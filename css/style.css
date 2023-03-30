@@ -1476,12 +1476,12 @@ body.light hr.separator {
     display: none !important;
   }
 
-  .portfolio .slideshow nav span {
-    padding: 0;
-  }
-
   .portfolio .slideshow {
     background: #252525;
+  }
+
+  .portfolio .slideshow nav span {
+    padding: 0;
   }
 
   .portfolio .slideshow ul > li {
