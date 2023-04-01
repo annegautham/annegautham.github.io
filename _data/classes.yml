@@ -1,0 +1,249 @@
+- term: Spring 2023 (upcoming)
+  classes:
+    - number: 2.14
+      name: Analysis and Design of Feedback Control Systems
+      dept: MechE
+      type: Advanced Elective
+      description: Develops the fundamentals of feedback control using linear transfer function system models. Analysis in time and frequency domains. Design in the s-plane (root locus) and in the frequency domain (loop shaping). Describing functions for stability of certain non-linear systems. Extension to state variable systems and multivariable control with observers. Discrete and digital hybrid systems and use of z-plane design. Extended design case studies and capstone group projects. Students taking graduate version complete additional assignments.
+    - number: 2.S994 II
+      name: Senior Pappalardo Apprenticeship
+      dept: MechE
+      type: Advanced Elective
+      description: The Pappalardo Apprentice series is designed to further develop fabrication skills, and provide mentor training and opportunities for peer-to-peer mentoring. The objective is to push the boundaries of the lab experience, further developing students' skills and the workspace as one of the safest, most productive, positive, and creative labs on campus. The program has two primary areas of emphasis.<br><b>1. Peer mentoring.</b> Apprentices are undergraduate lab assistants for 2.007, required signing-on to a regularly scheduled 2.007 lab section and an additional three-hour lab block to assist 2.007 students with fabrication, including machining, hand-tool use, materials and supplies assistance, brainstorming, and general peer-to-peer support.<br><b>2. Project work.</b> Apprentices will participate in a series of seminars and clinics to refresh and further their fabrication knowledge and hands-on skills, including mill and lathe use, CAD/CAM, patternmaking, and casting. Weekly seminars and practicum cover a variety of topics such as shop best practices, machine setup, chip formation, fixturing, material selection, and physical metallurgy. Senior apprentices will spend the first half of term focused on iron, with each student casting, machining, and scraping their own camelback straightedge. The second half of term  focuses on copper alloys, with Senior apprentices continuing fabrication of a replica of an 1899 anchor windlass from the Herreshoff Manufacturing Company, used on the famous New York 70 class sloops.
+    - number: "6.3000"
+      name: Signal Processing
+      dept: EECS
+      type: Header
+      description: Fundamentals of signal processing, focusing on the use of Fourier methods to analyze and process signals such as sounds and images. Topics include Fourier series, Fourier transforms, the Discrete Fourier Transform, sampling, convolution, deconvolution, filtering, noise reduction, and compression. Applications draw broadly from areas of contemporary interest with emphasis on both analysis and design.
+    - number: 6.UAR
+      name: Seminar in Undergraduate Advanced Research
+      units: 6
+      dept: EECS
+      type: Communication
+      description: Instruction in effective undergraduate research, including choosing and developing a research topic, surveying previous work and publications, research topics in EECS and the School of Engineering, industry best practices, design for robustness, technical presentation, authorship and collaboration, and ethics. Students engage in extensive written and oral communication exercises, in the context of an approved advanced research project.
+
+
+- term: Fall 2022
+  classes:
+    - number: 2.009
+      name: The Product Engineering Process
+      units: 15
+      dept: MechE
+      type: Core
+      description: Students develop an understanding of product development phases and experience working in teams to design and construct high-quality product prototypes. Design process learned is placed into a broader development context. Primary goals are to improve ability to reason about design alternatives and apply modeling techniques appropriate for different development phases; understand how to gather and process customer information and transform it into engineering specifications; and use teamwork to resolve the challenges in designing and building a substantive product prototype. Instruction and practice in oral communication provided.
+    - number: 2.74
+      name: Bio-inspired Robotics
+      dept: MechE
+      type: Advanced Elective
+      description: "Interdisciplinary approach to bio-inspired design, with emphasis on principle extraction applicable to various robotics research fields, such as robotics, prosthetics, and human assistive technologies. Focuses on three main components: biomechanics, numerical techniques that allow multi-body dynamics simulation with environmental interaction and optimization, and basic robotics techniques and implementation skills. Students integrate the components into a final robotic system project of their choosing through which they must demonstrate their understanding of dynamics and control and test hypothesized design principles."
+    - number: 6.UAR
+      name: Seminar in Undergraduate Advanced Research
+      units: 6
+      dept: EECS
+      type: Communication
+      description: Instruction in effective undergraduate research, including choosing and developing a research topic, surveying previous work and publications, research topics in EECS and the School of Engineering, industry best practices, design for robustness, technical presentation, authorship and collaboration, and ethics. Students engage in extensive written and oral communication exercises, in the context of an approved advanced research project.
+    - number: 21M.600
+      name: Introduction to Acting
+      units: 9
+      dept: HASS
+      type: Theatre
+      description: "Explores the actor's tools: body, voice, mind, imagination, and the essential self. Through studio exercises, students address issues of honesty and creativity in the theatrical moment, and begin to have a sense of their strengths and limitations as communicating theatrical artists. Provides an opportunity for students to discover their relationship to 'the other' in the acting partner, the group, the environment, and the audience."
+
+- term: Spring 2022
+  classes:
+    - number: 2.12
+      name: Introduction to Robotics
+      dept: MechE
+      type: Advanced Elective
+      description: Cross-disciplinary studies in robot mechanics and intelligence. Emphasizes physical understanding of robot kinematics and dynamics, differential motion and energy method, design and control of robotic arms and mobile robots, and actuators, drives, and transmission. Second half of course focuses on algorithmic thinking and computation, computer vision and perception, planning and control for manipulation, localization and navigation, machine learning for robotics, and human-robot systems. Weekly laboratories include brushless DC motor control, design and fabrication of robotic arms and vehicles, robot vision and navigation, and programming and system integration using Robot Operating System (ROS). Group term project builds intelligent robots for specific applications of interest. 
+    - number: 2.S994 I
+      name: Junior Pappalardo Apprenticeship
+      dept: MechE
+      type: Advanced Elective
+      description: The Pappalardo Apprentice series is designed to further develop fabrication skills, and provide mentor training and opportunities for peer-to-peer mentoring. The objective is to push the boundaries of the lab experience, further developing students' skills and the workspace as one of the safest, most productive, positive, and creative labs on campus. The program has two primary areas of emphasis.<br><b>1. Peer mentoring.</b> Apprentices are undergraduate lab assistants for 2.007, required signing-on to a regularly scheduled 2.007 lab section and an additional three-hour lab block to assist 2.007 students with fabrication, including machining, hand-tool use, materials and supplies assistance, brainstorming, and general peer-to-peer support.<br><b>2. Project work.</b> Apprentices will participate in a series of seminars and clinics to refresh and further their fabrication knowledge and hands-on skills, including mill and lathe use, CAD/CAM, and patternmaking. Weekly seminars and practicum cover a variety of topics such as shop best practices, machine setup, chip formation, fixturing, material selection, and physical metallurgy. Junior apprentices have the full-term project of fabricating a Stirling engine.
+    - number: 6.832
+      name: Underactuated Robotics
+      dept: EECS
+      type: Graduate
+      description: Covers nonlinear dynamics and control of underactuated mechanical systems, with an emphasis on computational methods. Topics include the nonlinear dynamics of robotic manipulators, applied optimal and robust control and motion planning. Discussions include examples from biology and applications to legged locomotion, compliant manipulation, underwater robots, and flying machines.
+    - number: 17.265
+      name: Public Opinion and American Democracy
+      dept: HASS
+      type: PoliSci
+      description: Introduces students to public opinion in politics and public policymaking. Surveys theories of political psychology and political behavior. Examines empirical research on public understanding of and attitudes towards important issues, including war, economic and social policies, and moral questions.
+    - number: 3.985
+      name: Archaeological Science
+      dept: HASS
+      type: Material Sci/Eng
+      description: Pressing issues in archaeology as an anthropological science. Stresses the natural science and engineering methods archaeologists use to address these issues. Reconstructing time, space, and human ecologies provides one focus; materials technologies that transform natural materials to material culture provide another. Topics include 14C dating, ice core and palynological analysis, GIS and other remote sensing techniques for site location, organic residue analysis, comparisons between Old World and New World bronze production, invention of rubber by Mesoamerican societies, analysis and conservation of Dead Sea Scrolls.
+
+- term: Fall 2021
+  classes:
+    - number: 2.005
+      name: Thermal-Fluids Engineering I
+      dept: MechE
+      type: Core
+      description: Integrated development of the fundamental principles of thermodynamics, fluid mechanics, and heat transfer, with applications. Focuses on the first and second laws of thermodynamics, mass conservation, and momentum conservation, for both closed and open systems. Entropy generation and its influence on the performance of engineering systems. Introduction to dimensionless numbers. Introduction to heat transfer-conduction, convection, and radiation. Steady-state and transient conduction. Finned surfaces. The heat equation and the lumped capacitance model. Coupled and uncoupled fluid models. Hydrostatics. Inviscid flow analysis and Bernoulli equation. Navier-Stokes equation and its solutions. Viscous internal flows, head losses, and turbulence. Introduction to pipe flows and Moody chart.
+    - number: 2.671
+      name: Measurement and Instrumentation
+      dept: MechE
+      type: Core
+      description: Experimental techniques for observation and measurement of physical variables such as force, strain, temperature, flow rate, and acceleration. Emphasizes principles of transduction, measurement circuitry, MEMS sensors, Fourier transforms, linear and nonlinear function fitting, uncertainty analysis, probability density functions and statistics, system identification, electrical impedance analysis and transfer functions, computer-aided experimentation, and technical reporting. Typical laboratory experiments involve oscilloscopes, electronic circuits including operational amplifiers, thermocouples, strain gauges, digital recorders, lasers, etc. Basic material and lab objectives are developed in lectures. Instruction and practice in oral and written communication provided.
+    - number: 6.014
+      name: Electromagnetic Fields, Forces and Motion
+      dept: EECS
+      type: Header
+      description: Study of electromagnetics and electromagnetic energy conversion leading to an understanding of devices, including electromagnetic sensors, actuators, motors and generators. Quasistatic Maxwell's equations and the Lorentz force law. Studies of the quasistatic fields and their sources through solutions of Poisson's and Laplace's equations. Boundary conditions and multi-region boundary-value problems. Steady-state conduction, polarization, and magnetization. Charge conservation and relaxation, and magnetic induction and diffusion. Extension to moving materials. Electric and magnetic forces and force densities derived from energy, and stress tensors. Extensive use of engineering examples. Students taking graduate version complete additional assignments.
+    - number: 14.01
+      name: Principles of Microeconomics
+      dept: HASS
+      type: Economics
+      description: Introduces microeconomic concepts and analysis, supply and demand analysis, theories of the firm and individual behavior, competition and monopoly, and welfare economics. Applications to problems of current economic policy.
+
+
+- term: Spring 2021
+  classes:
+    - number: 2.003
+      name: Dynamics and Control I
+      dept: MechE
+      type: Core
+      description: Introduction to the dynamics and vibrations of lumped-parameter models of mechanical systems. Kinematics. Force-momentum formulation for systems of particles and rigid bodies in planar motion. Work-energy concepts. Virtual displacements and virtual work. Lagrange's equations for systems of particles and rigid bodies in planar motion. Linearization of equations of motion. Linear stability analysis of mechanical systems. Free and forced vibration of linear multi-degree of freedom models of mechanical systems; matrix eigenvalue problems.
+    - number: 2.007
+      name: Design and Manufacturing I
+      dept: MechE
+      type: Core
+      description: Develops students' competence and self-confidence as design engineers. Emphasis on the creative design process bolstered by application of physical laws. Instruction on how to complete portfolio on schedule and within budget. Robustness and manufacturability are emphasized. Subject relies on active learning via a major design-and-build project. Lecture topics include idea generation, estimation, concept selection, visual thinking, computer-aided design (CAD), mechanism design, machine elements, basic electronics, technical communication, and ethics. 
+    - number: 6.302
+      name: Feedback System Design
+      dept: EECS
+      type: Advanced Elective
+      description: Learn-by-design introduction to modeling and control of discrete- and continuous-time systems, from classical analytical techniques to modern computational strategies. Topics include modeling (difference/differential equations, natural frequencies, transfer functions, frequency response, impedances);  performance metrics (stability, tracking, disturbance rejection); classical design (root-locus, PID, lead-lag); state-space (ABCD matrices, pole placement, LQR, observers); and data-driven design (regression,identification, model-based control). Students apply concepts introduced in lectures and online assignments to design labs that include discussion-based checkoffs. In lab, students use circuits, sensors, actuators, and a microcontroller to design, build and test controllers for, e.g., propeller-actuated positioners, magnetic levitators, and two-wheel balancers. Students taking graduate version complete additional assignments.
+    - number: 6.08
+      name: Interconnected Embedded Systems
+      dept: EECS
+      type: Introductory
+      description: Introduction to embedded systems in the context of connected devices, wearables, and the "Internet of Things" (IoT). Topics include microcontrollers, energy utilization, algorithmic efficiency, interfacing with sensors, networking, cryptography, and local versus distributed computation. Students design, make, and program an Internet-connected wearable or handheld device. In final project, student teams design and demo their own cloud-connected IoT system. 
+    - number: 11.001
+      name: Introduction to Urban Design and Development
+      dept: HASS
+      type: Urban Studies/Planning
+      description: Examines the evolving structure of cities and the way that cities, suburbs, and metropolitan areas can be designed and developed. Surveys the ideas of a wide range of people who have addressed urban problems. Stresses the connection between values and design. Demonstrates how physical, social, political and economic forces interact to shape and reshape cities over time.
+
+- term: Fall 2020
+  classes:
+    - number: 2.001
+      name: Mechanics and Materials I
+      dept: MechE
+      type: Core
+      description: Introduction to statics and the mechanics of deformable solids. Emphasis on the three basic principles of equilibrium, geometric compatibility, and material behavior. Stress and its relation to force and moment; strain and its relation to displacement; linear elasticity with thermal expansion. Failure modes. Application to simple engineering structures such as rods, shafts, beams, and trusses. Application to biomechanics of natural materials and structures.
+    - number: 2.086
+      name: Numerical Computation for Mechanical Engineers
+      dept: MechE
+      type: Core
+      description: Covers elementary programming concepts, including variable types, data structures, and flow control. Provides an introduction to linear algebra and probability. Numerical methods relevant to MechE, including approximation (interpolation, least squares, and statistical regression), integration, solution of linear and nonlinear equations, and ordinary differential equations. Presents deterministic and probabilistic approaches. Uses examples from MechE, particularly from robotics, dynamics, and structural analysis. Assignments require MATLAB programming. 
+    - number: 6.036
+      name: Introduction to Machine Learning
+      dept: EECS
+      type: Header
+      description: Introduces principles, algorithms, and applications of machine learning from the point of view of modeling and prediction; formulation of learning problems; representation, over-fitting, generalization; clustering, classification, probabilistic modeling; and methods such as support vector machines, hidden Markov models, and neural networks. Students taking graduate version complete additional assignments. 
+    - number: 6.006
+      name: Introduction to Algorithms
+      dept: EECS
+      type: Foundation
+      description: Introduction to mathematical modeling of computational problems, as well as common algorithms, algorithmic paradigms, and data structures used to solve these problems. Emphasizes the relationship between algorithms and programming, and introduces basic performance measures and analysis techniques for these problems.
+    - number: "17.20"
+      name: Introduction to the American Political Process
+      dept: HASS
+      type: PoliSci
+      description: Provides a substantive overview of US politics and an introduction to the discipline of political science. Surveys the institutional foundations of US politics as well as the activities of political elites, organizations, and ordinary citizens. Explores the application of general political science concepts and analytic frameworks to specific episodes and phenomena in US politics.
+    - number: 3.091
+      name: Introduction to Solid-State Chemistry
+      dept: GIR
+      description: Basic principles of chemistry and their application to engineering systems. The relationship between electronic structure, chemical bonding, and atomic order. Characterization of atomic arrangements in crystalline and amorphous solids&#58; metals, ceramics, semiconductors, and polymers. Topical coverage of organic chemistry, solution chemistry, acid-base equilibria, electrochemistry, biochemistry, chemical kinetics, diffusion, and phase diagrams. Examples from industrial practice (including the environmental impact of chemical processes), from energy generation and storage (e.g., batteries and fuel cells), and from emerging technologies (e.g., photonic and biomedical devices).
+
+
+- term: Spring 2020
+  classes:
+    - number: 6.002
+      name: Circuits and Electronics
+      dept: EECS
+      type: Foundation
+      description: Fundamentals of linear systems and abstraction modeling through lumped electronic circuits. Linear networks involving independent and dependent sources, resistors, capacitors and inductors. Extensions to include nonlinear resistors, switches, transistors, operational amplifiers and transducers. Dynamics of first- and second-order networks; design in the time and frequency domains; signal and energy processing applications. Design exercises. Weekly laboratory with microcontroller and transducers.
+    - number: 6.004
+      name: Computation Structures
+      dept: EECS
+      type: Foundation
+      description: Provides an introduction to the design of digital systems and computer architecture. Emphasizes expressing all hardware designs in a high-level hardware language and synthesizing the designs. Topics include combinational and sequential circuits, instruction set abstraction for programmable hardware, single-cycle and pipelined processor implementations, multi-level memory hierarchies, virtual memory, exceptions and I/O, and parallel systems.
+    - number: 6.042
+      name: Math for Computer Science
+      dept: EECS
+      type: Math/Probability
+      description: Elementary discrete mathematics for science and engineering, with a focus on mathematical tools and proof techniques useful in computer science. Topics include logical notation, sets, relations, elementary graph theory, state machines and invariants, induction and proofs by contradiction, recurrences, asymptotic notation, elementary analysis of algorithms, elementary number theory and cryptography, permutations and combinations, counting tools, and discrete probability.
+    - number: 18.03
+      name: Differential Equations
+      dept: Math
+      type: Engineering
+      description: Study of differential equations, including modeling physical systems. Solution of first-order ODEs by analytical, graphical, and numerical methods. Linear ODEs with constant coefficients. Complex numbers and exponentials. Inhomogeneous equations&#58; polynomial, sinusoidal, and exponential inputs. Oscillations, damping, resonance. Fourier series. Matrices, eigenvalues, eigenvectors, diagonalization. First order linear systems&#58; normal modes, matrix exponentials, variation of parameters. Heat equation, wave equation. Nonlinear autonomous systems&#58; critical point analysis, phase plane diagrams.
+    - number: 21W.747
+      name: Rhetoric
+      dept: HASS
+      type: Writing
+      description: For students with a special interest in learning how to make forceful arguments in oral and written form. Studies the forms and structures of argumentation, including organization of ideas, awareness of audience, methods of persuasion, evidence, factual vs. emotional argument, figures of speech, and historical forms and uses of arguments.
+
+- term: IAP 2020
+  classes:
+    - number: "2.670"
+      name: Mechanical Engineering Tools
+      dept: MechE
+      type: Core
+      units: 3
+      description: Introduces the fundamentals of machine tools use and fabrication techniques. Students work with a variety of machine tools including the bandsaw, milling machine, and lathe. Mechanical Engineering students are advised to take this subject in the first IAP after declaring their major. Enrollment may be limited due to laboratory capacity. 
+    - number: 6.176
+      name: "Pokerbots Competition"
+      dept: EECS
+      type: Elective
+      units: 6
+      description: Build autonomous poker players and acquire the knowledge of the game of poker. Showcase decision making skills, apply concepts in mathematics, computer science and economics. Provides instruction in programming, game theory, probability and statistics and machine learning.
+
+- term: Fall 2019
+  classes:
+    - number: 6.A01
+      name: Mens et Manus
+      dept: EECS
+      type: Seminar
+      units: 6
+      description: This seminar provides opportunities to learn to use modern fabrication techniques such as laser cutting and 3D printing as well as state-of-the-art microcontrollers to design and build your own novel brushless motor. Learn how to apply principles from your classroom experiences in physics and math to real-world design problems, and then build your design using MIT's state-of-the-art prototyping facilities.
+    - number: 18.022
+      name: Calculus II
+      dept: GIR
+      description: Calculus of several variables. More mathematically rigorous than traditional Calculus II. Vector algebra, dot product, matrices, determinant. Functions of several variables, continuity, differentiability, derivative. Parametrized curves, arc length, curvature, torsion. Vector fields, gradient, curl, divergence. Multiple integrals, change of variables, line integrals, surface integrals. Stokes' theorem in one, two, and three dimensions.
+    - number: 8.022
+      name: Physics II
+      dept: GIR
+      description: Electromagnetism and electrostatics. Mathematically advanced compared to traditional Physics II. Electric charge, Coulomb's Law, electric structure of matter. Conductors and dielectrics. Electrostatic and magnetic vector potential, electrostatic energy. Electric currents, magnetic fields, and Ampere's law. Properties of dielectrics and magnetic materials. Time-varying fields and Faraday's law of induction. Basic electric circuits. Electromagnetic waves and Maxwell's equations, in both differential and integral forms.
+    - number: 7.012
+      name: Introductory Biology
+      dept: GIR
+      description: Exploration into areas of current research in molecular and cell biology, immunology, neurobiology, human genetics, biochemistry, and evolution. Enrollment limited to seating capacity of classroom.
+    - number: 17.03
+      name: Introduction to Political Thought
+      dept: HASS
+      type: PoliSci
+      description: Examines major texts in the history of political thought and considers how they contribute to a broader conversation about freedom, equality, democracy, rights, and the role of politics in human life. Areas covered may include ancient, modern, contemporary, or American political thought.
+
+- term: Prior Credit
+  classes:
+    - number: 6.0001
+      name: Introduction to Computer Science
+      dept: EECS
+      type: Programming Skills
+      units: 6
+      description: Introduction to computer science and programming for students with little or no programming experience. Students develop skills to program and use computational techniques to solve problems. Topics include the notion of computation, Python, simple algorithms and data structures, testing and debugging, and algorithmic complexity. 
+    - number: 18.01
+      name: Calculus I
+      dept: GIR
+      description: Differentiation and integration of functions of one variable, with applications. Informal treatment of limits and continuity. Differentiation&#58; definition, rules, application to graphing, rates, approximations, and extremum problems. Indefinite integration; separable first-order differential equations. Definite integral; fundamental theorem of calculus. Applications of integration to geometry and science. Elementary functions. Techniques of integration. Polar coordinates. L'Hopital's rule. Improper integrals. Infinite series&#58; geometric, p-harmonic, simple comparison tests, power series for some elementary functions.
+    - number: 8.01
+      name: Physics I
+      dept: GIR
+      description: Introduces classical mechanics. Space and time&#58; straight-line kinematics; motion in a plane; forces and static equilibrium; particle dynamics, with force and conservation of momentum; relative inertial frames and non-inertial force; work, potential energy and conservation of energy; kinetic theory and the ideal gas; rigid bodies and rotational dynamics; vibrational motion; conservation of angular momentum; central force motions; fluid mechanics. 

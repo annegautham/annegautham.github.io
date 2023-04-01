@@ -1,0 +1,73 @@
+---
+layout: detailpage
+permalink: /education/
+title: "Education"
+description: Looking for which classes I'm taking, I've taken, and I plan on taking? Look no further! Click on any of the classes below to learn more.
+---
+
+{% for term in site.data.classes %}
+    <div class="block">
+        <h2>{{ term.term }}</h2>
+
+        <div class="class_list transition">
+            {% for class in term.classes %}
+                <div id="{{ class.number | replace: ' ', '-' }}" class="class transition {{ class.dept }}">
+                    <div class="upper transition">
+                        <span class="number">{{ class.number }}</span>
+                        <span class="name">{{ class.name }}</span>
+                    </div>
+                    <div class="lower transition">
+                        <div>
+                            <span class="number">{{ class.number }}</span>
+                            <span class="name">{{ class.name }}</span>
+                        </div>
+                        <div class="metadata">
+                            {{ class.dept }}{% if class.type %} | {{ class.type }}{% endif %} | {% if class.units %} {{ class.units }} {% else %} 12 {% endif %} units
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endfor %}
+
+<div id="class_overlay" class="overlay" style="display: none;">
+    {% for term in site.data.classes %}
+        {% for class in term.classes %}
+            <div id="{{ class.number | replace: ' ', '-' }}_overlay" class="class_popup" style="display: none;">
+                <div class="title">
+                    <span class="number">{{ class.number }}: </span>
+                    <span class="name">{{ class.name }}</span>
+                </div>
+
+                <div class="metadata">
+                    {{ class.dept }}{% if class.type %} | {{ class.type }}{% endif %} | {% if class.units %} {{ class.units }} {% else %} 12 {% endif %} units
+                </div>
+
+                <div class="description">
+                    {{ class.description }}
+                </div>
+
+                <div style="text-align: center; margin-top: 12px">
+                    <div class="button inline transition gray">close</div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endfor %}
+</div>
+
+<script>
+    var open_thing = '';
+    $(".class").click(function() {
+        $("#class_overlay").css("display", "block");
+        console.log("#" + $(this).attr('id') + "_overlay");
+
+        open_selector = "#" + $(this).attr('id').replace('\.', '\\\.') + "_overlay";
+        $(open_selector).css("display", "block");
+    });
+
+    $("#class_overlay").click(function() {
+        $("#class_overlay").css("display", "none");
+        $(open_selector).css("display", "none");
+    });
+</script>

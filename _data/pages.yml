@@ -1,0 +1,10 @@
+- name: Education
+  permalink: /education/
+- name: Experience
+  permalink: /experience/
+- name: Portfolio
+  permalink: /portfolio/
+- name: Engineering Teams
+  permalink: /teams/
+- name: <b>Resume</b>
+  permalink: /assets/documents/ResumeRonakRoy.pdf

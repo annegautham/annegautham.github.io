@@ -1,0 +1,44 @@
+---
+layout: largeheader
+---
+
+<div class="main_content wrap {% if page.filterable %} filterable {% endif %}">
+  {% if page.filterable %}
+    <div class="filter_buttons">
+      {% for tag in page.filter_tags %}
+        <div id="{{ tag }}" class="button transition white">{{ tag }}</div>
+      {% endfor %}
+    </div>
+
+    <script>
+      var selected = '{{ page.filter_selected }}';
+      $(document).ready(function() {
+        $(".filter_buttons > #" + selected).addClass("selected");
+      });
+
+      $(".filter_buttons > .button").click(function() {
+        $(".filter_buttons > #" + selected).removeClass("selected");
+        selected = $(this).text();
+        $(this).addClass("selected");
+
+        $(".card").each(function() {
+          if ($(this).hasClass(selected)) $(this).show();
+          else $(this).hide();
+        });
+
+        // $("#class_overlay").css("display", "block");
+        // console.log("#" + $(this).attr('id') + "_overlay");
+
+        // open_selector = "#" + $(this).attr('id').replace('\.', '\\\.') + "_overlay";
+        // $(open_selector).css("display", "block");
+      });
+
+      $("#class_overlay").click(function() {
+        $("#class_overlay").css("display", "none");
+        $(open_selector).css("display", "none");
+      });
+    </script>
+  {% endif %}
+
+  {{ content }}
+</div>

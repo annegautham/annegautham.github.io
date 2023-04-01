@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="header_image {% if page.url == '/' %} homepage {% endif %}">
+    <div class="gray">
+        <div class="wrap content">
+            <h2>{{ page.title }}</h2>
+            <h5 class="description">
+                {{ page.description }}
+            </h5>
+            {% if page.url == '/' %}
+                <div class="social_icons">
+                    {% for sm in site.data.social %}
+                        <a href="{{ sm.link }}"><img class="transition" src="/assets/images/social/{{sm.name}}.png"></img></a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{{ content }}

@@ -1,0 +1,10 @@
+# - name: facebook
+#   link: https://www.facebook.com/profile.php?id=100040440607226
+# - name: twitter
+#   link: https://twitter.com/theronakroy
+- name: linkedin
+  link: https://linkedin.com/in/ronak-roy
+- name: github
+  link: https://github.com/RonakRoy
+- name: email
+  link: mailto:me@ronakroy.com

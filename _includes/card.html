@@ -1,0 +1,14 @@
+<div class="card {{ include.tags }}">
+    <div class="image_frame">
+        <div class="image slow_transition" style="background-image: url('{{ include.image_path }}')">
+        </div>
+    </div>
+    <div class="content">
+        <h4 class="title">{{ include.title }}</h4>
+        <div class="subheader"> {{ include.subheader }}</div>
+        <h5 class="description">
+            {{ include.description }}
+        </h5>
+    </div>
+    <a class="page_link" href="{{ include.page_url }}"></a>
+</div>
