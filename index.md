@@ -23,7 +23,13 @@ description: I'm Gautham, a current high school senior at the Illinois Mathemati
     description="I've employed the engineering process of design, build, test, repeat on personal projects as well as projects for classes and my engineering teams. Forging ahead using all the resources at my disposal have allowed me to learn a lot (and fail a lot), while making some cool things along the way." %}
 
 {% include card.html
-    title="Engineering Teams"
-    page_url="/teams/"
+    title="Blog"
+    page_url="/blog/"
     image_path="/assets/images/teams.jpeg"
-    description="My FRC and ASC teams have given me hands-on engineering learning opportunities. Through these programs, I've learned about controls systems, mechanical design, and manufacturing—but, and most importantly, I've met amazing, passionate people who've enabled me to grow as an engineer, as a leader, and as a person." %}
+    description="Blog" %}
+
+{% include card.html
+    title="Youtube"
+    page_url="/youtube/"
+    image_path="/assets/images/teams.jpeg"
+    description="Blog" %}
