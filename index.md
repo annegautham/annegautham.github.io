@@ -5,6 +5,13 @@ description: I'm Gautham, a current high school senior at the Illinois Mathemati
 ---
 
 {% include card.html
+    title="About Me"
+    page_url="/aboutme/"
+    image_path="/assets/images/mit.jpeg"
+    description="About Me" %}
+
+
+{% include card.html
     title="Education"
     page_url="/education/"
     image_path="/assets/images/mit.jpeg"
@@ -24,12 +31,12 @@ description: I'm Gautham, a current high school senior at the Illinois Mathemati
 
 {% include card.html
     title="Blog"
-    page_url="/blog/"
+    page_url="https://medium.com/@annegautham"
     image_path="/assets/images/teams.jpeg"
     description="Blog" %}
 
 {% include card.html
     title="Youtube"
-    page_url="/youtube/"
+    page_url="https://www.youtube.com/@gauthamanne"
     image_path="/assets/images/teams.jpeg"
-    description="Blog" %}
+    description="Youtube" %}
