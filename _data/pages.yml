@@ -7,8 +7,8 @@
 - name: Portfolio
   permalink: /portfolio/
 - name: Blog
-  permalink: /blog/
+  permalink: <a href="https://medium.com/@annegautham/">Blog</a>
 - name: Youtube
-  permalink: /youtube/  
+  permalink: <a href="https://www.youtube.com/@gauthamanne">Youtube</a> 
 - name: <b>Resume</b>
   permalink: /assets/documents/ResumeRonakRoy.pdf
