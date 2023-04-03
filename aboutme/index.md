@@ -1,74 +1,20 @@
 ---
 layout: splashpage
 title: "About Me"
-description: Ever since high school, I have had the privilege of gaining valuable work experience through research internships at the university-level and through engineering internships in industry.
-filterable: true
-filter_tags:
-  - all
-  - industry
-  - research
-filter_selected: all
+description: Hi! I love all things STEM, especially leaning on the math, physics, and computer science aspects of how things work! On that note, I'm still figuring out how my life works, and it's quite complicated! Anyway, I'm a senior at the Illinois Mathematics and Science Academy, a public residential high school located in Aurora, Illinois. I'll be attending Northwestern University in fall 2023! My major is still undecided, but I'm looking forward to exploring Engineering, Computer Science, Physics, and Political Science! My friends and family would describe me as a driven, curious, redundant, ambitious, driven, goofy, intellectual. Just kidding, they would probably describe me as an annoying presence they tolerate.
 ---
-
 {% include card.html
-	title="ReMAP&colon; AFM Rotation-enabled Multi-tip Active Probe Atomic Force Microscopy"
-	page_url="/experience/mrl"
-	image_path="/assets/images/experience/mrl.png"
-	subheader="MIT Mechatronics Research Laboratory | Feb 2022 — Now"
-	description="I am working on the ReMAP AFM (Rotation-enabled Multi-tip Active Probe Atomic Force Microscopy) system."
-	tags="all research"
+    title="MIT Solar Electric Vehicle Team"
+    page_url="/teams/sevt"
+    image_path="/assets/images/teams/sevt.jpeg"
+    subheader="Sep 2020 — May 2022"
+    description=" At MIT, I was a part of the American Solar Challenge team. In the ASC, we design and build an electric car powered completely using the car-mounted solar panels to race in an over 1300 mile, cross-country race."
 %}
 
 {% include card.html
-	title="Mechanical Design Engineering Intern - Power Electronics"
-	page_url="/experience/tesla"
-	image_path="/assets/images/experience/tesla.png"
-	subheader="Tesla | May 2022 — Aug 2022"
-	description="I designed, simulated, and tested custom electromagnetic components, high-voltage connectors, and thermal management hardware for next-generation high voltage power conversion systems used in residential energy storage applications."
-	tags="all industry"
-%}
-
-{% include card.html
-	title="Manufacturing and Robotics Engineering Intern"
-	page_url="/experience/lilly"
-	image_path="/assets/images/experience/lilly.png"
-	subheader="Eli Lilly and Co. | Jun 2021 — Aug 2021"
-	description="I built a data organization system that enables process engineers to improve efficiency on the assembly line for the Trulicity autoinjector. I also developed a robotic automation strategy that utilizes industrial robots in the drug device and packaging facility."
-	tags="all industry"
-%}
-
-{% include card.html
-	title="Multi-Modality Association Algorithm for Robot Perception"
-	page_url="/experience/acl-mixer"
-	image_path="/assets/images/experience/acl-mixer.png"
-	subheader="MIT Aerospace Controls Laboratory | Jan 2021 — May 2021"
-	description="I helped develop the MIXER algorithm, which allows data gathered from multiple modalities to be fused to provide accurate associations of objects over multiple observations."
-	tags="all research"
-%}
-
-{% include card.html
-	title="Multi-Robot Collaborative Mapping Simulator"
-	page_url="/experience/acl-clear"
-	image_path="/assets/images/experience/acl-clear.png"
-    subheader="MIT Aerospace Controls Laboratory | Jun 2020 — May 2020"
-	description="I implemented the CLEAR multiway association algorithm in a photorealistic simulator, enabling a fleet of robots to collaboratively map an environment in simulation."
-	tags="all research"
-%}
-
-{% include card.html
-	title="SMA-Actuated Hinge for Small Satellites"
-	page_url="/experience/flaps"
-	image_path="/assets/images/experience/flaps.jpeg"
-	subheader="MIT Space, Telecommunications, Astronomy, and Radiation Laboratory | Apr 2020 — Sep 2020"
-	description="I was a member of the test team of the Folded Lightweight Actuated Positioning System for CubeSat Deployables (FLAPS) project."
-	tags="all research"
-%}
-
-{% include card.html
-	title="Modelling Quantum Interaction Energies for Molecular Simulations"
-	page_url="/experience/goetz"
-	image_path="/assets/images/experience/goetz.png"
-    subheader="UC San Diego: San Diego Supercomputer Center | Jun 2018 — Jul 2019"
-	description="As a member of the Goetz lab, I worked on developing and benchmarking our lab's machine-learning software infrastructure for running large-scale molecular simulations."
-	tags="all research"
+    title="FIRST Robotics Competition Team 3128: Aluminum Narwhals"
+    page_url="/teams/frc"
+    image_path="/assets/images/teams/frc3128.jpg"
+    subheader="Aug 2015 — Jun 2019"
+    description="In high school, I was a dedicated member of my FIRST Robotics Competition Team; I eventually served as Head of the Controls, Programming, and Electronics Department and President of the team."
 %}
