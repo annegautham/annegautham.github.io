@@ -29,6 +29,12 @@ description: Hi! I love all things STEM, especially the "how" behind the "why" t
 %}
 
 {% include card.html
+    title="Bozo Sister"
+    image_path="/assets/images/aboutme/wSis.jpg"
+    description="With my sister on a vaction to Mexico!"
+%}
+
+{% include card.html
     title="In my Euclidean Domain ..."
     image_path="/assets/images/aboutme/goofyMath.jpg"
     description="Me after 1 hour of sleep as a Junior Counselor at the Ross Mathematics Program! Stayed up all night working on problem sets with my roomate, but nothing that coffee can't solve!"
@@ -38,10 +44,4 @@ description: Hi! I love all things STEM, especially the "how" behind the "why" t
     title="Rainbowstache"
     image_path="/assets/images/aboutme/goofyMath.jpg"
     description="Playing around with Spectral Lenses in my Planetary Science class."
-%}
-
-{% include card.html
-    title="Bozo Sister"
-    image_path="/assets/images/aboutme/wSis.jpg"
-    description="With my sister on a vaction to Mexico!"
 %}
