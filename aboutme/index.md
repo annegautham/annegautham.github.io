@@ -42,6 +42,6 @@ description: Hi! I love all things STEM, especially the "how" behind the "why" t
 
 {% include card.html
     title="Rainbowstache"
-    image_path="/assets/images/aboutme/goofyMath.jpg"
+    image_path="/assets/images/aboutme/rainbowMustache.jpg"
     description="Playing around with Spectral Lenses in my Planetary Science class."
 %}
