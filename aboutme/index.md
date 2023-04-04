@@ -5,7 +5,43 @@ description: Hi! I love all things STEM, especially the "how" behind the "why" t
 ---
 
 {% include card.html
-    title="FTC Team!"
+    title="My FTC Team!"
     image_path="/assets/images/aboutme/ftcTeam.jpg"
-    description="Try to spot me in my FTC Team picu"
+    description="Where's Waldo?"
+%}
+
+{% include card.html
+    title="IMSA's Clash of the Halls!"
+    image_path="/assets/images/aboutme/clash.jpg"
+    description="Where's Waldo? (Part 2)"
+%}
+
+{% include card.html
+    title="Drones!"
+    image_path="/assets/images/aboutme/drone.jpg"
+    description="Here's me droning on about a quadcopter I built from scratch ..."
+%}
+
+{% include card.html
+    title="Radiosity Lecture"
+    image_path="/assets/images/aboutme/radiosity.jpg"
+    description="Here's a snapshot of my lecture on Radiosity. I actually built the light board myself by using an old glass pane and adding LED lights around the edges!"
+%}
+
+{% include card.html
+    title="In my Euclidean Domain ..."
+    image_path="/assets/images/aboutme/goofyMath.jpg"
+    description="Me after 1 hour of sleep as a Junior Counselor at the Ross Mathematics Program! Stayed up all night working on problem sets with my roomate, but nothing that coffee can't solve!"
+%}
+
+{% include card.html
+    title="Rainbowstache"
+    image_path="/assets/images/aboutme/goofyMath.jpg"
+    description="Playing around with Spectral Lenses in my Planetary Science class."
+%}
+
+{% include card.html
+    title="Bozo Sister"
+    image_path="/assets/images/aboutme/wSis.jpg"
+    description="With my sister on a vaction to Mexico!"
 %}
