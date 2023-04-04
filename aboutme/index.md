@@ -5,8 +5,7 @@ description: Hi! I love all things STEM, especially the "how" behind the "why" t
 ---
 
 {% include card.html
-    title="MIT Solar Electric Vehicle Team"
-    image_path="/assets/images/teams/sevt.jpeg"
-    subheader="Sep 2020 — May 2022"
-    description=" At MIT, I was a part of the American Solar Challenge team. In the ASC, we design and build an electric car powered completely using the car-mounted solar panels to race in an over 1300 mile, cross-country race."
+    title="FTC Team!"
+    image_path="/assets/images/aboutme/ftcTeam.jpg"
+    description="Try to spot me in my FTC Team picu"
 %}
