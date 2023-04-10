@@ -7,8 +7,9 @@ filterable: true
 filter_tags:
   - all
   - class
+  - research
   - personal
-  - SEVT
+  
 filter_selected: all
 ---
 
@@ -137,19 +138,3 @@ filter_selected: all
     description="I developed my independent research project, the Smartphone-Controlled Portable Phoropter Powered by Variable Focal Length Liquid Lens, which won awards at the Intel ISEF and REGENERON STS."
     tags="all personal"
 %}
-
-<!-- {% include card.html
-    title="NarwhalDashboard"
-    page_url="/portfolio/narwhaldashboard"
-    image_path="/assets/images/portfolio/nardash.png"
-    subheader="Aug 2018 — Jun 2019"
-    description="I developed a custom, web-socket based web dashboard for robot communication as Head of Controls on my FIRST Robotics Competition Team."
-%} -->
-
-<!-- {% include card.html
-    title="FRC Team 3128's Website"
-    page_url="/portfolio/frc3128website"
-    image_path="/assets/images/portfolio/team3128.png"
-    subheader="Mar 2016 — Jun 2019"
-    description="I built and maintained the website for my high school's FIRST Robotics Competition team from scratch in HTML/CSS/JS using Jekyll."
-%} -->

@@ -7,6 +7,7 @@ filter_tags:
   - all
   - industry
   - research
+  - extracurricular
 filter_selected: all
 ---
 
