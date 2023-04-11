@@ -31,7 +31,7 @@ description: Hi! I love all things STEM, especially the "how" behind the "why" t
 {% include card.html
     title="Bozo Sister"
     image_path="/assets/images/aboutme/wSis.jpg"
-    description="With my sister on a vaction to Mexico!"
+    description="With my sister on a trip to Mexico!"
 %}
 
 {% include card.html

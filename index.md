@@ -33,7 +33,7 @@ description: I'm Gautham, a current high school senior at the Illinois Mathemati
     title="Blog"
     page_url="https://medium.com/@annegautham"
     image_path="/assets/images/teams.jpeg"
-    description="I've recently started a blog! I write about anything that strikes me fancy, or go into deep philosophical discussions with myself ... anyway, enjoy!" %}
+    description="I've recently started a blog! I may write about anything that strikes me fancy or delve into deep philosophical discussions with myself ... anyways, enjoy!" %}
 
 {% include card.html
     title="Youtube"
