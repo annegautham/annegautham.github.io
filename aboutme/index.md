@@ -39,9 +39,3 @@ description: Hi! I love all things STEM, especially the "how" behind the "why" t
     image_path="/assets/images/aboutme/goofyMath.jpg"
     description="Me after 1 hour of sleep as a Junior Counselor at the Ross Mathematics Program! Stayed up all night working on problem sets with my roomate, but nothing that coffee can't solve!"
 %}
-
-{% include card.html
-    title="Rainbowstache"
-    image_path="/assets/images/aboutme/rainbowMustache.jpg"
-    description="Playing around with Spectral Lenses in my Planetary Science class."
-%}
