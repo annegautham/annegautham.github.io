@@ -7,7 +7,7 @@ description: I'm Gautham, a current high school senior at the Illinois Mathemati
 {% include card.html
     title="About Me"
     page_url="/aboutme/"
-    image_path="/assets/images/aboutme/rainbowStache.jpg"
+    image_path="/assets/images/aboutme/rainbowMustache.jpg"
     description="Wanna learn more about who I am? Well, here you go!" %}
 
 
@@ -27,7 +27,7 @@ description: I'm Gautham, a current high school senior at the Illinois Mathemati
     title="Portfolio"
     page_url="/portfolio/"
     image_path="/assets/images/portfolio.png"
-    description="I've employed the engineering process of design, build, test, repeat on personal projects as well as projects for classes and my engineering teams. Forging ahead using all the resources at my disposal have allowed me to learn a lot (and fail a lot), while making some cool things along the way." %}
+    description="As I've employed the engineering process of design, build, test, repeat on personal projects as well as projects for classes and my engineering teams. Forging ahead using all the resources at my disposal have allowed me to learn a lot (and fail a lot), while making some cool things along the way." %}
 
 {% include card.html
     title="Blog"
