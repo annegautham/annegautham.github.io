@@ -7,15 +7,15 @@ description: I'm Gautham, a current high school senior at the Illinois Mathemati
 {% include card.html
     title="About Me"
     page_url="/aboutme/"
-    image_path="/assets/images/mit.jpeg"
-    description="About Me" %}
+    image_path="/assets/images/aboutme/treeshade.jpg"
+    description="Wanna learn more about who I am? Well, here you go!" %}
 
 
 {% include card.html
     title="Education"
     page_url="/education/"
-    image_path="/assets/images/mit.jpeg"
-    description="A formal education serves as the foundation of an engineer's knowledge and abilities. As a student at MIT, I've had the privilege to take fascinating classes not only in Mechanical and Electrical Engineering, but also in the humanities, arts, and social sciences." %}
+    image_path="/assets/images/imsa.jpg"
+    description="A formal education serves as the foundation of an my knowledge and abilities. I've not only had the privilege to take fascinating classes not in STEM, but also in the humanities, arts, and social sciences. As John Wick demonstrated, the pen(cil) is mightier than the sword." %}
 
 {% include card.html
     title="Experience"
