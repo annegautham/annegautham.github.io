@@ -21,13 +21,13 @@ description: I'm Gautham, a current high school senior at the Illinois Mathemati
     title="Experience"
     page_url="/experience/"
     image_path="/assets/images/experience.jpeg"
-    description="Through internships at companies like Tesla and in research MIT and UC San Diego, I have been able to apply my knowledge of mechanical engineering, electronics, and software." %}
+    description="Through research at institutions like Fermilab and in my studies at programs like the selective Ross Mathematics Program, I've have been able to apply my knowledge and acquire new skills." %}
 
 {% include card.html
     title="Portfolio"
     page_url="/portfolio/"
     image_path="/assets/images/portfolio.png"
-    description="As I've employed the engineering process of design, build, test, repeat on personal projects as well as projects for classes and my engineering teams. Forging ahead using all the resources at my disposal have allowed me to learn a lot (and fail a lot), while making some cool things along the way." %}
+    description="I've employed the engineering process of design, build, test, and repeat on personal projects as well as projects for classes, engineering teams, and research. By forging ahead using all the resources at my disposal have allowed me to learn, and fail, a lot, while making some cool/useful things along the way." %}
 
 {% include card.html
     title="Blog"
