@@ -8,7 +8,7 @@ description: I'm Gautham, a current high school senior at the Illinois Mathemati
     title="About Me"
     page_url="/aboutme/"
     image_path="/assets/images/aboutme/rainbowMustache.jpg"
-    description="Wanna learn more about who I am? Well, here you go!" %}
+    description="Wanna learn more about who I am? Well, here you go! Ignore this picture, I'll find a better one ... or not." %}
 
 
 {% include card.html
