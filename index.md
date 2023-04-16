@@ -39,4 +39,4 @@ description: I'm Gautham, a current high school senior at the Illinois Mathemati
     title="Youtube"
     page_url="https://www.youtube.com/@gauthamanne"
     image_path="/assets/images/youtube.png"
-    description="This channel's purpose is to provide engaging courses/lectures on all sorts of subjects, ranging from AP classes to Abstract Algebra. Hopefully, I'll be able to crank out some explanations to various personal projects and some guitar covers... stay tuned!" %}
+    description="This channel's purpose is to provide engaging courses/lectures on all sorts of subjects, ranging from AP classes to Abstract Algebra. Hopefully, I'll be able to crank out explanations to various personal projects and even some guitar covers... stay tuned!" %}
