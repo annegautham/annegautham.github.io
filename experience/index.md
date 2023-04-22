@@ -12,6 +12,16 @@ filter_selected: all
 ---
 
 {% include card.html
+	title="University of Chicago Young Scholar's Program"
+	page_url="/experience/ysp"
+	image_path="/assets/images/experience/uchicago.png"
+	subheader="Jun 2019 - Aug 2019 & Jun 2020 - Aug 2020"
+	description="I am working on the ReMAP AFM (Rotation-enabled Multi-tip Active Probe Atomic Force Microscopy) system."
+	tags="all extracurricular"
+%}
+
+
+{% include card.html
 	title="ReMAP&colon; AFM Rotation-enabled Multi-tip Active Probe Atomic Force Microscopy"
 	page_url="/experience/mrl"
 	image_path="/assets/images/experience/mrl.png"
