@@ -16,17 +16,14 @@ filter_selected: all
 	page_url="/experience/ysp"
 	image_path="/assets/images/experience/uchicago.png"
 	subheader="Jun 2019 - Aug 2019 & Jun 2020 - Aug 2020"
-	description="I am working on the ReMAP AFM (Rotation-enabled Multi-tip Active Probe Atomic Force Microscopy) system."
-	tags="all extracurricular"
+	description="I attended the selective Young Scholar's Program, a selective summer math program, where I was given the opportunity to explore mathematics that are not generally taught in school. During the first year, I took lectures in algebraic topology and chaos theory, and in the second year, I studied elementary number theory."
 %}
 
-
-
 {% include card.html
-	title="ReMAP&colon; AFM Rotation-enabled Multi-tip Active Probe Atomic Force Microscopy"
+	title="Emory Math Circle"
 	page_url="/experience/mrl"
 	image_path="/assets/images/experience/mrl.png"
-	subheader="MIT Mechatronics Research Laboratory | Feb 2022 — Now"
+	subheader="July 2020 - Aug 2020"
 	description="I am working on the ReMAP AFM (Rotation-enabled Multi-tip Active Probe Atomic Force Microscopy) system."
 	tags="all research"
 %}
