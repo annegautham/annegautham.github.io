@@ -24,7 +24,7 @@ filter_selected: all
 	page_url="/experience/mrl"
 	image_path="/assets/images/experience/mrl.png"
 	subheader="July 2020 - Aug 2020"
-	description="I am working on the ReMAP AFM (Rotation-enabled Multi-tip Active Probe Atomic Force Microscopy) system."
+	description="I am w	orking on the ReMAP AFM (Rotation-enabled Multi-tip Active Probe Atomic Force Microscopy) system."
 	tags="all research"
 %}
 
