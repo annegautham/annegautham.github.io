@@ -1,7 +1,7 @@
 ---
 layout: splashpage
 title: "Experience"
-description: Ever since high school, I have had the privilege of gaining valuable work experience through research internships at the university-level and through engineering internships in industry.
+description: Ever since high school, I have had the privilege of gaining valuable experience through research internships at the university-level and through internships in industry.
 filterable: true
 filter_tags:
   - all
@@ -16,15 +16,15 @@ filter_selected: all
 	page_url="/experience/ysp"
 	image_path="/assets/images/experience/uchicago.png"
 	subheader="Jun 2019 - Aug 2019 & Jun 2020 - Aug 2020"
-	description="I attended the selective Young Scholar's Program, a selective summer math program, where I was given the opportunity to explore mathematics that are not generally taught in school. During the first year, I took lectures in algebraic topology and chaos theory, and in the second year, I studied elementary number theory."
+	description="I attended the selective Young Scholar's Program, a selective summer math program, where I was given the opportunity to explore mathematics not generally taught in school. During the first year, I took lectures in algebraic topology and chaos theory, and in the second year, I studied elementary number theory."
 %}
 
 {% include card.html
-	title="Emory Math Circle"
+	title="QTN Math Circle"
 	page_url="/experience/mrl"
 	image_path="/assets/images/experience/mrl.png"
 	subheader="July 2020 - Aug 2020"
-	description="I am w	orking on the ReMAP AFM (Rotation-enabled Multi-tip Active Probe Atomic Force Microscopy) system."
+	description="Through the QTM Math Circle at Emory University, I not only learned about various complex topics in mathemtaics, but also conducted research in Extremal Graph Theory."
 	tags="all research"
 %}
 

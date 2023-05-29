@@ -19,7 +19,7 @@ description: Hi! I love all things STEM, especially the "how" behind the "why" t
 {% include card.html
     title="Drones!"
     image_path="/assets/images/aboutme/drone.jpg"
-    description="Here's me droning on about a quadcopter I built from scratch ... not so subtle flex."
+    description="Droning on about a quadcopter I built from scratch ... not so subtle flex."
 %}
 
 {% include card.html
