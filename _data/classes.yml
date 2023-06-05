@@ -287,7 +287,7 @@
     - number: 431      
       name: Machine Learning
       dept: Math
-      description:  We will study multiple classes of problems: supervised learning and unsupervised learning, reward etc.. We will use the Python programming language in the Anaconda development platform. In supervised learning, we will study problems of regression. For example, program the machine to predict the price of the house. In unsupervised learning, we will program the machine to answer questions, such as whether a given email is spam. We will study several problems in each category. The students are encouraged to research problems of their interest and work on those as part of their project assignments.
+      description:  We will study multiple classes of problems in supervised learning and unsupervised learning, reward etc.. We will use the Python programming language in the Anaconda development platform. In supervised learning, we will study problems of regression. For example, program the machine to predict the price of the house. In unsupervised learning, we will program the machine to answer questions, such as whether a given email is spam. We will study several problems in each category. The students are encouraged to research problems of their interest and work on those as part of their project assignments.
 
       
     - number: 422      
