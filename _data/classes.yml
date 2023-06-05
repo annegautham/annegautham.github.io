@@ -235,7 +235,7 @@
   classes:
     - number: 445
       name: Modern Physics
-      dept: Physics
+      dept: Math
       description: The course focuses on special relativity, nonrelativistic quantum mechanics, and elementary particle physics, emphasizing conceptual understanding and the ability to solve problems in novel situations.
 
     - number: 474
@@ -262,55 +262,55 @@
 
     - number: 411      
       name: Calculus Based Mechanics
-      dept: Physics
+      dept: Math
       description: Calculus-Based Physics/Mechanics follows the typical sequence of a university physics course. The semester is devoted to topics in classical mechanics including Newton’s laws of motion, conservation of momentum and conservation of energy as they apply to both translational and rotational motion. The major emphasis of the course is on problem-solving including laboratory experiments, and theoretical problems. There is strong overlap with the AP Physics C Mechanics exam.
       
 
     - number: 412      
       name: Calculus Based Electricity & Magnetism
-      dept: Physics
+      dept: Math
       description: Calculus-Based Physics/Electricity and Magnetism follows the typical sequence of a university physics course. The semester is devoted to topics in electrostatics, circuits, magnetism, and induction. The major emphasis of the course is on problem-solving including laboratory experiments and theoretical problems. There is strong overlap between the curriculum and the AP Physics C Electricity and Magnetism exam.
 
 
     - number: 425      
       name: Planetary Science
-      dept: Physics    
+      dept: Math    
       description: This course will introduce students to basic concepts in planetary science and the dynamic processes of planetary formation and evolution. This course will briefly cover the Big Bang, stellar evolution, and planetary formation to allow students to better understand the initial conditions out of which the Earth formed. This course will cover in a mostly qualitative way the many interactions and relationships between the properties of the Earth, and how these interactions caused our planet to change and evolve over time.
 
 
     - number: 455      
       name: Engineering
-      dept: Physics
+      dept: Math
       description: Students gain hands-on experience studying problems, working in teams to design solutions and constructing their designs. As students work on projects, they may utilize mechanics, electronics, chemistry, and biology. Students may also utilize tools and methods such as CAD, construction of models or prototypes, 3D printing, and programming. Students are also exposed to the many branches of engineering and the highly diverse opportunities within the field through an interview with an engineer. Students form teams to develop original products that advance the human condition and are related to United Nations Sustainable Development goals. Teams make a presentation on this project including a demonstration of their prototype.
 
 
     - number: 431      
       name: Machine Learning
-      dept: CS
+      dept: Math
       description:  We will study multiple classes of problems: supervised learning and unsupervised learning, reward etc.. We will use the Python programming language in the Anaconda development platform. In supervised learning, we will study problems of regression. For example, program the machine to predict the price of the house. In unsupervised learning, we will program the machine to answer questions, such as whether a given email is spam. We will study several problems in each category. The students are encouraged to research problems of their interest and work on those as part of their project assignments.
 
       
     - number: 422      
       name: UNIX/Linux & Cybersecurity
-      dept: CS 
+      dept: Math 
       description: This course introduces students to the Linux operating system and its basic operations and file management system. Students are then introduced to the interdisciplinary field of cybersecurity by discussing the evolution of information security, cyber-crime, current trends in cyber-related strategies and policies, and cyber-related challenges facing the global community. Students will focus on cyber forensics and forensics investigations by researching advanced topics like DDoS, SQL injection, VPN, man-in-the-middle attacks, steganography, cryptography and social engineering among other topics. Students will be required to demonstrate their knowledge by participating in solving forensics challenges using virtual machines. Students will explore many of the advanced topics through research and presentations.     
 
 
     - number: 315      
       name: Microcontroller Applications
-      dept: CS      
+      dept: Math      
       description: In this course, students will use a microcontroller to take input from their users or environment, and manipulate the data to control external devices. In the process, students will learn to program and debug a popular, everyday microcontroller. They will also become acquainted with a variety of sensors, motors, and input/output devices.
 
 
     - number: 202      
       name: AP Chemistry
-      dept: Chemistry   
+      dept: Math   
       description: AP Chemistry is an engaging and comprehensive advanced-level course designed to provide students with a deep understanding of the fundamental principles and applications of chemistry. Through a combination of theoretical instruction and hands-on laboratory experiences, students will explore topics such as atomic structure, chemical bonding, thermodynamics, kinetics, equilibrium, and organic chemistry. Emphasis will be placed on developing critical thinking skills, problem-solving techniques, and mathematical reasoning abilities. Students will engage in rigorous coursework and gain practical experience through experiments, data analysis, and scientific inquiry. 
 
 
     - number: 600      
       name: AP Biology
-      dept: Biology 
+      dept: Math 
       description: AP Biology is an immersive and advanced-level course designed to provide students with a comprehensive understanding of the principles and processes that govern the living world. Through in-depth study and laboratory investigations, students will explore topics including cellular biology, genetics, evolution, ecology, and physiology. The course focuses on developing scientific inquiry skills, critical thinking abilities, and data analysis techniques. Students will engage in hands-on experiments, research projects, and dissections to gain practical experience and deepen their understanding of biological concepts.     
 
 
