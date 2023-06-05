@@ -231,8 +231,90 @@
       type: PoliSci
       description: Examines major texts in the history of political thought and considers how they contribute to a broader conversation about freedom, equality, democracy, rights, and the role of politics in human life. Areas covered may include ancient, modern, contemporary, or American political thought.
 
-- term: Prior Credit
+- term: High School Credits
   classes:
+    - number: 
+      name: Modern Physics
+      dept: Physics
+      description: The course focuses on special relativity, nonrelativistic quantum mechanics, and elementary particle physics, emphasizing conceptual understanding and the ability to solve problems in novel situations.
+
+    - number: 
+      name: Abstract Algebra
+      dept: Math      
+      description: Students learn about groups, subgroups, homomorphisms, and the structure of various groups (such as the structure theorem for finitely graded Abelian groups, the Sylow theorems, etc.). Students also investigate the basics of rings. Ring topics include ideals and homomorphisms; PIDs, UFDs, and Euclidean domains; fields and (time permitting) field extensions including applications such as constructibility. All aspects of the course are presented with full mathematical rigor, and students are expected to produce proofs of equivalent quality to mathematics majors at a university.
+
+    - number:       
+      name: Differential Equations
+      dept: Math      
+      description: Students will study a number of approaches to analytic and numerical solutions to differential equations while they simultaneously investigate the models with computer software. After an introduction to the study of differential equations students will study both linear and non-linear models, and use both continuous and discrete approaches to determine the long-term behavior of the phenomena described by the equations.
+
+    - number:       
+      name: Multi-Variable Calculus
+      dept: Math     
+      description: Multi-Variable Calculus will apply the tools of calculus to functions of several variables. Topics will include the algebra and geometry of vectors, a study of functions of several variables, applications of partial derivatives, multiple integrals, line and surface integrals, and Green’s, Stokes’ and Gauss’ Theorems.
+
+
+    - number:       
+      name: Linear Algebra
+      dept: Math      
+      descrption: This course concentrates on the theory of simultaneous linear equations. Gaussian elimination is used as a tool to solve linear systems and to investigate the subspace structure of a matrix (kernel, range, etc.). Extensions of these ideas include orthogonality and least squares. Determinants are examined from several perspectives, Eigenvalues and eigenvectors are introduced, including a discussion of special matrices (symmetric, unitary, normal, etc.). Applications include singular value decomposition and the Fast Fourier transform.
+
+
+    - number:       
+      name: Calculus Based Mechanics
+      dept: Physics
+      description: Calculus-Based Physics/Mechanics follows the typical sequence of a university physics course. The semester is devoted to topics in classical mechanics including Newton’s laws of motion, conservation of momentum and conservation of energy as they apply to both translational and rotational motion. The major emphasis of the course is on problem-solving including laboratory experiments, and theoretical problems. There is strong overlap with the AP Physics C Mechanics exam.
+      
+
+    - number:       
+      name: Calculus Based Electricity & Magnetism
+      dept: Physics
+      description: Calculus-Based Physics/Electricity and Magnetism follows the typical sequence of a university physics course. The semester is devoted to topics in electrostatics, circuits, magnetism, and induction. The major emphasis of the course is on problem-solving including laboratory experiments and theoretical problems. There is strong overlap between the curriculum and the AP Physics C Electricity and Magnetism exam.
+
+
+    - number:       
+      name: Planetary Science
+      dept: Physics    
+      description: This course will introduce students to basic concepts in planetary science and the dynamic processes of planetary formation and evolution. This course will briefly cover the Big Bang, stellar evolution, and planetary formation to allow students to better understand the initial conditions out of which the Earth formed. This course will cover in a mostly qualitative way the many interactions and relationships between the properties of the Earth, and how these interactions caused our planet to change and evolve over time.
+
+
+    - number:       
+      name: Engineering
+      dept: Physics
+      description: Students gain hands-on experience studying problems, working in teams to design solutions and constructing their designs. As students work on projects, they may utilize mechanics, electronics, chemistry, and biology. Students may also utilize tools and methods such as CAD, construction of models or prototypes, 3D printing, and programming. Students are also exposed to the many branches of engineering and the highly diverse opportunities within the field through an interview with an engineer. Students form teams to develop original products that advance the human condition and are related to United Nations Sustainable Development goals. Teams make a presentation on this project including a demonstration of their prototype.
+
+
+    - number:       
+      name: Machine Learning
+      dept: CS
+      description:  We will study multiple classes of problems: supervised learning and unsupervised learning, reward etc.. We will use the Python programming language in the Anaconda development platform. In supervised learning, we will study problems of regression. For example, program the machine to predict the price of the house. In unsupervised learning, we will program the machine to answer questions, such as whether a given email is spam. We will study several problems in each category. The students are encouraged to research problems of their interest and work on those as part of their project assignments.
+
+      
+    - number:       
+      name: UNIX/Linux & Cybersecurity
+      dept: CS 
+      description: This course introduces students to the Linux operating system and its basic operations and file management system. Students are then introduced to the interdisciplinary field of cybersecurity by discussing the evolution of information security, cyber-crime, current trends in cyber-related strategies and policies, and cyber-related challenges facing the global community. Students will focus on cyber forensics and forensics investigations by researching advanced topics like DDoS, SQL injection, VPN, man-in-the-middle attacks, steganography, cryptography and social engineering among other topics. Students will be required to demonstrate their knowledge by participating in solving forensics challenges using virtual machines. Students will explore many of the advanced topics through research and presentations.     
+
+
+    - number:       
+      name: Microcontroller Applications
+      dept: CS      
+      description: In this course, students will use a microcontroller to take input from their users or environment, and manipulate the data to control external devices. In the process, students will learn to program and debug a popular, everyday microcontroller. They will also become acquainted with a variety of sensors, motors, and input/output devices.
+
+
+    - number:       
+      name: AP Chemistry
+      dept: Chemistry   
+      description: AP Chemistry is an engaging and comprehensive advanced-level course designed to provide students with a deep understanding of the fundamental principles and applications of chemistry. Through a combination of theoretical instruction and hands-on laboratory experiences, students will explore topics such as atomic structure, chemical bonding, thermodynamics, kinetics, equilibrium, and organic chemistry. Emphasis will be placed on developing critical thinking skills, problem-solving techniques, and mathematical reasoning abilities. Students will engage in rigorous coursework and gain practical experience through experiments, data analysis, and scientific inquiry. 
+
+
+    - number:       
+      name: AP Biology
+      dept: Biology 
+      description: AP Biology is an immersive and advanced-level course designed to provide students with a comprehensive understanding of the principles and processes that govern the living world. Through in-depth study and laboratory investigations, students will explore topics including cellular biology, genetics, evolution, ecology, and physiology. The course focuses on developing scientific inquiry skills, critical thinking abilities, and data analysis techniques. Students will engage in hands-on experiments, research projects, and dissections to gain practical experience and deepen their understanding of biological concepts.     
+
+
+
     - number: 6.0001
       name: Introduction to Computer Science
       dept: EECS
