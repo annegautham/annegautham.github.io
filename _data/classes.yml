@@ -24,7 +24,7 @@
     - number: 473      
       name: Linear Algebra
       dept: Math      
-      descrption: This course concentrates on the theory of simultaneous linear equations. Gaussian elimination is used as a tool to solve linear systems and to investigate the subspace structure of a matrix (kernel, range, etc.). Extensions of these ideas include orthogonality and least squares. Determinants are examined from several perspectives, Eigenvalues and eigenvectors are introduced, including a discussion of special matrices (symmetric, unitary, normal, etc.). Applications include singular value decomposition and the Fast Fourier transform.
+      description: This course concentrates on the theory of simultaneous linear equations. Gaussian elimination is used as a tool to solve linear systems and to investigate the subspace structure of a matrix (kernel, range, etc.). Extensions of these ideas include orthogonality and least squares. Determinants are examined from several perspectives, Eigenvalues and eigenvectors are introduced, including a discussion of special matrices (symmetric, unitary, normal, etc.). Applications include singular value decomposition and the Fast Fourier transform.
 
 
     - number: 411      
