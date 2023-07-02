@@ -1,7 +1,7 @@
 ---
 layout: splashpage
 title: "About Me"
-description: Hi! I love all things STEM, especially the "how" behind the "why" things work! On that note, I'm still figuring out how life works, and it's quite complicated! Anyway, I'm a freshman '27 at Northwestern Universtiy. My majors are still undecided, but I'm exploring Engineering, Computer Science, Physics, and Mathematics. My friends and family would describe me as a compassionate, driven, curious, redundant, driven, goofy, innovative, learning-loving, tinkerer.
+description: Hi! I love all things science and math, especially the "how" behind the "why" things work! I'm a freshman '27 at Northwestern Universtiy. My majors are still undecided, but I'm exploring Engineering, Computer Science, Physics, and Mathematics. My friends and family would describe me as a compassionate, driven, curious, redundant, driven, goofy, innovative, learning-loving, tinkerer (I think ... I didn't really ask them).
 ---
 
 {% include card.html
