@@ -1,7 +1,7 @@
 ---
 layout: splashpage
 title: "About Me"
-description: Hi! I love all things STEM, especially the "how" behind the "why" things work! On that note, I'm still figuring out how my life works, and it's quite complicated! Anyway, I'm a senior at the Illinois Mathematics and Science Academy, a public residential high school located in Aurora, Illinois. I'll be attending Northwestern University in fall 2023! My major is still undecided, but I'm looking forward to exploring Engineering, Computer Science, Physics, and Political Science. My friends and family would describe me as a compassionate, driven, curious, redundant, driven, goofy, innovative, learning-loving, intellectual, tinkerer (and annoying, probably).
+description: Hi! I love all things STEM, especially the "how" behind the "why" things work! On that note, I'm still figuring out how life works, and it's quite complicated! Anyway, I'm a freshman '27 at Northwestern Universtiy. My majors are still undecided, but I'm exploring Engineering, Computer Science, Physics, and Mathematics. My friends and family would describe me as a compassionate, driven, curious, redundant, driven, goofy, innovative, learning-loving, tinkerer.
 ---
 
 {% include card.html
@@ -14,12 +14,6 @@ description: Hi! I love all things STEM, especially the "how" behind the "why" t
     title="IMSA's Clash of the Halls!"
     image_path="/assets/images/aboutme/clash.jpg"
     description="Where's Waldo? (Part 2)"
-%}
-
-{% include card.html
-    title="Drones!"
-    image_path="/assets/images/aboutme/drone.jpg"
-    description="Droning on about a quadcopter I built from scratch ... not so subtle flex."
 %}
 
 {% include card.html
