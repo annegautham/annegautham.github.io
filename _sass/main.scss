@@ -640,6 +640,38 @@ h5 {
     }
 
     &.Math {
+      background: #59aff5;
+      color: white;
+      .metadata {
+        color: #ececec;
+      }
+    }
+
+    &.Biology {
+      background: #59f58d;
+      color: white;
+      .metadata {
+        color: #ececec;
+      }
+    }
+
+     &.Physics {
+      background: #f55959;
+      color: white;
+      .metadata {
+        color: #ececec;
+      }
+    }
+
+    &.Chemistry {
+      background: #9059f5;
+      color: white;
+      .metadata {
+        color: #ececec;
+      }
+    }
+
+    &.CS {
       background: #8D94BA;
       color: white;
       .metadata {
