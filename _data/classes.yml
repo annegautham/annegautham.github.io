@@ -1,6 +1,6 @@
 - term: High School Credits
   classes:
-    - number: 445
+    - number: P445
       name: Modern Physics
       dept: Physics
       description: The course focuses on special relativity, nonrelativistic quantum mechanics, and elementary particle physics, emphasizing conceptual understanding and the ability to solve problems in novel situations.
@@ -10,7 +10,7 @@
       dept: Math      
       description: Students learn about groups, subgroups, homomorphisms, and the structure of various groups (such as the structure theorem for finitely graded Abelian groups, the Sylow theorems, etc.). Students also investigate the basics of rings. Ring topics include ideals and homomorphisms; PIDs, UFDs, and Euclidean domains; fields and (time permitting) field extensions including applications such as constructibility. All aspects of the course are presented with full mathematical rigor, and students are expected to produce proofs of equivalent quality to mathematics majors at a university.
 
-    - number: 445
+    - number: M445
       name: Theory of Analysis
       dept: Math
       description: This course provides a theoretical look at many of the important concepts studied in the BC Calculus sequence. The emphasis in this course will be upon rigorous mathematical proof. Major ideas addressed in this course includes mathematical proof, theory of sets, sequences, topology of the real numbers, limits, continuity, and differentiation. Enrollment in this course requires a high degree of mathematical maturity along with a deep understanding of the concepts covered in the BC Calculus sequence. There will be opportunity for the class to take excursions into related theory when students in the class take the lead.
