@@ -1,14 +1,14 @@
 ---
 layout: splashpage
 title: Greetings, Fellow Homo Sapien!
-description: I'm Gautham, a current high school senior at the Illinois Mathematics and Science Academy. I'm looking forward to pursuing an undergraduate degree at Northwestern University starting this fall! I'm still figuring out my major, but I'm interested in Engineering (Electrical, Mechanical, and Computer), CS, Physics, Mathematics, and Political Science. Here, you can check out the classes I've taken, my internships and work experience, projects I've developed, and research I've contributed to. Have fun!
+description: I'm Gautham, an undergraduate freshman at Northwestern University! I'm still figuring out my majors, but I'm interested in Engineering (Electrical, Mechanical, and Computer), CS, Physics, and Mathematics. Here, you can check out the classes I've taken, my internships and work experience, projects I've developed, and research I've contributed to. Have fun!
 ---
 
 {% include card.html
     title="About Me"
     page_url="/aboutme/"
     image_path="/assets/images/pfp/graduation.jpg"
-    description="Wanna learn more about who I am? Well, here you go! Ignore this picture, I'll find a better one ... or not." %}
+    description="Wanna learn more about who I am? Well, here you go!" %}
 
 
 {% include card.html
