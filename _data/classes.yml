@@ -80,7 +80,12 @@
       description: AP Chemistry is an engaging and comprehensive advanced-level course designed to provide students with a deep understanding of the fundamental principles and applications of chemistry. Through a combination of theoretical instruction and hands-on laboratory experiences, students will explore topics such as atomic structure, chemical bonding, thermodynamics, kinetics, equilibrium, and organic chemistry. Emphasis will be placed on developing critical thinking skills, problem-solving techniques, and mathematical reasoning abilities. Students will engage in rigorous coursework and gain practical experience through experiments, data analysis, and scientific inquiry. 
 
 
-    - number: 600      
+    - number: 601      
       name: AP Biology
       dept: Biology 
       description: AP Biology is an immersive and advanced-level course designed to provide students with a comprehensive understanding of the principles and processes that govern the living world. Through in-depth study and laboratory investigations, students will explore topics including cellular biology, genetics, evolution, ecology, and physiology. The course focuses on developing scientific inquiry skills, critical thinking abilities, and data analysis techniques. Students will engage in hands-on experiments, research projects, and dissections to gain practical experience and deepen their understanding of biological concepts.
+
+    - number: 600
+      name: Advanced Biological Systems
+      dept: Biology
+      description: This course focuses on four themes to organize our study into major biological systems - the development of organisms, molecular and cellular physiology with applications, global and personal health, and the interdependent world. Students will engage in learning through a combination of laboratory activities, classroom discussion, and guided modeling. Projects, which focus scientific understanding to address current issues, will organize the learning and allow students to apply their knowledge. 
