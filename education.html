@@ -2,7 +2,7 @@
 layout: detailpage
 permalink: /education/
 title: "Education"
-description: Looking for some relevant coursework! Well, Look no further! Click on any of my classes below to learn more.
+description: Looking for my relevant coursework! Well, look no further! Click on any of my classes below to learn more.
 ---
 
 {% for term in site.data.classes %}
@@ -22,7 +22,7 @@ description: Looking for some relevant coursework! Well, Look no further! Click 
                             <span class="name">{{ class.name }}</span>
                         </div>
                         <div class="metadata">
-                            {{ class.dept }}{% if class.type %} | {{ class.type }}{% endif %} | {% if class.units %} {{ class.units }} {% else %} 12 {% endif %} units
+                            {{ class.dept }}{% if class.type %} | {{ class.type }}{% endif %} | {% if class.credits %} {{ class.credits }} {% else %} 12 {% endif %} credits
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ description: Looking for some relevant coursework! Well, Look no further! Click 
                 </div>
 
                 <div class="metadata">
-                    {{ class.dept }}{% if class.type %} | {{ class.type }}{% endif %} | {% if class.units %} {{ class.units }} {% else %} 12 {% endif %} units
+                    {{ class.dept }}{% if class.type %} | {{ class.type }}{% endif %} | {% if class.credits %} {{ class.credits }} {% else %} 12 {% endif %} credits
                 </div>
 
                 <div class="description">
