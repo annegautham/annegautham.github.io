@@ -1,7 +1,7 @@
 ---
 layout: splashpage
 title: "Experience"
-description: Ever since high school, I have had the privilege of gaining valuable experience through research internships at the university-level and through internships in industry.
+description: Ever since high school, I have had the privilege of gaining valuable experience through research, internships, and study at the university-level and in industry.
 filterable: true
 filter_tags:
   - all
