@@ -55,7 +55,11 @@
       dept: Physics
       description: Students gain hands-on experience studying problems, working in teams to design solutions and constructing their designs. As students work on projects, they may utilize mechanics, electronics, chemistry, and biology. Students may also utilize tools and methods such as CAD, construction of models or prototypes, 3D printing, and programming. Students are also exposed to the many branches of engineering and the highly diverse opportunities within the field through an interview with an engineer. Students form teams to develop original products that advance the human condition and are related to United Nations Sustainable Development goals. Teams make a presentation on this project including a demonstration of their prototype.
 
-
+    - number: 305           
+      name: AP Computer Science A
+      dept: CS
+      description:  This course continues to develop the ideas introduced in Object Oriented Programming. Topics may include inheritance, interface, polymorphism, recursion, hashmaps, hashsets, stacks, queues, trees, linked lists, and advanced programming techniques including advanced sorts and searches. Programming projects in this course are designed to learn as many aspects of the programming algorithms and development as possible. The projects include different stages of developing software including design, coding, testing and refactoring.
+      
     - number: 431      
       name: Machine Learning
       dept: CS
