@@ -22,7 +22,7 @@ filter_selected: all
 
 {% include card.html
 	title="QTM Math Circle"
-	page_url="/experience/mrl"
+	page_url="/experience/qtm"
 	image_path="/assets/images/experience/emory.jpg"
 	subheader="July 2020 - Aug 2020"
 	description="Through the QTM Math Circle at Emory University, I not only learned about various complex topics in mathemtaics, but also conducted research in Extremal Graph Theory."
