@@ -39,6 +39,15 @@ filter_selected: all
 %}
 
 {% include card.html
+	title="Ivy Roots Consulting"
+	page_url="/experience/ivyroots"
+	image_path="/assets/images/experience/ivyroots.png"
+	subheader="May 2023 - Present"
+	description="Founder and CTO of nonprofit providing free essay review, college consulting, and SAT Preperation for underpriveledged and low-income students."
+	tags="all research"
+%}
+
+{% include card.html
 	title="Mechanical Design Engineering Intern - Power Electronics"
 	page_url="/experience/tesla"
 	image_path="/assets/images/experience/tesla.png"
