@@ -7,7 +7,7 @@ Through the QTM Math Circle at Emory University, I not only learned about variou
 
 <br>
 
-Under my mentor, Dr. Bradley Elliott (Emory University), my research partner and I studied the Turan Number for K-Chorded cycles.
+Under my mentor, Dr. Bradley Elliott (Emory University), my research partner and I studied the Turan Number for K-Chorded cycles. We presented the research to 20 math faculty @ Emory and 46 undergrad and grad students.
 
 <br>
 
