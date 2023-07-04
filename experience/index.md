@@ -16,7 +16,7 @@ filter_selected: all
 	page_url="/experience/ysp"
 	image_path="/assets/images/experience/uchicago.png"
 	subheader="Jun 2019 - Aug 2019 & Jun 2020 - Aug 2020"
-	description="I attended the selective Young Scholar's Program, a selective summer math program, where I was given the opportunity to explore mathematics not generally taught in school. During the first year, I took lectures in algebraic topology and chaos theory, and in the second year, I studied elementary number theory."
+	description="I attended the Young Scholar's Program at UofC, a selective summer math program, where I was given the opportunity to explore mathematics not generally taught in school."
 %}
 
 {% include card.html
