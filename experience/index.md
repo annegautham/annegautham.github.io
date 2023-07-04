@@ -17,6 +17,7 @@ filter_selected: all
 	image_path="/assets/images/experience/uchicago.png"
 	subheader="Jun 2019 - Aug 2019 & Jun 2020 - Aug 2020"
 	description="I attended the Young Scholar's Program at UofC, a selective summer math program, where I was given the opportunity to explore mathematics not generally taught in school."
+	tags="all research"
 %}
 
 {% include card.html
