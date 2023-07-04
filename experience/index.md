@@ -20,11 +20,20 @@ filter_selected: all
 %}
 
 {% include card.html
-	title="QTN Math Circle"
+	title="QTM Math Circle"
 	page_url="/experience/mrl"
 	image_path="/assets/images/experience/mrl.png"
 	subheader="July 2020 - Aug 2020"
 	description="Through the QTM Math Circle at Emory University, I not only learned about various complex topics in mathemtaics, but also conducted research in Extremal Graph Theory."
+	tags="all research"
+%}
+
+{% include card.html
+	title="Davuluri Lab Research Intern"
+	page_url="/experience/compbio"
+	image_path="/assets/images/experience/mrl.png"
+	subheader="July 2022 - Sept 2022"
+	description="Under Professor Ramana Davuluri, I applied NLP methods (Transformers, DNABERT) to biologicval systems. Specifically, I studied tissue specificity as markers in Acute Myeloid Leukemia."
 	tags="all research"
 %}
 
