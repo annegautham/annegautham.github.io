@@ -31,7 +31,7 @@ filter_selected: all
 {% include card.html
 	title="Davuluri Lab Research Intern"
 	page_url="/experience/compbio"
-	image_path="/assets/images/experience/mrl.png"
+	image_path="/assets/images/experience/davlabs.png"
 	subheader="July 2022 - Sept 2022"
 	description="Under Professor Ramana Davuluri, I applied NLP methods (Transformers, DNABERT) to biologicval systems. Specifically, I studied tissue specificity as markers in Acute Myeloid Leukemia."
 	tags="all research"
