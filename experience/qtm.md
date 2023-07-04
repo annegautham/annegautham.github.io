@@ -11,5 +11,8 @@ Under my mentor, Dr. Bradley Elliott (Emory University), my research partner and
 
 <br>
 
-<iframe height="600px" width="100%" src="/assets/documents/Turan # for K Chorded Cycles.pdf"></iframe>
+<iframe height="600px" width="100%" src="/assets/documents/Turan # Slides.pdf"></iframe>
 <div class="caption">Presentation at the end of camp.</div>
+
+<iframe height="600px" width="100%" src="/assets/documents/Turan # Paper.pdf"></iframe>
+<div class="caption">Preprint available on <a href="https://www.researchgate.net/publication/357821992_On_the_Turan_Problem_for_k-chorded_Cycles">Research Gate</a>.</div>
