@@ -12,6 +12,16 @@ filter_selected: all
 ---
 
 {% include card.html
+	title="CMS Experiment at the LHC at CERN."
+	page_url="/experience/fermilab"
+	image_path="/assets/images/experience/cmsDetector.jpeg"
+	subheader="Jun 2019 - Aug 2019 & Jun 2020 - Aug 2020"
+	description="Conducted experimental physics research on behalf of the CMS collaboration at the Large Hadron Collider, CERN. Participated in search for dark photons and doubly charged Higgs boson event signatures in four-lepton final states."
+	tags="all research"
+%}
+
+
+{% include card.html
 	title="University of Chicago Young Scholar's Program"
 	page_url="/experience/ysp"
 	image_path="/assets/images/experience/uchicago.png"
