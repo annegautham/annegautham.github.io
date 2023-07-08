@@ -8,7 +8,7 @@ With Fermilab, I conducted experimental physics research on behalf of the CMS co
 
 <br>
 
-Special thanks to my mentors Dr. Peter Dong (IMSA), Paul Karchin (Wayne State University), and Lenny Spiegel (Fermilab). I
+Special thanks to my mentors Dr. Peter Dong (IMSA), Paul Karchin (Wayne State University), and Lenny Spiegel (Fermilab)!
 
 <br>
 
