@@ -15,7 +15,7 @@ filter_selected: all
 	title="CMS Experiment at the LHC at CERN."
 	page_url="/experience/fermilab"
 	image_path="/assets/images/experience/cmsDetector.jpeg"
-	subheader="Jun 2019 - Aug 2019 & Jun 2020 - Aug 2020"
+	subheader="Aug 2021 - Jun 2023"
 	description="Conducted experimental physics research on behalf of the CMS collaboration at the Large Hadron Collider, CERN. Participated in search for dark photons and doubly charged Higgs boson event signatures in four-lepton final states."
 	tags="all research"
 %}
