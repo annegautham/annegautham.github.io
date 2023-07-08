@@ -11,7 +11,7 @@ Under my mentor, Dr. Bradley Elliott (Emory University), my research partner and
 
 <br>
 
-<iframe height="600px" width="100%" src="/assets/documents/Turan # Slides.pdf"></iframe>
+<iframe height="600px" width="100%" src="/assets/documents/Dav Labs Slides.pdf"></iframe>
 <div class="caption">Presentation at the end of camp.</div>
 
 <br>
