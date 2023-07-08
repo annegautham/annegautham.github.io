@@ -8,7 +8,7 @@ With Fermilab, I conducted experimental physics research on behalf of the CMS co
 
 <br>
 
-Under the mentorship of Dr. Peter Dong (IMSA), Paul Karchin (Wayne State University), and Lenny Spiegel (Fermilab), I
+Special thanks to my mentors Dr. Peter Dong (IMSA), Paul Karchin (Wayne State University), and Lenny Spiegel (Fermilab). I
 
 <br>
 
@@ -19,3 +19,10 @@ Under the mentorship of Dr. Peter Dong (IMSA), Paul Karchin (Wayne State Univers
 
 <br>
 
+<iframe height="600px" width="100%" src="/assets/documents/experience/APS April Meeting, 2023, Slides.pdf"></iframe>
+<br>
+<iframe height="600px" width="100%" src="/assets/documents/experience/IMSAloquium 2023, AutoDatacard Gen & Significance Est.pdf"></iframe>
+<br>
+<iframe height="600px" width="100%" src="/assets/documents/experience/APS April Meeting, 2023, Dark Photons"></iframe>
+<br>
+<iframe height="600px" width="100%" src="/assets/documents/experience/IMSAloquium 2022, Lepton Selection for H++"></iframe>
