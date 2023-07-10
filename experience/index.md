@@ -57,6 +57,15 @@ filter_selected: all
 %}
 
 {% include card.html
+	title="The Gauss Group"
+	page_url="/experience/ggroup.md"
+	image_path="/assets/images/experience/ggrouplogo.png"
+	subheader="Dec 2020 - Present"
+	description="I founded and am the current CEO of a nonprofit math organization dedicted to engaging underprivileged students with math typically not taught in their schools. So far, we have taught over 15 courses to 120+ students, and have held 3 math tournaments, sponsored by companies such as Wolfram."
+	tags="all research"
+%}
+
+{% include card.html
 	title="Ivy Roots Consulting"
 	page_url="/experience/ivyroots"
 	image_path="/assets/images/experience/ivyroots.png"
