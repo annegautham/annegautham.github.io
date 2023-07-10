@@ -14,7 +14,7 @@ description: I'm Gautham, an undergraduate freshman at Northwestern University! 
 {% include card.html
     title="Education"
     page_url="/education/"
-    image_path="/assets/images/imsa.jpg"
+    image_path="/assets/images/nucampus.jpg"
     description="A formal education serves as the foundation of an my knowledge and abilities. I've not only had the privilege to take fascinating classes not in STEM, but also in the humanities, arts, and social sciences. As John Wick demonstrated, the pen(cil) is mightier than the sword." %}
 
 {% include card.html
