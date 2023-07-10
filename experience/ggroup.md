@@ -12,7 +12,7 @@ As an instructor, I've taught middle and high schoolers in Geometry, Number Theo
 
 <br>
 
-I was also the primary front and back-end developer of the website.
+I'm the primary front and back-end developer of the website.
 
 <br>
 
