@@ -15,7 +15,7 @@ As a JC, I guided first years as they worked through their difficult Number Theo
 In addition, I taught 'dorm' lectures in topics including
 * Turing Machines
 * Alexander Polynomials (Knot Theory)
-* Shannon's Coding Theorem,
+* Shannon's Coding Theorem
 * Dynamical Systems
 
 <br>
@@ -63,6 +63,22 @@ As an advanced JC, I took courses in
 
 I also helped host Talent Show and performed a mathematics themed stand-up set. Abelian grapes, anyone?
 
+<br>
 
+<iframe height="600px" width="100%" src="/assets/documents/experience/Z_Cubrt2 & Cubic_Reciprocity, Ross.pdf"></iframe>
+<div class="caption">Z_Cubrt2 & Cubic Reciprocity Lecture Notes</div>
 
+<br>
 
+<iframe height="600px" width="100%" src="/assets/documents/experience/Z_Omega, Ross.pdf"></iframe>
+<div class="caption">Z_Omega Lecture Notes</div>
+
+<br>
+
+<iframe height="600px" width="100%" src="/assets/documents/experience/QR_Proof, Ross.pdf"></iframe>
+<div class="caption">Quadratic Reciprocity Proof Presentation</div>
+
+<br>
+
+<iframe height="600px" width="100%" src="/assets/documents/experience/Integer_Sequences, Ross.pdf"></iframe>
+<div class="caption">Integer Sequences Notes Compilation</div>
