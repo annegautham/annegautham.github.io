@@ -37,9 +37,3 @@ description: Hi! I love all things science and math, especially the "how" behind
     image_path="/assets/images/aboutme/goofyMath.jpg"
     description="Me after 1 hour of sleep as a Junior Counselor at the Ross Mathematics Program! Stayed up all night working on problem sets with my roomate, but nothing that coffee can't solve!"
 %}
-
-{% include card.html
-    title="Blog!"
-    image_path="https://annegautham.medium.com/"
-    description="a compilation of my thoughts and experiences!"
-%}
