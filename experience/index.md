@@ -25,7 +25,7 @@ filter_selected: all
 	page_url="/experience/ross"
 	image_path="/assets/images/experience/rosehulman.jpg"
 	subheader="Jun 2021 - August 2022"
-	description="Junior Counselor & Camper at selective Number Theory summer math program."
+	description="Junior Counselor & Camper at selective Number Theory summer math program. Taught lectures to attendees, including Turing Machines, Alexander Polynomials, Dynamical Systems, and Shannon's Coding Theorem. Took advacnced math courses in Logic, Topology, etc."
 	tags="all research"
 %}
 
