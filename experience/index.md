@@ -12,7 +12,7 @@ filter_selected: all
 ---
 
 {% include card.html
-	title="CMS Experiment at the LHC at CERN."
+	title="CMS Experiment at the LHC at CERN"
 	page_url="/experience/fermilab"
 	image_path="/assets/images/experience/cmsDetector.jpeg"
 	subheader="Aug 2021 - Jun 2023"
@@ -20,6 +20,14 @@ filter_selected: all
 	tags="all research"
 %}
 
+{% include card.html
+	title="Ross Mathematics Program"
+	page_url="/experience/ross"
+	image_path="/assets/images/experience/rosehulman.jpg"
+	subheader="Jun 2021 - August 2022"
+	description="Junior Counselor & Camper at selective Number Theory summer math program."
+	tags="all research"
+%}
 
 {% include card.html
 	title="University of Chicago Young Scholar's Program"
