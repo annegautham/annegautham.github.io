@@ -14,6 +14,90 @@ filter_selected: all
 ---
 
 {% include card.html
+    title="Introduction to Modern Physics"
+    page_url="/portfolio/modphysbook"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Feb 2022 — Present"
+    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    tags="all class"
+%}
+
+
+{% include card.html
+    title="Low Cost Electroencephalogram for the Diagnosis & Prediction of Neural Anomalies"
+    page_url="/portfolio/eeg"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Feb 2022 — Present"
+    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    tags="all class"
+%}
+
+
+{% include card.html
+    title="Automated Covid Card Sorter"
+    page_url="/portfolio/covidsorter"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Feb 2022 — Present"
+    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    tags="all class"
+%}
+
+{% include card.html
+    title="Facial Recognition Laser Turret"
+    page_url="/portfolio/laserturret"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Feb 2022 — Present"
+    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    tags="all class"
+%}
+
+{% include card.html
+    title="Smart Room Knock Lock"
+    page_url="/portfolio/knocklock"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Feb 2022 — Present"
+    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    tags="all class"
+%}
+
+
+{% include card.html
+    title="RNN Name Generator"
+    page_url="/portfolio/rnnnamegen"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Feb 2022 — Present"
+    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    tags="all class"
+%}
+
+{% include card.html
+    title="Automatic Sleep Detection Water Turret"
+    page_url="/portfolio/sleepturret"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Feb 2022 — Present"
+    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    tags="all class"
+%}
+
+{% include card.html
+    title="RPLidar + SLAM Capable Drones"
+    page_url="/portfolio/drone"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Feb 2022 — Present"
+    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    tags="all class"
+%}
+
+{% include card.html
+    title="Low Cost Electroencephalogram for the Diagnosis & Prediction of Neural Anomalies"
+    page_url="/portfolio/eeg"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Feb 2022 — Present"
+    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    tags="all class"
+%}
+
+{% include card.html
     title="Cast Iron Camelback Straightedge"
     page_url="/portfolio/straightedge"
     image_path="/assets/images/portfolio/straightedge.jpg"
@@ -21,6 +105,7 @@ filter_selected: all
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
     tags="all class"
 %}
+
 
 {% include card.html
     title="2.74 Horizontal Throwing Arm Robot"
