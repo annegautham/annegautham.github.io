@@ -18,8 +18,6 @@ In addition, I taught 'dorm' lectures in topics including
 * Shannon's Coding Theorem
 * Dynamical Systems
 
-<br>
-
 I also taught a 6 hr lecture to both first years and faculty on the discovery/proof of Cubic Reciprocity and properties of Z[cubrt(2)] and Z[omega].
 
 <br>
