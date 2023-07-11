@@ -27,7 +27,7 @@ description: I'm Gautham, an undergraduate freshman at Northwestern University! 
     title="Portfolio"
     page_url="/portfolio/"
     image_path="/assets/images/portfolio.png"
-    description="I've employed the engineering process of design, build, test, and repeat on personal projects as well as projects for classes, engineering teams, and research. By forging ahead using all the resources at my disposal have allowed me to learn, and fail, a lot, while researching, tinkering, and developing some cool things along the way." %}
+    description="I've employed the engineering process of iterative design and testing on projects for classes, engineering teams, personal use, and research. By exhausting all the resources at my disposal, I've learned by failing, and have conducted research, tinkered, and developed cool things along the way." %}
 
 {% include card.html
     title="Blog"
