@@ -41,14 +41,14 @@ filter_selected: all
     tags="all"
 %}
 
-{% include card.html
+<!---{% include card.html
     title="Automated Covid Card Sorter"
     page_url="/portfolio/covidsorter"
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2022 — Present"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
     tags="all"
-%}
+%}--->
 
 {% include card.html
     title="Facial Recognition Laser Turret"
