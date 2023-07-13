@@ -85,6 +85,9 @@ hyperparameters.</div>
 
 <br>
 
+The physical margins between the copper traces also require some improvement due to crowding near battery nodes.
+
+<br>
 Finally, the current circuit is still subject to artifact signals unrelated to
 the brain waves of interest. So, I'm currently studying the use of ICA to remove contamination of eye movement, blinks, muscle contractions, and EKG signal from the brain waves of interest. However, <a href="https://www.geeksforgeeks.org/ml-independent-component-analysis/">ICA</a> also assumes linear mixing of signals, which may make it less effective.
 
