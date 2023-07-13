@@ -16,9 +16,9 @@ filter_selected: all
 {% include card.html
     title="Introduction to Modern Physics"
     page_url="/portfolio/modphysbook"
-    image_path="/assets/images/portfolio/straightedge.jpg"
+    image_path="/assets/images/portfolio/amazonbook.png"
     subheader="Feb 2022 — Present"
-    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    description="I wrote and published a 100 page book "Introduction to Modern Physics", ISBN 979-8849892566, which is available on <a href="https://www.amazon.com/Introduction-Modern-Physics-Gautham-Anne/dp/B0BD2XNX7J">Amazon</a>, <a href="https://www.barnesandnoble.com/w/introduction-to-modern-physics-gautham-anne/1142532018">Barnes & Nobles</a>, and other distributors."
     tags="all class"
 %}
 
