@@ -40,7 +40,7 @@ In addition, I supplemented the video lectures with <i><a href="https://www.amaz
 
 <br>
 
-![](/assets/images/portfolio/PCB.png)
+<!---![](/assets/images/portfolio/PCB.png)--->
 ![](/assets/images/portfolio/pcbSoldered.png)
 <div class="caption">Due to powerline seepage, I designed and soldered a custom PCB to ensure the signal noise was as reduced as much as possible.</div>
 
