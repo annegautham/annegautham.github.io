@@ -19,7 +19,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/amazonbook.png"
     subheader="Feb 2022 — Present"
     description="I wrote and published a 100 page book "Introduction to Modern Physics", ISBN 979-8849892566, which is available on Amazon, Barnes & Nobles, and other distributors."
-    tags="all class personal"
+    tags="all class"
 %}
 
 
