@@ -21,8 +21,15 @@ Signal processing software and hardware filters were implemented. I aim to make 
 
 <br>
 
-In addition, I supplemented the video lectures with <i><a href="https://www.amazon.com/Signals-Systems-Inference-Alan-Oppenheim/dp/0133943283">Signals, Systems, and Inference</a></i> by Professor Oppenheim and my mentor, Professor Verghese.
+I also supplemented the video lectures with <i><a href="https://www.amazon.com/Signals-Systems-Inference-Alan-Oppenheim/dp/0133943283">Signals, Systems, and Inference</a></i> by Professor Oppenheim and my mentor, Professor Verghese.
 
+<br>
+
+Professor Verghese generously provided me with lab notes and his lecture slides from classes he taught at MIT, which are attached below.
+<br>
+<iframe height="600px" width="100%" src="/assets/documents/portfolio/ecg_theory_mit.pdf"></iframe>
+<br>
+<iframe height="600px" width="100%" src="/assets/documents/portfolio/ecg_lab_mit.pdf"></iframe>
 <br>
 
 ![](/assets/images/portfolio/schematic.jpg)
