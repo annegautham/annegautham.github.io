@@ -22,4 +22,6 @@ Currently, it is used by students taking Modern Physics at the Illinois Mathemat
 
 It made the Amazon top-100 bestseller list in Relativity and Quantum Mechanics for multiple weeks. In addition, I launched IMSA's first ever publishing house.
 
-<FONT COLOR="RED"> A quick plug! I'm currently authoring similar books on Quantum Mechanics (covering the equivalent of a college course), Abstract Algebra, and Ancient Philosophy (split into Plato and Predecessors & Aristotle and Successors). If you would like to help with the illustrations, please reach out to me @ annegautham@gmail.com!
+<br>
+
+<FONT COLOR="RED"> A quick plug! I'm currently authoring books on Quantum Mechanics (covering the equivalent of a college course), Abstract Algebra, and more. If you would like to help with the illustrations, please reach out to me @ annegautham@gmail.com!
