@@ -1,7 +1,7 @@
 ---
 layout: splashpage
 title: "Portfolio"
-description: Here, you can learn more about some of the projects I've worked on for engineering teams and classes, as well as my personal projects.
+description: Here, you can learn more about some of the projects and products I've developed!
 
 filterable: true
 filter_tags:
