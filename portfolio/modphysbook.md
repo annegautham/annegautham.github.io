@@ -20,7 +20,8 @@ As a student that responds well to appealing visuals and hands-on learning, I ma
 <div class="caption">Sample pages from my book!</div>
 
 <br>
-Currently, it is used by students taking Modern Physics at the Illinois Mathematics and Science Academy (IMSA) as supplementary readings. It is also available in middle school, high school, and public libraries. I hosted multiple author visits at schools, motivating students to learn the difficult subject of physics.
+
+Currently, the book is used by students taking Modern Physics at the Illinois Mathematics and Science Academy (IMSA) as supplementary readings. It is also available in middle school, high school, and public libraries. I hosted multiple author visits at schools, encouraging students to learn difficult but fascinating physics.
 
 <br>
 
