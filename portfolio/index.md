@@ -6,6 +6,7 @@ description: Here, you can learn more about some of the projects I've worked on 
 filterable: true
 filter_tags:
   - all
+  - industry
   - class
   - research
   - personal
@@ -19,7 +20,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/amazonbook.png"
     subheader="Feb 2022 — Present"
     description="I wrote and published a 100 page book on modern physics, ISBN 979-8849892566, which is available on Amazon, Barnes & Nobles, and other distributors."
-    tags="all class"
+    tags="all industry personal"
 %}
 
 
