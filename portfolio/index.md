@@ -26,9 +26,9 @@ filter_selected: all
 {% include card.html
     title="Low Cost Electroencephalogram for the Diagnosis & Prediction of Neural Anomalies"
     page_url="/portfolio/eeg"
-    image_path="/assets/images/portfolio/straightedge.jpg"
+    image_path="/assets/images/portfolio/PCB.png"
     subheader="Feb 2022 — Present"
-    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    description="Under the mentorship of Professor George Verghese (MIT, Henry Ellis Warren Prof. of Electrical and Biomedical Engineering), I designed and implemented an electroencephalogram to predict neural anomalies. The project achieved both high accuracy and low cost with cost-effective components such as the AD622ANZ instrumentation amplifier and TL048x operational amplifier."
     tags="all"
 %}
 
