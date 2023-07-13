@@ -19,7 +19,7 @@ filter_selected: all
     page_url="/portfolio/modphysbook"
     image_path="/assets/images/portfolio/amazonbook.png"
     subheader="Feb 2022 — Present"
-    description="I wrote and published a 100 page book "Introduction to Modern Physics", ISBN 979-8849892566, which is available on <a href="https://www.amazon.com/Introduction-Modern-Physics-Gautham-Anne/dp/B0BD2XNX7J">Amazon</a>, <a href="https://www.barnesandnoble.com/w/introduction-to-modern-physics-gautham-anne/1142532018">Barnes & Nobles</a>, and other distributors."
+    description="I wrote and published a 100 page book "Introduction to Modern Physics", ISBN 979-8849892566, which is available on Amazon, Barnes & Nobles, and other distributors."
     tags="all class industry personal"
 %}
 
