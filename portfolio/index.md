@@ -29,7 +29,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2022 — Present"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all class"
+    tags="all"
 %}
 
 
@@ -39,7 +39,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2022 — Present"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all class"
+    tags="all"
 %}
 
 {% include card.html
@@ -48,7 +48,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2022 — Present"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all class"
+    tags="all "
 %}
 
 {% include card.html
@@ -57,7 +57,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2022 — Present"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all class"
+    tags="all "
 %}
 
 
@@ -67,7 +67,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2022 — Present"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all class"
+    tags="all "
 %}
 
 {% include card.html
@@ -76,7 +76,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2022 — Present"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all class"
+    tags="all "
 %}
 
 {% include card.html
@@ -85,7 +85,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2022 — Present"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all class"
+    tags="all "
 %}
 
 {% include card.html
@@ -94,7 +94,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2022 — Present"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all class"
+    tags="all "
 %}
 
 {% include card.html
@@ -103,7 +103,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2023 — Now"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all class"
+    tags="all "
 %}
 
 
@@ -122,7 +122,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/212robot.png"
     subheader="Feb 2022 — May 2022"
     description="The term project in Intro to Robotics was to modify a mobile robot to scoop and deposit \"lunar regolith.\" I designed and fabricated parts of our 3-DOF robot scoop mechanism with steppers and DC motors, and I wrote the backing suite of ROS nodes for low level feedback control, computer vision-based localization and detection, and trajectory planning and execution."
-    tags="all class"
+    tags="all "
 %}
 
 {% include card.html
@@ -131,7 +131,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/stirlingengine.png"
     subheader="Feb 2022 — May 2022"
     description="As a Pappalardo Apprentice, I designed a Stirling engine that I fabricated with a mix of CNC and manual machining on the mill and lathe. It was an assembly with over a dozen parts, which I machined to have tolerances tight enough to enable the engine to spin at over 300 RPM."
-    tags="all class"
+    tags="all "
 %}
 
 {% include card.html
@@ -140,7 +140,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/6832eggflipper.png"
     subheader="Mar 2022 — May 2022"
     description="For my final project in Underactuated Robotics, I developed a controller that could flip an egg upside down to make an over-easy fried egg. I derived my controller using trajectory optimization with custom-implemented constraints for contact dynamics."
-    tags="all class"
+    tags="all "
 %}
 
 {% include card.html
@@ -167,7 +167,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/2671expdiag.png"
     subheader="Sep 2021 — Dec 2021"
     description="The semester-long project in 2.671: Measurement and Instrumentation is the Go Forth and Measure Project, in which we use measurement and analysis techniques learned in class to investigate a question of our choosing. I constructed an experimental setup that constantly monitors soil moisture level and pumps water to maintain it."
-    tags="all class"
+    tags="all "
 %}
 
 {% include card.html
@@ -185,7 +185,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/2007robot.jpg"
     subheader="Feb 2021 — May 2021"
     description="Every year, each student of 2.007: Design and Manufacturing I designs and fabricates a robot to compete in the class competition. My robot for the 2021 competition: \"Home Alone Together\" was able to extend to twice its height to lift 8kg, push game elements, and both cut and ride down a zipline."
-    tags="all class"
+    tags="all "
 %}
 
 {% include card.html
@@ -203,7 +203,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/motor.png"
     subheader="Sep 2019 — Oct 2019"
     description="As a part of my freshman year advising seminar, 6.A01, I designed and fabricated fully-functional brushless DC motor from scratch. It featured wire-wound electromagnetic coils, an outrunner-style rotor with embedded permanent magnets, and a custom electronics panel that enabled four-phase control."
-    tags="all class"
+    tags="all "
 %}
 
 {% include card.html
@@ -211,8 +211,8 @@ filter_selected: all
     page_url="/portfolio/suntracking"
     image_path="/assets/images/portfolio/solar.jpg"
     subheader="May 2018"
-    description="In my AP Environmental Science class, my final project was developing a small-scale solar panel that used computer vision to track the sun."
-    tags="all class"
+    description="In my AP Environmental Science , my final project was developing a small-scale solar panel that used computer vision to track the sun."
+    tags="all "
 %}
 
 {% include card.html
