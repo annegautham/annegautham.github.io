@@ -7,7 +7,6 @@ filterable: true
 filter_tags:
   - all
   - industry
-  - class
   - research
   - personal
   
