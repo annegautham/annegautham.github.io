@@ -16,6 +16,10 @@ As a student that responds well to appealing visuals and hands-on learning, I ma
 
 <br>
 
+<iframe height="600px" width="100%" src="/assets/documents/portfolio/Sample Pages.pdf"></iframe>
+<div class="caption">Sample pages from my book!</div>
+
+<br>
 Currently, it is used by students taking Modern Physics at the Illinois Mathematics and Science Academy (IMSA) as supplementary readings. It is also available in middle school, high school, and public libraries. I hosted multiple author visits at schools, motivating students to learn the difficult subject of physics.
 
 <br>
