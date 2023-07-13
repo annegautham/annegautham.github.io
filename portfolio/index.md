@@ -32,6 +32,14 @@ filter_selected: all
     tags="all"
 %}
 
+{% include card.html
+    title="CNC Driver Drawing Machine"
+    page_url="/portfolio/drawingmachine"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Jun 2022"
+    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    tags="all"
+%}
 
 {% include card.html
     title="Automated Covid Card Sorter"
