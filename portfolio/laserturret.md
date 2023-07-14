@@ -14,6 +14,7 @@ Inspired from a Michael Reeves video, I decided to build a laser turret that fir
 ![](/assets/images/portfolio/laserPanTilt.jpg)
 <div class="caption">Schematics and various views of crude contraption. It's a basic prototype of my even more advanced project, Sleep Detection Water Turret. Essentially, the hardware is a USB camera mounted to a pan tilt servo mechanism and a laser diode. All of this is powered by an Arduino.</div>
 
+<!---
 <br>
 
 [//]: # ({% raw %})
@@ -156,3 +157,4 @@ void fire(){
 <br>
 
 <div class="caption">Simple Arduino script to move servos to position values received from serial port. Fire() function defines buzzer and laser activation inspired from Star Wars effects.</div>
+--->
