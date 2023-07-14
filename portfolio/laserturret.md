@@ -16,7 +16,9 @@ Inspired from a Michael Reeves video, I decided to build a laser turret that fir
 
 <br>
 
-'''
+[//]: # ({% raw %})
+
+'''python
 import cv2
 import serial,time
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -56,6 +58,7 @@ while cap.isOpened():
 cap.release()
 cv2.destroyAllWindows()
 '''
+[//]: # ({% endraw %})
 
 <br>
 
@@ -63,7 +66,9 @@ cv2.destroyAllWindows()
 
 <br>
 
+[//]: # ({% raw %})
 
+'''cpp
 #includeServo.h
 
 Servo x, y;
@@ -119,7 +124,7 @@ void loop() {
     fire();
     }
 }
-'''
+
 void fire(){
     digitalWrite(laserPin, HIGH);
     tone(buzzerPin,2200);
@@ -145,6 +150,8 @@ void fire(){
     delayMicroseconds(10000);
 }
 '''
+
+[//]: # ({% endraw %})
 
 <br>
 
