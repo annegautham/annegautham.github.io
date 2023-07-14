@@ -16,7 +16,7 @@ Inspired from a Michael Reeves video, I decided to build a laser turret that fir
 
 <br>
 
-<code>
+'''python
 import cv2
 import serial,time
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -55,12 +55,12 @@ while cap.isOpened():
         break
 cap.release()
 cv2.destroyAllWindows()
-</code>
+'''
 <div class="caption">Python code that transmits servo adjustment values to Arduino over serial port. Essentially, the camera tracks distance from center of face to the center of frame, which is relayed to pan tilt mechanism. Had to calibrate based on distance face was to the camera.</div>
 
 <br>
 
-<code>
+'''
 #includeServo.h
 
 Servo x, y;
@@ -143,5 +143,6 @@ void fire(){
     noTone(buzzerPin);
     delayMicroseconds(10000);
 }
-</code>
+'''
+
 <div class="caption">Simple Arduino script to move servos to position values received from serial port. Fire() function defines buzzer and laser activation inspired from Star Wars effects.</div>
