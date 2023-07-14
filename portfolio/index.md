@@ -32,7 +32,7 @@ filter_selected: all
     tags="all"
 %}
 
-{% include card.html
+<!---{% include card.html
     title="CNC Driver Drawing Machine"
     page_url="/portfolio/drawingmachine"
     image_path="/assets/images/portfolio/straightedge.jpg"
@@ -40,6 +40,7 @@ filter_selected: all
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
     tags="all"
 %}
+--->
 
 <!---{% include card.html
     title="Automated Covid Card Sorter"
@@ -53,9 +54,9 @@ filter_selected: all
 {% include card.html
     title="Facial Recognition Laser Turret"
     page_url="/portfolio/laserturret"
-    image_path="/assets/images/portfolio/straightedge.jpg"
-    subheader="Feb 2022 — Present"
-    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    image_path="/assets/images/portfolio/overallLaserTurret.jpg"
+    subheader="Aug 2020"
+    description="Inspired from a Michael Reeves video, I decided to build a laser turret that fires at specific people (my roomate!) utilizing OpenCV contouring."
     tags="all "
 %}
 
