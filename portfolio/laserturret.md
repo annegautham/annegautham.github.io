@@ -56,11 +56,14 @@ while cap.isOpened():
 cap.release()
 cv2.destroyAllWindows()
 '''
+
+<br>
+
 <div class="caption">Python code that transmits servo adjustment values to Arduino over serial port. Essentially, the camera tracks distance from center of face to the center of frame, which is relayed to pan tilt mechanism. Had to calibrate based on distance face was to the camera.</div>
 
 <br>
 
-'''
+'''cpp
 #includeServo.h
 
 Servo x, y;
@@ -69,7 +72,6 @@ int xpos = 120, ypos = 140;  // initial positions of both Servos
 int laserPin = 11;
 int buzzerPin = 8;
 void setup() {
-
   Serial.begin(9600);
   x.write(xpos);
   y.write(ypos);
@@ -77,9 +79,8 @@ void setup() {
   y.attach(10);
   pinMode(laserPin, OUTPUT);
   pinMode(buzzerPin, OUTPUT);
-
-
 }
+
 const int angle = 3;   // degree of increment or decrement
 
 void loop() {
@@ -117,8 +118,8 @@ void loop() {
     y.write(ypos);
     fire();
     }
-
 }
+
 void fire(){
     digitalWrite(laserPin, HIGH);
     tone(buzzerPin,2200);
@@ -144,5 +145,7 @@ void fire(){
     delayMicroseconds(10000);
 }
 '''
+
+<br>
 
 <div class="caption">Simple Arduino script to move servos to position values received from serial port. Fire() function defines buzzer and laser activation inspired from Star Wars effects.</div>
