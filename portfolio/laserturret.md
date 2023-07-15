@@ -14,12 +14,10 @@ Inspired from a Michael Reeves video, I decided to build a laser turret that fir
 ![](/assets/images/portfolio/laserPanTilt.jpg)
 <div class="caption">Schematics and various views of crude contraption. It's a basic prototype of a more advanced project, my Sleep Detection Water Turret. The hardware is a USB camera mounted to a pan tilt servo mechanism and a laser diode. All of this is powered by an Arduino.</div>
 
-<!---
 <br>
 
-[//]: # ({% raw %})
 
-'''python
+```python
 import cv2
 import serial,time
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -58,8 +56,7 @@ while cap.isOpened():
         break
 cap.release()
 cv2.destroyAllWindows()
-'''
-[//]: # ({% endraw %})
+```
 
 <br>
 
@@ -67,10 +64,9 @@ cv2.destroyAllWindows()
 
 <br>
 
-[//]: # ({% raw %})
 
-'''cpp
-#includeServo.h
+```cpp
+#include <Servo.h>
 
 Servo x, y;
 int width = 640, height = 480;  // total resolution of the video
@@ -150,11 +146,8 @@ void fire(){
     noTone(buzzerPin);
     delayMicroseconds(10000);
 }
-'''
-
-[//]: # ({% endraw %})
+```
 
 <br>
 
 <div class="caption">Simple Arduino script to move servos to position values received from serial port. Fire() function defines buzzer and laser activation inspired from Star Wars effects.</div>
---->
