@@ -1,7 +1,7 @@
 ---
 layout: detailpage
 title: Smart Knock Lock
-description: Jul 2022 — Present
+description: Aug 2021
 ---
 
 Since my IMSA dorm door had an autolock, I frequently locked myself out. So, I designed a locking system that unlocks the door using a sound sensor that recognizes a secret knock pattern.

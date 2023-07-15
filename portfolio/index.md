@@ -64,7 +64,7 @@ filter_selected: all
     title="Smart Knock Lock"
     page_url="/portfolio/knocklock"
     image_path="/assets/images/portfolio/knocklockPre.jpg"
-    subheader="Aug 2021"
+    subheader="Nov 2021"
     description="Since my IMSA dorm door had an autolock, I frequently locked myself out. So, I designed a locking system that unlocks the door using a sound sensor that recognizes a secret knock pattern."
     tags="all "
 %}
