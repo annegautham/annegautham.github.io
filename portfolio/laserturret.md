@@ -12,7 +12,7 @@ Inspired from a Michael Reeves video, I decided to build a laser turret that fir
 ![](/assets/images/portfolio/overallLaserTurret.jpg)
 ![](/assets/images/portfolio/insideLaserTurret.jpg)
 ![](/assets/images/portfolio/laserPanTilt.jpg)
-<div class="caption">Schematics and various views of crude contraption. It's a basic prototype of my even more advanced project, Sleep Detection Water Turret. Essentially, the hardware is a USB camera mounted to a pan tilt servo mechanism and a laser diode. All of this is powered by an Arduino.</div>
+<div class="caption">Schematics and various views of crude contraption. It's a basic prototype of a more advanced project, my Sleep Detection Water Turret. The hardware is a USB camera mounted to a pan tilt servo mechanism and a laser diode. All of this is powered by an Arduino.</div>
 
 <!---
 <br>
