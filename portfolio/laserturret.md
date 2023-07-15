@@ -8,7 +8,7 @@ Inspired from a Michael Reeves video, I decided to build a laser turret that fir
 
 <br>
 
-![](/assets/images/portfolio/laserturretSchematic.png)
+![](/assets/images/portfolio/laserturretschematic.png)
 ![](/assets/images/portfolio/overallLaserTurret.jpg)
 ![](/assets/images/portfolio/insideLaserTurret.jpg)
 ![](/assets/images/portfolio/laserPanTilt.jpg)

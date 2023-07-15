@@ -54,18 +54,18 @@ filter_selected: all
 {% include card.html
     title="Facial Recognition Laser Turret"
     page_url="/portfolio/laserturret"
-    image_path="/assets/images/portfolio/overallLaserTurret.jpg"
-    subheader="Aug 2020"
+    image_path="/assets/images/portfolio/laserturretschematic.png"
+    subheader="Jan 2022"
     description="Inspired from a Michael Reeves video, I decided to build a laser turret that fires at specific people (my roomate!) utilizing OpenCV contouring."
     tags="all "
 %}
 
 {% include card.html
-    title="Smart Room Knock Lock"
+    title="Smart Knock Lock"
     page_url="/portfolio/knocklock"
-    image_path="/assets/images/portfolio/straightedge.jpg"
-    subheader="Feb 2022 — Present"
-    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    image_path="/assets/images/portfolio/knocklockPre.jpg"
+    subheader="Aug 2021"
+    description="Since my IMSA dorm door had an autolock, I frequently locked myself out. So, I designed a locking system that unlocks the door using a sound sensor that recognizes a secret knock pattern."
     tags="all "
 %}
 
@@ -73,6 +73,15 @@ filter_selected: all
 {% include card.html
     title="RNN Name Generator"
     page_url="/portfolio/rnnnamegen"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Feb 2022 — Present"
+    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    tags="all "
+%}
+
+{% include card.html
+    title="Phouse: A Phone controlled Mouse"
+    page_url="/portfolio/phouse"
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2022 — Present"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
