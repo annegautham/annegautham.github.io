@@ -14,7 +14,7 @@ Since my IMSA dorm door had an autolock, I frequently locked myself out. So, I d
 <br>
 
 ![](/assets/images/portfolio/knocklockV1F.jpg)
-<div class="caption">2nd prototype (sorry, terrible image). Powered by 9V battery (lasts ~4 months), but wasn't counting on it, so I added a redundancy screwdriver ratcheting system so I could use room key. Had to calibrate sound sensor sensitivity manually based on sound from other side of door so that it wasn't sensitive to voices or other shenanigans.</div>
+<div class="caption">2nd prototype (sorry about the terrible image). Powered by 9V battery (lasts ~4 months), but wasn't counting on it, so I added a redundancy screwdriver ratcheting system so I could use room key. Had to calibrate sound sensor sensitivity manually based on sound from other side of door so that it wasn't sensitive to voices or other shenanigans.</div>
 
 <br>
 
