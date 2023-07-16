@@ -80,10 +80,10 @@ filter_selected: all
 %}
 
 {% include card.html
-    title="Phouse: A Phone controlled Mouse"
+    title="Phouse: A Phone controlled Cursor"
     page_url="/portfolio/phouse"
     image_path="/assets/images/portfolio/straightedge.jpg"
-    subheader="Feb 2022 — Present"
+    subheader="April 2022"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
     tags="all "
 %}
