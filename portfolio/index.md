@@ -73,9 +73,9 @@ filter_selected: all
 {% include card.html
     title="RNN Name Generator"
     page_url="/portfolio/rnnnamegen"
-    image_path="/assets/images/portfolio/straightedge.jpg"
+    image_path="/assets/images/portfolio/names3.png"
     subheader="Feb 2022 — Present"
-    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    description="I developed an RNN (Reccurrent Neural Network) from scratch to generate new names!"
     tags="all "
 %}
 
