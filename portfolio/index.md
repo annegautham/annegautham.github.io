@@ -73,7 +73,7 @@ filter_selected: all
 {% include card.html
     title="RNN Name Generator"
     page_url="/portfolio/rnnnamegen"
-    image_path="/assets/images/portfolio/names3.png"
+    image_path="/assets/images/portfolio/rnnconcept.png"
     subheader="Feb 2022 — Present"
     description="I developed an RNN (Reccurrent Neural Network) from scratch to generate new names!"
     tags="all "
