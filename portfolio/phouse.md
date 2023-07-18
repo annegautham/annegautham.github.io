@@ -128,9 +128,7 @@ while 1 == 1:
             gyr_x_float_m = 0
         if abs(gyr_y_float_m)<20:
             gyr_y_float_m =0
-    
 
-    #    while keyboard.is_pressed('space')== False:
         pos_x = gyr_x_float_m * k
         pos_y = gyr_y_float_m * k
         move(pos_x,pos_y,t)
@@ -170,9 +168,7 @@ while 1 == 1:
             gyr_x_float_m = 0
         if abs(gyr_y_float_m)<20:
             gyr_y_float_m =0
-    
 
-    #    while keyboard.is_pressed('space')== False:
         pos_x = gyr_x_float_m * k
         pos_y = gyr_y_float_m * k
         move(pos_x,pos_y,t)
