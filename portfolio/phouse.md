@@ -89,7 +89,7 @@ while 1 == 1:
 
 <br>
 
-Unfortunately, double integrating the accelerometer data does not *perfectly* translate into position coordinates! I'll never forget the +C on integration problems again. I tried 3 different versions with accelerometer datasets by applying a Gaussian buffer to the data to approximate the position of the mouse. While the results were better, they did not hold up to the precision standards required for CAD.
+Unfortunately, double integrating the accelerometer data does not perfectly translate into position coordinates! I'll never forget the +C on integration problems again. I tried 3 different versions with accelerometer datasets by applying a Gaussian buffer to the data to approximate the position of the mouse. While the results were better, they did not hold up to the precision standards required for CAD.
 
 <br>
 
@@ -186,7 +186,7 @@ while 1 == 1:
 
 <br>
 
-However, the user now has to *rotate* the phone into various orientation to move the mouse around, which can take a bit of getting used to, especially if your iPhone mouse is just a temporary solution. Furthermore, the Phyphox only transmits data from one sensor at a time, so adding a 'right and left click' feature or a 'scroll button' is pretty much impossible. 
+However, the user now has to rotate the phone into various orientation to move the mouse around, which can take a bit of getting used to, especially if your iPhone mouse is just a temporary solution. Furthermore, the Phyphox only transmits data from one sensor at a time, so adding a 'right and left click' feature or a 'scroll button' is pretty much impossible. 
 
 <br>
 
