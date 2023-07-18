@@ -82,9 +82,9 @@ filter_selected: all
 {% include card.html
     title="Phouse: A Phone controlled Cursor"
     page_url="/portfolio/phouse"
-    image_path="/assets/images/portfolio/straightedge.jpg"
+    image_path="/assets/images/portfolio/accelero.png"
     subheader="April 2022"
-    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    description="After forgetting my computer mouse multiple times to robotics practices, where I'd need them for computer aided design, I decided to program an application that allows me to use my iPhone as a mouse!"
     tags="all "
 %}
 
