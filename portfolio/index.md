@@ -94,7 +94,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2022 — Present"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all "
+    tags="all"
 %}
 
 {% include card.html
