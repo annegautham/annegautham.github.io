@@ -1,10 +1,5 @@
 - term: High School Credits
   classes:
-    - number: P445
-      name: Modern Physics
-      dept: Physics
-      description: The course focuses on special relativity, nonrelativistic quantum mechanics, and elementary particle physics, emphasizing conceptual understanding and the ability to solve problems in novel situations.
-
     - number: 474
       name: Abstract Algebra
       dept: Math      
@@ -30,7 +25,16 @@
       name: Linear Algebra
       dept: Math      
       description: This course concentrates on the theory of simultaneous linear equations. Gaussian elimination is used as a tool to solve linear systems and to investigate the subspace structure of a matrix (kernel, range, etc.). Extensions of these ideas include orthogonality and least squares. Determinants are examined from several perspectives, Eigenvalues and eigenvectors are introduced, including a discussion of special matrices (symmetric, unitary, normal, etc.). Applications include singular value decomposition and the Fast Fourier transform.
+    
+    - number: IP01
+      name: Quantum Mechanics
+      dept: Physics
+      description: This course explores introductory non-relativistic quantum mechanics (equivalent to college semester course). It covers both Heisenberg's and Schrodinger's pictures, harmonic oscillators, and the solution to the hydrogen atom. The student will learn to solve the Schrodinger equation and find the eigenstates of several important systems in quantum mechanics. They will gain problem-based competencies, learning to solve realistic problems over the course of their study. Understanding of the material will be demonstrated by the student through weekly problem sets.
 
+    - number: P445
+      name: Modern Physics
+      dept: Physics
+      description: The course focuses on special relativity, nonrelativistic quantum mechanics, and elementary particle physics, emphasizing conceptual understanding and the ability to solve problems in novel situations.
 
     - number: 411      
       name: Calculus Based Mechanics
