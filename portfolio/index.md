@@ -69,7 +69,6 @@ filter_selected: all
     tags="all "
 %}
 
-
 {% include card.html
     title="RNN Name Generator"
     page_url="/portfolio/rnnnamegen"
@@ -88,14 +87,15 @@ filter_selected: all
     tags="all "
 %}
 
-<!-- {% include card.html
+
+{% include card.html
     title="CamSense: An Emotion Based Camera"
     page_url="/portfolio/camsense"
     image_path="/assets/images/portfolio/accelero.png"
     subheader="April 2022"
     description="After forgetting my computer mouse multiple times to robotics practices, where I'd need them for computer aided design, I decided to program an application that allows me to use my iPhone as a mouse!"
     tags="all "
-%} -->
+%}
 
 <!-- {% include card.html
     title="Automatic Sleep Detection Water Turret"
