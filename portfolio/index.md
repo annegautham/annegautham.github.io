@@ -89,11 +89,11 @@ filter_selected: all
 
 
 {% include card.html
-    title="uCam: An Emotion Based Camera"
-    page_url="/portfolio/ucam"
-    image_path="/assets/images/portfolio/accelero.png"
+    title="CamSense: An Emotion Based Camera"
+    page_url="/portfolio/camsense"
+    image_path="/assets/images/portfolio/completegoggles.jpg"
     subheader="April 2022"
-    description="After forgetting my computer mouse multiple times to robotics practices, where I'd need them for computer aided design, I decided to program an application that allows me to use my iPhone as a mouse!"
+    description="For my final project in high school Engineering, I developed Goggles, somewhat inspired from the GoogleGlass, that takes pictures based on your response to external stimuli!"
     tags="all "
 %}
 
