@@ -93,7 +93,7 @@ filter_selected: all
     page_url="/portfolio/camsense"
     image_path="/assets/images/portfolio/completegoggles.jpg"
     subheader="April 2022"
-    description="For my final project in high school Engineering, I developed Goggles, somewhat inspired from the GoogleGlass, that takes pictures based on your response to external stimuli!"
+    description="For my final project in high school Engineering, I developed CamSense, somewhat inspired from the GoogleGlass, that takes pictures based on your response to external stimuli!"
     tags="all "
 %}
 
