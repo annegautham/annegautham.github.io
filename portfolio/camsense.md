@@ -47,3 +47,12 @@ Note that the current prototype cannot accurately distinguish between emotion st
 ![](/assets/images/portfolio/gloveinprogress.jpg)
 <div class="caption">Glove in progress...</div>
 
+<br>
+
+![](/assets/images/portfolio/goggles.jpg)
+<div class="caption">Goggles with Esp32 Cam + Radio Receiver w/ antenna. A bit messy!</div>
+
+<br>
+
+![](/assets/images/portfolio/completegoggles.jpg)
+<div class="caption">Completed 1st prototype! Updates coming soon...</div>
