@@ -20,19 +20,19 @@ description: I'm Gautham, an undergraduate freshman at Northwestern University! 
 {% include card.html
     title="Experience"
     page_url="/experience/"
-    image_path="/assets/images/experience.jpeg"
-    description="Through research at institutions like Fermilab and in my studies at programs like the Ross Mathematics Program, I've have been able to apply my knowledge and acquire new skills." %}
+    image_path="/assets/images/experience/cmsDetector.jpeg"
+    description="Through research at institutions like Fermilab and in studies at programs like the Ross Mathematics Program, I've have been able to apply my knowledge and acquire new skills." %}
 
 {% include card.html
     title="Portfolio"
     page_url="/portfolio/"
-    image_path="/assets/images/portfolio.png"
+    image_path="/assets/images/portfolio/electrodepadpcb.png"
     description="I've employed the engineering process of iterative design and testing on projects for classes, engineering teams, personal use, and research. By exhausting all the resources at my disposal, I've learned by failing, and have conducted research, tinkered, and developed cool things along the way." %}
 
 {% include card.html
     title="Blog"
     page_url="https://medium.com/@annegautham"
-    image_path="/assets/images/blog.jpg"
+    image_path="/assets/images/blog.png"
     description="I've recently started a blog! I write about anything that strikes me fancy or delve into deep philosophical discussions with myself ... anyways, enjoy!" %}
 
 {% include card.html
