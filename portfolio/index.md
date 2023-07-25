@@ -97,6 +97,15 @@ filter_selected: all
     tags="all "
 %}
 
+{% include card.html
+    title="Elliptic Curve Cryptography Implementation"
+    page_url="/portfolio/ecc"
+    image_path="/assets/images/portfolio/completegoggles.jpg"
+    subheader="June 2023"
+    description="For my final project my Linux + Cybersecurity class, I developed an ECC Algorithm from scratch in Java."
+    tags="all"
+%}
+
 <!-- {% include card.html
     title="Automatic Sleep Detection Water Turret"
     page_url="/portfolio/sleepturret"
