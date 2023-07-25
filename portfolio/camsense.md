@@ -28,4 +28,22 @@ Note that the current prototype cannot accurately distinguish between emotion st
 <br>
 
 
-![](/assets/images/portfolio/schematic.jpg)
+![](/assets/images/portfolio/gloveangle1.jpg)
+![](/assets/images/portfolio/gloveangle2.jpg)
+<div class="caption">The accompanying glove that transmits heart rate (from pulse sensor) along with switch state to determinte mode. The palm (not shown) has a button, that upon pressing in manual mode, takes pictures.</div>
+
+<br>
+
+![](/assets/images/portfolio/brainstormingelectronics.jpg)
+<div class="caption">Electronics associated with the project are shown. I used a radio transmitter and receiver so that the camera (Esp32 Cam) can receive signals regarding heart rate and switch state from glove without requiring a wired connection. I initially used a bluetooth module, but after some trial and error, figured out that it had less range, especially given the frequency range of the radio.</div>
+
+<br>
+
+![](/assets/images/portfolio/radiotest.jpg)
+<div class="caption">Successful radio test!</div>
+
+<br>
+
+![](/assets/images/portfolio/gloveinprogress.jpg)
+<div class="caption">Glove in progress...</div>
+
