@@ -8,7 +8,7 @@ description: I'm Gautham, an undergraduate freshman at Northwestern University! 
     title="About Me"
     page_url="/aboutme/"
     image_path="/assets/images/pfp/about.jpg"
-    description="Wanna learn more about who I am? Well, here you go!" %}
+    description="Wanna learn more about me? Well, here you go!" %}
 
 
 {% include card.html

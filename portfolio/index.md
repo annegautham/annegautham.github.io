@@ -100,9 +100,9 @@ filter_selected: all
 {% include card.html
     title="Elliptic Curve Cryptography Implementation"
     page_url="/portfolio/ecc"
-    image_path="/assets/images/portfolio/completegoggles.jpg"
+    image_path="/assets/images/portfolio/mainframeKeyGen.png"
     subheader="June 2023"
-    description="For my final project my Linux + Cybersecurity class, I developed an ECC Algorithm from scratch in Java."
+    description="For my final project in my Linux & Cybersecurity class, I developed an ECC Algorithm from scratch in Java."
     tags="all"
 %}
 
