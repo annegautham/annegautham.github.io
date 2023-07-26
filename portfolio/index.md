@@ -106,14 +106,15 @@ filter_selected: all
     tags="all"
 %}
 
-<!-- {% include card.html
-    title="Automatic Sleep Detection Water Turret"
+
+{% include card.html
+    title="Sleep Detection Water Turret"
     page_url="/portfolio/sleepturret"
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Feb 2022 — Present"
-    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
+    description="As a late night coffee addict, I built a water turret that fires at me if it detects that I'm drowsy."
     tags="all"
-%} -->
+%}
 
 <!-- {% include card.html
     title="RPLidar + SLAM Capable Drones"
