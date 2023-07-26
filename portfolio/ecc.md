@@ -10,7 +10,7 @@ For my final project in my Linux & Cybersecurity class, I developed an ECC Algor
 
 ![](/assets/images/portfolio/nistcurves.png)
 ![](/assets/images/portfolio/nistpoints.png)
-<div class="caption">Some NIST curves that I've programmed into the algorithm. They are a set of curves from the FIPS 186-3 standard that are recommended for US federal government use. They were chosen by repeatedly selecting a random seed, and then checking the resulting curve against known attacks
+<div class="caption">Some NIST curves that I've programmed into the algorithm. They are a set of curves from the FIPS 186-3 standard that are recommended for US federal government use. They were chosen by repeatedly selecting a random seed, and then checking the resulting curve against known attacks.
 </div>
 
 
