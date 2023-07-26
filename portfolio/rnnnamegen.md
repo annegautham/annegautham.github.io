@@ -90,4 +90,4 @@ That resulted in the following names at their respective epochs!
 ![](/assets/images/portfolio/names3.png)
 ![](/assets/images/portfolio/names4.png)
 ![](/assets/images/portfolio/names5.png)
-<div class="caption">Iteration 0 (randomly generated) doesn't look like names at all, but by iteration 110000, the model starts to do better (Jerick)! Palin, Vera, Tasil, and Sannalyn all seem like pretty dope names, while Smauron sounds like the dark lord's younger but not a successful brother.</div>
+<div class="caption">Iteration 0 (randomly generated) doesn't look like names at all, but by iteration 110000, the model starts to do better (Jerick)! Palin, Vera, Tasil, and Sannalyn all seem like pretty dope names, while Smauron sounds like the dark lord's younger but not as successful brother.</div>
