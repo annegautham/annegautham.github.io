@@ -153,8 +153,10 @@ public class PrivateKey {
     }
     
     /**
-     * Save the current key to a *.pri file - basically contains a binary index of all resources in a Windows application, stores localized resources
-     * figured that VSCOde can interpret it well - you do not need to access this because the output is to the screen anyway - it was helpful for decrypting stuff!
+     * Save the current key to a *.pri file - basically contains a binary index of all resources
+     *  in a Windows application, stores localized resources
+     * figured that VSCOde can interpret it well - you do not need to access this because
+     *  the output is to the screen anyway - it was helpful for decrypting stuff!
      */
     public void saveToFile(String path) {
         BigInteger a = c.getA();
