@@ -105,37 +105,37 @@ img {
 </style>
 <body>
 
-<h2 style="text-align:center">Slideshow Gallery</h2>
+<h3 style="text-align:center">I've captained and held subteam (mechanical & outreach) lead roles of numerous competition robotics teams (FIRST & VEX). Here's a gallery!</h3>
 
 <div class="container">
   <div class="mySlides">
     <div class="numbertext">1 / 6</div>
-    <img src="img_woods_wide.jpg" style="width:100%">
+    <img src="/assets/images/portfolio/r1.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">2 / 6</div>
-    <img src="img_5terre_wide.jpg" style="width:100%">
+    <img src="/assets/images/portfolio/r2.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 6</div>
-    <img src="img_mountains_wide.jpg" style="width:100%">
+    <img src="/assets/images/portfolio/r3.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
     <div class="numbertext">4 / 6</div>
-    <img src="img_lights_wide.jpg" style="width:100%">
+    <img src="/assets/images/portfolio/r4.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">5 / 6</div>
-    <img src="img_nature_wide.jpg" style="width:100%">
+    <img src="/assets/images/portfolio/r5.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
     <div class="numbertext">6 / 6</div>
-    <img src="img_snow_wide.jpg" style="width:100%">
+    <img src="/assets/images/portfolio/r6.jpg" style="width:100%">
   </div>
     
   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -147,22 +147,22 @@ img {
 
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      <img class="demo cursor" src="/assets/images/portfolio/r1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      <img class="demo cursor" src="/assets/images/portfolio/r2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="/assets/images/portfolio/r3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="/assets/images/portfolio/r4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      <img class="demo cursor" src="/assets/images/portfolio/r5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
     </div>    
     <div class="column">
-      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      <img class="demo cursor" src="/assets/images/portfolio/r6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
     </div>
   </div>
 </div>
