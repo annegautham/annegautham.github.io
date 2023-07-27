@@ -20,7 +20,6 @@
       dept: Math     
       description: Multi-Variable Calculus will apply the tools of calculus to functions of several variables. Topics will include the algebra and geometry of vectors, a study of functions of several variables, applications of partial derivatives, multiple integrals, line and surface integrals, and Green’s, Stokes’ and Gauss’ Theorems.
 
-
     - number: 473      
       name: Linear Algebra
       dept: Math      
@@ -41,18 +40,15 @@
       dept: Physics
       description: Calculus-Based Physics/Mechanics follows the typical sequence of a university physics course. The semester is devoted to topics in classical mechanics including Newton’s laws of motion, conservation of momentum and conservation of energy as they apply to both translational and rotational motion. The major emphasis of the course is on problem-solving including laboratory experiments, and theoretical problems. There is strong overlap with the AP Physics C Mechanics exam.
       
-
     - number: 412      
       name: Calculus Based Electricity & Magnetism
       dept: Physics
       description: Calculus-Based Physics/Electricity and Magnetism follows the typical sequence of a university physics course. The semester is devoted to topics in electrostatics, circuits, magnetism, and induction. The major emphasis of the course is on problem-solving including laboratory experiments and theoretical problems. There is strong overlap between the curriculum and the AP Physics C Electricity and Magnetism exam.
 
-
     - number: 425      
       name: Planetary Science
       dept: Physics    
       description: This course will introduce students to basic concepts in planetary science and the dynamic processes of planetary formation and evolution. This course will briefly cover the Big Bang, stellar evolution, and planetary formation to allow students to better understand the initial conditions out of which the Earth formed. This course will cover in a mostly qualitative way the many interactions and relationships between the properties of the Earth, and how these interactions caused our planet to change and evolve over time.
-
 
     - number: 455      
       name: Engineering
@@ -75,18 +71,15 @@
       dept: CS 
       description: This course introduces students to the Linux operating system and its basic operations and file management system. Students are then introduced to the interdisciplinary field of cybersecurity by discussing the evolution of information security, cyber-crime, current trends in cyber-related strategies and policies, and cyber-related challenges facing the global community. Students will focus on cyber forensics and forensics investigations by researching advanced topics like DDoS, SQL injection, VPN, man-in-the-middle attacks, steganography, cryptography and social engineering among other topics. Students will be required to demonstrate their knowledge by participating in solving forensics challenges using virtual machines. Students will explore many of the advanced topics through research and presentations.     
 
-
     - number: 315      
       name: Microcontroller Applications
       dept: CS      
       description: In this course, students will use a microcontroller to take input from their users or environment, and manipulate the data to control external devices. In the process, students will learn to program and debug a popular, everyday microcontroller. They will also become acquainted with a variety of sensors, motors, and input/output devices.
 
-
     - number: 202      
       name: AP Chemistry
       dept: Chemistry   
       description: AP Chemistry is an engaging and comprehensive advanced-level course designed to provide students with a deep understanding of the fundamental principles and applications of chemistry. Through a combination of theoretical instruction and hands-on laboratory experiences, students will explore topics such as atomic structure, chemical bonding, thermodynamics, kinetics, equilibrium, and organic chemistry. Emphasis will be placed on developing critical thinking skills, problem-solving techniques, and mathematical reasoning abilities. Students will engage in rigorous coursework and gain practical experience through experiments, data analysis, and scientific inquiry. 
-
 
     - number: 601      
       name: AP Biology
