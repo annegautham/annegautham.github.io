@@ -9,6 +9,7 @@ filter_tags:
   - industry
   - research
   - personal
+  - class
   
 filter_selected: all
 ---

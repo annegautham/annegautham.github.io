@@ -10,7 +10,6 @@ description: I'm Gautham, an undergraduate freshman at Northwestern University! 
     image_path="/assets/images/pfp/about.jpg"
     description="Wanna learn more about me? Well, here you go!" %}
 
-
 {% include card.html
     title="Education"
     page_url="/education/"
