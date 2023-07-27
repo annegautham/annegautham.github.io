@@ -19,5 +19,23 @@ The device consists of the following:
 
 <br>
 
-![](/assets/images/portfolio/accelero.png)
+![](/assets/images/portfolio/sleepturretpantilt.png)
+![](/assets/images/portfolio/sleepturretcameramount.png)
+<div class="caption">Pan tilt mechanism and the camera mount</div>
 
+<br>
+
+![](/assets/images/portfolio/cruderelay.png)
+![](/assets/images/portfolio/sleepturretworkingrelay.png)
+![](/assets/images/portfolio/sleepturretoutletconnection.png)
+<div class="caption">I soldered a 2 pin outlet connector to the relay (need to heatshrink it) and connected the other side to the water pump. The relay is controlled by an Arduino, allowing the device to control when to fire the water.</div>
+
+<br>
+
+![](/assets/images/portfolio/sleepturretcomputer.png)
+<div class="caption">Program running on computer, but assembly not complete. The water pump fires through nozzle when an ML algorithm determines that the user is drowsy. A Python script sends data through a serial to the Arduino, which controls servos to keep the camera focused on the user.</div>
+
+<br>
+
+![](/assets/images/portfolio/sleepturretoverview.png)
+<div class="caption">Final assembly of prototype 1! A second version will be more compact and hopefully self-contained. That is, I plan to integrate a Raspberry Pi for onboard processing instead of requiring it to be hooked up to a computer.</div>
