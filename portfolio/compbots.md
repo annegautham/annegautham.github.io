@@ -105,7 +105,7 @@ img {
 </style>
 <body>
 
-<h3 style="text-align:center">I've captained and held subteam (mechanical & outreach) lead roles of numerous competition robotics teams (FIRST & VEX). Here's a gallery!</h3>
+<h4 style="text-align:center">I've captained and held subteam (mechanical & outreach) lead roles of numerous competition robotics teams (FIRST & VEX). Here's a gallery!</h4>
 
 <div class="container">
   <div class="mySlides">
