@@ -59,7 +59,7 @@ $normal_margin: 24px;
   }
 }
 
-@media                               (max-width: $small_width) {
+@media (max-width: $small_width) {
   .wrap {
     max-width: 100%;
     margin: 0 $normal_margin;
