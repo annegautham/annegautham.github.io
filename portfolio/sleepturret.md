@@ -39,3 +39,9 @@ The device consists of the following:
 
 ![](/assets/images/portfolio/sleepturretoverview.png)
 <div class="caption">Final assembly of prototype 1! A second version will be more compact and hopefully self-contained. I plan to integrate a Raspberry Pi for onboard processing instead of requiring it to be hooked up to a computer.</div>
+
+<br>
+
+
+<iframe height="600px" width="100%" src="/assets/documents/portfolio/Sleep-Detection-Water-Turret.pdf"></iframe>
+<div class="caption">In class presentation!</div>
