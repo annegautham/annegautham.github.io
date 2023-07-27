@@ -9,7 +9,6 @@ filter_tags:
   - industry
   - research
   - personal
-  - class
   
 filter_selected: all
 ---
@@ -39,7 +38,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/PCB.png"
     subheader="April 2022 — Present"
     description="Under the mentorship of Professor George Verghese (MIT, Henry Ellis Warren Prof. of Electrical and Biomedical Engineering), I designed and implemented an electroencephalogram to predict neural anomalies. The project achieved high accuracy with cost-effective components."
-    tags="all"
+    tags="all research industry personal"
 %}
 
 {% include card.html
@@ -48,7 +47,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/amazonbook.png"
     subheader="Feb 2022 — Present"
     description="I wrote and published a 100 page book on modern physics, ISBN 979-8849892566, which is available on Amazon, Barnes & Nobles, and other distributors."
-    tags="all"
+    tags="all industry personal"
 %}
 
 {% include card.html
@@ -57,7 +56,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/completegoggles.jpg"
     subheader="Nov - Jan 2023"
     description="For my final project in high school Engineering, I developed CamSense, somewhat inspired from the GoogleGlass, that takes pictures based on your response to external stimuli!"
-    tags="all "
+    tags="all research personal"
 %}
 
 {% include card.html
@@ -66,7 +65,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Aug 2019 — Jun 2023"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all"
+    tags="all industry personal"
 %}
 
 {% include card.html
@@ -75,7 +74,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/sleepturretoverview.png"
     subheader="March - April 2023"
     description="As a late night coffee addict, I built a water turret that fires at me if it detects that I'm drowsy."
-    tags="all"
+    tags="all personal"
 %}
 
 {% include card.html
@@ -84,7 +83,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/mainframeKeyGen.png"
     subheader="May 2023"
     description="For my final project in my Linux & Cybersecurity class, I developed an ECC Algorithm from scratch in Java."
-    tags="all"
+    tags="all research"
 %}
 
 {% include card.html
@@ -93,7 +92,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/accelero.png"
     subheader="March - July 2022"
     description="After forgetting my computer mouse multiple times to robotics practices, where I'd need them for computer aided design, I programmed an application that allows me to use my iPhone as a mouse."
-    tags="all"
+    tags="all industry personal"
 %}
 
 {% include card.html
@@ -102,7 +101,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/rnnconcept.png"
     subheader="Jan 2022"
     description="I developed an RNN from scratch to generate new names!"
-    tags="all"
+    tags="all personal"
 %}
 
 {% include card.html
@@ -111,7 +110,7 @@ filter_selected: all
     image_path="/assets/images/portfolio/laserturretschematic.png"
     subheader="Nov - Dec 2021"
     description="Inspired from a Michael Reeves video, I decided to build a laser turret that fires at specific people (my roomate!) utilizing OpenCV contouring."
-    tags="all"
+    tags="all personal"
 %}
 
 {% include card.html
@@ -120,5 +119,5 @@ filter_selected: all
     image_path="/assets/images/portfolio/knocklockPre.jpg"
     subheader="Sept 2021"
     description="Since my IMSA dorm door had an autolock, I frequently locked myself out. So, I designed a locking system that unlocks the door using a sound sensor that recognizes a secret knock pattern."
-    tags="all"
+    tags="all personal"
 %}
