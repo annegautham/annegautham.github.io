@@ -110,7 +110,7 @@ filter_selected: all
 {% include card.html
     title="Sleep Detection Water Turret"
     page_url="/portfolio/sleepturret"
-    image_path="/assets/images/portfolio/straightedge.jpg"
+    image_path="/assets/images/portfolio/sleepturretoverview.png"
     subheader="Feb 2022 — Present"
     description="As a late night coffee addict, I built a water turret that fires at me if it detects that I'm drowsy."
     tags="all"
