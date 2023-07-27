@@ -62,7 +62,7 @@ filter_selected: all
 
 {% include card.html
     title="Competition Robots"
-    page_url="/portfolio/comprobots"
+    page_url="/portfolio/compbots"
     image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Aug 2019 — Jun 2023"
     description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
