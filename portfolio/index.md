@@ -28,7 +28,7 @@ filter_selected: all
     page_url="/portfolio/eeg"
     image_path="/assets/images/portfolio/PCB.png"
     subheader="Feb 2022 — Present"
-    description="Under the mentorship of Professor George Verghese (MIT, Henry Ellis Warren Prof. of Electrical and Biomedical Engineering), I designed and implemented an electroencephalogram to predict neural anomalies. The project achieved both high accuracy and low cost with cost-effective components."
+    description="Under the mentorship of Professor George Verghese (MIT, Henry Ellis Warren Prof. of Electrical and Biomedical Engineering), I designed and implemented an electroencephalogram to predict neural anomalies. The project achieved high accuracy with cost-effective components."
     tags="all"
 %}
 
