@@ -1,7 +1,7 @@
 ---
 layout: detailpage
 title: Facial Recognition Laser Turret
-description: Aug 2020
+description: Nov - Dec 2021
 ---
 
 Inspired from a Michael Reeves video, I decided to build a laser turret that fires at specific people (my roomate!) utilizing OpenCV contouring. Code and imagery available <a href="https://github.com/annegautham/FacialRecog_LaserTurret">here</a>.

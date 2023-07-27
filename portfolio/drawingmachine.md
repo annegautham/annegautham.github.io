@@ -1,5 +1,5 @@
 ---
 layout: detailpage
 title: CNC Driver Drawing Machine
-description: June 2023
+description: June - July 2023
 ---

@@ -1,7 +1,7 @@
 ---
 layout: detailpage
 title: RNN Name Generator
-description: Aug 2021
+description: Jan 2022
 ---
 
 I developed an RNN (Reccurrent Neural Network) from scratch to generate new names! There wasn't much motivation for doing so other than learning more about RNNs. Here's <a href="https://github.com/annegautham/RNN_NameGenerator">my implementation</a>!

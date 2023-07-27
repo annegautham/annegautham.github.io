@@ -1,7 +1,7 @@
 ---
 layout: detailpage
 title: Phouse, A Phone controlled Cursor
-description: Jul 2022 — Present
+description: March - July 2022
 ---
 
 After forgetting my computer mouse multiple times to robotics practices, where I'd need them for CAD (3D computer aided design), I decided to program an application that allows me to use my iPhone as a mouse! See the scripts <a href="https://github.com/annegautham/Phouse">here</a>!

@@ -1,7 +1,7 @@
 ---
 layout: detailpage
 title: Elliptic Curve Cryptography Implementation
-description: June 2023
+description: May 2023
 ---
 
 For my final project in my Linux & Cybersecurity class, I developed an ECC Algorithm from scratch in Java. You can find the code <a href="https://github.com/annegautham/ECC">here</a>.

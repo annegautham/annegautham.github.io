@@ -1,7 +1,7 @@
 ---
 layout: detailpage
 title: CamSense, An Emotion Based Camera
-description: June 2023
+description: Nov - Jan 2023
 ---
 For my final project in high school Engineering, I developed CamSense, somewhat inspired from the GoogleGlass, that takes pictures based on your response to external stimuli! You can find some scripts I wrote <a href="https://github.com/annegautham/CamSense">here</a>. Note that it's not completely updated! 
 
