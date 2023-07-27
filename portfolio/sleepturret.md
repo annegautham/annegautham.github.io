@@ -8,4 +8,16 @@ As a late night coffee addict, I built a water turret that fires at me if it det
 
 <br>
 
+The device consists of the following:
+
+* <strong>Arduino Uno</strong> to controll all the electronics
+* <strong>12V Water Pump w/ Tubing</strong> to fire water through a nozzle! A 5V pump would actually be better as to not require a...
+* <strong>5-12V Relay</strong> connected to outlet and water pump
+* <strong>USB Camera</strong> for OpenCV Contouring to recalibrate and track face
+* <strong>Water Bottle</strong> to carry the water for firing. I used an old caramel macchiato container
+* <strong>2 Hobby Servos w/ Pan Tilt</strong> for moving the camera and firing nozzle
+
+<br>
+
+![](/assets/images/portfolio/accelero.png)
 
