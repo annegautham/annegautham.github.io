@@ -38,4 +38,4 @@ The device consists of the following:
 <br>
 
 ![](/assets/images/portfolio/sleepturretoverview.png)
-<div class="caption">Final assembly of prototype 1! A second version will be more compact and hopefully self-contained. That is, I plan to integrate a Raspberry Pi for onboard processing instead of requiring it to be hooked up to a computer.</div>
+<div class="caption">Final assembly of prototype 1! A second version will be more compact and hopefully self-contained. I plan to integrate a Raspberry Pi for onboard processing instead of requiring it to be hooked up to a computer.</div>
