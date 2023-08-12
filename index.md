@@ -14,13 +14,13 @@ description: I'm Gautham, an undergraduate freshman at Northwestern University! 
     title="Education"
     page_url="/education/"
     image_path="/assets/images/nucampus.jpg"
-    description="A formal education serves as the foundation of an my knowledge and abilities. I've not only had the privilege to take fascinating classes not in STEM, but also in the humanities, arts, and social sciences. As John Wick demonstrated, the pen(cil) is mightier than the sword." %}
+    description="A formal education serves as the foundation of my knowledge and abilities. I've not only had the privilege to take fascinating classes not in STEM, but also in the humanities, arts, and social sciences. As John Wick demonstrated, the pen(cil) is mightier than the sword." %}
 
 {% include card.html
     title="Experience"
     page_url="/experience/"
     image_path="/assets/images/experience/cmsDetector.jpeg"
-    description="Through research at institutions like Fermilab and in studies at programs like the Ross Mathematics Program, I've have been able to apply my knowledge and acquire new skills." %}
+    description="Through work, research, and study at institutions like Fermilab and the Ross Mathematics Program, I've have been able to apply my knowledge and acquire new skills." %}
 
 {% include card.html
     title="Portfolio"
@@ -34,8 +34,9 @@ description: I'm Gautham, an undergraduate freshman at Northwestern University! 
     image_path="/assets/images/blog.png"
     description="I've recently started a blog! I write about anything that strikes me fancy or delve into deep philosophical discussions with myself ... anyways, enjoy!" %}
 
-{% include card.html
+<!-- {% include card.html
     title="Youtube"
     page_url="https://www.youtube.com/@gauthamanne"
     image_path="/assets/images/youtube.png"
     description="This channel's purpose is to provide engaging courses/lectures on all sorts of subjects, ranging from AP classes to Abstract Algebra. Hopefully, I'll be able to crank out explanations to various personal projects and even some guitar covers... stay tuned!" %}
+ -->
