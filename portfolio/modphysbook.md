@@ -12,7 +12,7 @@ The book covers the subjects of Special Relativity, a brief intro to General Rel
 
 <br>
 
-As a student that responds well to appealing visuals and hands-on learning, I made the books as appealing as possible, by explaining concepts from the perspective of Schrödinger's Cat. I drew most of the illustrations myself, and the rest was clipart scraped from the internet!
+As a student that responds well to visuals and hands-on learning, I made the books as appealing as possible, by explaining concepts from the perspective of Schrödinger's Cat. I drew most of the illustrations myself, and the rest was clipart scraped from the internet!
 
 <br>
 

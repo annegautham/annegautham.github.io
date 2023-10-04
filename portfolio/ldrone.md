@@ -18,7 +18,7 @@ I'm making a LiDAR based drone that can fly around and map the environment! Here
 * 
 
 <br>
-Here's a picture of the completed drone! For the Star Wars fans amongst us, I found a really cool R2D2 head built using kitchen appliances, which I plan to attach to the top of the drone, because why not...
+Here's a picture of the completed drone (LiDAR not attached)! For the Star Wars fans amongst us, I found a really cool R2D2 head built using kitchen appliances, which I plan to attach to the top of the drone, because why not...
 
 <br>
 
