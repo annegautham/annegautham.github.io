@@ -13,24 +13,32 @@ filter_tags:
 filter_selected: all
 ---
 
-<!---{% include card.html
-    title="CNC Driver Drawing Machine"
+{% include card.html
+    title="LiDAR based Mapping Drone"
+    page_url="/portfolio/ldrone"
+    image_path="/assets/images/portfolio/ldroneproto1.jpg"
+    subheader="Sept 2023 - Present"
+    description="I'm implementing autonomous navigation and mapping algorithms on a drone I built from scratch!"
+    tags="all research industry personal"
+%}
+
+{% include card.html
+    title="Quadruped Crawl Bot"
+    page_url="/portfolio/quadruped"
+    image_path="/assets/images/portfolio/PCB.png"
+    subheader="Sept 2023 - Present"
+    description="To apply the knowledge I acquired through the Coursera Northwestern & UPenn Robotics Specializations, I decided to develop a quadruped!"
+    tags="all research industry personal"
+%}
+
+{% include card.html
+    title="CNC Driver Drawing Robot"
     page_url="/portfolio/drawingmachine"
     image_path="/assets/images/portfolio/straightedge.jpg"
-    subheader="June - July 2023"
-    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all"
+    subheader="July - Oct 2023"
+    description="To complement my terrible drawing skills, I developed to make a robot, leveraging a CNC driver, to sketch basically anything! I'm basically the new Picasso."
+    tags="all personal"
 %}
---->
-
-<!-- {% include card.html
-    title="RPLidar + SLAM Capable Drones"
-    page_url="/portfolio/drone"
-    image_path="/assets/images/portfolio/straightedge.jpg"
-    subheader="Feb 2022 — Present"
-    description="As a Senior Pappalardo Apprentice, I designed a cast iron camelback straightedge that I cast, machined, and will hand-scrape."
-    tags="all "
-%} -->
 
 {% include card.html
     title="Low Cost Electroencephalogram for the Diagnosis & Prediction of Neural Anomalies"

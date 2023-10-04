@@ -12,6 +12,15 @@ filter_selected: all
 ---
 
 {% include card.html
+	title="NASA L'Space Scholar - NPWEE Fellow"
+	page_url="/experience/lspace"
+	image_path="/assets/images/experience/lspace.png"
+	subheader="Sept 2023 - Present"
+	description="Accepted to the NASA L'Space Academy as an NPWEE Fellow, where I'm learning how to properly write research proposals, and am competing for a Science Technology Mission Directorate (STMD) for $10,000 to fund the concept."
+	tags="all research industry"
+%}
+
+{% include card.html
 	title="CMS Experiment at the LHC at CERN"
 	page_url="/experience/fermilab"
 	image_path="/assets/images/experience/cmsDetector.jpeg"
