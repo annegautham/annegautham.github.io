@@ -1,3 +1,9 @@
+- term: Fall 2023
+  classes:
+    - number: 
+      name:
+      dept:
+      description:
 - term: High School Credits
   classes:
     - number: 474
@@ -89,4 +95,4 @@
     - number: 600
       name: Advanced Biological Systems
       dept: Biology
-      description: This course focuses on four themes to organize our study into major biological systems - the development of organisms, molecular and cellular physiology with applications, global and personal health, and the interdependent world. Students will engage in learning through a combination of laboratory activities, classroom discussion, and guided modeling. Projects, which focus scientific understanding to address current issues, will organize the learning and allow students to apply their knowledge. 
+      description: This course focuses on four themes to organize our study into major biological systems - the development of organisms, molecular and cellular physiology with applications, global and personal health, and the interdependent world. Students will engage in learning through a combination of laboratory activities, classroom discussion, and guided modeling. Projects, which focus scientific understanding to address current issues, will organize the learning and allow students to apply their knowledge.

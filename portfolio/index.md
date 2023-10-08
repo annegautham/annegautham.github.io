@@ -25,7 +25,7 @@ filter_selected: all
 {% include card.html
     title="Quadruped Crawl Bot"
     page_url="/portfolio/quadruped"
-    image_path="/assets/images/portfolio/PCB.png"
+    image_path="/assets/images/portfolio/straightedge.jpg"
     subheader="Sept 2023 - Present"
     description="To apply the knowledge I acquired through the Coursera Northwestern & UPenn Robotics Specializations, I decided to develop a quadruped!"
     tags="all research industry personal"
