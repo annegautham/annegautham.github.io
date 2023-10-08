@@ -1,9 +1,25 @@
 - term: Fall 2023
   classes:
-    - number: 
-      name:
-      dept:
-      description:
+    - number: 215-1
+      name: Organic Chemistry I
+      dept: Chemistry
+      description: Foundational concepts in organic chemistry will be introduced. Topics include structure and properties of common functional groups, acidity/basicity, conformational analysis, stereochemistry, and reactivity of organic compounds.
+    
+    - number: 205-1
+      name: Engineering Analysis I
+      dept: Gen_Eng
+      description: Specific topics include solving systems of linear equations, linear independence, linear transformations, matrix inverses, vector spaces, and least-squares problems. We will also cover a sequence of case studies showing different applications of these concepts.
+
+    - number: 228-2
+      name: Multiple Integration and Vector Calculus
+      dept: Math
+      description: Cylindrical and spherical coordinates, double and triple integrals, line and surface integrals. Change of variables in multiple integrals; gradient, divergence, and curl.
+
+    - number: 106-1
+      name: Design Thinking and Communication
+      dept: Design
+      description: Integrated introduction to the user-centered design process and technical communication. Students will address challenges proposed by project partners by identifying unmet needs, conducting research, generating and evaluating potential solutions, and finally, presenting a final design concept with supporting documentation. Students also enhance their abilities in equitable teamwork, project management, fabrication skills, and producing written, oral, graphical, and interpersonal communication.
+
 - term: High School Credits
   classes:
     - number: 474

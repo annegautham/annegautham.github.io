@@ -627,18 +627,22 @@ h5 {
       background: #B4EDD2;
     }
 
-    &.EECS {
-      background: #A0CFD3;
-    }
-
-    &.GIR {
-      background: #8D94BA;
+    &.Gen_Eng {
+      background: #2d362f;
       color: white;
       .metadata {
         color: #ececec;
       }
     }
 
+    &.Design {
+      background: #f5ed59;
+      color: white;
+      .metadata {
+        color: #ececec;
+      }
+    }
+    
     &.Math {
       background: #59aff5;
       color: white;
