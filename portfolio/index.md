@@ -14,6 +14,24 @@ filter_selected: all
 ---
 
 {% include card.html
+    title="Greenfield Swarm Bot Development"
+    page_url="/portfolio/elwinbots"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Oct 2023 - Present"
+    description="I'm developing small scale cost-efficient swarm bots for the manipulation of heavier objects!"
+    tags="all research industry"
+%}
+
+{% include card.html
+    title="Voice Activated Neopixel Strip"
+    page_url="/portfolio/rgblights"
+    image_path="/assets/images/portfolio/straightedge.jpg"
+    subheader="Oct 2023"
+    description="I decided to spice up my college dorm through a voice activated RGB Neopixel setup!"
+    tags="all personal"
+%}
+
+{% include card.html
     title="LiDAR based Mapping Drone"
     page_url="/portfolio/ldrone"
     image_path="/assets/images/portfolio/ldroneproto1.jpg"
