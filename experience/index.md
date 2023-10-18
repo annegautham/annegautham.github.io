@@ -12,6 +12,15 @@ filter_selected: all
 ---
 
 {% include card.html
+	title="Greenfield Swarm Bot Development"
+	page_url="/portfolio/elwinbots"
+	image_path="/assets/images/experience/straightedge.jpg"
+	subheader="Oct 2023 - Present"
+	description="I'm developing small scale cost-efficient swarm bots for the manipulation of heavier objects!"
+	tags="all research industry"
+%}
+
+{% include card.html
 	title="NASA L'Space Scholar - NPWEE Fellow"
 	page_url="/experience/lspace"
 	image_path="/assets/images/experience/lspace.png"
