@@ -8,7 +8,7 @@ I developed an RNN (Reccurrent Neural Network) from scratch to generate new name
 
 <br>
 
-RNNs are essentially deep NNs created by applying the same set of weights recursively over a structured input. This produces a structured prediction over variable length input structures (# of characters in a name). RNNs are commonly used for deep tree parsing while preserve topological order. One application is the prediction of stock markets, but naturally models haven't achieved viable accuracy due to the unpredictable nature of stocks.
+RNNs are essentially deep NNs created by applying the same set of weights recursively over a structured input. This produces a structured prediction over variable length input structures (# of characters in a name). RNNs are commonly used for deep tree parsing while preserving topological order. One application is the prediction of stock markets, but naturally models haven't achieved viable accuracy due to the unpredictable nature of stocks.
 ![](/assets/images/portfolio/rnnconcept.png)
 <br>
 
