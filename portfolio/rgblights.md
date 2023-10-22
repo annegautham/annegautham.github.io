@@ -9,8 +9,8 @@ My college dorm room was looking a bit boring, aside from these beauties:
 
 <!-- ![](/assets/images/portfolio/sneezyVader.jpg)
 ![](/assets/images/portfolio/spaceChimp.jpg) -->
-<img src="/assets/images/portfolio/sneezyVader.jpg" width = "50%" float="left">
-<img src="/assets/images/portfolio/spaceChimp.jpg" width = "50%" float="left">
+<img src="/assets/images/portfolio/sneezyVader.jpg" width = "20%" float="left">
+<img src="/assets/images/portfolio/spaceChimp.jpg" width = "20%" float="left">
 <br>
 So, I decided to spice it up through a voice activated RGB Neopixel setup! I found enough in the Mechatronics Lab to span about 1/2 the room's perimeter!
 <br>
