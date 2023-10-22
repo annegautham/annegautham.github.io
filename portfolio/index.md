@@ -25,7 +25,7 @@ filter_selected: all
 {% include card.html
     title="Voice Activated Neopixel Strip"
     page_url="/portfolio/rgblights"
-    image_path="/assets/images/portfolio/straightedge.jpg"
+    image_path="/assets/images/portfolio/greenLight.jpg"
     subheader="Oct 2023"
     description="I decided to spice up my college dorm through a voice activated RGB Neopixel setup!"
     tags="all personal"
