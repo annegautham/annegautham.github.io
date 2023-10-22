@@ -33,5 +33,5 @@ Here's how the different settings look so far:
 ![](/assets/images/portfolio/pinkLight.jpg)
 
 <br>
-There's a bit of skewing towards red in color combinations that require it, due to red needing the lowest energy (hence, the yellowish hue in the white light image). I'm currently integrating the Wake Word voice recognition algorithm with an Adafruit Electret Microphone Amplifier onto the pico. I'll keep y'all updated on the progress.
+There's a bit of skewing towards red in color combinations with it, due to red requiring the lowest energy (hence, the yellowish hue in the white light image). I'm currently integrating the Wake Word voice recognition algorithm with an Adafruit Electret Microphone Amplifier onto the pico. I'll keep y'all updated on the progress.
 
