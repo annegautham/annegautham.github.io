@@ -23,13 +23,13 @@ First, I programmed a Raspberry Pi Pico to adjust the brightness and color of th
 Here's how the different settings look so far:
 <br>
 
-![](/assets/images/portfolio/whiteLight.png)
-![](/assets/images/portfolio/redLight.png)
-![](/assets/images/portfolio/orangeLight.png)
-![](/assets/images/portfolio/greenLight.png)
-![](/assets/images/portfolio/blueLight.png)
-![](/assets/images/portfolio/purpleLight.png)
-![](/assets/images/portfolio/pinkLight.png)
+![](/assets/images/portfolio/whiteLight.jpg)
+![](/assets/images/portfolio/redLight.jpg)
+![](/assets/images/portfolio/orangeLight.jpg)
+![](/assets/images/portfolio/greenLight.jpg)
+![](/assets/images/portfolio/blueLight.jpg)
+![](/assets/images/portfolio/purpleLight.jpg)
+![](/assets/images/portfolio/pinkLight.jpg)
 
 <br>
 There's a bit of skewing towards red in color combinations that require it, due to red needing the lowest energy (hence, the yellowish hue in the white light image). I'm currently integrating the Wake Word voice recognition algorithm with an Adafruit Electret Microphone Amplifier onto the pico. I'll keep y'all updated on the progress.
