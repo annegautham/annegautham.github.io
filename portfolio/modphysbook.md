@@ -29,4 +29,4 @@ It made the Amazon top-100 bestseller list in Relativity and Quantum Mechanics f
 
 <br>
 
-<FONT COLOR="RED"> A quick plug! I'm currently authoring books on Quantum Mechanics, Thermodynamics & Statistical Mechanics, Organic Chemistry, and more. These will be a bit more advanced, covering concepts presented in college courses. If you would like to help with the illustrations, please reach out to me @ annegautham@gmail.com!
+<FONT COLOR="RED"> A quick plug! I'm currently authoring books on Circuits, Thermodynamics & Statistical Mechanics, Organic Chemistry, and more. These will be a bit more advanced, covering concepts presented in college courses. If you would like to help with the illustrations, please reach out to me @ annegautham@gmail.com!
