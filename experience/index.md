@@ -48,15 +48,6 @@ filter_selected: all
 %}
 
 {% include card.html
-	title="Ivy Roots Consulting"
-	page_url="/experience/ivyroots"
-	image_path="/assets/images/experience/ivyroots.png"
-	subheader="May 2023 - Present"
-	description="Founder and CTO of nonprofit providing free essay review, college consulting, and SAT Preperation for underpriveledged and low-income students."
-	tags="all extracurricular"
-%}
-
-{% include card.html
 	title="Davuluri Lab Research Intern"
 	page_url="/experience/compbio"
 	image_path="/assets/images/experience/davlabs.png"

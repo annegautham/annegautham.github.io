@@ -1,14 +1,14 @@
 ---
 layout: splashpage
 title: Greetings, Fellow Homo Sapien!
-description: I'm Gautham, a freshman at Northwestern University! I'm still figuring out my majors, but I'm interested in Engineering (Electrical, Mechanical, and Computer), CS, Physics, and Mathematics. Here, you can check out the classes I've taken, my internships and work experience, projects I've developed, and research I've contributed to. Have fun!
+description: I'm Gautham, a freshman at Northwestern University! I'm majoring in Mechanical Engineering and Physics, with a concentration in physics, and am on track to receive my BS/MS in Electrical Engineering. Here, you can check out the classes I've taken, my internships and work experience, projects I've developed, and research I've contributed to. Have fun!
 ---
 
 {% include card.html
     title="About Me"
     page_url="/aboutme/"
     image_path="/assets/images/pfp/about.jpg"
-    description="Wanna learn more about me? Well, here you go!" %}
+    description="Wanna learn more about me? I'm still figuring it out..." %}
 
 {% include card.html
     title="Education"
