@@ -4,7 +4,7 @@ title: Low-Cost Electroencephalogram for Prediction of Neural Anomalies
 description: Jul 2022 — Present
 ---
 
-Under the mentorship of Professor George Verghese (MIT, Henry Ellis Warren Prof. of Electrical and Biomedical Engineering), I designed and implemented an electroencephalogram to predict neural anomalies. The project achieved high accuracy with cost-effective components such as the AD622ANZ instrumentation amplifier and TL048x operational amplifier. 
+With assistance from Professor George Verghese (MIT, Henry Ellis Warren Prof. of Electrical and Biomedical Engineering), I designed and implemented an electroencephalogram to predict neural anomalies. The project achieved high accuracy with cost-effective components such as the AD622ANZ instrumentation amplifier and TL048x operational amplifier. 
 
 <br>
 
