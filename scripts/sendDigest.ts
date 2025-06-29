@@ -66,13 +66,15 @@ function generateHTML(posts: ReturnType<typeof getRecentPosts>) {
     </div>
   `;
 }
-
 async function sendEmail(html: string) {
   try {
+    const plainText = "Check out the latest posts from me at https://annegautham.github.io/blog";
+
     const res = await axios.post(
       "https://api.buttondown.email/v1/emails",
       {
         subject: "Gautham's Weekly Update",
+        body: plainText,
         body_html: html,
       },
       {
@@ -88,6 +90,7 @@ async function sendEmail(html: string) {
     console.error("❌ Failed to send email:", err.response?.data || err.message);
   }
 }
+
 
 (async () => {
   const posts = getRecentPosts(7);
