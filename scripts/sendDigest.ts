@@ -60,7 +60,7 @@ function generateHTML(posts: ReturnType<typeof getRecentPosts>) {
 async function sendEmail(html: string) {
   try {
     const res = await axios.post(
-      "https://buttondown.email/api/emails",
+      "https://api.buttondown.email/v1/emails",
       {
         subject: "Weekly Digest: New Blog Posts",
         body: html,
