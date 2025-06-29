@@ -1,0 +1,26 @@
+---
+const BUTTONDOWN_USERNAME = "annegautham";
+---
+
+<form
+  action={`https://buttondown.email/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`}
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open(this.action, 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+  class="flex flex-col sm:flex-row items-center gap-3 mt-6"
+>
+  <input
+    type="email"
+    name="email"
+    placeholder="Enter your email"
+    required
+    class="rounded-lg px-4 py-2 border border-skin-line bg-skin-card"
+  />
+  <input type="hidden" value="1" name="embed" />
+  <button
+    type="submit"
+    class="rounded-lg bg-skin-accent text-white px-4 py-2 hover:opacity-90"
+  >
+    Subscribe
+  </button>
+</form>
