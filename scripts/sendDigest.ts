@@ -13,7 +13,7 @@ if (!BUTTONDOWN_API_KEY) {
 }
 
 function getRecentPosts(days = 7) {
-  const files = fs.readdirSync(BLOG_DIR).filter(f => f.endsWith(".mdx"));
+  const files = fs.readdirSync(BLOG_DIR).filter(f => f.endsWith(".md"));
   const cutoff = dayjs().subtract(days, "day");
 
   const posts = files.map(filename => {
