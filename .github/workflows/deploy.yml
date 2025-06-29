@@ -38,7 +38,7 @@ jobs:
         run: pnpm run build
 
       - name: Upload build artifacts
-        uses: actions/upload-pages-artifact@v2 # ✅ Use v2 (not deprecated)
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
