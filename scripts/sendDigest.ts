@@ -35,22 +35,15 @@ function getRecentPosts(days = 7) {
 }
 
 function generateHTML(posts: ReturnType<typeof getRecentPosts>) {
-  const postHtml = posts.length === 0
-    ? "<p>No posts, will lock in, I promise</p>"
-    : `
-      <h2 style="font-family:sans-serif">Check these out!</h2>
-      <ul style="padding-left:0">
-        ${posts.map(post => `
-          <li style="margin-bottom:20px;list-style:none">
-            <a href="https://annegautham.github.io/blog/${post.slug}" style="font-size:18px;font-weight:bold;color:#000;text-decoration:none">
-              ${post.title}
-            </a><br/>
-            <span style="font-size:14px;color:#444">${post.description}</span><br/>
-            <span style="font-size:12px;color:#888">${post.date.format("MMMM D, YYYY")}</span>
-          </li>
-        `).join("")}
-      </ul>
-    `;
+  const listItems = posts.map(post => `
+    <li style="margin-bottom:20px;list-style:none">
+      <a href="https://annegautham.github.io/blog/${post.slug}" style="font-size:18px;font-weight:bold;color:#000;text-decoration:none">
+        ${post.title}
+      </a><br/>
+      <span style="font-size:14px;color:#444">${post.description}</span><br/>
+      <span style="font-size:12px;color:#888">${post.date.format("MMMM D, YYYY")}</span>
+    </li>
+  `).join("");
 
   const catHtml = `
     <div style="margin-top:40px;text-align:center">
@@ -60,7 +53,15 @@ function generateHTML(posts: ReturnType<typeof getRecentPosts>) {
     </div>
   `;
 
-  return postHtml + catHtml;
+  return `
+    <div style="font-family:sans-serif;padding:24px">
+      <h2 style="margin-bottom:16px">Your Weekly Upsiedatesies</h2>
+      <ul style="padding-left:0;margin:0">
+        ${listItems || "<p>No new posts this week Locking in...</p>"}
+      </ul>
+      ${catHtml}
+    </div>
+  `;
 }
 
 async function sendEmail(html: string) {
@@ -79,9 +80,9 @@ async function sendEmail(html: string) {
       }
     );
 
-    console.log(`Email sent! ID: ${res.data.id}`);
+    console.log(`✅ Email sent! ID: ${res.data.id}`);
   } catch (err: any) {
-    console.error("Failed to send email:", err.response?.data || err.message);
+    console.error("❌ Failed to send email:", err.response?.data || err.message);
   }
 }
 
