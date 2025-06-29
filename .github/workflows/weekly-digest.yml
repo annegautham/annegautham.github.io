@@ -1,0 +1,26 @@
+name: Weekly Digest
+
+on:
+  schedule:
+    - cron: '0 14 * * 1'  # every Monday at 7 AM PST
+  workflow_dispatch:
+
+jobs:
+  send-digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install deps
+        run: npm install
+
+      - name: Send Weekly Digest
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: npx tsx scripts/sendDigest.ts
