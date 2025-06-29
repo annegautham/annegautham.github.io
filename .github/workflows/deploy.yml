@@ -17,17 +17,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # ✅ Install pnpm first so it's on the PATH
       - name: Install pnpm
         uses: pnpm/action-setup@v3
         with:
           version: latest
 
+      # ✅ Now setup-node AFTER pnpm is available
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          # comment this line if you still get pnpm not found errors
-          cache: 'pnpm'
+          cache: 'pnpm' # optional, but works now because pnpm is already installed
 
       - name: Enable postinstall scripts
         run: pnpm config set ignore-scripts false
@@ -38,7 +39,7 @@ jobs:
       - name: Build site
         run: pnpm run build
 
-      - name: Upload artifact
+      - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
