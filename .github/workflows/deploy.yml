@@ -17,18 +17,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # ✅ Install pnpm first so it's on the PATH
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
+      # ✅ Install pnpm first (v4)
+      - uses: pnpm/action-setup@v4
         with:
-          version: latest
+          version: 9
 
-      # ✅ Now setup-node AFTER pnpm is available
+      # ✅ Setup Node.js AFTER pnpm is on the PATH
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm' # optional, but works now because pnpm is already installed
+          cache: pnpm
 
       - name: Enable postinstall scripts
         run: pnpm config set ignore-scripts false
@@ -42,7 +41,7 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: ./dist
 
   deploy:
     needs: build
