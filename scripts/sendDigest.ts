@@ -60,7 +60,7 @@ function generateHTML(posts: ReturnType<typeof getRecentPosts>) {
 
   return `
     <div style="font-family:sans-serif;padding:24px">
-      <h2 style="margin-bottom:16px">Your Weeklyyy Upsiedatesies</h2>
+      <h2 style="margin-bottom:16px">Gautham's Weekly Update</h2>
       ${postBlocks}
       ${catHtml}
     </div>
@@ -72,7 +72,7 @@ async function sendEmail(html: string) {
     const res = await axios.post(
       "https://api.buttondown.email/v1/emails",
       {
-        subject: "Your Weeklyyy Upsiedatesies from Gautham",
+        subject: "Gautham's Weekly Update",
         body_html: html,
       },
       {
