@@ -8,7 +8,7 @@ const BLOG_DIR = path.join(process.cwd(), "src", "content", "blog");
 const BUTTONDOWN_API_KEY = process.env.BUTTONDOWN_API_KEY;
 
 if (!BUTTONDOWN_API_KEY) {
-  console.error("Missing BUTTONDOWN_API_KEY");
+  console.error("❌ Missing BUTTONDOWN_API_KEY");
   process.exit(1);
 }
 
@@ -35,15 +35,20 @@ function getRecentPosts(days = 7) {
 }
 
 function generateHTML(posts: ReturnType<typeof getRecentPosts>) {
-  const listItems = posts.map(post => `
-    <li style="margin-bottom:20px;list-style:none">
-      <a href="https://annegautham.github.io/blog/${post.slug}" style="font-size:18px;font-weight:bold;color:#000;text-decoration:none">
-        ${post.title}
-      </a><br/>
-      <span style="font-size:14px;color:#444">${post.description}</span><br/>
-      <span style="font-size:12px;color:#888">${post.date.format("MMMM D, YYYY")}</span>
-    </li>
-  `).join("");
+  const hasPosts = posts.length > 0;
+
+  const postBlocks = hasPosts
+    ? posts.map(post => `
+      <div style="margin-bottom:24px">
+        <a href="https://annegautham.github.io/blog/${post.slug}" 
+           style="font-size:18px;font-weight:bold;color:#000;text-decoration:none;display:inline-block;margin-bottom:4px">
+          ${post.title}
+        </a><br/>
+        <span style="font-size:14px;color:#444">${post.description}</span><br/>
+        <span style="font-size:12px;color:#888">${post.date.format("MMMM D, YYYY")}</span>
+      </div>
+    `).join("")
+    : `<p style="font-size:16px;color:#555">No new posts this week. Locking in, I promise.</p>`;
 
   const catHtml = `
     <div style="margin-top:40px;text-align:center">
@@ -55,10 +60,8 @@ function generateHTML(posts: ReturnType<typeof getRecentPosts>) {
 
   return `
     <div style="font-family:sans-serif;padding:24px">
-      <h2 style="margin-bottom:16px">Your Weeklyy Upsiedatesies</h2>
-      <ul style="padding-left:0;margin:0">
-        ${listItems || "<p>No new posts this week Locking in...</p>"}
-      </ul>
+      <h2 style="margin-bottom:16px">Your Weeklyyy Upsiedatesies</h2>
+      ${postBlocks}
       ${catHtml}
     </div>
   `;
