@@ -35,7 +35,7 @@ const socialImageURL = new URL(
 
 <!doctype html>
 <html
-  lang={`${LOCALE.lang ?? "en"}`}
+  lang=`${LOCALE.lang ?? "en"}`
   class={`${scrollSmooth && "scroll-smooth"}`}
 >
   <head>
@@ -102,6 +102,9 @@ const socialImageURL = new URL(
     <meta name="theme-color" content="" />
 
     {
+      // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
+      // include google-site-verification tag in the heading
+      // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
       googleSiteVerification && (
         <meta
           name="google-site-verification"
@@ -113,7 +116,6 @@ const socialImageURL = new URL(
     <ViewTransitions />
 
     <script is:inline src="/toggle-theme.js"></script>
-    <script type="module" src="/neko-toggle.js"></script>
   </head>
   <body>
     <slot />

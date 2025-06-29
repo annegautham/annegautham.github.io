@@ -55,7 +55,7 @@ function generateHTML(posts: ReturnType<typeof getRecentPosts>) {
 
   return `
     <div style="font-family:sans-serif;padding:24px">
-      <h2 style="margin-bottom:16px">Your Weekly Upsiedatesies</h2>
+      <h2 style="margin-bottom:16px">Your Weeklyy Upsiedatesies</h2>
       <ul style="padding-left:0;margin:0">
         ${listItems || "<p>No new posts this week Locking in...</p>"}
       </ul>
