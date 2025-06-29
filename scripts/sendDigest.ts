@@ -82,5 +82,6 @@ async function sendEmail(html: string) {
 (async () => {
   const posts = getRecentPosts(7);
   const html = generateHTML(posts);
+  console.log("=== EMAIL HTML PREVIEW ===\n", html);
   await sendEmail(html);
 })();
