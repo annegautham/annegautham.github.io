@@ -22,10 +22,10 @@ function getRecentPosts(days = 7) {
     const { data } = matter(fileContent);
 
     return {
-      title: data.title || filename.replace(/\.mdx$/, ""),
+      title: data.title || filename.replace(/\.md$/, ""),
       description: data.description || "",
       date: dayjs(data.pubDate || data.date || data.publishedAt || new Date()),
-      slug: filename.replace(/\.mdx?$/, ""),
+      slug: filename.replace(/\.md$/, ""),
     };
   });
 
@@ -35,26 +35,32 @@ function getRecentPosts(days = 7) {
 }
 
 function generateHTML(posts: ReturnType<typeof getRecentPosts>) {
-  if (posts.length === 0) return "<p>No new posts this week.</p>";
+  const postHtml = posts.length === 0
+    ? "<p>No posts, will lock in, I promise</p>"
+    : `
+      <h2 style="font-family:sans-serif">Check these out!</h2>
+      <ul style="padding-left:0">
+        ${posts.map(post => `
+          <li style="margin-bottom:20px;list-style:none">
+            <a href="https://annegautham.github.io/blog/${post.slug}" style="font-size:18px;font-weight:bold;color:#000;text-decoration:none">
+              ${post.title}
+            </a><br/>
+            <span style="font-size:14px;color:#444">${post.description}</span><br/>
+            <span style="font-size:12px;color:#888">${post.date.format("MMMM D, YYYY")}</span>
+          </li>
+        `).join("")}
+      </ul>
+    `;
 
-  return `
-    <h2 style="font-family:sans-serif">📰 New Posts This Week</h2>
-    <ul style="padding-left:0">
-      ${posts
-        .map(
-          post => `
-        <li style="margin-bottom:20px;list-style:none">
-          <a href="https://annegautham.github.io/blog/${post.slug}" style="font-size:18px;font-weight:bold;color:#000;text-decoration:none">
-            ${post.title}
-          </a><br/>
-          <span style="font-size:14px;color:#444">${post.description}</span><br/>
-          <span style="font-size:12px;color:#888">${post.date.format("MMMM D, YYYY")}</span>
-        </li>
-      `
-        )
-        .join("")}
-    </ul>
+  const catHtml = `
+    <div style="margin-top:40px;text-align:center">
+      <img src="https://cataas.com/cat/says/Ok%20Byesies?width=300&cache=${Date.now()}" 
+           alt="Cute cat saying Ok Byesies" 
+           style="max-width:100%;border-radius:12px;margin-top:20px" />
+    </div>
   `;
+
+  return postHtml + catHtml;
 }
 
 async function sendEmail(html: string) {
@@ -62,7 +68,7 @@ async function sendEmail(html: string) {
     const res = await axios.post(
       "https://api.buttondown.email/v1/emails",
       {
-        subject: "Weekly Digest: New Blog Posts",
+        subject: "Your Weekly Upsiedatesies from Gautham",
         body_html: html,
       },
       {
