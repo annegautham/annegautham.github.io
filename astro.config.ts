@@ -29,11 +29,11 @@ export default defineConfig({
       wrap: true,
     },
   },
-  image: {
-    service: {
-      entrypoint: "astro/assets/services/static",
-    },
-  },
+  // image: {
+  //   service: {
+  //     entrypoint: "astro/assets/services/static",
+  //   },
+  // },
   vite: {
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
