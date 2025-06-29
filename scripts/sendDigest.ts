@@ -25,7 +25,7 @@ function getRecentPosts(days = 7) {
       title: data.title || filename.replace(/\.mdx$/, ""),
       description: data.description || "",
       date: dayjs(data.pubDate || data.date || data.publishedAt || new Date()),
-      slug: filename.replace(/\.mdx$/, ""),
+      slug: filename.replace(/\.mdx?$/, ""),
     };
   });
 
@@ -63,7 +63,7 @@ async function sendEmail(html: string) {
       "https://api.buttondown.email/v1/emails",
       {
         subject: "Weekly Digest: New Blog Posts",
-        body: html,
+        body_html: html,
       },
       {
         headers: {
