@@ -90,7 +90,6 @@ async function sendEmail(html: string) {
       {
         subject: "Gautham's Weeklyiessss Updates",
         body: html,
-        // body_html: html,
       },
       {
         headers: {
