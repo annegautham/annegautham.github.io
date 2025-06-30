@@ -73,7 +73,7 @@ async function sendEmail(html: string) {
     const res = await axios.post(
       "https://api.buttondown.email/v1/emails",
       {
-        subject: "Gautham's Weekly Update",
+        subject: "Gautham's Weeklyies Update",
         body: plainText,
         body_html: html,
       },
