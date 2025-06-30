@@ -8,10 +8,10 @@ tags:
   - vibration
   - finite-element-method
   - northwestern
-description: My ME363 (Mechanical Vibrations) final project! Vibrational analysis of baseball bats.
+description: My ME363 (Vibrations) final project! Vibrational analysis of baseball bats.
 ---
 
-Have you ever wondered why a baseball bat stings your hands when you mishit a ball — or why some hits feel effortlessly powerful? Behind those sensations lie the hidden vibrations of the bat, shaped by its geometry, material, and how you grip it. This article is a recap of my final project for my ME363 (Mechanical Vibrations) class at Northwestern.
+Have you ever wondered why a baseball bat stings your hands when you mishit a ball — or why some hits feel effortlessly powerful? Behind those sensations lie the hidden vibrations of the bat, shaped by its geometry, material, and how you grip it. This article is a recap of my final project for my ME363 (Mechanical Vibrations) class at Northwestern. My partners were Tianhao Zhang and Thomas Hoang.
 
 ## Table of Contents
 
