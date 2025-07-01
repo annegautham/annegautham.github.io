@@ -23,10 +23,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
-  <script type="module" is:client>
-    import initInteractivePfp from "/src/scripts/switchPfp.js";
-    initInteractivePfp();
-  </script>
+  <script type="module" src="/switchPfp.js"></script>
   <Header />
   <main id="main-content">
     <section id="hero">
