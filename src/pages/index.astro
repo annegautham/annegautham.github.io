@@ -11,6 +11,7 @@ import getSortedPosts from "@utils/getSortedPosts";
 import Profile from "@components/Profile.astro";
 import SubscribeForm from "@components/SubscribeForm.astro";
 import { SOCIALS } from "@config";
+import InteractivePfp from "@components/InteractivePfp.astro";
 
 const posts = await getCollection("blog");
 
@@ -22,12 +23,31 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
+  <script type="module" is:client>
+    import initInteractivePfp from "/src/scripts/switchPfp.js";
+    initInteractivePfp();
+  </script>
   <Header />
   <main id="main-content">
     <section id="hero">
-      <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col md:flex-row items-start gap-8">
         <!-- <div class="grid justify-items-center md:justify-items-start"></div> -->
-        <Profile path="/me.png" />
+        <InteractivePfp
+          client:load
+          images={[
+            "/pfp/heatblast.png",
+            "/pfp/goop.png",
+            "/pfp/upgrade.png",
+            "/pfp/diamondhead.png",
+            "/pfp/four_arms.png",
+            "/pfp/grey_matter.png",
+            "/pfp/ghostfreak.png",
+            "/pfp/wildmutt.png",
+            "/pfp/ripjaws.png",
+            "/pfp/stinkfly.png",
+            "/pfp/xlr8.png",
+          ]}
+        />
 
         <div>
           <p>Always learning, ocassionally making things work.</p>

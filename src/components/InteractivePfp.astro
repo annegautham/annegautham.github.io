@@ -1,0 +1,31 @@
+---
+export interface Props {
+  images: string[];
+}
+
+const { images } = Astro.props;
+const initialImage = images[0];
+---
+
+<div
+  class="profile-img"
+  id="profile"
+  data-images={JSON.stringify(images)}
+  style={`background-image: url(${initialImage})`}
+  title="Click to switch alien"
+>
+</div>
+
+<style>
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    margin: 1.5em 0 1.5em 2em;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+</style>

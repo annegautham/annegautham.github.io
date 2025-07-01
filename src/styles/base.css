@@ -192,3 +192,15 @@
   @apply border-red-400;
   content: '⛔';
 }
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 1.5em;
+  border-radius: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
