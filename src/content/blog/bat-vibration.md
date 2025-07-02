@@ -106,7 +106,7 @@ The bat is modeled as being fixed at the handle, simulating the clamp, while the
 
 The full MATLAB code will be included in the appendix. This section will summarize the approach we used in MATLAB to achieve the results. The code consists of two main scripts:
 
-- `ElementMassAndStiffness.m`: The context and derivation of this script was explained in Section 2.2 Mathematical Model. This script calculates the local element mass and stiffness matrices based on the provided bending stiffness EI, material density ρ, cross-sectional area A, and element length L. This script was provided to us.
+- `ElementMassAndStiffness.m`: The context and derivation of this script was explained in the Mathematical Model section. This script calculates the local element mass and stiffness matrices based on the provided bending stiffness EI, material density ρ, cross-sectional area A, and element length L. This script was provided to us.
 - `BaseballBatModes.m`: This is the main driver script. It.
   1. Divides the baseball bats into N elements (multiply N by two if error is greater than tolerance to find satisfactory N)
   2. Loops over a range of Young’s Modulus, E

@@ -15,7 +15,7 @@ Hi y'all!
 
 I wrote and published a 100 page book "Introduction to Modern Physics", ISBN 979-8849892566, which is available on <a href="https://www.amazon.com/Introduction-Modern-Physics-Gautham-Anne/dp/B0BD2XNX7J">Amazon</a>, <a href="https://www.barnesandnoble.com/w/introduction-to-modern-physics-gautham-anne/1142532018">Barnes & Nobles</a>, and other distributors.
 
-<div class="callout">
+<div class="callout warning">
   <strong>Warning:</strong> Don’t use it for formal study! I wrote a list of better resources for further study in the book.
 </div>
 
