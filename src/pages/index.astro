@@ -23,14 +23,16 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
-  <script type="module" src="/switchPfp.js"></script>
+  <script type="module" is:client>
+    import initInteractivePfp from "/src/scripts/switchPfp.js";
+    initInteractivePfp();
+  </script>
   <Header />
   <main id="main-content">
     <section id="hero">
       <div class="flex flex-col md:flex-row items-start gap-8">
         <!-- <div class="grid justify-items-center md:justify-items-start"></div> -->
         <InteractivePfp
-          client:load
           images={[
             "/pfp/heatblast.png",
             "/pfp/goop.png",
