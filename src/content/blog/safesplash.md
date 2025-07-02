@@ -27,7 +27,7 @@ For those who don't wanna read this monster post, I don't blame you:
 </video>
 </div>
 
-<iframe height="600px" width="85%" src="/files/safesplash/final-presentation.pdf"></iframe>
+<iframe height="600px" width="100%" src="/files/safesplash/final-presentation.pdf"></iframe>
 
 ## Executive Summary
 
