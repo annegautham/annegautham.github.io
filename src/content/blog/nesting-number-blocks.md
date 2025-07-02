@@ -1,18 +1,18 @@
 ---
 author: Gautham Anne
 pubDatetime: 2023-12-2T14:14:00Z
-title: Nesting Number Blocks - DTC Fall Quarter
+title: Nesting Number Blocks - DTC Fall Quarter 2023
 featured: true
 draft: false
 tags:
   - northwestern
   - dtc
-description: This was my final design project for the first of Northwestern's 2 quarter Design Thinking & Communicaiton (DTC) sequence!
+description: This was my final design project for the first of Northwestern's 2 quarter Design Thinking & Communication (DTC) sequence!
 ---
 
-Hey goobers! This post will be about my final project for the 1st of a 2 quarter sequence at Northwestern known as <a href="https://design.northwestern.edu/programs/take-design-course/design-thinking-communication/">Design Thinking and Communciation</a> (DTC). My group members (Burke Stanton, Jonas Goldberg, Lucas Holliday), and I designed Nesting Number Blocks, a set of mathematics manipulatives for adults with intellectual and developmental disabilities at <a href="https://www.misericordia.com/">Misericordia Home</a>.
+Hey goobers! This post will be about my final project for the 1st quarter of a 2 quarter sequence at Northwestern known as <a href="https://design.northwestern.edu/programs/take-design-course/design-thinking-communication/">Design Thinking and Communciation</a> (DTC). Here's my final project for the second quarter of the sequence: <a href = "https://annegautham.github.io/posts/safesplash/">Safesplash</a>.
 
-This was prepared for Nicole Humphrey, a teacher at Misericordia, who now uses our product in her classrooms.
+My group members (Burke Stanton, Jonas Goldberg, Lucas Holliday), and I designed **Nesting Number Blocks**, a set of mathematics manipulatives for adults with intellectual and developmental disabilities at <a href="https://www.misericordia.com/">Misericordia Home</a>. This was prepared for Nicole Humphrey, a teacher at Misericordia, who now uses our product in her classrooms.
 
 ## Table of Contents
 
