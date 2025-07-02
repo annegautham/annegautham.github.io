@@ -16,6 +16,12 @@ This was prepared for Nicole Humphrey, a teacher at Misericordia, who now uses o
 
 ## Table of Contents
 
+## Final Poster
+
+For those who don't wanna read this monster post, I don't blame you:
+
+<iframe height="600px" width="100%" src="/files/nesting-number-blocks/final-poster.pdf"></iframe>
+
 ## Executive Summary
 
 ### Problem Statement
