@@ -2,7 +2,7 @@
 author: Gautham Anne
 pubDatetime: 2024-03-12T06:10:00Z
 title: Piper, a 1-DoF Robot
-featured: true
+featured: false
 draft: false
 tags:
   - random

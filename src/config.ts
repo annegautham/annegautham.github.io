@@ -3,11 +3,11 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://annegautham.github.io", // replace this with your deployed domain
   author: "Gautham Anne",
-  desc: "Gautham Anne's Portfolio + Blogs",
+  desc: "Gautham Anne's Portfolio",
   title: "Gautham Anne",
   // ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 8,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 

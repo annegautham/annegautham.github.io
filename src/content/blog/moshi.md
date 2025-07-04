@@ -2,7 +2,7 @@
 author: Xiu-Zhe Luo
 pubDatetime: 2024-07-29 15:00:00
 title: Moshi - pattern matching and algebraic data types for Julia
-featured: true
+featured: false
 draft: false
 tags:
   - julia

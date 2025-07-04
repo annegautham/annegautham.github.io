@@ -3,7 +3,7 @@ author: Xiu-Zhe Luo
 pubDatetime: 2018-10-23T15:22:00Z
 modDatetime: 2024-06-04T19:12:47.400Z
 title: Implement Your Own Automatic Differentiation with Julia in ONE day
-featured: true
+featured: false
 draft: false
 tags:
   - automatic differentiation

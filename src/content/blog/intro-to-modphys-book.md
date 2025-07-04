@@ -7,7 +7,7 @@ draft: false
 tags:
   - physics
   - kdp
-  - self-published
+  - self-publishing
 description: I wrote, illustrated, and published an Introduction to Modern Physics book for middle and high schoolers!
 ---
 

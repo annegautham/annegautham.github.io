@@ -1,7 +1,7 @@
 ---
 author: Gautham Anne
 pubDatetime: 2025-06-05T15:22:00Z
-title: On Hybrid Plasmonic Waveguides
+title: On Hybrid Plasmonic Waveguides (Part 1)
 featured: true
 draft: false
 tags:
