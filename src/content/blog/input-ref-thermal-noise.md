@@ -8,3 +8,5 @@ tags:
   - mathematica
 description: Some work I did at my UROP this past summer!
 ---
+
+![placeholder](@assets/images/placeholder.png)

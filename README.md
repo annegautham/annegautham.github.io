@@ -1,7 +1,7 @@
 # My Personal Page
 
-This is the source code for my website. It is based on the [AstroPaper](https://astro-paper.pages.dev).
+My personal website! A step-up from its horrendous predecessor. Inspired from [Roger Luo's site](https://rogerluo.dev/). Based of of [AstroPaper](https://astro-paper.pages.dev).
 
 ## License
 
-Licensed under the MIT License, Copyright © 2023
+Licensed under the MIT License, Copyright © 2025

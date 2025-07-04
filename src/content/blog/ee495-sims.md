@@ -11,7 +11,7 @@ tags:
 description: Some Julia simulations of concepts related to hybrid plasmonic waveguides. (Tried to recreate from R.F. Oulton et al.)
 ---
 
-This post is about some simulations I ran on hybrid plasmonic waveguides after my EE495 course ended. Check out my the <a href="https://annegautham.github.io/posts/hybrid-plasmonic-waveguides">part 1 post</a> for a more detailed overview of the topic, but I'll be providing context here as well. This is my first time attempting to embedd Julia simulations in my portfolio, so bear with me. All of the assumptions I made (apart from a couple, which are noted) are based of off <a href = "https://www.nature.com/articles/nphoton.2008.131">R.F. Oulton et al. (Nature Photonics, 2008)</a>.
+This post is about some simulations I learned to make over the past couple of weeks. Check out my the <a href="https://annegautham.github.io/posts/hybrid-plasmonic-waveguides">part 1 post</a> for a more detailed overview of the topic, but I'll be providing context here as well. This is my first time attempting to embedd Julia simulations in my portfolio, so bear with me. All of the assumptions I made (apart from a couple, which are noted) are based of off <a href = "https://www.nature.com/articles/nphoton.2008.131">R.F. Oulton et al. (Nature Photonics, 2008)</a>.
 
 ## Table of Contents
 
