@@ -10,7 +10,7 @@ tags:
 description: Some work I did at my UROP this past summer!
 ---
 
-Hola peepsicles! So, a lot of what I was learning about this past summer revolved around optimizing circuit topology with respect to thermal noise. See my previous article for some more background!
+Hola peepsicles! So, a lot of what I was learning about this past summer revolved around optimizing circuit topology with respect to thermal noise. See <a href="https://annegautham.github.io/posts/thermal-noise-derivation/">this post</a> for some more background!
 
 Specifically, I spent time learning about various methods of circuit synthesis (Foster-Cauer synthesis, Multiport Synthesis - Brune's method, etc). Of course, much of my work was purely exploratory, and I spent most of my time developing the necessary mathematical tools to understand concepts. My advisor phrased it as learning to think 'precisely', which I've come to appreciate over the course of the summer.
 

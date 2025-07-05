@@ -3,7 +3,7 @@ author: Gautham Anne
 pubDatetime: 2025-07-03T00:39:22
 title: Seeing Atoms!
 featured: true
-draft: true
+draft: false
 tags:
   - northwestern
   - scanning probe microscopy
