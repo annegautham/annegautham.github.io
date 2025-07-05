@@ -13,7 +13,7 @@ description: My ME363 (Vibrations) final project! Vibrational analysis of baseba
 
 Have you ever wondered why a baseball bat stings your hands when you mishit a ball — or why some hits feel effortlessly powerful?
 
-I didn't. Alas, my professor (who is awesome, btw) assigned me this final project. This article is a recap of my final project for my ME363 (Mechanical Vibrations) class at Northwestern. It analyzes the vibrational behavior of baseball bats as a function of geometry, material, and boundary conditions. My partners were Tianhao Zhang and Thomas Hoang.
+This article is a recap of my final project for my ME363 (Mechanical Vibrations) class at Northwestern. It analyzes the vibrational behavior of baseball bats as a function of geometry, material, and boundary conditions. My partners were Tianhao Zhang and Thomas Hoang.
 
 ## Table of Contents
 

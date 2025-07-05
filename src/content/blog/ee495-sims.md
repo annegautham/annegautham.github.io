@@ -1,7 +1,7 @@
 ---
 author: Gautham Anne
 pubDatetime: 2025-07-03T00:39:22
-title: Simulations on Hybrid Plasmonic Waveguides (Part 2)
+title: Simulations on Hybrid Plasmonic Waveguides
 featured: true
 draft: false
 tags:
@@ -59,4 +59,27 @@ I defined a grid (spacing of 5nm) over the cross section. This is fine enough to
 - The Si nanowire is defined as a cylinder of diameter d, whose bottom sits at y = h. $\epsilon_{Si}$ is assigned here!
 - Everywhere else, I treated as background (leaving it as air, so $\epsilon$ is 1).
 
-## Guided Mode
+## Guided Mode (Frequency-Domain Solution)
+
+To obtain the modal fields nad the propagation constant, we first solve for Maxwell's equations in the frequency domain for a guided mode solution. In a frequency-domain approach, we should first look for the **E(x,y)** and **H(x,y)** fields that satisfy the source-free Maxwell curl equations with some assumed propgation. For example, we can let
+$$E(x,y,z) = E(x,y) \cdot e^{i\Beta z}$$. This leads to an eigenvalue problem for $\Beta$. MaxwellFDFD.jl includes a waveguided mode solver for this purpose, and FDFD.jl can compute modes by excitingb a mode source. I chose to use FDFD.jl:
+
+### Mode Excitations:
+
+I set up a small simulation where teh waveguide extends a short length in z (a couple hundred nm) with PML on both ends. Then, I used a modal source at one end: FDFD.jl provides an `addMode!` function to excited the waveguide's eigenmode. This internally solves an eigenvalue problem on a cross-section to find the mode field and $\Beta$, then it injects that field as a source. The code looks like this:
+
+```julia
+using FDFD, FDFDViz, GeometryPrimitives
+add_mode!(dev, Mode(TE, ẑ, neff_guess, Point(z0, 0.0), width))
+field = solve(dev)
+```
+
+'Mode(polarization, direction, neff_guess, location, width)' specifies the modes to find. For example, we could choose the quasi-TE polarization (primarily horizontal E-field) or the quasi-TM polarization (primarily vertical E-field across gap). The hybrid fundamental mode in our structure has a strong vertical E_field in the gap, which would correspond to a TM-like polarization. The `addMode!` cal will perform an eigenmode solve on the cross-section and then adds a current source that will excite the compound mode. The solver then finds the steady-state field pattern `field` along the propagation direction.
+
+### Boundary Conditions
+
+At the top and sides, I set PML absorbing layers. At the metal and symmetry plane (symmetric about x=0), we can exploit symmetry to reduce some computation. I was unsure about whether the E-field across the center is symmetric in $E_y$ or $E_x$. Thus, I thought it would be safe to initially simulate the full cross section to let the solver find the symmetric mode.
+
+After solving, we can extract the effective index $n_{eff} = \Beta/k_0$. This tells us the confinement ($n_{eff}$ lies in between the index of Si and that of the SPP mode at the interface). We can also get the modal field distribution on the 2D grid $E(x,y,z)$ and $H(x,y,z)$.
+
+## Simulation go Brr...
