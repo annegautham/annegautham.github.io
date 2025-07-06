@@ -31,7 +31,7 @@ In this post, I will dissect a Mathematica function `calcInputRefVNoise`, which 
 
 The function first begins by importing and cleaning the SPICE netlist text:
 
-```mathematica
+```wolfram
 fileContent = Import[filePath, "Text"];
 lines = StringSplit[fileContent, "\n"];
 netlistLines = Drop[lines, 1];
@@ -43,7 +43,7 @@ The first and last two lines are dropped (often a title/comment in SPICE).
 
 `StringTrim` is applied to remove and leading/trailing whitespace on each remaining line, and the remaining `netlist` is a list of cleaned strings, each representing one circuit element's definition in SPICE format. For example, `netlist` may look like
 
-```mathematica
+```wolfram
 {"R1 1 2 1k", "C1 2 0 1u", "L1 2 3 5m", ...}
 ```
 
@@ -53,7 +53,7 @@ Each entry is a component definition that follows this convention: `{Name, Node1
 
 Next, the code tokenizes each netlist line into its constituent parts (component name, nodes, value, etc.) and gathers all unique node identifiers:
 
-```mathematica
+```wolfram
 components = StringSplit[#, " "] & /@ netlist;
 nodes = Union[Flatten[components[[All, 2 ;; 3]]]] // DeleteCases["0"];
 nodes = Append[nodes, "0"];
@@ -72,7 +72,7 @@ At this point, nodes might be something like `{"1", "2", "3", ..., "0"}`. The gr
 
 Using the node list, the code builds an **incidence matrix** that describes how each branch (component) connects to the nodes:
 
-```mathematica
+```wolfram
 incidenceMatrix = ConstantArray[0, {numNodes, Length[netlist]}];
 incidenceMatrix = Module[{incMat = incidenceMatrix},
   MapIndexed[(
@@ -101,7 +101,7 @@ After this, each column of the `incidenceMatrix` has exactly two nonzero entries
 
 The next portion of code defines a helper to obtain each component’s admittance (in the Laplace domain) and its thermal noise PSD, then applies it to all components:
 
-```mathematica
+```wolfram
 admittanceAndNoisePowerMap[component_] := Module[{nestedAdmittances, nestedNoisePSDs,
                                                  name, value, componentType},
   name = component[[1]];
@@ -133,7 +133,7 @@ branchAdmittances = DiagonalMatrix[admittances];
   - Inductor (L): Admittance $Y = \frac{1}{s L}$. Inductors are the dual of capacitors in this sense (impedance $sL$, so admittance $1/(sL)$).
 
 - **Thermal noise PSD (nestedNoisePSDs):** Using another `Switch`:
-  - Resistor (R): Thermal noise is included. The code uses 4 _ value _ k _ T. Here value is $R$ (resistance in Ω), $k$ presumably is Boltzmann’s constant $k_B$, and $T$ is absolute temperature. Thus 4 _ R _ k _ T corresponds to the one-sided voltage noise power spectral density $S_{v} = 4 k_B T R$ (in units of V²/Hz) for a resistor. This is the well-known Johnson–Nyquist noise formula for a resistor’s open-circuit voltage noise, and I provide a derivation here.
+  - Resistor (R): Thermal noise is included. The code uses 4 _ value _ k _ T. Here value is $R$ (resistance in Ω), $k$ presumably is Boltzmann’s constant $k_B$, and $T$ is absolute temperature. Thus 4 _ R _ k _ T corresponds to the one-sided voltage noise power spectral density $S_{v} = 4 k_B T R$ (in units of V²/Hz) for a resistor. This is the well-known Johnson–Nyquist noise formula for a resistor’s open-circuit voltage noise, and I provide a derivation <a href="https://annegautham.github.io/posts/thermal-noise-derivation/">here</a>.
   - Capacitor (C): 0. An ideal capacitor does not generate thermal noise on its own (any noise in a capacitor comes from resistive elements, which can be modeled as an ESR).
   - Inductor (L): 0. Ideal inductors similarly are lossless and do not contribute thermal noise.
 
@@ -149,7 +149,7 @@ branchAdmittances = DiagonalMatrix[admittances];
 
 With the incidence matrix $A$ and the branch admittance matrix in hand, the code constructs the system equations and derives a transfer function matrix $G$. This matrix $G$ relates each branch’s noise source to the node voltages:
 
-```mathematica
+```wolfram
 (* Calculate the transfer function matrix G *)
 G = -1 * Inverse[A . branchAdmittances . Transpose[A]] . A . branchAdmittances;
 ```
@@ -188,13 +188,13 @@ This procedure is a cutset-based approach where KCL is applied. The matrix $A$ (
 
 After deriving the symbolic transfer function matrix $G(s)$, the code converts it to the frequency domain by substituting $s = j\omega$ (where $j = \sqrt{-1}$):
 
-```mathematica
+```wolfram
 Giw = G /. s -> I*w;
 ```
 
 At this point, `Giw` is ready to be used for computing noise spectral densities. I was interested in the magnitude of these transfer functions since noise PSD contributions depend on the squared magnitude of transfer gains (because power spectral density of the output due to a source is the input PSD times the gain magnitude squared, for linear systems).
 
-```mathematica
+```wolfram
 GMSquared = # * Conjugate[#] & /@ Giw;
 ```
 
@@ -205,7 +205,7 @@ GMSquared = # * Conjugate[#] & /@ Giw;
 
 Finally, the code combines the squared gains with each branch’s noise PSD to compute the total noise at each node (except ground). This uses the principle of superposition for independent noise sources (RSS addition):
 
-```mathematica
+```wolfram
 inputRefNoisePSDs = FullSimplify[
   GMSquared . noisePSDs,
   Assumptions -> Flatten[{
@@ -253,7 +253,7 @@ While I know circuit simulators definitely incorporate features like AC noise an
 
 ## Complete Function
 
-```mathematica
+```wolfram
 calcInputRefVNoise[filePath_] :=
   Module[{fileContent, lines, netlistLines, netlist, components,
     nodes, nodeOrder, numNodes, incidenceMatrix, A,

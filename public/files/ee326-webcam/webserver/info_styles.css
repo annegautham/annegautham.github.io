@@ -1,0 +1,116 @@
+/* Global Terminator-themed style */
+body {
+  background: url('assets/background.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Orbitron', sans-serif;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #f00;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+header h1 {
+  font-size: 40px;
+  color: #f00;
+}
+
+/* Combined Team Photo Section */
+.team-photo {
+  text-align: center;
+  margin: 20px auto;
+}
+.team-photo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  height: auto;
+  border: 2px solid #f00;
+  border-radius: 5px;
+}
+.team-description {
+  font-size: 18px;
+  margin-top: 10px;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #e0e0e0;
+}
+
+/* Profiles Section */
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+.profile {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #f00;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;  /* Fixed width for symmetry */
+  box-sizing: border-box;
+  text-align: center;
+}
+.profile img {
+  width: 200px;   /* Fixed width */
+  height: 200px;  /* Fixed height */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #f00;
+  margin: 0 auto 10px;
+  display: block;
+}
+.profile h2 {
+  font-size: 28px;
+  margin-top: 10px;
+  color: #f00;
+}
+.profile .email {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #f00;
+}
+.profile p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+footer p {
+  font-size: 16px;
+  color: #e0e0e0;
+}

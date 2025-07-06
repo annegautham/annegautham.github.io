@@ -1,0 +1,75 @@
+/* Ensure html and body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Terminator-themed style */
+body {
+  background: url('assets/background.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Orbitron', sans-serif;  /* Futuristic look */
+  color: #e0e0e0;
+  
+  /* Flex layout to push footer to bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #f00;  /* Red accent */
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  font-size: 48px;
+  margin: 20px 0;
+  color: #f00;
+}
+
+/* Main Content */
+.main-content {
+  text-align: center;
+  padding: 20px;
+  flex: 1; /* This makes main-content expand and push the footer down */
+}
+
+.main-content img {
+  max-width: 90%;
+  height: auto;
+  border: 2px solid #f00;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+footer p {
+  font-size: 16px;
+  color: #e0e0e0;
+}
