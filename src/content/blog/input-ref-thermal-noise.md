@@ -16,12 +16,30 @@ Specifically, I spent time learning about various methods of circuit synthesis (
 
 This is a post explaining a script I made in Mathematica. It calculates the 'input-referred' thermal noise for any circuit with strictly passive elements (resistors, capacitors, inductors).
 
+Hand calculations of the thermal noise PSD at any node, even for a relatively simple circuit like below (top), are quite complicated (bottom).
+
+![pain](@assets/images/input-ref-thermal-noise/pain.png)
+
 ## Table of Contents
 
 ## TLDR & Usage
 
 Will update with an example. For now:
 ![placeholder](@assets/images/placeholder.png)
+
+This file is a SPICE netlist of the circuit I showed above. Basically, it dictates components are connected in a graph by specifying the node endpoints of each component. You can get this netlist by creating a circuit (in LT SPICE, for example), and exporting it as a .net file.
+
+<div class="download-list">
+  <div class="download-item">
+    <span class="file-name">example-circuit.net</span>
+    <a class="download-btn" href="/files/input-ref-thermal-noise/example-circuit.net" download title="Download file">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24">
+        <path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V4" />
+      </svg>
+    </a>
+
+  </div>
+</div>
 
 ## Introduction
 
@@ -249,7 +267,7 @@ The function returns `inputRefNoisePSDs`. This is the vector of noise spectral d
 
 ## Future Features
 
-While I know circuit simulators definitely incorporate features like AC noise analysis, total output/input referred noise over a bandwidth, PSD plots, etc., I'm not sure to what extent they are 'customizable'. This function could be a good starting point to incorporate some cooler features, such as parameter sensitivity of noise ($\frac{\partial S}{\partial R}$), self-heating thermal feedback into noise, quantum noise, Fisher information / estimation theory tools.
+While I know circuit simulators definitely incorporate features like AC noise analysis, total output/input referred noise over a bandwidth, PSD plots, etc., I'm not sure to what extent they are 'customizable'. This function could be a good starting point to incorporate some cooler features, such as parameter sensitivity of noise ($\frac{\partial S}{\partial R}$), self-heating thermal feedback into noise, quantum noise, etc.
 
 ## Complete Function
 

@@ -15,7 +15,7 @@ description: My EE326 project at Northwestern! Designed and wrote firmware for a
 ## Introduction
 
 In Electronic System Design 1 class at Northwestern, my partner, Zach Tey, and I designed, programmed, and manufactured a compact embedded webcam setup that streams images through a webserver. The overall embedded design had 3 main components: an Espressif
-ESP32 microcontroller (called ‘Wifi Chip’ within this report), an Atmel SAM4S8B microcontroller (called ‘MCU’ within this report), and an OVO2640 camera module.
+ESP32 microcontroller (called ‘Wifi Chip’), an Atmel SAM4S8B microcontroller (called ‘MCU’), and an OVO2640 camera module. All of the code, pcb files, and enclosure design files can be found <a href="https://github.com/annegautham/EE326_CustomWebcam">here</a>.
 
 ![final](@assets/images/ee326-webcam/final.png)
 

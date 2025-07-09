@@ -1,0 +1,11 @@
+* C:\Users\annegautham\Documents\LTspice\circuit1woV.asc
+C1 N001 0 1
+R1 N001 0 1
+R2 N001 N002 1
+L1 N001 N003 1
+C2 N002 N003 1
+L2 N003 0 1
+R3 N002 0 1
+C3 N002 0 1
+.backanno
+.end

@@ -74,7 +74,7 @@ add_mode!(dev, Mode(TE, ẑ, neff_guess, Point(z0, 0.0), width))
 field = solve(dev)
 ```
 
-'Mode(polarization, direction, neff_guess, location, width)' specifies the modes to find. For example, we could choose the quasi-TE polarization (primarily horizontal E-field) or the quasi-TM polarization (primarily vertical E-field across gap). The hybrid fundamental mode in our structure has a strong vertical E_field in the gap, which would correspond to a TM-like polarization. The `addMode!` cal will perform an eigenmode solve on the cross-section and then adds a current source that will excite the compound mode. The solver then finds the steady-state field pattern `field` along the propagation direction.
+`Mode(polarization, direction, neff_guess, location, width)` specifies the modes to find. For example, we could choose the quasi-TE polarization (primarily horizontal E-field) or the quasi-TM polarization (primarily vertical E-field across gap). The hybrid fundamental mode in our structure has a strong vertical E_field in the gap, which would correspond to a TM-like polarization. The `addMode!` cal will perform an eigenmode solve on the cross-section and then adds a current source that will excite the compound mode. The solver then finds the steady-state field pattern `field` along the propagation direction.
 
 ### Boundary Conditions
 

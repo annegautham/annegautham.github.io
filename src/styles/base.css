@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 @layer base {
+  
   :root {
     --font-sans: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
     --font-mono: 'Comic Neue', 'Comic Sans MS', cursive, monospace;
@@ -150,6 +151,35 @@
   pre > code {
     white-space: pre;
   }
+
+  .download-list {
+  @apply w-full max-w-xl mx-auto my-6 space-y-2;
+}
+
+.download-item {
+  @apply flex items-center justify-between px-4 py-2 rounded-md border
+         bg-skin-card text-skin-base border-skin-line transition-all;
+}
+
+.file-name {
+  @apply text-sm font-medium truncate;
+}
+
+.download-btn {
+  @apply p-2 rounded-md border border-skin-line 
+         hover:bg-skin-accent hover:text-skin-inverted transition-colors;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-btn .icon {
+  @apply w-5 h-5 stroke-current;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 }
 
 @layer components {
