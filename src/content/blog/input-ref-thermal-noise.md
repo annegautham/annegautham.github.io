@@ -24,9 +24,6 @@ Hand calculations of the thermal noise PSD at any node, even for a relatively si
 
 ## TLDR & Usage
 
-Will update with an example. For now:
-![placeholder](@assets/images/placeholder.png)
-
 This file is a SPICE netlist of the circuit I showed above. Basically, it dictates components are connected in a graph by specifying the node endpoints of each component. You can get this netlist by creating a circuit (in LT SPICE, for example), and exporting it as a .net file.
 
 <div class="download-list">
@@ -37,9 +34,25 @@ This file is a SPICE netlist of the circuit I showed above. Basically, it dictat
         <path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V4" />
       </svg>
     </a>
-
   </div>
 </div>
+
+Example usage is as follows:
+
+```wolfram
+filePath = "C:\\Users\\anneg101\\Desktop\\circuit.net";
+k = 1.380649*10^-23;
+(*{R1 , L1, C1, ..., RN, LN, CN, T} = {values};*)
+vn = calcInputRefVNoise[filePath]
+```
+
+The output of `calcInputRefNoise`, stored in `v`, is a list of symbolic expressions of the thermal noise PSDs (units of $\text{v}^2/\text{Hz}$) at each node (labeled as per the SPICE netlist).
+
+Here, `values` is a list of numerical constants for each of the passive RLC elements in standard units (Ohms, Farads, Henrys) in the circuit and T is the global temperature in Kelvin. If the line is uncommented, `v` is no longer a list of symbolic expressions, but is instead evaluated.
+
+Below is an example output, where I fed in a circuit with two nodes (think the actual circuit was an ideal omp amp configured in negative feedback). Here, $R_f = 2R_i$, and I measured the SNR.
+
+![example output](@assets/images/input-ref-thermal-noise/ex-out.png)
 
 ## Introduction
 
