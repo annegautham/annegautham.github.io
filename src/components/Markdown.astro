@@ -1,0 +1,9 @@
+---
+import type { CollectionEntry } from "astro:content";
+const { content } = Astro.props as { content: CollectionEntry<"notes"> };
+const { Content } = await content.render();
+---
+
+<article class="prose text-left">
+  <Content />
+</article>

@@ -1,26 +1,24 @@
 ---
-import NoteLayout from "@layouts/NoteLayout.astro";
 import { getCollection } from "astro:content";
-import Markdown from "@layouts/Markdown.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-
+import NoteLayout from "@layouts/NoteLayout.astro";
+import Markdown from "@components/Markdown.astro";
 const notes = await getCollection("notes");
+
+const current = notes.find(note => note.slug === "ashcroft_mermin");
+if (!current) throw new Error("Index note not found");
 
 const ashcroftNotes = notes
   .filter(
     note =>
-      note.id.startsWith("ashcroft_mermin/") && !note.id.endsWith("index.md")
+      note.slug.startsWith("ashcroft_mermin/") && !note.id.endsWith("/index.md")
   )
   .sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
 
-const ashcroftIndexNote = notes.find(
-  note => note.id === "ashcroft_mermin/index.md"
-);
+const { Content } = await current.render();
 ---
 
-<Header />
-<NoteLayout ashcroftNotes={ashcroftNotes}>
-  {ashcroftIndexNote && <Markdown content={ashcroftIndexNote} />}
+<NoteLayout ashcroftNotes={ashcroftNotes} current={current}>
+  <Markdown content={current} />
 </NoteLayout>
-<Footer />

@@ -1,46 +1,41 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
-import NoteLayout from "@layouts/NoteLayout.astro";
-import Markdown from "@layouts/Markdown.astro";
+import { getCollection } from "astro:content";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
+import NoteLayout from "@layouts/NoteLayout.astro";
+import Markdown from "@components/Markdown.astro";
 
+const { slug } = Astro.params;
 const notes = await getCollection("notes");
+
+export async function getStaticPaths() {
+  const notes = await getCollection("notes");
+  return notes
+    .filter(
+      note =>
+        note.slug.startsWith("ashcroft_mermin/") &&
+        note.slug !== "ashcroft_mermin/index"
+    )
+    .map(note => ({
+      params: {
+        slug: note.slug.split("/").at(-1),
+      },
+    }));
+}
+
+const current = notes.find(note => note.slug === `ashcroft_mermin/${slug}`);
+if (!current) throw new Error("Note not found");
 
 const ashcroftNotes = notes
   .filter(
     note =>
-      note.id.startsWith("ashcroft_mermin/") && !note.id.endsWith("index.md") // skip index page
+      note.slug.startsWith("ashcroft_mermin/") && !note.id.endsWith("/index.md")
   )
   .sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
 
-const ashcroftIndexNote = notes.find(
-  note => note.id === "ashcroft_mermin/index.md"
-);
-
-const { slug } = Astro.params;
-const current = ashcroftNotes.find(n => n.slug.split("/").at(-1) === slug);
-
-export async function getStaticPaths() {
-  const notes = await getCollection("notes");
-  const ashcroftNotes = notes.filter(
-    note =>
-      note.id.startsWith("ashcroft_mermin/") &&
-      note.slug !== "ashcroft_mermin/index"
-  );
-
-  return ashcroftNotes.map(note => ({
-    params: { slug: note.slug.split("/").at(-1) },
-  }));
-}
+const { Content } = await current.render();
 ---
-
-<Header />
 
 <NoteLayout ashcroftNotes={ashcroftNotes} current={current}>
-  <Markdown content={await current?.render()} />
+  <Markdown content={current} />
 </NoteLayout>
-
-<Footer />
----
-
