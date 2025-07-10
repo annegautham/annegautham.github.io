@@ -56,7 +56,7 @@ Below is an example output, where I fed in a circuit with two nodes (think the a
 
 ## Introduction
 
-In this post, I will dissect a Mathematica function `calcInputRefVNoise`, which computes the input-referred thermal noise Power Spectral Density (PSD) for an aribitrary circuit given its SPICE netlist. The code leverages principles of circuit graph theory using incidence (cutset) and admittance matrices to derive a symbolic expression for noise. I'll attempt to explain each part of the code in detail, assuming the reader has some background in circuit analysis and noise fundamentals.
+In this post, I will dissect a function `calcInputRefVNoise`, which computes the input-referred thermal noise Power Spectral Density (PSD) for an aribitrary circuit given its SPICE netlist. The code leverages principles of circuit graph theory using incidence (cutset) and admittance matrices to derive a symbolic expression for noise. I'll attempt to explain each part of the code in detail, assuming the reader has some background in circuit analysis and noise fundamentals.
 
 ## Parsing and Preprocessing the SPICE Netlist
 
@@ -166,7 +166,7 @@ branchAdmittances = DiagonalMatrix[admittances];
 - **Thermal noise PSD (nestedNoisePSDs):** Using another `Switch`:
   - Resistor (R): Thermal noise is included. The code uses 4 _ value _ k _ T. Here value is $R$ (resistance in Ω), $k$ presumably is Boltzmann’s constant $k_B$, and $T$ is absolute temperature. Thus 4 _ R _ k _ T corresponds to the one-sided voltage noise power spectral density $S_{v} = 4 k_B T R$ (in units of V²/Hz) for a resistor. This is the well-known Johnson–Nyquist noise formula for a resistor’s open-circuit voltage noise, and I provide a derivation <a href="https://annegautham.github.io/posts/thermal-noise-derivation/">here</a>.
   - Capacitor (C): 0. An ideal capacitor does not generate thermal noise on its own (any noise in a capacitor comes from resistive elements, which can be modeled as an ESR).
-  - Inductor (L): 0. Ideal inductors similarly are lossless and do not contribute thermal noise.
+  - Inductor (L): 0. Ideal inductors are similarly lossless and do not contribute thermal noise.
 
 **Note:** The code assumes a single global temperature T and Boltzmann constant k are defined in the environment. It treats each resistor’s noise as an equivalent series voltage noise source with PSD $4k_BTR$. I could equally have used an equivalent parallel current noise $4k_B T / R$, but using the series voltage model aligns with the transfer function approach.
 

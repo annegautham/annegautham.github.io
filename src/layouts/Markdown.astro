@@ -1,0 +1,11 @@
+---
+export interface Props {
+  content: any;
+}
+
+const { content } = Astro.props;
+---
+
+<article class="prose max-w-none">
+  {content}
+</article>
