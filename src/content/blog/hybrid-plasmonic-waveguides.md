@@ -2,7 +2,7 @@
 author: Gautham Anne
 pubDatetime: 2025-06-05T4:19:00Z
 title: Theory behind Hybrid Plasmonic Waveguides
-featured: true
+featured: false
 draft: false
 tags:
   - nanophotonics

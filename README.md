@@ -1,6 +1,6 @@
 # My Personal Page
 
-My personal website! A step-up from its horrendous predecessor. Inspired from [Roger Luo's site](https://rogerluo.dev/). Based of off [AstroPaper](https://astro-paper.pages.dev).
+My personal website! Inspired from [Roger Luo's site](https://rogerluo.dev/). Based of off [AstroPaper](https://astro-paper.pages.dev).
 
 ## License
 

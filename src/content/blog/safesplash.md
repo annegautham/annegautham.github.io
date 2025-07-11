@@ -2,7 +2,7 @@
 author: Gautham Anne
 pubDatetime: 2024-06-05T02:10:00Z
 title: Safesplash - DTC Spring Quarter 2024
-featured: true
+featured: false
 draft: false
 tags:
   - northwestern

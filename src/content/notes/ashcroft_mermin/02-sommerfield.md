@@ -1,7 +1,7 @@
 ---
-title: "Sommerfield"
-order: 2
-description: Sommerfield made a theory.
+title: "Sommerfield Theory of Metals"
+order: 3
+description: UHHHH
 ---
 
-fsss
+asas

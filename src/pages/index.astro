@@ -17,7 +17,8 @@ const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+// const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+const recentPosts = sortedPosts.slice(0, 3);
 
 const socialCount = SOCIALS.filter(social => social.active).length;
 ---
@@ -81,7 +82,13 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             <div class="duration">2024 - Present</div>
             <div class="position">Electrical Lead</div>
 
-            <div class="institution">Northwestern Haptics Group</div>
+            <div class="institution">
+              <a
+                class="border-b border-dashed border-current hover:text-skin-accent transition-colors"
+                target="_blank"
+                href="https://sites.northwestern.edu/hapticsgroup/"
+                >Northwestern Haptics Group</a>
+            </div>
             <div class="duration">2023 - Present</div>
             <div class="position">
               Undergraduate Researcher, Finger Stretch Characterization
@@ -92,10 +99,16 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             </div>
             <div class="duration">2024</div>
             <div class="position">
-              Visiting Scholar (UROP), Electrical Network Theory
+              Visiting Student (UROP), Electrical Network Theory
             </div>
 
-            <div class="institution">Omnid Research Group</div>
+            <div class="institution">
+              <a
+                class="border-b border-dashed border-current hover:text-skin-accent transition-colors"
+                target="_blank"
+                href="https://robotics.northwestern.edu/news-events/articles/2024/crb-celebrates-the-mars-omnid-team.html"
+                >MARS Omnid Team</a>
+            </div>
             <div class="duration">2023 - 2024</div>
             <div class="position">
               Undergraduate Researcher, PCB and Shielding Box Design
@@ -107,7 +120,12 @@ const socialCount = SOCIALS.filter(social => social.active).length;
               Student Researcher in Dark Photon and H<sup>±±</sup> Searches.
             </div>
 
-            <div class="institution">Ross Mathematics Program</div>
+            <div class="institution">
+              <a
+                class="border-b border-dashed border-current hover:text-skin-accent transition-colors"
+                target="_blank"
+                href="https://rossprogram.org/">Ross Mathematics Program</a>
+            </div>
             <div class="duration">2021, 2022</div>
             <div class="position">Junior Counselor / Dorm Lecturer</div>
           </div>
