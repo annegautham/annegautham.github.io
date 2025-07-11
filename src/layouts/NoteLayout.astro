@@ -20,66 +20,100 @@ const { ashcroftNotes, current } = Astro.props as Props;
     <Header activeNav="notes" />
 
     <!-- Page Body (Sidebar + Main Content) -->
-    <div class="flex flex-col sm:flex-row gap-8 w-full">
-      <div class="flex flex-1 flex-row gap-8 max-w-6xl mx-auto w-full px-4">
-        <!-- Sidebar -->
-        <div class="sm:hidden">
-          <button
-            onClick="document.getElementById('sidebar-nav')?.classList.toggle('hidden')"
-            class="mb-4 rounded bg-skin-accent px-4 py-2 text-sm font-semibold text-skin-inverted shadow"
-          >
-            |||
-          </button>
-        </div>
+    <div class="flex flex-1 flex-row gap-8 max-w-6xl mx-auto w-full px-4">
+      <!-- Sidebar -->
+      <button
+        id="sidebar-toggle"
+        onclick="toggleSidebar()"
+        class="sm:hidden px-4 py-2 text-sm font-medium bg-skin-accent text-skin-inverted rounded mb-4"
+        aria-label="Toggle sidebar"
+      >
+        &#9776;
+      </button>
 
-        <!-- Sidebar -->
-        <aside
-          id="sidebar-nav"
-          class="w-64 shrink-0 sticky top-20 max-h-[90vh] overflow-y-auto px-4 py-6 border-r border-white/10 bg-skin-bg sm:block hidden"
-        >
-          <nav class="space-y-4">
-            <div>
-              <a
-                href="/notes/ashcroft_mermin/"
-                class={`text-lg font-semibold tracking-tight block mb-2 transition hover:opacity-80 ${
-                  current?.slug === "ashcroft_mermin/index" ? "underline" : ""
-                }`}
-              >
-                Ashcroft & Mermin
-              </a>
-              <ul class="space-y-1 pl-2 border-l border-white/10">
-                {
-                  ashcroftNotes.map(note => {
-                    const noteSlug = note.slug.split("/").at(-1);
-                    const isActive = current?.slug === note.slug;
-                    return (
-                      <li>
-                        <a
-                          href={`/notes/ashcroft_mermin/${noteSlug}`}
-                          class={`block text-sm px-3 py-1.5 rounded transition ${
-                            isActive
-                              ? "bg-skin-accent/20 text-skin-base font-bold border-l-2 border-skin-accent"
-                              : "text-skin-base/80 hover:bg-white/5"
-                          }`}
-                        >
-                          {note.data.title}
-                        </a>
-                      </li>
-                    );
-                  })
-                }
-              </ul>
-            </div>
-          </nav>
-        </aside>
+      <!-- Sidebar -->
+      <aside
+        id="sidebar-nav"
+        class="fixed inset-y-0 left-0 z-50 w-64 -translate-x-full transform border-r border-white/10 bg-skin-bg px-4 py-6
+           transition-transform duration-300 sm:static sm:translate-x-0 sm:z-auto sm:block"
+      >
+        <nav class="space-y-4">
+          <div>
+            <a
+              href="/notes/ashcroft_mermin/"
+              class={`text-lg font-semibold tracking-tight block mb-2 transition hover:opacity-80 ${
+                current?.slug === "ashcroft_mermin/index" ? "underline" : ""
+              }`}
+            >
+              Ashcroft & Mermin
+            </a>
+            <ul class="space-y-1 pl-2 border-l border-white/10">
+              {
+                ashcroftNotes.map(note => {
+                  const noteSlug = note.slug.split("/").at(-1);
+                  const isActive = current?.slug === note.slug;
+                  return (
+                    <li>
+                      <a
+                        href={`/notes/ashcroft_mermin/${noteSlug}`}
+                        class={`block text-sm px-3 py-1.5 rounded transition ${
+                          isActive
+                            ? "bg-skin-accent/20 text-skin-base font-bold border-l-2 border-skin-accent"
+                            : "text-skin-base/80 hover:bg-white/5"
+                        }`}
+                      >
+                        {note.data.title}
+                      </a>
+                    </li>
+                  );
+                })
+              }
+            </ul>
+          </div>
+        </nav>
+      </aside>
 
-        <!-- Main Content -->
-        <main id="main-content" class="flex-1 py-6">
-          <slot />
-        </main>
-      </div>
+      <!-- Main Content -->
+      <main id="main-content" class="flex-1 py-6">
+        <slot />
+      </main>
     </div>
+
     <!-- Footer -->
     <Footer />
+    <div
+      id="sidebar-backdrop"
+      class="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm hidden sm:hidden"
+      onclick="toggleSidebar()"
+    >
+    </div>
   </div>
 </Layout>
+
+<script type="module">
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar-nav");
+    const backdrop = document.getElementById("sidebar-backdrop");
+
+    if (!sidebar || !backdrop) return;
+
+    sidebar.classList.toggle("-translate-x-full");
+    backdrop.classList.toggle("hidden");
+    document.body.classList.toggle("overflow-hidden");
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("sidebar-toggle");
+    const backdrop = document.getElementById("sidebar-backdrop");
+
+    toggleBtn?.addEventListener("click", toggleSidebar);
+    backdrop?.addEventListener("click", toggleSidebar);
+
+    document.querySelectorAll("#sidebar-nav a").forEach(a => {
+      a.addEventListener("click", () => {
+        if (window.innerWidth < 640) toggleSidebar();
+      });
+    });
+  });
+</script>
+
