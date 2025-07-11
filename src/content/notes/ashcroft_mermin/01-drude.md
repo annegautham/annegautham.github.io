@@ -1,7 +1,7 @@
 ---
-title: "Drude Model"
+title: "The Drude Theory of Metals"
 order: 1
-description: Introduction to the classical model of electron conduction.
+description: Drude made a theory.
 ---
 
 Content of the Drude model notes...asdasdasdads

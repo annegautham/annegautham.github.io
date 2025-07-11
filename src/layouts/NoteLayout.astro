@@ -17,7 +17,7 @@ const { ashcroftNotes, current } = Astro.props as Props;
 
   <div class="flex min-h-screen flex-col">
     <!-- Header -->
-    <Header activeNav="notes" />
+    <Header />
 
     <!-- Page Body (Sidebar + Main Content) -->
     <div class="flex flex-1 flex-row gap-8 max-w-6xl mx-auto w-full px-4">
@@ -45,7 +45,7 @@ const { ashcroftNotes, current } = Astro.props as Props;
                 current?.slug === "ashcroft_mermin/index" ? "underline" : ""
               }`}
             >
-              Ashcroft & Mermin
+              Solid State Physics
             </a>
             <ul class="space-y-1 pl-2 border-l border-white/10">
               {
@@ -116,4 +116,3 @@ const { ashcroftNotes, current } = Astro.props as Props;
     });
   });
 </script>
-
