@@ -7,7 +7,7 @@ draft: false
 tags:
   - northwestern
   - scanning probe microscopy
-description: Global Directory page for my STM project (scanning tunneling microscope).
+description: Global directory page for my STM project (scanning tunneling microscope).
 ---
 
 **tl;dr**: Built a functional scanning tunneling microscope. Iterating upon it to make it more stable (thermal drift) and robust against noise sources. Developing curriculum revolving around instrument to teach younger students surface science adjacent topics. **Need help** in the following: curriculum development, electrical/computer engineering, software developmnet. Reach out if interested (4.543 billion years of experience required).
@@ -29,6 +29,8 @@ Some of the following pages sound super formal for blog posts, which is a result
 
 ---
 
+# Version 1
+
 ## [Design Overview + Constraints](/posts/stm-design-overview)
 
 ## [Engineering Standards](/posts/stm-engineering-standards)
@@ -48,5 +50,9 @@ Some of the following pages sound super formal for blog posts, which is a result
 ## Software Design Pages
 
 ### [Feedback Control](/posts/stm-feedback-control)
+
+### [Firmware](/posts/stm-firmware)
+
+---
 
 ![model](@assets/images/stm-7_11_2025_IMAGES/model.png)
