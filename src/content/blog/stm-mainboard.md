@@ -1,7 +1,7 @@
 ---
 author: Gautham Anne
 pubDatetime: 2025-07-03T00:39:22
-title: STM Mainboard
+title: Mainboard
 featured: false
 draft: false
 tags:

@@ -10,7 +10,7 @@ tags:
 description: Global directory page for my STM project (scanning tunneling microscope).
 ---
 
-**tl;dr**: Built a functional scanning tunneling microscope. Iterating upon it to make it more stable (thermal drift) and robust against noise sources. Developing curriculum revolving around instrument to teach younger students surface science adjacent topics. **Need help** in the following: curriculum development, electrical/computer engineering, software developmnet. Reach out if interested (4.543 billion years of experience required).
+**tl;dr**: Built a functional scanning tunneling electron microscope. Iterating upon it to make it more robust against noise sources & less janky. May develop curriculum revolving around instrument to teach younger students surface science adjacent topics. **Need help** in the following: curriculum development, electrical/computer engineering, software developmnet. Reach out if interested (4.543 billion years of experience required).
 
 ---
 
@@ -23,21 +23,31 @@ Typical commercial microscopes that are used in research labs cost upwards of \$
   materials like HOPG, gold, silicon, specially prepared samples
 - "Easy to use"
 
-I came across Dan Berard's (very well documented) <a href="https://dberard.com/home-built-stm/">project</a> my senior year of high school, but I lacked the prereq knowledge to implement it then. This post documents my journey attempting to improve on Berard's design. I am gatekeeping some information (sorry) since it is still under development! Contact me if you want some more information!
+I came across Dan Berard's (this guy is awesome) <a href="https://dberard.com/home-built-stm/">project</a> my senior year of high school, but I lacked the prereq knowledge to implement it then. This post documents my journey attempting to improve on Berard's design. I am gatekeeping some information (sorry) since it is still under development! Contact me if you want some more information!
 
 Some of the following pages sound super formal for blog posts, which is a result of me copying and pasting from my EE327 (Electronic System Design II) final report. Working on make it more concise...
 
 ---
 
-# Version 1
+# Version 1 - Aangstrom (Updated 06/23/2025)
 
-## [Design Overview + Constraints](/posts/stm-design-overview)
+<div style="display: flex; align-items: center; gap: 2rem;">
 
-## [Engineering Standards](/posts/stm-engineering-standards)
+<div style="flex: 1;">
 
-## [Theory Of Operation](/posts/stm-theory-of-operation)
+## Overview
+
+### [Design Overview + Constraints](/posts/stm-design-overview)
+
+### [Engineering Standards](/posts/stm-engineering-standards)
+
+### [Theory Of Operation](/posts/stm-theory-of-operation)
 
 ## Mechanical Design Pages
+
+### [Scan Head](/posts/stm-scan-head)
+
+### [Vibration Isolation](/posts/stm-vibration-isolation)
 
 ## Electrical Design Pages
 
@@ -53,6 +63,24 @@ Some of the following pages sound super formal for blog posts, which is a result
 
 ### [Firmware](/posts/stm-firmware)
 
+## Image Gallery - Coming Soon!
+
+### HOPG (Highly Oriented Pyrolytic Graphite)
+
+### Gold Films
+
+### Sputtered Platinum
+
+### Graphene on SiO<sub>2</sub>/Copper
+
+</div>
+
+<div style="flex-shrink: 0;">
+  <img src="/files/stm_IMAGES/model.png" alt="model" style="max-width: 300px;" />
+</div>
+
+</div>
+
 ---
 
-![model](@assets/images/stm-7_11_2025_IMAGES/model.png)
+# Version 2 - Working on it...
