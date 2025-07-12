@@ -23,7 +23,7 @@ Typical commercial microscopes that are used in research labs cost upwards of \$
   materials like HOPG, gold, silicon, specially prepared samples
 - "Easy to use"
 
-I came across Dan Berard's (this guy is awesome) <a href="https://dberard.com/home-built-stm/">project</a> my senior year of high school, but I lacked the prereq knowledge to implement it then. This post documents my journey attempting to improve on Berard's design. I am gatekeeping some information (sorry) since it is still under development! Contact me if you want some more information!
+I came across Dan Berard's (this guy is awesome) <a href="https://dberard.com/home-built-stm/">project</a> my junior year of high school, but I lacked the prereq knowledge to build it then. This directory documents my journey attempting to make my own microscope. I am gatekeeping some information (sorry) since it is still under development! Longterm goal: I want to release it as a kit for high school students - which would supplement a curriculum, either in school or an educational camp. Contact me if you want some more information!
 
 Some of the following pages sound super formal for blog posts, which is a result of me copying and pasting from my EE327 (Electronic System Design II) final report. Working on make it more concise...
 
@@ -83,4 +83,4 @@ Some of the following pages sound super formal for blog posts, which is a result
 
 ---
 
-# Version 2 - Working on it...
+# Version 2 - uhhh... on it

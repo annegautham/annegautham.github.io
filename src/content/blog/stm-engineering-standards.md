@@ -12,6 +12,8 @@ description: Engineering Standards
 
 Engineering standards and protocols were systematically applied throughout the STM design to ensure safety, reliability, and interoperability. For example, we adhered to IPC (Institute for Printed Circuits) guidelines for PCB design, which are known to reduce errors and improve manufacturing consistency. By following such standards, the project aligned with industry best practices, minimizing defects and ensuring compatibility across components and suppliers.
 
+## Table of Contents
+
 ## PCB Layout and Footprint Standards
 
 The printed-circuit board layout followed established IPC standards. In particular, IPC-2221B (the Generic Standard on Printed Board Design) was used to set materials, trace width, spacing, and clearance rules. IPC-2221B defines minimum conductor spacing as a function of voltage to avoid dielectric breakdown or dendritic growth, so we sized trace gaps to meet its requirements even for low-voltage sections. This ensured robust insulation margins and reduced risk of arcing. IPC-2221B also covers thermal management (e.g. copper area for heat dissipation) and testability, helping to improve board quality. Compliance with these IPC rules reduced layout errors and enhanced overall PCB quality.

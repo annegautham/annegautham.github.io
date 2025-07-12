@@ -8,7 +8,7 @@ tags:
   - physics
   - kdp
   - self-publishing
-description: I wrote, illustrated, and published an Introduction to Modern Physics book for middle and high schoolers!
+description: I published an Introduction to Modern Physics book for middle and high schoolers!
 ---
 
 Hi y'all!

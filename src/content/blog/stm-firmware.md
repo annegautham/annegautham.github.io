@@ -10,11 +10,11 @@ tags:
 description: STM Firmware
 ---
 
-## Table of Contents
-
 Firmware is mostly split into two parts: $\textbf{Frontend}$ and $\textbf{Backend}$. Frontend refers to the code that the user interfaces with, which is on a web server hosted on the ESP32. Backend refers to postprocessing and controls that result in data collection. On a high level, the user chooses the metrics and configurations of the scans through the website; the ESP32 forwards them to the Teensy microcontroller, which controls the electronics to raster the tip across the sample. The collected data is sent back to the ESP32, where it is ideally displayed on the website again for viewing. We were able to achieve motor control, tip control and piezo deformation, frontend-backend data link communication success, and GUI integration. While we did make significant progress to the firmware development as a whole, we were not able to collect line scans and post-process the line scans onto the GUI.
 
-## Firmware
+## Table of Contents
+
+## Frontend
 
 The complete data journey begins in the browser, travels through the ESP32's WebSocket stack, crosses a UART link, and finally lands inside the Teensy’s real-time interrupt that drives the piezoelectric scanners. When a user adjusts a control on the HTML/JavaScript frontend, the page serializes that action as a short ASCII command whose first two characters form a fixed opcode (EN, SS, KP, and so on), and whose optional numeric suffix encodes the parameter value in plain decimal. The browser delivers this string over a WebSocket connection to port 81 on the ESP32.
 

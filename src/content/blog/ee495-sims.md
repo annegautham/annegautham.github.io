@@ -2,7 +2,7 @@
 author: Gautham Anne
 pubDatetime: 2025-07-03T00:39:22
 title: Simulations on Hybrid Plasmonic Waveguides
-featured: true
+featured: false
 draft: false
 tags:
   - nanophotonics

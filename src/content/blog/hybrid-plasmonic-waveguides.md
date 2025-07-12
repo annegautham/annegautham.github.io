@@ -2,12 +2,12 @@
 author: Gautham Anne
 pubDatetime: 2025-06-05T4:19:00Z
 title: Theory behind Hybrid Plasmonic Waveguides
-featured: false
+featured: true
 draft: false
 tags:
   - nanophotonics
   - northwestern
-description: Final oral presentation for my EE495 (Intro to Nanophotonics) class at Northwestern.
+description: Final oral presentation for my EE495 (Intro to Nanophotonics) class.
 ---
 
 Hi! This was my final oral for EE495 (Spring 2025), an introductory class on nanophotonics, at Northwestern University. Students were tasked to find a relevant paper in the field and present an oral on it. Specifically, my prompt was to

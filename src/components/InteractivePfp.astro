@@ -20,12 +20,18 @@ const initialImage = images[0];
   .profile-img {
     width: 200px;
     height: 200px;
-    margin: 1.5em 0 1.5em 2em;
+    margin: 1.5em auto; /* center by default */
     border-radius: 50%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
     flex-shrink: 0;
+  }
+
+  @media (min-width: 768px) {
+    .profile-img {
+      margin: 0 0 0 2em; /* only apply left margin on desktop */
+    }
   }
 </style>
