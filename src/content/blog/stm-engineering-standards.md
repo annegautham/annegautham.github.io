@@ -1,13 +1,13 @@
 ---
 author: Gautham Anne
-pubDatetime: 2025-07-03T00:39:22
+pubDatetime: 2025-07-11T00:19:22
 title: Engineering Standards
 featured: false
 draft: false
 tags:
   - northwestern
   - scanning probe microscopy
-description: Engineering Standards
+description: STM Engineering Standards
 ---
 
 Engineering standards and protocols were systematically applied throughout the STM design to ensure safety, reliability, and interoperability. For example, we adhered to IPC (Institute for Printed Circuits) guidelines for PCB design, which are known to reduce errors and improve manufacturing consistency. By following such standards, the project aligned with industry best practices, minimizing defects and ensuring compatibility across components and suppliers.

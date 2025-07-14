@@ -1,6 +1,6 @@
 ---
 author: Gautham Anne
-pubDatetime: 2025-07-03T00:39:22
+pubDatetime: 2025-05-04T00:39:22
 title: Vibration Isolation
 featured: false
 draft: false
@@ -60,4 +60,4 @@ The aluminum baseplate was reclaimed from a salvaged soldering apparatus and cho
 
 ## Performance and Expected Bandwidth
 
-Our piezoelectric unimorph actuator, with a manufacturer stated mechanical resonance of approximately 6.3~kHz, is well above the dominant environmental noise frequencies. Thus, the passive damping stack and suspension system form a vibration isolation scheme with at least three decades of separation between environmental noise ($<$ 10 Hz) and STM actuation bandwidth (kHz regime). Initial qualitative testing confirms that low-frequency disturbances—such as footsteps or door motion—have minimal impact on the tunneling current when the isolation system is engaged.
+Our piezoelectric unimorph actuator, with a manufacturer stated mechanical resonance of approximately 6.3kHz, is well above the dominant environmental noise frequencies. Thus, the passive damping stack and suspension system form a vibration isolation scheme with at least three decades of separation between environmental noise ($<$ 10 Hz) and STM actuation bandwidth (kHz regime). Initial qualitative testing confirms that low-frequency disturbances—such as footsteps or door motion—have minimal impact on the tunneling current when the isolation system is engaged.

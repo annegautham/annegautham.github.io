@@ -1,6 +1,6 @@
 ---
 author: Gautham Anne
-pubDatetime: 2025-07-03T00:39:22
+pubDatetime: 2025-07-06T00:39:22
 title: Mainboard
 featured: false
 draft: false

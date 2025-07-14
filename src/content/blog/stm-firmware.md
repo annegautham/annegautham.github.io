@@ -1,6 +1,6 @@
 ---
 author: Gautham Anne
-pubDatetime: 2025-07-03T00:39:22
+pubDatetime: 2025-07-05T00:39:22
 title: Firmware
 featured: false
 draft: false

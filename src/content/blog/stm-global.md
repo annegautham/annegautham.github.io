@@ -1,6 +1,6 @@
 ---
 author: Gautham Anne
-pubDatetime: 2025-07-03T00:39:22
+pubDatetime: 2025-06-23T10:19:26
 title: "Aangstrom: Seeing Atoms!"
 featured: true
 draft: false
@@ -23,7 +23,7 @@ Typical commercial microscopes that are used in research labs cost upwards of \$
   materials like HOPG, gold, silicon, specially prepared samples
 - "Easy to use"
 
-I came across Dan Berard's (this guy is awesome) <a href="https://dberard.com/home-built-stm/">project</a> my junior year of high school, but I lacked the prereq knowledge to build it then. This directory documents my journey attempting to make my own microscope. I am gatekeeping some information (sorry) since it is still under development! Longterm goal: I want to release it as a kit for high school students - which would supplement a curriculum, either in school or an educational camp. Contact me if you want some more information!
+I came across Dan Berard's (this guy is awesome) <a href="https://dberard.com/home-built-stm/">project</a> my junior year of high school, but I lacked the prereq knowledge to build it then. This directory documents my journey attempting to make my own microscope (started 08/2024). I am gatekeeping some information (sorry) since it is still under development! Longterm: I want to release it as a kit for high school students - which would supplement a curriculum, either in school or an educational camp. Contact me if you want some more information!
 
 Some of the following pages sound super formal for blog posts, which is a result of me copying and pasting from my EE327 (Electronic System Design II) final report. Working on make it more concise...
 
@@ -76,11 +76,19 @@ Some of the following pages sound super formal for blog posts, which is a result
 </div>
 
 <div style="flex-shrink: 0;">
-  <img src="/files/stm_IMAGES/model.png" alt="model" style="max-width: 300px;" />
+  <img src="/files/stm_IMAGES/model.png" alt="model" style="max-width: 700px;" />
 </div>
 
 </div>
+
+![327 Poster](@assets/images/stm-7_11_2025_IMAGES/327_poster.png)
 
 ---
 
 # Version 2 - uhhh... on it
+
+I’ve uncovered a couple of design headaches in V1: the “5V” stepper motors actually run much more smoothly at around 9 V, and those delicate 40 AWG wires—along with my patience—keep breaking far too easily.
+
+Also, there's an inherent coupling between ground and the scan head through the cable going to the outlet, so I'm thinking about transitioning to powering the system on a 20V Li-Ion drill battery (or LiFePO<sub>4</sub> pack). I'm a little dissapointed the work spent on designing a custom power supply may be all for naught, but am glad I learned a ton.
+
+I also started work on a more modular design for the scan head, enabling future integration of various types of microscopy, such an AFM head. See Dan Berard's (the GOAT) <a href="https://hackaday.io/project/5713-frequency-modulated-atomic-force-microscope" target = "_blank">project</a> for more information.

@@ -1,13 +1,13 @@
 ---
 author: Gautham Anne
-pubDatetime: 2025-07-03T00:39:22
+pubDatetime: 2025-07-11T00:19:22
 title: Design Description and Constraints
 featured: false
 draft: false
 tags:
   - northwestern
   - scanning probe microscopy
-description: Design Description and Constraints
+description: STM Design Description and Constraints
 ---
 
 This project presents the design and construction of a low-cost, air-operable Scanning Tunneling Microscope (STM) capable of sub-nanometer resolution. STMs detect quantum tunneling currents between a conductive tip and sample to image surfaces at atomic scale, but commercial systems are expensive and complex. Our goal was to build an educational STM for under \$300 using off-the-shelf components.
