@@ -63,9 +63,12 @@ Some of the following pages sound super formal for blog posts, which is a result
 
 ### [Firmware](/posts/stm-firmware)
 
-## Image Gallery - Coming Soon!
+## Image Gallery - More coming soon!
 
 ### HOPG (Highly Oriented Pyrolytic Graphite)
+
+Example HOPG lattice (const. current mode, after some post processing to remove drift - attempting to streamline with <a href = "https://gwyddion.net/" target = "_blank">Gwyddion</a>).
+![HOPG Lattice](@assets/images/stm-7_11_2025_IMAGES/hopg_lattice.png)
 
 ### Gold Films
 
