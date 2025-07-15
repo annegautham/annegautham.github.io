@@ -1,7 +1,7 @@
 ---
 author: Gautham Anne
 pubDatetime: 2025-07-06T00:39:22
-title: Power Supply
+title: Sine Sweep Deconvolution
 featured: false
 draft: false
 tags:
