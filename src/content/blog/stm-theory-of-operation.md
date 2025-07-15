@@ -1,7 +1,7 @@
 ---
 author: Gautham Anne
 pubDatetime: 2025-07-04T00:39:22
-title: STM Theory of Operation
+title: Theory of Operation
 featured: false
 draft: false
 tags:

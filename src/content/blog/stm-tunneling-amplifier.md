@@ -1,7 +1,7 @@
 ---
 author: Gautham Anne
 pubDatetime: 2025-07-04T00:39:22
-title: STM Tunneling Amplifier
+title: Tunneling Amplifier
 featured: false
 draft: false
 tags:
