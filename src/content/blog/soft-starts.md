@@ -4,7 +4,6 @@ pubDatetime: 2025-07-24T06:12:14
 title: Soft Start Circuits
 featured: false
 draft: false
-tags:
   - none
 description: Everything (not really) about soft start circuits!
 ---
@@ -76,6 +75,7 @@ A triac is a bidirectional AC switch (essentially two SCRs back-to-back) that ca
 A triac-based soft-start usually requires a small triggering circuit. This could be analog (for example, an RC timer feeding a DIAC or a unijunction transistor circuit that gradually changes phase – similar to how lamp dimmers work but with a time-varying reference) or digital (a microcontroller or a dedicated ASIC that ramps the firing angle). The main pros are that there is no series resistor after startup, no mechanical components, and we can tailor the voltage ramp profile. In addition, there is a built in zero cross behavior (if designed to trigger at a certain angle every cycle).
 
 The main cons are that a triac soft-start often benefits from a MCU for precise timing. This adds some complexity on a level similar to the MOSFET approach. Also, unlike a relay, a triac will always drop about 1V (depending on device and current), and will need a heatsink for high currents. The phase control is effectively voltage limiting - but doesn't really regulate teh current. The actual current drawn by load depends on load's impedance and inrush characteristics.
+nt drawn by load depends on load's impedance and inrush characteristics.
 
 ## My Soft-Start Implementation
 
