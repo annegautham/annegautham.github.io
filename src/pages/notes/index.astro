@@ -1,42 +1,149 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
+import { getNotesStructure } from "@utils/getNotesStructure";
+import { getColorClasses, getAccentClasses, getTagClasses } from "@utils/colorThemes";
 
-const notes = await getCollection("notes");
-console.log(notes.map(n => n.slug)); // Temporarily for debugging
-
-const indexNotes = notes.filter(note => !note.slug.includes("/"));
-
-const categories = indexNotes.map(note => {
-  const slugParts = note.slug.split("/");
-  return {
-    slug: slugParts[0], // category folder name
-    data: note.data,
-  };
-});
+const notesStructure = await getNotesStructure();
 ---
 
 <Layout title="Notes">
-  <Header activeNav="notes" />
-  <main class="flex flex-col items-center py-12">
-    <h1 class="text-4xl font-bold mb-8">Notes</h1>
-    <div class="flex flex-col items-center gap-4">
-      {
-        categories.map(({ slug, data }) => (
-          <a
-            href={`/notes/${slug}/`}
-            class="block border rounded-lg p-4 hover:bg-skin-fill bg-skin-card border-skin-accent"
-          >
-            <h2 class="font-bold text-xl mb-1">{data.title}</h2>
-            <p class="opacity-80 text-sm">
-              {data.description ?? "No description yet."}
+  <div class="flex min-h-screen flex-col">
+    <Header activeNav="notes" />
+    
+    <main class="flex-1">
+      <div class="max-w-6xl mx-auto px-4 py-8 lg:px-8">
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+          <h1 class="text-4xl font-bold text-skin-base mb-4">
+            Notes I Actually Kept
+          </h1>
+          <p class="text-lg text-skin-muted max-w-2xl mx-auto">
+            Evidence that I was paying attention - organized by subject.
+          </p>
+          <div class="mt-6 flex justify-center">
+            <div class="bg-skin-accent/10 text-skin-accent px-4 py-2 rounded-full text-sm font-medium">
+              {notesStructure.totalNotes} notes across {notesStructure.subjects.length} subjects
+            </div>
+          </div>
+        </header>
+
+        <!-- Subjects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {notesStructure.subjects.map((subject) => (
+            <div class={`group border rounded-lg p-6 hover:shadow-lg transition-all duration-200 ${getColorClasses(subject.color as any)} hover:border-opacity-80`}>
+              <div class="flex items-center justify-between mb-4">
+                <h2 class={`text-xl font-semibold group-hover:opacity-90 transition-colors ${subject.color ? 'text-gray-900 dark:text-white' : 'text-skin-base group-hover:text-skin-accent'}`}>
+                  {subject.title}
+                </h2>
+                <div class={`px-2 py-1 rounded-full text-xs font-medium ${subject.color ? 'bg-white/20 dark:bg-black/20' : 'bg-skin-accent/10 text-skin-accent'}`}>
+                  {subject.notes.length}
+                </div>
+              </div>
+              
+              <!-- Tags -->
+              {subject.tags.length > 0 && (
+                <div class="flex flex-wrap gap-1 mb-4">
+                  {subject.tags.map((tag) => (
+                    <span class={`px-2 py-1 text-xs rounded-full border ${getTagClasses(tag)}`}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+              
+              <div class="space-y-2 mb-4">
+                {subject.notes.slice(0, 3).map((note) => (
+                  <a 
+                    href={`/notes/${note.slug}`}
+                    class={`block text-sm hover:opacity-80 transition-colors truncate ${subject.color ? 'text-gray-900 dark:text-white opacity-80 hover:opacity-100' : 'text-skin-muted hover:text-skin-base'}`}
+                  >
+                    {note.data.order && `${note.data.order}. `}{note.data.title}
+                  </a>
+                ))}
+                {subject.notes.length > 3 && (
+                  <div class={`text-sm italic ${subject.color ? 'text-gray-900 dark:text-white opacity-70' : 'text-skin-muted'}`}>
+                    and {subject.notes.length - 3} more...
+                  </div>
+                )}
+              </div>
+
+              <a 
+                href={`/notes/${subject.notes[0]?.slug}`}
+                class={`inline-flex items-center gap-2 text-sm font-medium transition-colors ${subject.color ? 'text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-200' : getAccentClasses(subject.color as any)}`}
+              >
+                Start reading
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          ))}
+        </div>
+
+        <!-- Quick Start Guide -->
+        <!-- <div class="mt-16 bg-skin-accent/5 border border-skin-accent/20 rounded-lg p-8">
+          <h2 class="text-2xl font-semibold text-skin-base mb-4">
+            Adding New Notes
+          </h2>
+          <div class="prose prose-skin max-w-none">
+            <p class="text-skin-muted mb-4">
+              To add a new subject or notes, simply create a new folder in <code>src/content/notes/</code>:
             </p>
-          </a>
-        ))
-      }
-    </div>
-  </main>
-  <Footer />
+            <ol class="text-skin-muted space-y-2">
+              <li>Create a new folder (e.g., <code>control_theory</code>)</li>
+              <li>Add markdown files with frontmatter:
+                <pre class="mt-2 text-xs"><code>---
+title: "Your Note Title"
+order: 1
+description: "Optional description"
+color: "blue"  # red, blue, green, purple, orange, teal, pink, indigo
+tags: ["Northwestern", "Self-Studied", "Research"]
+---
+
+# Your content here...</code></pre>
+              </li>
+              <li>The system will automatically organize and display your notes with colors and tags!</li>
+            </ol>
+            
+            <h3 class="text-lg font-semibold text-skin-base mt-6 mb-2">Available Colors</h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              {['red', 'blue', 'green', 'purple', 'orange', 'teal', 'pink', 'indigo'].map((color) => (
+                <span class={`px-3 py-1 text-sm rounded border ${getColorClasses(color as any)}`}>
+                  {color}
+                </span>
+              ))}
+            </div>
+            
+            <h3 class="text-lg font-semibold text-skin-base mt-4 mb-2">Suggested Tags</h3>
+            <div class="flex flex-wrap gap-2">
+              {['Northwestern', 'Self-Studied', 'Research', 'Coursework', 'Personal', 'Work', 'Project'].map((tag) => (
+                <span class={`px-3 py-1 text-sm rounded-full border ${getTagClasses(tag)}`}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </main>
+    
+    <Footer />
+  </div>
+</Layout>
+
+<style>
+.prose code {
+  @apply bg-skin-accent/10 text-skin-accent px-1.5 py-0.5 rounded text-sm;
+}
+
+.prose pre {
+  @apply bg-skin-card border border-skin-line rounded p-4 overflow-x-auto;
+}
+
+.prose pre code {
+  @apply bg-transparent text-skin-base px-0 py-0;
+}
+</style>
 </Layout>

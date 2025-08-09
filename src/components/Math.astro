@@ -1,0 +1,14 @@
+---
+export interface Props {
+  formula: string;
+  display?: boolean;
+}
+
+const { formula, display = false } = Astro.props;
+---
+
+{display ? (
+  <div class="math-display" set:html={`$$${formula}$$`} />
+) : (
+  <span class="math-inline" set:html={`$${formula}$`} />
+)}

@@ -2,9 +2,9 @@
 title: "Drude Theory of Metals"
 order: 1
 description: Drude made a theory.
+color: "purple"
+tags: ["Physics"]
 ---
-
-# Drude Theory of Metals
 
 ## Table of Contents
 
@@ -50,7 +50,7 @@ This chapter introduces the **Drude model** (ca. 1900):
 Drude treated conduction electrons as a gas of particles of mass $m$. Their density:
 
 $$
-n = 0.6022 \times 10^{24} \cdot \frac{Z \rho_m}{A}  \text{(in cm}^{-3}\text{)}
+n = 0.6022 \times 10^{24} \cdot \frac{Z \rho_m}{A} \text{ (in cm}^{-3}\text{)}
 $$
 
 Where:
@@ -91,7 +91,7 @@ Despite its simplicity, the Drude model gives a surprisingly good first approxim
 
 ### Table: Free Electron Densities
 
-| Element | $Z$ | $n \ (10^{22}/\text{cm}^3)$ | $r_s$ (Å) | $r_s / a_0$ |
+| Element | $Z$ | $n \\ (10^{22}/\\mathrm{cm}^3)$ | $r_s$ (Å) | $r_s / a_0$ |
 | ------- | --- | --------------------------- | --------- | ----------- |
 | Li      | 1   | 4.70                        | 1.72      | 3.25        |
 | Na      | 1   | 2.65                        | 2.08      | 3.93        |
@@ -125,19 +125,33 @@ $$
 
 Using $V = \rho j L \Rightarrow R = \rho \frac{L}{A}$
 
-Drude model: electrons of charge $-e$, number density $n$, average velocity $\mathbf{v}$:
+Drude model: electrons of charge $-e$, number density $n$, average velocity $\\mathbf{v}$:
 
 $$
 \mathbf{j} = -ne \mathbf{v}
 $$
 
-### Deriving Drude Conductivity
+### Step-by-Step Conductivity Derivation
 
-Electrons have random thermal motion, so net velocity averages to zero. In an electric field $\mathbf{E}$, they drift opposite to the field with an average velocity:
+Starting from the current density equation:
 
-$$
-\mathbf{v}_{\text{avg}} = -\frac{e \tau}{m} \mathbf{E}
-$$
+$$\\mathbf{j} = -ne \\mathbf{v}$$
+
+The average drift velocity in an electric field is:
+
+$$\mathbf{v}_{\text{avg}} = -\frac{e \tau}{m} \mathbf{E}$$
+
+Substituting the drift velocity into the current equation:
+
+$$\mathbf{j} = -ne \left(-\frac{e \tau}{m} \mathbf{E}\right)$$
+
+Simplifying the expression:
+
+$$\mathbf{j} = \frac{ne^2 \tau}{m} \mathbf{E}$$
+
+This gives us the famous Drude conductivity:
+
+$$\sigma = \frac{ne^2 \tau}{m}$$
 
 So from $\mathbf{j} = -ne \mathbf{v}_{\text{avg}}$:
 
@@ -273,7 +287,25 @@ Two main observables:
 - Negative $R_H$ implies negative charge carriers (electrons)
 - Surprisingly, **some metals** show **positive** $R_H$
 
-### Equation of Motion with $\mathbf{H}$ Field
+### Hall Effect Analysis
+
+Starting with the Lorentz force on moving electrons:
+
+$$\mathbf{F} = -\frac{e}{c} \mathbf{v} \times \mathbf{H}$$
+
+Newton's second law with all forces (electric field, magnetic field, and collisions):
+
+$$\frac{d\mathbf{p}}{dt} = -e\mathbf{E} - \frac{e}{c} \mathbf{v} \times \mathbf{H} - \frac{\mathbf{p}}{\tau}$$
+
+In steady state, breaking into x and y components:
+
+$$0 = -eE_x - \omega_c p_y - \frac{p_x}{\tau}$$
+
+$$0 = -eE_y + \omega_c p_x - \frac{p_y}{\tau}$$
+
+This leads to the Hall coefficient:
+
+$$R_H = \frac{E_y}{j_x H} = -\frac{1}{nec}$$
 
 Total force per electron:
 
@@ -580,8 +612,7 @@ $$
 In 3D:
 
 $$
-j^q = \frac{1}{3}v^2 \tau c_v (-\nabla T)  \text
-{(Eq. 1.50)}
+j^q = \frac{1}{3}v^2 \tau c_v (-\nabla T) \quad \text{(Eq. 1.50)}
 $$
 
 $$

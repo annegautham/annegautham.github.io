@@ -1,0 +1,40 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import { getNoteWithContext } from "@utils/getNotesStructure";
+import NoteLayout from "@layouts/NoteLayout.astro";
+
+export async function getStaticPaths() {
+  const notes = await getCollection("notes");
+  
+  return notes
+    .filter(note => note.slug.includes('/') && !note.slug.endsWith('/index')) // Only notes with subject/note structure
+    .map(note => ({
+      params: { slug: note.slug },
+      props: { note }
+    }));
+}
+
+interface Props {
+  note: CollectionEntry<"notes">;
+}
+
+const { note } = Astro.props;
+const { slug } = Astro.params;
+
+// Get note context (subject and all subjects)
+const context = await getNoteWithContext(slug!);
+
+if (!context || !context.subject) {
+  return Astro.redirect('/404');
+}
+
+const { Content } = await note.render();
+---
+
+<NoteLayout 
+  currentNote={context.note}
+  currentSubject={context.subject}
+  allSubjects={context.allSubjects}
+>
+  <Content />
+</NoteLayout>
