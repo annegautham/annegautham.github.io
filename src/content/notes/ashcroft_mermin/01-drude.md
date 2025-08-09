@@ -68,14 +68,17 @@ $$
 ### Key Assumptions of Drude Theory
 
 1. **Independent electron approximation**:
+
    - Ignore electron-electron and electron-ion interactions during collisions.
    - Each electron moves freely between collisions.
 
 2. **Collisions are instantaneous**:
+
    - Modeled as abrupt velocity changes (like bouncing off hard walls).
    - No gradual scattering — just sudden redirection.
 
 3. **Collision rate**:
+
    - Probability of collision per time = $1/\tau$
    - After each collision, an electron emerges with a **random velocity**, unrelated to its prior motion.
 
@@ -92,12 +95,12 @@ Despite its simplicity, the Drude model gives a surprisingly good first approxim
 ### Table: Free Electron Densities
 
 | Element | $Z$ | $n \\ (10^{22}/\\mathrm{cm}^3)$ | $r_s$ (Å) | $r_s / a_0$ |
-| ------- | --- | --------------------------- | --------- | ----------- |
-| Li      | 1   | 4.70                        | 1.72      | 3.25        |
-| Na      | 1   | 2.65                        | 2.08      | 3.93        |
-| Cu      | 1   | 8.47                        | 1.41      | 2.67        |
-| Be      | 2   | 24.7                        | 0.99      | 1.87        |
-| Al      | 3   | 18.1                        | 1.10      | 2.07        |
+| ------- | --- | ------------------------------- | --------- | ----------- |
+| Li      | 1   | 4.70                            | 1.72      | 3.25        |
+| Na      | 1   | 2.65                            | 2.08      | 3.93        |
+| Cu      | 1   | 8.47                            | 1.41      | 2.67        |
+| Be      | 2   | 24.7                            | 0.99      | 1.87        |
+| Al      | 3   | 18.1                            | 1.10      | 2.07        |
 
 ---
 

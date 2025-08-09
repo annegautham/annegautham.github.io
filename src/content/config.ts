@@ -27,7 +27,18 @@ const notes = defineCollection({
     description: z.string().optional(),
     draft: z.boolean().optional(),
     tags: z.array(z.string()).optional(),
-    color: z.enum(['red', 'blue', 'green', 'purple', 'orange', 'teal', 'pink', 'indigo']).optional(), // color theme for the subject
+    color: z
+      .enum([
+        "red",
+        "blue",
+        "green",
+        "purple",
+        "orange",
+        "teal",
+        "pink",
+        "indigo",
+      ])
+      .optional(), // color theme for the subject
   }),
 });
 

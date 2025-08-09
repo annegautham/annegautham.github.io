@@ -21,14 +21,25 @@ const { currentNote, currentSubject, allSubjects } = Astro.props;
     <Header />
 
     <!-- Mobile sidebar toggle -->
-    <div class="lg:hidden sticky top-16 z-30 bg-skin-fill border-b border-skin-line px-4 py-2">
+    <div
+      class="lg:hidden sticky top-16 z-30 bg-skin-fill border-b border-skin-line px-4 py-2"
+    >
       <button
         id="sidebar-toggle"
         class="flex items-center gap-2 px-3 py-2 text-sm font-medium bg-skin-accent/10 hover:bg-skin-accent/20 text-skin-base rounded-md transition-colors"
         aria-label="Toggle navigation"
       >
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
         <span>Navigation</span>
       </button>
@@ -42,76 +53,98 @@ const { currentNote, currentSubject, allSubjects } = Astro.props;
         class="fixed inset-y-0 left-0 z-40 w-80 bg-skin-fill border-r border-skin-line transform -translate-x-full transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0 lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)] lg:overflow-y-auto"
       >
         <!-- Sidebar header -->
-        <div class="flex items-center justify-between p-4 border-b border-skin-line bg-skin-accent/5">
-          <h2 class="text-lg font-semibold text-skin-base">Notes I Actually Kept</h2>
+        <div
+          class="flex items-center justify-between p-4 border-b border-skin-line bg-skin-accent/5"
+        >
+          <h2 class="text-lg font-semibold text-skin-base">
+            Notes I Actually Kept
+          </h2>
           <button
             id="sidebar-close"
             class="lg:hidden p-1 rounded-md hover:bg-skin-accent/10 transition-colors"
             aria-label="Close navigation"
           >
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
         </div>
 
         <!-- Sidebar content -->
         <nav class="flex-1 overflow-y-auto p-4 space-y-6 lg:max-h-full">
-          {allSubjects.map((subject) => (
-            <div class="space-y-2">
-              <!-- Subject header -->
-              <button
-                class="subject-toggle w-full flex items-center justify-between text-left p-2 rounded-lg hover:bg-skin-accent/10 transition-colors group"
-                data-subject={subject.slug}
-                aria-expanded={currentSubject?.slug === subject.slug ? "true" : "false"}
-              >
-                <h3 class="font-medium text-skin-base group-hover:text-skin-accent transition-colors">
-                  {subject.title}
-                </h3>
-                <svg 
-                  class={`w-4 h-4 text-skin-muted transition-transform ${
-                    currentSubject?.slug === subject.slug ? 'rotate-90' : ''
-                  }`}
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
+          {
+            allSubjects.map(subject => (
+              <div class="space-y-2">
+                <button
+                  class="subject-toggle w-full flex items-center justify-between text-left p-2 rounded-lg hover:bg-skin-accent/10 transition-colors group"
+                  data-subject={subject.slug}
+                  aria-expanded={
+                    currentSubject?.slug === subject.slug ? "true" : "false"
+                  }
                 >
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </button>
+                  <h3 class="font-medium text-skin-base group-hover:text-skin-accent transition-colors">
+                    {subject.title}
+                  </h3>
+                  <svg
+                    class={`w-4 h-4 text-skin-muted transition-transform ${
+                      currentSubject?.slug === subject.slug ? "rotate-90" : ""
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
 
-              <!-- Notes list -->
-              <div 
-                class={`notes-list space-y-1 ml-2 border-l-2 border-skin-line/30 pl-3 ${
-                  currentSubject?.slug === subject.slug ? 'block' : 'hidden'
-                }`}
-                data-subject={subject.slug}
-              >
-                {subject.notes.map((note) => {
-                  const isActive = currentNote.slug === note.slug;
-                  return (
-                    <a
-                      href={`/notes/${note.slug}`}
-                      class={`block px-3 py-2 text-sm rounded-md transition-all duration-200 ${
-                        isActive
-                          ? 'bg-skin-accent text-skin-inverted font-medium shadow-sm'
-                          : 'text-skin-base/80 hover:text-skin-base hover:bg-skin-accent/10'
-                      }`}
-                    >
-                      <div class="flex items-center justify-between">
-                        <span class="truncate">{note.data.title}</span>
-                        {note.data.order && (
-                          <span class={`text-xs ${isActive ? 'text-skin-inverted/70' : 'text-skin-muted'}`}>
-                            {note.data.order}
-                          </span>
-                        )}
-                      </div>
-                    </a>
-                  );
-                })}
+                <div
+                  class={`notes-list space-y-1 ml-2 border-l-2 border-skin-line/30 pl-3 ${
+                    currentSubject?.slug === subject.slug ? "block" : "hidden"
+                  }`}
+                  data-subject={subject.slug}
+                >
+                  {subject.notes.map(note => {
+                    const isActive = currentNote.slug === note.slug;
+                    return (
+                      <a
+                        href={`/notes/${note.slug}`}
+                        class={`block px-3 py-2 text-sm rounded-md transition-all duration-200 ${
+                          isActive
+                            ? "bg-skin-accent text-skin-inverted font-medium shadow-sm"
+                            : "text-skin-base/80 hover:text-skin-base hover:bg-skin-accent/10"
+                        }`}
+                      >
+                        <div class="flex items-center justify-between">
+                          <span class="truncate">{note.data.title}</span>
+                          {note.data.order && (
+                            <span
+                              class={`text-xs ${isActive ? "text-skin-inverted/70" : "text-skin-muted"}`}
+                            >
+                              {note.data.order}
+                            </span>
+                          )}
+                        </div>
+                      </a>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          ))}
+            ))
+          }
         </nav>
       </aside>
 
@@ -119,7 +152,8 @@ const { currentNote, currentSubject, allSubjects } = Astro.props;
       <div
         id="sidebar-backdrop"
         class="fixed inset-0 z-30 bg-black/50 backdrop-blur-sm lg:hidden hidden"
-      ></div>
+      >
+      </div>
 
       <!-- Main content -->
       <main class="flex-1 lg:ml-0">
@@ -128,11 +162,15 @@ const { currentNote, currentSubject, allSubjects } = Astro.props;
           <nav class="mb-6 text-sm text-skin-muted">
             <ol class="flex items-center space-x-2">
               <li>
-                <a href="/notes" class="hover:text-skin-base transition-colors">Notes</a>
+                <a href="/notes" class="hover:text-skin-base transition-colors"
+                  >Notes</a
+                >
               </li>
               <li>/</li>
               <li>
-                <span class="text-skin-base font-medium">{currentSubject?.title}</span>
+                <span class="text-skin-base font-medium"
+                  >{currentSubject?.title}</span
+                >
               </li>
               <li>/</li>
               <li>
@@ -146,20 +184,26 @@ const { currentNote, currentSubject, allSubjects } = Astro.props;
             <h1 class="text-3xl font-bold text-skin-base mb-2">
               {currentNote.data.title}
             </h1>
-            {currentNote.data.description && (
-              <p class="text-lg text-skin-muted leading-relaxed mb-3">
-                {currentNote.data.description}
-              </p>
-            )}
-            {currentNote.data.tags && currentNote.data.tags.length > 0 && (
-              <div class="flex flex-wrap gap-2">
-                {currentNote.data.tags.map((tag) => (
-                  <span class={`px-3 py-1 text-sm rounded-full border ${getTagClasses(tag)}`}>
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            )}
+            {
+              currentNote.data.description && (
+                <p class="text-lg text-skin-muted leading-relaxed mb-3">
+                  {currentNote.data.description}
+                </p>
+              )
+            }
+            {
+              currentNote.data.tags && currentNote.data.tags.length > 0 && (
+                <div class="flex flex-wrap gap-2">
+                  {currentNote.data.tags.map(tag => (
+                    <span
+                      class={`px-3 py-1 text-sm rounded-full border ${getTagClasses(tag)}`}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )
+            }
           </header>
 
           <!-- Note content -->
@@ -170,61 +214,111 @@ const { currentNote, currentSubject, allSubjects } = Astro.props;
           <!-- Navigation between notes -->
           <nav class="mt-12 pt-6 border-t border-skin-line">
             <div class="flex justify-center items-center gap-4">
-              {(() => {
-                const currentIndex = currentSubject.notes.findIndex(n => n.slug === currentNote.slug);
-                const prevNote = currentIndex > 0 ? currentSubject.notes[currentIndex - 1] : null;
-                const nextNote = currentIndex < currentSubject.notes.length - 1 ? currentSubject.notes[currentIndex + 1] : null;
-                
-                return (
-                  <>
-                    {prevNote ? (
-                      <a
-                        href={`/notes/${prevNote.slug}`}
-                        class="group flex items-center gap-2 px-3 py-2 text-sm text-skin-muted hover:text-skin-accent transition-colors"
-                        title={prevNote.data.title}
-                      >
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                        </svg>
-                        <span>Prev</span>
-                      </a>
-                    ) : (
-                      <div class="flex items-center gap-2 px-3 py-2 text-sm text-skin-muted/40">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                        </svg>
-                        <span>Prev</span>
+              {
+                (() => {
+                  const currentIndex = currentSubject.notes.findIndex(
+                    n => n.slug === currentNote.slug
+                  );
+                  const prevNote =
+                    currentIndex > 0
+                      ? currentSubject.notes[currentIndex - 1]
+                      : null;
+                  const nextNote =
+                    currentIndex < currentSubject.notes.length - 1
+                      ? currentSubject.notes[currentIndex + 1]
+                      : null;
+
+                  return (
+                    <>
+                      {prevNote ? (
+                        <a
+                          href={`/notes/${prevNote.slug}`}
+                          class="group flex items-center gap-2 px-3 py-2 text-sm text-skin-muted hover:text-skin-accent transition-colors"
+                          title={prevNote.data.title}
+                        >
+                          <svg
+                            class="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 19l-7-7 7-7"
+                            />
+                          </svg>
+                          <span>Prev</span>
+                        </a>
+                      ) : (
+                        <div class="flex items-center gap-2 px-3 py-2 text-sm text-skin-muted/40">
+                          <svg
+                            class="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 19l-7-7 7-7"
+                            />
+                          </svg>
+                          <span>Prev</span>
+                        </div>
+                      )}
+
+                      <div class="flex items-center gap-2 px-3 py-1 text-sm text-skin-muted">
+                        <span>{currentIndex + 1}</span>
+                        <span>/</span>
+                        <span>{currentSubject.notes.length}</span>
                       </div>
-                    )}
-                    
-                    <div class="flex items-center gap-2 px-3 py-1 text-sm text-skin-muted">
-                      <span>{currentIndex + 1}</span>
-                      <span>/</span>
-                      <span>{currentSubject.notes.length}</span>
-                    </div>
-                    
-                    {nextNote ? (
-                      <a
-                        href={`/notes/${nextNote.slug}`}
-                        class="group flex items-center gap-2 px-3 py-2 text-sm text-skin-muted hover:text-skin-accent transition-colors"
-                        title={nextNote.data.title}
-                      >
-                        <span>Next</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
-                    ) : (
-                      <div class="flex items-center gap-2 px-3 py-2 text-sm text-skin-muted/40">
-                        <span>Next</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                      </div>
-                    )}
-                  </>
-                );
-              })()}
+
+                      {nextNote ? (
+                        <a
+                          href={`/notes/${nextNote.slug}`}
+                          class="group flex items-center gap-2 px-3 py-2 text-sm text-skin-muted hover:text-skin-accent transition-colors"
+                          title={nextNote.data.title}
+                        >
+                          <span>Next</span>
+                          <svg
+                            class="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </a>
+                      ) : (
+                        <div class="flex items-center gap-2 px-3 py-2 text-sm text-skin-muted/40">
+                          <span>Next</span>
+                          <svg
+                            class="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </div>
+                      )}
+                    </>
+                  );
+                })()
+              }
             </div>
           </nav>
         </div>
@@ -237,107 +331,111 @@ const { currentNote, currentSubject, allSubjects } = Astro.props;
 </Layout>
 
 <script>
-// Sidebar functionality
-function initializeSidebar() {
-  const sidebar = document.getElementById('sidebar');
-  const backdrop = document.getElementById('sidebar-backdrop');
-  const toggleButton = document.getElementById('sidebar-toggle');
-  const closeButton = document.getElementById('sidebar-close');
-  const subjectToggles = document.querySelectorAll('.subject-toggle');
+  // Sidebar functionality
+  function initializeSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const backdrop = document.getElementById("sidebar-backdrop");
+    const toggleButton = document.getElementById("sidebar-toggle");
+    const closeButton = document.getElementById("sidebar-close");
+    const subjectToggles = document.querySelectorAll(".subject-toggle");
 
-  function openSidebar() {
-    sidebar?.classList.remove('-translate-x-full');
-    backdrop?.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
-  }
+    function openSidebar() {
+      sidebar?.classList.remove("-translate-x-full");
+      backdrop?.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
 
-  function closeSidebar() {
-    sidebar?.classList.add('-translate-x-full');
-    backdrop?.classList.add('hidden');
-    document.body.style.overflow = '';
-  }
+    function closeSidebar() {
+      sidebar?.classList.add("-translate-x-full");
+      backdrop?.classList.add("hidden");
+      document.body.style.overflow = "";
+    }
 
-  // Mobile toggle
-  toggleButton?.addEventListener('click', openSidebar);
-  closeButton?.addEventListener('click', closeSidebar);
-  backdrop?.addEventListener('click', closeSidebar);
+    // Mobile toggle
+    toggleButton?.addEventListener("click", openSidebar);
+    closeButton?.addEventListener("click", closeSidebar);
+    backdrop?.addEventListener("click", closeSidebar);
 
-  // Close sidebar when clicking a note link on mobile
-  document.querySelectorAll('#sidebar a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth < 1024) { // lg breakpoint
+    // Close sidebar when clicking a note link on mobile
+    document.querySelectorAll("#sidebar a").forEach(link => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth < 1024) {
+          // lg breakpoint
+          closeSidebar();
+        }
+      });
+    });
+
+    // Subject toggle functionality
+    subjectToggles.forEach(toggle => {
+      toggle.addEventListener("click", () => {
+        const subjectSlug = toggle.getAttribute("data-subject");
+        const notesList = document.querySelector(
+          `.notes-list[data-subject="${subjectSlug}"]`
+        );
+        const arrow = toggle.querySelector("svg");
+        const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+
+        // Toggle this subject
+        if (notesList) {
+          notesList.classList.toggle("hidden");
+          arrow?.classList.toggle("rotate-90");
+          toggle.setAttribute("aria-expanded", (!isExpanded).toString());
+        }
+      });
+    });
+
+    // Handle resize events
+    function handleResize() {
+      if (window.innerWidth >= 1024) {
+        // lg breakpoint
         closeSidebar();
       }
-    });
-  });
-
-  // Subject toggle functionality
-  subjectToggles.forEach(toggle => {
-    toggle.addEventListener('click', () => {
-      const subjectSlug = toggle.getAttribute('data-subject');
-      const notesList = document.querySelector(`.notes-list[data-subject="${subjectSlug}"]`);
-      const arrow = toggle.querySelector('svg');
-      const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-
-      // Toggle this subject
-      if (notesList) {
-        notesList.classList.toggle('hidden');
-        arrow?.classList.toggle('rotate-90');
-        toggle.setAttribute('aria-expanded', (!isExpanded).toString());
-      }
-    });
-  });
-
-  // Handle resize events
-  function handleResize() {
-    if (window.innerWidth >= 1024) { // lg breakpoint
-      closeSidebar();
     }
+
+    window.addEventListener("resize", handleResize);
   }
 
-  window.addEventListener('resize', handleResize);
-}
+  // Initialize when DOM is ready
+  document.addEventListener("DOMContentLoaded", initializeSidebar);
 
-// Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', initializeSidebar);
-
-// Reinitialize after page navigation (for SPA-like behavior)
-document.addEventListener('astro:page-load', initializeSidebar);
+  // Reinitialize after page navigation (for SPA-like behavior)
+  document.addEventListener("astro:page-load", initializeSidebar);
 </script>
 
 <style>
-/* Custom scrollbar for sidebar */
-#sidebar {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(var(--color-text-muted), 0.3) transparent;
-}
+  /* Custom scrollbar for sidebar */
+  #sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(var(--color-text-muted), 0.3) transparent;
+  }
 
-#sidebar::-webkit-scrollbar {
-  width: 6px;
-}
+  #sidebar::-webkit-scrollbar {
+    width: 6px;
+  }
 
-#sidebar::-webkit-scrollbar-track {
-  background: transparent;
-}
+  #sidebar::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-#sidebar::-webkit-scrollbar-thumb {
-  background-color: rgba(var(--color-text-muted), 0.3);
-  border-radius: 3px;
-}
+  #sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--color-text-muted), 0.3);
+    border-radius: 3px;
+  }
 
-#sidebar::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(var(--color-text-muted), 0.5);
-}
+  #sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(var(--color-text-muted), 0.5);
+  }
 
-/* Smooth transitions for subject toggles */
-.notes-list {
-  transition: all 0.2s ease-in-out;
-}
+  /* Smooth transitions for subject toggles */
+  .notes-list {
+    transition: all 0.2s ease-in-out;
+  }
 
-/* Focus styles for accessibility */
-.subject-toggle:focus-visible,
-#sidebar a:focus-visible {
-  outline: 2px solid rgb(var(--color-accent));
-  outline-offset: 2px;
-}
+  /* Focus styles for accessibility */
+  .subject-toggle:focus-visible,
+  #sidebar a:focus-visible {
+    outline: 2px solid rgb(var(--color-accent));
+    outline-offset: 2px;
+  }
 </style>

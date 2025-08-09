@@ -5,12 +5,12 @@ import NoteLayout from "@layouts/NoteLayout.astro";
 
 export async function getStaticPaths() {
   const notes = await getCollection("notes");
-  
+
   return notes
-    .filter(note => note.slug.includes('/') && !note.slug.endsWith('/index')) // Only notes with subject/note structure
+    .filter(note => note.slug.includes("/") && !note.slug.endsWith("/index")) // Only notes with subject/note structure
     .map(note => ({
       params: { slug: note.slug },
-      props: { note }
+      props: { note },
     }));
 }
 
@@ -25,13 +25,13 @@ const { slug } = Astro.params;
 const context = await getNoteWithContext(slug!);
 
 if (!context || !context.subject) {
-  return Astro.redirect('/404');
+  return Astro.redirect("/404");
 }
 
 const { Content } = await note.render();
 ---
 
-<NoteLayout 
+<NoteLayout
   currentNote={context.note}
   currentSubject={context.subject}
   allSubjects={context.allSubjects}

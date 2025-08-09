@@ -359,12 +359,14 @@ EL_solns = solve(EL_Eqs, qddot, dict=True)
 ### Parameters
 
 - **Box:**
+
   - Side length $l_{\text{box}} = 6$
   - Mass $M_{\text{box}} = 100$
   - Moment of inertia:  
     $$ j*{\text{box}} = 4 M*{\text{box}} l\_{\text{box}}^2 $$
 
 - **Jack:**
+
   - Length $l_{\text{jack}} = 1$
   - Mass $m_{\text{jack}} = 1$
   - Moment of inertia:  

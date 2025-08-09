@@ -3,7 +3,11 @@ import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import { getNotesStructure } from "@utils/getNotesStructure";
-import { getColorClasses, getAccentClasses, getTagClasses } from "@utils/colorThemes";
+import {
+  getColorClasses,
+  getAccentClasses,
+  getTagClasses,
+} from "@utils/colorThemes";
 
 const notesStructure = await getNotesStructure();
 ---
@@ -11,7 +15,7 @@ const notesStructure = await getNotesStructure();
 <Layout title="Notes">
   <div class="flex min-h-screen flex-col">
     <Header activeNav="notes" />
-    
+
     <main class="flex-1">
       <div class="max-w-6xl mx-auto px-4 py-8 lg:px-8">
         <!-- Header Section -->
@@ -23,63 +27,89 @@ const notesStructure = await getNotesStructure();
             Evidence that I was paying attention - organized by subject.
           </p>
           <div class="mt-6 flex justify-center">
-            <div class="bg-skin-accent/10 text-skin-accent px-4 py-2 rounded-full text-sm font-medium">
-              {notesStructure.totalNotes} notes across {notesStructure.subjects.length} subjects
+            <div
+              class="bg-skin-accent/10 text-skin-accent px-4 py-2 rounded-full text-sm font-medium"
+            >
+              {notesStructure.totalNotes} notes across {
+                notesStructure.subjects.length
+              } subjects
             </div>
           </div>
         </header>
 
         <!-- Subjects Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {notesStructure.subjects.map((subject) => (
-            <div class={`group border rounded-lg p-6 hover:shadow-lg transition-all duration-200 ${getColorClasses(subject.color as any)} hover:border-opacity-80`}>
-              <div class="flex items-center justify-between mb-4">
-                <h2 class={`text-xl font-semibold group-hover:opacity-90 transition-colors ${subject.color ? 'text-gray-900 dark:text-white' : 'text-skin-base group-hover:text-skin-accent'}`}>
-                  {subject.title}
-                </h2>
-                <div class={`px-2 py-1 rounded-full text-xs font-medium ${subject.color ? 'bg-white/20 dark:bg-black/20' : 'bg-skin-accent/10 text-skin-accent'}`}>
-                  {subject.notes.length}
-                </div>
-              </div>
-              
-              <!-- Tags -->
-              {subject.tags.length > 0 && (
-                <div class="flex flex-wrap gap-1 mb-4">
-                  {subject.tags.map((tag) => (
-                    <span class={`px-2 py-1 text-xs rounded-full border ${getTagClasses(tag)}`}>
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
-              
-              <div class="space-y-2 mb-4">
-                {subject.notes.slice(0, 3).map((note) => (
-                  <a 
-                    href={`/notes/${note.slug}`}
-                    class={`block text-sm hover:opacity-80 transition-colors truncate ${subject.color ? 'text-gray-900 dark:text-white opacity-80 hover:opacity-100' : 'text-skin-muted hover:text-skin-base'}`}
+          {
+            notesStructure.subjects.map(subject => (
+              <div
+                class={`group border rounded-lg p-6 hover:shadow-lg transition-all duration-200 ${getColorClasses(subject.color as any)} hover:border-opacity-80`}
+              >
+                <div class="flex items-center justify-between mb-4">
+                  <h2
+                    class={`text-xl font-semibold group-hover:opacity-90 transition-colors ${subject.color ? "text-gray-900 dark:text-white" : "text-skin-base group-hover:text-skin-accent"}`}
                   >
-                    {note.data.order && `${note.data.order}. `}{note.data.title}
-                  </a>
-                ))}
-                {subject.notes.length > 3 && (
-                  <div class={`text-sm italic ${subject.color ? 'text-gray-900 dark:text-white opacity-70' : 'text-skin-muted'}`}>
-                    and {subject.notes.length - 3} more...
+                    {subject.title}
+                  </h2>
+                  <div
+                    class={`px-2 py-1 rounded-full text-xs font-medium ${subject.color ? "bg-white/20 dark:bg-black/20" : "bg-skin-accent/10 text-skin-accent"}`}
+                  >
+                    {subject.notes.length}
+                  </div>
+                </div>
+
+                {subject.tags.length > 0 && (
+                  <div class="flex flex-wrap gap-1 mb-4">
+                    {subject.tags.map(tag => (
+                      <span
+                        class={`px-2 py-1 text-xs rounded-full border ${getTagClasses(tag)}`}
+                      >
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                 )}
-              </div>
 
-              <a 
-                href={`/notes/${subject.notes[0]?.slug}`}
-                class={`inline-flex items-center gap-2 text-sm font-medium transition-colors ${subject.color ? 'text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-200' : getAccentClasses(subject.color as any)}`}
-              >
-                Start reading
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          ))}
+                <div class="space-y-2 mb-4">
+                  {subject.notes.slice(0, 3).map(note => (
+                    <a
+                      href={`/notes/${note.slug}`}
+                      class={`block text-sm hover:opacity-80 transition-colors truncate ${subject.color ? "text-gray-900 dark:text-white opacity-80 hover:opacity-100" : "text-skin-muted hover:text-skin-base"}`}
+                    >
+                      {note.data.order && `${note.data.order}. `}
+                      {note.data.title}
+                    </a>
+                  ))}
+                  {subject.notes.length > 3 && (
+                    <div
+                      class={`text-sm italic ${subject.color ? "text-gray-900 dark:text-white opacity-70" : "text-skin-muted"}`}
+                    >
+                      and {subject.notes.length - 3} more...
+                    </div>
+                  )}
+                </div>
+
+                <a
+                  href={`/notes/${subject.notes[0]?.slug}`}
+                  class={`inline-flex items-center gap-2 text-sm font-medium transition-colors ${subject.color ? "text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-200" : getAccentClasses(subject.color as any)}`}
+                >
+                  Start reading
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            ))
+          }
         </div>
 
         <!-- Quick Start Guide -->
@@ -128,22 +158,21 @@ tags: ["Northwestern", "Self-Studied", "Research"]
         </div> -->
       </div>
     </main>
-    
+
     <Footer />
   </div>
 </Layout>
 
 <style>
-.prose code {
-  @apply bg-skin-accent/10 text-skin-accent px-1.5 py-0.5 rounded text-sm;
-}
+  .prose code {
+    @apply bg-skin-accent/10 text-skin-accent px-1.5 py-0.5 rounded text-sm;
+  }
 
-.prose pre {
-  @apply bg-skin-card border border-skin-line rounded p-4 overflow-x-auto;
-}
+  .prose pre {
+    @apply bg-skin-card border border-skin-line rounded p-4 overflow-x-auto;
+  }
 
-.prose pre code {
-  @apply bg-transparent text-skin-base px-0 py-0;
-}
+  .prose pre code {
+    @apply bg-transparent text-skin-base px-0 py-0;
+  }
 </style>
-</Layout>

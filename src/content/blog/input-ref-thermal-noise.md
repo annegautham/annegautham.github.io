@@ -159,6 +159,7 @@ branchAdmittances = DiagonalMatrix[admittances];
   - It extracts the name (e.g., "R1", "C2") and takes the first character to identify the type (componentType = "R", "C", "L", etc.). This assumes a naming convention where resistors begin with "R", capacitors with "C", inductors with "L" (standard in SPICE).
   - It also reads the value string (4th token) and converts it to an expression/number via ToExpression. So "1k" becomes 1000, "1u" becomes 1e-6, etc.
 - **Admittance (nestedAdmittances):** Using a `Switch` on the type:
+
   - Resistor (R): Admittance $Y = 1/R$. (Assuming the value is resistance in ohms, the admittance is the reciprocal in Siemens.)
   - Capacitor (C): Admittance $Y = s C$. In the Laplace domain, a capacitance $C$ has admittance $sC$ (where $s = \sigma + j\omega$ is the complex frequency). This treats capacitors as frequency-dependent admittances.
   - Inductor (L): Admittance $Y = \frac{1}{s L}$. Inductors are the dual of capacitors in this sense (impedance $sL$, so admittance $1/(sL)$).
@@ -171,6 +172,7 @@ branchAdmittances = DiagonalMatrix[admittances];
 **Note:** The code assumes a single global temperature T and Boltzmann constant k are defined in the environment. It treats each resistor’s noise as an equivalent series voltage noise source with PSD $4k_BTR$. I could equally have used an equivalent parallel current noise $4k_B T / R$, but using the series voltage model aligns with the transfer function approach.
 
 - **Collecting results:** The function returns a pair `{admittance, noisePSD}` for each component. By mapping this over all components and transposing, we get two lists:
+
   - `admittances`: a list of admittance expressions (each may be a function of $s$) for each branch in the same order as `components`.
   - `noisePSDs`: a list of noise PSD values for each branch (numerical or symbolic, e.g., $4kT\cdot 1000$ for a 1kΩ resistor, or $0$ for reactive components).
 
