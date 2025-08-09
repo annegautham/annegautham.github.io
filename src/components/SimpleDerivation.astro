@@ -1,0 +1,25 @@
+---
+export interface Props {
+  steps: string[];
+  title?: string;
+}
+
+const { steps, title } = Astro.props;
+---
+
+<div class="simple-derivation bg-purple-100 dark:bg-purple-900 p-4 rounded-lg">
+  {title && <h3 class="text-lg font-bold mb-3">{title}</h3>}
+
+  <div class="space-y-2">
+    {
+      steps.map((step, index) => (
+        <div class="step p-2 bg-white dark:bg-gray-800 rounded border">
+          <span class="step-number font-bold text-purple-600 mr-2">
+            {index + 1}.
+          </span>
+          <span set:html={step} />
+        </div>
+      ))
+    }
+  </div>
+</div>

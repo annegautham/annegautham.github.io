@@ -1,0 +1,238 @@
+---
+export interface Props {
+  steps: string[];
+  title?: string;
+  className?: string;
+}
+
+const { steps, title, className = "" } = Astro.props;
+const derivationId = `derivation-${Math.random().toString(36).substr(2, 9)}`;
+---
+
+<div
+  class={`animated-derivation ${className}`}
+  data-derivation-id={derivationId}
+>
+  {
+    title && (
+      <h3 class="derivation-title text-lg font-semibold mb-4 text-skin-base">
+        {title}
+      </h3>
+    )
+  }
+
+  <div class="derivation-container space-y-4">
+    {
+      steps.map((step, index) => (
+        <div
+          class="derivation-step opacity-0 transform translate-y-8 transition-all duration-700 ease-out"
+          data-step={index}
+          data-derivation={derivationId}
+        >
+          <div class="step-content bg-skin-card border border-skin-line rounded-lg p-4 shadow-sm">
+            <div class="step-number inline-flex items-center justify-center w-6 h-6 bg-skin-accent text-skin-inverted rounded-full text-sm font-medium mr-3 mb-2">
+              {index + 1}
+            </div>
+            <div class="equation-content" set:html={step} />
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<script>
+  class AnimatedDerivation {
+    private observer: IntersectionObserver | null = null;
+
+    constructor() {
+      this.init();
+    }
+
+    init(): void {
+      // Wait for DOM to be ready
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", () =>
+          this.setupObserver()
+        );
+      } else {
+        this.setupObserver();
+      }
+    }
+
+    setupObserver(): void {
+      // Create intersection observer for scroll-triggered animations
+      this.observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const container = entry.target as HTMLElement;
+              this.animateDerivation(container);
+              this.observer?.unobserve(container);
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+          rootMargin: "50px 0px -50px 0px",
+        }
+      );
+
+      // Find all derivations and observe them
+      const derivations = document.querySelectorAll(".animated-derivation");
+      derivations.forEach(derivation => {
+        this.observer?.observe(derivation);
+      });
+    }
+
+    animateDerivation(container: HTMLElement): void {
+      const steps = container.querySelectorAll(".derivation-step");
+
+      steps.forEach((step: Element, index: number) => {
+        setTimeout(() => {
+          const stepElement = step as HTMLElement;
+          stepElement.style.opacity = "1";
+          stepElement.style.transform = "translateY(0)";
+
+          // Add subtle bounce effect
+          setTimeout(() => {
+            stepElement.style.transform = "translateY(-2px)";
+            setTimeout(() => {
+              stepElement.style.transform = "translateY(0px)";
+            }, 150);
+          }, 200);
+
+          // Add glow effect for equations
+          const equations = stepElement.querySelectorAll(
+            ".katex, .math, .equation-content"
+          );
+          equations.forEach(eq => {
+            const eqElement = eq as HTMLElement;
+            eqElement.style.transition = "all 0.3s ease";
+            eqElement.style.textShadow = "0 0 8px rgba(139, 92, 246, 0.3)";
+
+            setTimeout(() => {
+              eqElement.style.textShadow = "";
+            }, 1000);
+          });
+        }, index * 300); // Stagger each step by 300ms
+      });
+    }
+
+    // Public method to manually trigger animation
+    triggerAnimation(derivationId: string): void {
+      const container = document.querySelector(
+        `[data-derivation-id="${derivationId}"]`
+      ) as HTMLElement;
+      if (container) {
+        this.animateDerivation(container);
+        this.observer?.unobserve(container);
+      }
+    }
+  }
+
+  // Initialize when script loads
+  const animatedDerivation = new AnimatedDerivation();
+
+  // Make it globally available for manual triggering
+  declare global {
+    interface Window {
+      animatedDerivation: AnimatedDerivation;
+    }
+  }
+
+  window.animatedDerivation = animatedDerivation;
+</script>
+
+<style>
+  .animated-derivation {
+    position: relative;
+    margin: 2rem 0;
+  }
+
+  .derivation-step {
+    position: relative;
+  }
+
+  .step-content {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .step-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(var(--color-accent), 0.1),
+      transparent
+    );
+    transition: left 0.6s ease-in-out;
+  }
+
+  .equation-highlight .step-content::before {
+    left: 100%;
+  }
+
+  /* Equation styling */
+  .equation-content {
+    font-family: "Computer Modern", "Latin Modern Math", serif;
+    transition: all 0.3s ease;
+  }
+
+  .equation-highlight .equation-content {
+    text-shadow: 0 0 8px rgba(var(--color-accent), 0.3);
+  }
+
+  /* Math equation specific styling */
+  .equation-content mjx-container {
+    margin: 0.5rem 0;
+  }
+
+  /* Connection lines between steps */
+  .derivation-step:not(:last-child)::after {
+    content: "↓";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.3s;
+  }
+
+  .derivation-step.opacity-100:not(:last-child)::after {
+    opacity: 0.6;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .derivation-container {
+      padding: 0 1rem;
+    }
+
+    .step-content {
+      padding: 1rem;
+    }
+  }
+
+  /* Dark mode support */
+  .dark .equation-highlight .equation-content {
+    text-shadow: 0 0 8px rgba(var(--color-accent), 0.4);
+  }
+
+  /* Performance optimizations */
+  .derivation-step {
+    will-change: transform, opacity;
+  }
+
+  .step-content {
+    will-change: transform;
+  }
+</style>
