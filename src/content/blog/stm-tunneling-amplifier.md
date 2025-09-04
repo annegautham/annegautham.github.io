@@ -44,7 +44,7 @@ Given the very large $R_f$, thermal noise is significant and sets a practical li
 
 ## Power Rails and Decoupling
 
-Power to the amplifier is supplied through a two-pin header (J1) that delivers regulated $\pm15$~V analog rails. Each rail is decoupled locally with a 4.7~$\mu$F electrolytic capacitor in parallel with a 100~nF ceramic capacitor. This local bypass network helps reduce high-frequency power supply noise and prevents oscillations by stabilizing the op-amp power inputs.
+Power to the amplifier is supplied through a two-pin header (J1) that delivers regulated $\pm15$V analog rails. Each rail is decoupled locally with a 4.7~$\mu$F electrolytic capacitor in parallel with a 100~nF ceramic capacitor. This local bypass network helps reduce high-frequency power supply noise and prevents oscillations by stabilizing the op-amp power inputs.
 
 ## Guarding and Layout Strats
 
