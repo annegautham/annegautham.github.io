@@ -10,7 +10,7 @@ tags:
 description: Global directory page for my STM project (scanning tunneling microscope).
 ---
 
-**tl;dr**: Built a functional scanning tunneling electron microscope. Iterating upon it to make it more robust against noise sources & less janky. May develop curriculum revolving around instrument to teach younger students surface science adjacent topics. **Need help** in the following: curriculum development, electrical/computer engineering, software developmnet. Reach out if interested (4.543 billion years of experience required).
+**tl;dr**: Built a functional scanning tunneling electron microscope. Iterating upon it to make it more robust against noise sources & less janky. May develop curriculum revolving around instrument to explain surface science adjacent topics.
 
 ---
 
