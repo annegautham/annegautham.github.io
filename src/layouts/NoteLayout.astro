@@ -22,7 +22,7 @@ const { currentNote, currentSubject, allSubjects } = Astro.props;
 
     <!-- Mobile sidebar toggle -->
     <div
-      class="lg:hidden sticky top-16 z-30 bg-skin-fill border-b border-skin-line px-4 py-2"
+      class="lg:hidden sticky top-16 z-40 bg-skin-fill border-b border-skin-line px-4 py-2"
     >
       <button
         id="sidebar-toggle"
@@ -45,12 +45,12 @@ const { currentNote, currentSubject, allSubjects } = Astro.props;
       </button>
     </div>
 
-    <!-- Main layout container -->
-    <div class="flex flex-1 relative lg:pt-0">
+    <!-- Main layout container with fixed sidebar -->
+    <div class="flex min-h-screen flex-col lg:pt-0">
       <!-- Sidebar -->
       <aside
         id="sidebar"
-        class="fixed inset-y-0 left-0 z-40 w-80 bg-skin-fill border-r border-skin-line transform -translate-x-full transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0 lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)] lg:overflow-y-auto"
+        class="fixed inset-y-0 left-0 z-40 w-80 bg-skin-fill border-r border-skin-line transform -translate-x-full transition-transform duration-300 ease-in-out lg:translate-x-0 lg:block lg:h-[calc(100vh-4rem)] lg:top-16"
       >
         <!-- Sidebar header -->
         <div
@@ -155,12 +155,12 @@ const { currentNote, currentSubject, allSubjects } = Astro.props;
       >
       </div>
 
-      <!-- Main content -->
-      <main class="flex-1 lg:ml-0">
-        <div class="max-w-4xl mx-auto px-4 py-6 lg:px-8">
+      <!-- Main content - true centering with equal margins and proper spacing for mobile navigation -->
+      <main class="flex grow justify-center lg:ml-80 xl:mr-80">
+        <div class="w-full max-w-3xl px-4 pt-16 pb-6 lg:pt-6 lg:px-8">
           <!-- Breadcrumb navigation -->
           <nav class="mb-6 text-sm text-skin-muted">
-            <ol class="flex items-center space-x-2">
+            <ol class="flex flex-wrap items-center space-x-2">
               <li>
                 <a href="/notes" class="hover:text-skin-base transition-colors"
                   >Notes</a

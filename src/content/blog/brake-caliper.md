@@ -8,7 +8,7 @@ tags:
   - nanophotonics
   - julia
   - northwestern
-description: My final deliverable for ME240 (Introduction to Mechanical Design and Manufacturing)! Designed and tested bicycle Nylon 12 brake caliper.
+description: My final deliverable for ME240 (Introduction to Mechanical Design and Manufacturing)!
 ---
 
 ![placeholder](@assets/images/placeholder.png)
