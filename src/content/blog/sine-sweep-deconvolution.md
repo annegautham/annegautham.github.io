@@ -17,7 +17,7 @@ In the Northwestern Haptics Group, I'm attempting to characterize the lateral dy
 
 In many systems, we provide an excitation that resembles an impulse (such as striking a [baseball bat](/posts/bat-vibration) with a hammer). However, exciting the finger with a sharp impulse is not very practical, since it can be noisy, painful, and provide low SNR.
 
-Instead, a common technique is to use a sine sweep method (linear or exponential), originally developed for acoustics, to obtain clean and artifact-free impulse responses. These sweeps spread energy over time, then mathematically repack it into an IR - while allowing for clean seperation of nonlinear distortion (harmonics) from the linear response.
+Instead, a common technique is to use a sine sweep method (linear or exponential), originally developed for acoustics, to obtain clean and artifact-free impulse responses. These sweeps spread energy over time, then mathematically repack it into an IR - while allowing for clean seperation of nonlinear distortion (harmonics) from the linear response. This information is adapted from this <a href="https://scispace.com/pdf/advancements-in-impulse-response-measurements-by-sine-sweeps-176h77bxug.pdf" target = "_blank">paper</a>.
 
 ## System Models and Signals
 
