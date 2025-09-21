@@ -11,8 +11,6 @@ tags:
 description: My final deliverable for ME240 (Introduction to Mechanical Design and Manufacturing)!
 ---
 
-![placeholder](@assets/images/placeholder.png)
-
 ## Table of Contents
 
 ## Introduction
