@@ -1,14 +1,18 @@
 ---
-title: Socrates on the Value of Philosophy
+title: The Nature of Philosophy
 author: Gautham Anne
 order: 2
 pubDatetime: 2025-07-01T12:00:00Z
-description: Socrates on the Value of Philosophy
+description: |
+  Discussions on the nature of philosophy. Readings: Plato, “Apology: Defense of Socrates” & Russell, “The Value of Philosophy”
+
 tags:
   - Philosophy
 ---
 
 ## Table of Contents
+
+# The Nature of Philosophy
 
 ## The Value of Philosophy
 
