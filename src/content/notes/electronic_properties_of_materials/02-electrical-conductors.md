@@ -52,3 +52,28 @@ phi(x) = e^ikx u(x); u(x+P) = u(x)
 => periodic potential yields periodic wavefunction... duh
 
 3. Wavefunction contains two independent parts: a slow varying part (the phase) e^ikx, and a fast varying part u(x).
+
+Solving Schrodinger equation for special case (no potential)
+
+$hbar^2/2m * d^2phi/2x^2 + Epsi = 0$ => $hbar^2/2m * a_0(-ik)^2e^" + Ea_0 e^""$ yielding $0hbar^2/2m*k^2 + E = 0$,
+Relation between mass and wavelength (specifically momentum and lambda) only because p = h/lambda = h*k/2pi = hbar * k
+
+Thus p^2/2m = E - U (Kinetic Energy) -> known as the dispersion relation (between momentum and energy)
+
+## Kronig-Penney Model
+
+3 - Dchrodinger equations for 0<x<a and -b<x<0 are:
+d^2psi/dx^2 + a^2 psix = 0, a = sqrt(2mE/hbar^2)
+
+psi_a(x) = A_asin(alphax) + B_a cos(alphax) (and same for B but with beta instead of alpha)
+
+Thus B_a = B_b since boundary condition at x=0 requires continuity. Second continuity exploits periodic, and derivatives must also be continuous (because current of electron flowing is related to derivative of its wavefunction) -> thus 4 continuity equations as well (continuity of wavefunction and its derivative, continuity of the phase shift and derivative)
+
+And finally, we get a Kronig Penney Model
+-(a^2 + Betaa^2)/2alphabeta \* sin(alpha a) sin(beta b) + cos alpha a cosbeta b = cos(k(a+b))
+
+and really, since alpha and beta are only dependent on E, the right side dependent only on momentum, so equation is basically a dispersion.
+
+Now using epsilon = E/U_0, and let alpha_0 sqrt(2mU_0/hbar^2), similar to a particle inside a well problem, and we have a generalized dispersion relationship (unitless).
+
+Thus, the possible energy bands that are available electrons need to fit into equation so that the LHS needs to be between -1 and 1

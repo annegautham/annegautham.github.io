@@ -202,7 +202,7 @@ where $u[n]$ is the unit step function.
 
 An LTI system is completely characterized by its impulse response $h[n]$:
 
-```tikz
+$$
 \begin{tikzpicture}[node distance=3cm, auto]
   \node (input) {$x[n]$};
   \node (system) [rectangle, draw, minimum width=2cm, minimum height=1cm, right of=input] {LTI System\\$h[n]$};
@@ -213,7 +213,7 @@ An LTI system is completely characterized by its impulse response $h[n]$:
 
   \node[below of=system, node distance=1.5cm] {$y[n] = x[n] * h[n]$};
 \end{tikzpicture}
-```
+$$
 
 **Convolution Relationship:**
 $$y[n] = x[n] * h[n] = \sum_{k=-\infty}^{\infty} x[k]h[n-k] = \sum_{k=-\infty}^{\infty} h[k]x[n-k]$$

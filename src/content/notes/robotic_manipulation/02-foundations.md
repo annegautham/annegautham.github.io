@@ -9,7 +9,9 @@ tags:
 
 ## Table of Contents
 
-# Degrees of Freedom of a Rigid Body
+# Configuration Space
+
+## Degrees of Freedom of a Rigid Body
 
 In mechanical systems (and sometimes in electrical analogs), we often ask:  
 **Where is the system located, and how is it oriented?**
@@ -111,3 +113,25 @@ The human arm (considering the **hand as a rigid body**) has **7 degrees of free
 **Total = 7 DOFs**
 
 Another way of thinking about it is by supposing you 'fix' your hand to a grounded surface, like a table. Since your arm can still move, it must have more than 6 degrees of freedom. In particular, it can only move in one way, so 6 + 1 is 7.
+
+From Grubler's formula, we have N = 5, m = 6, J = 7 => $6(5 - 1 - 7) + \sum_{i=1}^J f_i = 7$, so sum of freedoms provided by the joints is 25. In addition, constaints imposed by joints is $6\cdot4 - 7 = 17$.
+
+## Spaces and Representations
+
+Charts are local, better to handel some singularities, multiple charts are called an 'atlas'. Singular points are those where some properties are not well defined. In general, we describe space with more numbers than needed, and subject them to constraints.
+
+## Types of Constraints
+
+If there are N coordinates, and k independent holonomic constraints, it reduce an n-dim C-space to n-k dof. Pfaffian constraints are constraints on velocity, such as $A(\theta)\ddot \theta = 0$. Nonholonomic if constraints on velocity don't restrict configuration constraints.
+
+Task space is teh space in which a task is most naturally represented - independent of robot. Workspace is specification of space reachable of robot.
+
+Implicit (more #), Explicit (less #, minimal description)
+
+Given a diff-drive robot: how many holonomic constraints k and nonholonomic constraints m are on it given non-slip...
+
+1. Controls on robot (2), the wheel speeds.
+2. There are 3 velocity constraints (Pffafian)...
+3. How many are holonomic / how many are nonholonomic...
+
+- 1 nonholonomic, 2 holonomic
