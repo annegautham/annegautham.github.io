@@ -1,0 +1,62 @@
+---
+// Custom component for the Kronig-Penney diagram
+---
+
+<div class="kronig-penney-diagram">
+  <div id="tikz-kronig-penney"></div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Create the TikZ script element
+    const tikzScript = document.createElement("script");
+    tikzScript.type = "text/tikz";
+    tikzScript.textContent = `
+\\begin{tikzpicture}[scale=0.8]
+\\draw[thick,->] (-4,0) -- (4,0) node[right] {$x$};
+\\draw[thick,->] (-4,0) -- (-4,3) node[above] {$U(x)$};
+
+% Draw the periodic potential
+\\draw[thick,blue] (-4,0) -- (-3,0) -- (-3,2) -- (-2,2) -- (-2,0) -- (-1,0) -- (-1,2) -- (0,2) -- (0,0) -- (1,0) -- (1,2) -- (2,2) -- (2,0) -- (3,0) -- (3,2) -- (4,2);
+
+% Labels for potential heights
+\\node[left] at (-4,2) {$U_0$};
+\\node[left] at (-4,0) {$0$};
+
+% Width labels
+\\draw[<->] (-2,-0.3) -- (-1,-0.3);
+\\node[below] at (-1.5,-0.3) {$a$};
+\\draw[<->] (-3,-0.5) -- (-2,-0.5);
+\\node[below] at (-2.5,-0.5) {$b$};
+\\draw[<->] (-3,-0.7) -- (-1,-0.7);
+\\node[below] at (-2,-0.7) {$P = a + b$};
+
+% Potential labels
+\\node[blue] at (-2.5,1) {$U_0$};
+\\node[blue] at (-0.5,1) {$U_0$};
+\\node[blue] at (1.5,1) {$U_0$};
+\\end{tikzpicture}
+    `;
+
+    const container = document.getElementById("tikz-kronig-penney");
+    if (container) {
+      container.appendChild(tikzScript);
+    }
+
+    // Try to process with TikZJax if available
+    if (window.tikzjax && typeof window.tikzjax.process === "function") {
+      window.tikzjax.process();
+    }
+  });
+</script>
+
+<style>
+  .kronig-penney-diagram {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 1px solid rgb(var(--color-border) / 0.2);
+    border-radius: 8px;
+    background: rgb(var(--color-card) / 0.1);
+  }
+</style>

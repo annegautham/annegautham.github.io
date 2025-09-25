@@ -1,6 +1,5 @@
 ---
-title: |
-  Discusssion #1
+title: Discussion
 author: Gautham Anne
 order: 1
 pubDatetime: 2025-07-01T12:00:00Z

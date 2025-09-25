@@ -1,0 +1,43 @@
+---
+export interface Props {
+  code: string;
+}
+
+const { code } = Astro.props;
+---
+
+<div class="tikz-container">
+  <script type="text/tikz" set:html={code} />
+</div>
+
+<script>
+  // Load TikZJax from CDN if not already loaded
+  function loadTikZJax() {
+    if (document.querySelector('script[src*="tikzjax"]')) {
+      return; // Already loaded
+    }
+
+    const script = document.createElement("script");
+    script.src = "https://tikzjax.com/v1/tikzjax.js";
+    document.head.appendChild(script);
+  }
+
+  // Load TikZJax when the page loads
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", loadTikZJax);
+  } else {
+    loadTikZJax();
+  }
+</script>
+
+<style>
+  .tikz-container {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .tikz-container svg {
+    max-width: 100%;
+    height: auto;
+  }
+</style>

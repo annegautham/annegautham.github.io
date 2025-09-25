@@ -1,79 +1,362 @@
 ---
-title: Electrical Conductors
+title: Electrical Conductors and Electronic Band Theory
 author: Gautham Anne
 pubDatetime: 2025-07-01T12:00:00Z
-description: Electrical Conductors
+description: Comprehensive study of electrical conductors, electronic band theory, quantum mechanics of electrons in crystals, and the fundamental models describing electronic properties of materials
 tags:
-  - materials
+  - ssp
 ---
 
 ## Table of Contents
 
-Classes: Solids, Liquids, Gasses (Most powerful switches), Plasma
+## Classification of Materials by Electrical Conductivity
 
-Insulators, Semiconductors, Conductors
+### Fundamental Categories
 
-- Conductivities as a function of materials classes
-- Famous case with Germanium - a little bit of impurities in the semiconductors can make hem very conductive
-- Germanium diodes are very good radar receiver (radar development)
+Materials can be classified into four primary categories based on their electrical conductive properties:
 
-## Electrons in a Crystal
+#### 1. **Solids**
 
-### Assumptions
+- **Metals**: High conductivity ($10^6 - 10^8$ S/m)
+- **Semiconductors**: Variable conductivity ($10^{-6} - 10^3$ S/m)
+- **Insulators**: Very low conductivity ($< 10^{-10}$ S/m)
 
-1. Electrons in a crystal are not free
-2. They experience electrostatic potential from lattice ions and other electroncs
-3. The total potential is periodic, with the same periodicity oas the lattice
-4. The solutions of the Schrodinger equation are the 'band structures' for solids
+#### 2. **Liquids**
 
-### Tight-Binding Approximation
+- **Electrolytes**: Ionic conductivity
+- **Liquid metals**: Electronic conductivity
+- **Pure liquids**: Generally insulating
 
-Qualitatively, the potential around a nuclei is the electrostatic potential. Electrons of far apart atoms are primarily around a single atom and at specific energy levels.
-However, atoms are very close in a solid (sub-nanometer range), and hence, their electrons are no longer local.
+#### 3. **Gases**
 
-Thus, in solids, an electron wavefunction overlaps with many atoms. This feature significantly affects the resonanting (allowed) electron energy levels. When you couple multiple oscillators (coupled potential wells of atoms), mathematically enforces a splitting of these energy levels.
+- **Ionized gases**: Can be highly conductive
+- **Most powerful electrical switches** due to rapid ionization/deionization
+- **Plasma**: Fourth state of matter with free electrons and ions
 
-As the distance between the atoms reduces, the electron wavefunction ovverlaps with many atoms. As the interatomic distance decreases, the energy bands split. There exists a specific distance where solids are form (most semiconductors at 3 angstroms).
+#### 4. **Plasma**
 
-## Mathematical
+- Fully ionized gas with equal numbers of positive and negative charges
+- Extremely high conductivity approaching that of metals
 
-diagram of potential of single atom, potential of 1d crystical, and simplification of potential at 0 interatomic distance, the potential is 0 instead of -infinity.
+### Historical Significance: The Germanium Case Study
 
-prof converts wavefunctino into exponential format... introduces free space differential equation that solution is a wavefunction form...
+The development of **germanium semiconductors** revolutionized electronics and radar technology:
 
-## The Bloch Theorem
+- **Purity Requirements**: Small amounts of impurities (parts per billion) dramatically alter conductivity
+- **Doping Effect**: Controlled addition of impurities can increase conductivity by orders of magnitude
+- **Radar Technology**: Germanium diodes became essential components in radar receivers during WWII
+- **Foundation of Electronics**: Led to the development of transistors and modern semiconductor devices
 
-Potential $U(x) = U(x+P)$ 2. Putting the above potential in the Schrodinger's Equation, yields
+**Conductivity Range**: Pure germanium has resistivity ~0.5 Ω·m, but doped germanium can achieve resistivities as low as $10^{-4}$ Ω·m.
 
-$\frac{\bar{h}^2}{2m} laplacianp * phi + [E-U(x,y,z)]phi = 0$, the only way to get a stable potential is the following equalities:
-phi(x+P) = e^ikP phi (x)
+## Quantum Mechanical Description of Electrons in Crystals
 
-phi(x) = e^ikx u(x); u(x+P) = u(x)
-=> periodic potential yields periodic wavefunction... duh
+### Fundamental Assumptions
 
-3. Wavefunction contains two independent parts: a slow varying part (the phase) e^ikx, and a fast varying part u(x).
+The quantum mechanical treatment of electrons in crystalline solids is based on several key assumptions:
 
-Solving Schrodinger equation for special case (no potential)
+#### 1. **Non-Free Electron Model**
 
-$hbar^2/2m * d^2phi/2x^2 + Epsi = 0$ => $hbar^2/2m * a_0(-ik)^2e^" + Ea_0 e^""$ yielding $0hbar^2/2m*k^2 + E = 0$,
-Relation between mass and wavelength (specifically momentum and lambda) only because p = h/lambda = h*k/2pi = hbar * k
+Electrons in crystals are **not free particles** but are constrained by the crystal structure and interactions.
 
-Thus p^2/2m = E - U (Kinetic Energy) -> known as the dispersion relation (between momentum and energy)
+#### 2. **Electrostatic Interactions**
 
-## Kronig-Penney Model
+Electrons experience complex electrostatic potentials from:
 
-3 - Dchrodinger equations for 0<x<a and -b<x<0 are:
-d^2psi/dx^2 + a^2 psix = 0, a = sqrt(2mE/hbar^2)
+- **Lattice ions**: Coulomb attraction to positive nuclei
+- **Other electrons**: Coulomb repulsion and exchange interactions
+- **Core electrons**: Screening effects from inner shell electrons
 
-psi_a(x) = A_asin(alphax) + B_a cos(alphax) (and same for B but with beta instead of alpha)
+#### 3. **Periodic Potential**
 
-Thus B_a = B_b since boundary condition at x=0 requires continuity. Second continuity exploits periodic, and derivatives must also be continuous (because current of electron flowing is related to derivative of its wavefunction) -> thus 4 continuity equations as well (continuity of wavefunction and its derivative, continuity of the phase shift and derivative)
+The total electrostatic potential has the same periodicity as the crystal lattice:
+$$U(\mathbf{r}) = U(\mathbf{r} + \mathbf{R})$$
+where $\mathbf{R}$ is any lattice vector.
 
-And finally, we get a Kronig Penney Model
--(a^2 + Betaa^2)/2alphabeta \* sin(alpha a) sin(beta b) + cos alpha a cosbeta b = cos(k(a+b))
+#### 4. **Band Structure Solutions**
 
-and really, since alpha and beta are only dependent on E, the right side dependent only on momentum, so equation is basically a dispersion.
+Solutions to the Schrödinger equation in this periodic potential yield **electronic band structures**, which determine all electronic properties of the solid.
 
-Now using epsilon = E/U_0, and let alpha_0 sqrt(2mU_0/hbar^2), similar to a particle inside a well problem, and we have a generalized dispersion relationship (unitless).
+### The Tight-Binding Approximation
 
-Thus, the possible energy bands that are available electrons need to fit into equation so that the LHS needs to be between -1 and 1
+#### Physical Foundation
+
+The tight-binding model provides intuitive understanding of how atomic orbitals combine to form electronic bands:
+
+**Isolated Atoms**: When atoms are far apart (>> 1 nm), electrons are localized around individual nuclei with discrete energy levels determined by atomic quantum mechanics.
+
+**Crystal Formation**: As atoms approach each other to form a solid (typical spacing ~0.3 nm for semiconductors), several phenomena occur:
+
+1. **Wavefunction Overlap**: Electron wavefunctions from neighboring atoms begin to overlap significantly
+2. **Energy Level Splitting**: Each atomic energy level splits into multiple closely-spaced levels
+3. **Band Formation**: With $N$ atoms, each atomic level splits into $N$ closely-spaced levels forming a continuous band
+
+#### Mathematical Description
+
+For a system of $N$ identical atoms, an atomic orbital $\phi(\mathbf{r} - \mathbf{R}_i)$ centered at site $\mathbf{R}_i$ combines to form Bloch states:
+
+$$\psi_k(\mathbf{r}) = \frac{1}{\sqrt{N}} \sum_{i=1}^{N} e^{i\mathbf{k} \cdot \mathbf{R}_i} \phi(\mathbf{r} - \mathbf{R}_i)$$
+
+**Energy Dispersion**: The energy becomes k-dependent:
+$$E(k) = E_{\text{atomic}} - t\sum_{\delta} e^{i\mathbf{k} \cdot \boldsymbol{\delta}}$$
+where $t$ is the hopping integral and $\boldsymbol{\delta}$ represents nearest-neighbor vectors.
+
+#### Critical Interatomic Distance
+
+**Equilibrium Spacing**: Most semiconductors form stable crystals at approximately **3 Å** (0.3 nm) interatomic spacing, representing an optimal balance between:
+
+- **Attractive forces**: Coulomb attraction, covalent bonding
+- **Repulsive forces**: Pauli exclusion, core electron repulsion
+
+## Mathematical Framework: From Atoms to Bands
+
+### Potential Energy Landscapes
+
+#### Single Atom Potential
+
+For an isolated atom, the potential energy is:
+$$U_{\text{atom}}(r) = -\frac{Ze^2}{4\pi\varepsilon_0 r}$$
+where $Z$ is the nuclear charge.
+
+#### One-Dimensional Crystal Potential
+
+For a 1D chain of atoms with lattice constant $a$:
+$$U_{\text{crystal}}(x) = \sum_{n=-\infty}^{\infty} U_{\text{atom}}(x - na)$$
+
+#### Simplified Model Potential
+
+At the limit of zero interatomic distance, the potential approaches a constant value rather than diverging to $-\infty$, leading to the **nearly free electron model**.
+
+### Wavefunction Solutions
+
+The transition from atomic to crystalline wavefunctions involves:
+
+1. **Atomic Wavefunctions**: $\psi_{\text{atomic}}(r) = R_{nl}(r)Y_l^m(\theta,\phi)$
+2. **Linear Combinations**: Form Bloch states as linear combinations
+3. **Exponential Modulation**: Include plane wave factors for momentum
+
+## The Bloch Theorem: Foundation of Band Theory
+
+### Statement of the Theorem
+
+For a periodic potential $U(\mathbf{r}) = U(\mathbf{r} + \mathbf{R})$, where $\mathbf{R}$ is any lattice vector, the solutions to the Schrödinger equation have the form:
+
+$$\psi_{n\mathbf{k}}(\mathbf{r}) = e^{i\mathbf{k} \cdot \mathbf{r}} u_{n\mathbf{k}}(\mathbf{r})$$
+
+where $u_{n\mathbf{k}}(\mathbf{r})$ has the same periodicity as the lattice:
+$$u_{n\mathbf{k}}(\mathbf{r} + \mathbf{R}) = u_{n\mathbf{k}}(\mathbf{r})$$
+
+### Derivation and Physical Meaning
+
+#### Schrödinger Equation with Periodic Potential
+
+$$-\frac{\hbar^2}{2m}\nabla^2\psi + U(\mathbf{r})\psi = E\psi$$
+
+#### Periodicity Condition
+
+The key insight is that $U(\mathbf{r}) = U(\mathbf{r} + \mathbf{R})$ leads to:
+$$\psi(\mathbf{r} + \mathbf{R}) = e^{i\mathbf{k} \cdot \mathbf{R}}\psi(\mathbf{r})$$
+
+#### Decomposition of the Wavefunction
+
+The Bloch wavefunction contains two independent components:
+
+1. **Plane Wave Component**: $e^{i\mathbf{k} \cdot \mathbf{r}}$
+
+   - Represents the **momentum** of the electron
+   - Provides **translational symmetry**
+   - **Slowly varying** on the scale of the lattice
+
+2. **Periodic Component**: $u_{n\mathbf{k}}(\mathbf{r})$
+   - Has the **periodicity of the lattice**
+   - **Rapidly varying** on atomic scales
+   - Determines the **band index** $n$
+
+### Free Electron Limit
+
+#### Special Case: Zero Potential
+
+When $U(\mathbf{r}) = 0$, the Schrödinger equation becomes:
+$$-\frac{\hbar^2}{2m}\nabla^2\psi = E\psi$$
+
+#### Solution
+
+The solution is a pure plane wave:
+$$\psi(\mathbf{r}) = A_0 e^{i\mathbf{k} \cdot \mathbf{r}}$$
+
+Substituting back:
+$$-\frac{\hbar^2}{2m}(-k^2)A_0 e^{i\mathbf{k} \cdot \mathbf{r}} = EA_0 e^{i\mathbf{k} \cdot \mathbf{r}}$$
+
+#### Dispersion Relation
+
+This yields the free electron dispersion relation:
+$$E = \frac{\hbar^2 k^2}{2m} = \frac{p^2}{2m}$$
+
+#### de Broglie Relationship
+
+The momentum-wavelength relationship is fundamental:
+$$p = \frac{h}{\lambda} = \frac{h \cdot k}{2\pi} = \hbar k$$
+
+#### Kinetic Energy
+
+For free electrons, all energy is kinetic:
+$$E_{\text{kinetic}} = \frac{p^2}{2m} = E - U = E \quad \text{(since } U = 0\text{)}$$
+
+This **dispersion relation** connects momentum (or k-vector) to energy and is fundamental to understanding electronic properties.
+
+## Kronig-Penney Model: Exact Solution for Periodic Potentials
+
+### Model Setup
+
+The Kronig-Penney model provides an exactly solvable example of electrons in a periodic potential, consisting of:
+
+**Periodic Square Well Potential:**
+
+```tikz
+\begin{tikzpicture}[scale=0.8]
+\draw[thick,->] (-4,0) -- (4,0) node[right] {$x$};
+\draw[thick,->] (-4,0) -- (-4,3) node[above] {$U(x)$};
+
+% Draw the periodic potential
+\draw[thick,blue] (-4,0) -- (-3,0) -- (-3,2) -- (-2,2) -- (-2,0) -- (-1,0) -- (-1,2) -- (0,2) -- (0,0) -- (1,0) -- (1,2) -- (2,2) -- (2,0) -- (3,0) -- (3,2) -- (4,2);
+
+% Labels for potential heights
+\node[left] at (-4,2) {$U_0$};
+\node[left] at (-4,0) {$0$};
+
+% Width labels
+\draw[<->] (-2,-0.3) -- (-1,-0.3);
+\node[below] at (-1.5,-0.3) {$a$};
+\draw[<->] (-3,-0.5) -- (-2,-0.5);
+\node[below] at (-2.5,-0.5) {$b$};
+\draw[<->] (-3,-0.7) -- (-1,-0.7);
+\node[below] at (-2,-0.7) {$P = a + b$};
+
+% Potential labels
+\node[blue] at (-2.5,1) {$U_0$};
+\node[blue] at (-0.5,1) {$U_0$};
+\node[blue] at (1.5,1) {$U_0$};
+\end{tikzpicture}
+```
+
+</script>
+</div>
+
+**Model Parameters:**
+
+- **Potential Wells**: Width $a$, potential $U = 0$
+- **Potential Barriers**: Width $b$, potential $U = U_0 > 0$
+- **Period**: $P = a + b$
+
+### Region-Specific Schrödinger Equations
+
+#### Region I: Inside Wells ($0 < x < a$)
+
+$$-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} = E\psi$$
+
+Defining $\alpha^2 = \frac{2mE}{\hbar^2}$:
+$$\frac{d^2\psi}{dx^2} + \alpha^2\psi = 0$$
+
+**General Solution**:
+$$\psi_I(x) = A\sin(\alpha x) + B\cos(\alpha x)$$
+
+#### Region II: Inside Barriers ($-b < x < 0$)
+
+$$-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} + U_0\psi = E\psi$$
+
+Defining $\beta^2 = \frac{2m(U_0 - E)}{\hbar^2}$ (assuming $E < U_0$):
+$$\frac{d^2\psi}{dx^2} - \beta^2\psi = 0$$
+
+**General Solution**:
+$$\psi_{II}(x) = C e^{\beta x} + D e^{-\beta x}$$
+
+### Boundary Conditions and Continuity
+
+#### Continuity Requirements
+
+1. **Wavefunction Continuity**: $\psi$ must be continuous at all interfaces
+2. **Derivative Continuity**: $\frac{d\psi}{dx}$ must be continuous (ensuring current conservation)
+3. **Bloch Periodicity**: $\psi(x + P) = e^{ikP}\psi(x)$
+4. **Derivative Periodicity**: $\frac{d\psi}{dx}\Big|_{x+P} = e^{ikP}\frac{d\psi}{dx}\Big|_x$
+
+#### Boundary Condition at $x = 0$
+
+From continuity:
+$$B = C + D$$
+$$\alpha A = \beta(C - D)$$
+
+#### Periodic Boundary Conditions
+
+These lead to a system of four linear equations in four unknowns $(A, B, C, D)$.
+
+### The Kronig-Penney Dispersion Relation
+
+#### Final Result
+
+After applying all boundary conditions and requiring non-trivial solutions, we obtain:
+
+$$-\frac{\alpha^2 + \beta^2}{2\alpha\beta}\sin(\alpha a)\sinh(\beta b) + \cos(\alpha a)\cosh(\beta b) = \cos(k(a+b))$$
+
+#### Physical Interpretation
+
+- **Left Side**: Depends only on energy $E$ through $\alpha$ and $\beta$
+- **Right Side**: Depends only on crystal momentum $k$
+- **Constraint**: The right side must be between -1 and +1 for real solutions
+
+#### Dimensionless Parameters
+
+Introducing dimensionless variables:
+
+- **Reduced Energy**: $\varepsilon = \frac{E}{U_0}$
+- **Characteristic Parameter**: $\alpha_0 = \sqrt{\frac{2mU_0}{\hbar^2}}$
+
+The dispersion relation becomes:
+$$P(\varepsilon) = \cos(k(a+b))$$
+
+where $P(\varepsilon)$ is the left-hand side expressed in terms of $\varepsilon$.
+
+### Energy Band Structure
+
+#### Allowed and Forbidden Bands
+
+**Allowed Bands**: Energy ranges where $|P(\varepsilon)| \leq 1$
+
+- Electrons can propagate with real $k$ values
+- Form continuous energy bands
+
+**Forbidden Bands (Band Gaps)**: Energy ranges where $|P(\varepsilon)| > 1$
+
+- No real solutions for $k$
+- Electrons cannot exist at these energies
+
+#### Band Edge Conditions
+
+- **Band Edge**: Where $P(\varepsilon) = \pm 1$
+- **Band Center**: Where $P(\varepsilon) = 0$
+- **Effective Mass**: Determined by curvature $\frac{d^2E}{dk^2}$ near band edges
+
+### Connection to Real Materials
+
+#### Limiting Cases
+
+1. **Free Electron Limit** ($U_0 \to 0$):
+   $$E = \frac{\hbar^2 k^2}{2m}$$
+
+2. **Strong Potential Limit** ($U_0 \gg E$):
+
+   - Tight-binding behavior
+   - Narrow bands with large gaps
+
+3. **Nearly Free Electrons** ($U_0$ small):
+   - Band gaps open at Brillouin zone boundaries
+   - Explains metal-insulator transitions
+
+#### Physical Significance
+
+The Kronig-Penney model demonstrates how:
+
+- **Periodic potentials** naturally lead to **band structures**
+- **Energy gaps** arise from **wave interference** effects
+- **Electronic properties** depend on the **relationship between Fermi energy and band structure**
+
+This model forms the theoretical foundation for understanding conductors, semiconductors, and insulators in terms of their electronic band structures.
