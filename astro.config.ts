@@ -8,7 +8,6 @@ import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
 import { remarkReadingTime } from "./src/utils/remark-reading-time.mjs";
-import { remarkTikz } from "./src/utils/remark-tikz.mjs";
 
 export default defineConfig({
   site: SITE.website,
@@ -18,7 +17,6 @@ export default defineConfig({
     remarkPlugins: [
       remarkToc,
       remarkMath,
-      remarkTikz,
       remarkReadingTime,
       [remarkCollapse, { test: "Table of contents" }],
     ],

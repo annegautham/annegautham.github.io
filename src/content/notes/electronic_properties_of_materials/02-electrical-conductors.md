@@ -359,4 +359,60 @@ The Kronig-Penney model demonstrates how:
 - **Energy gaps** arise from **wave interference** effects
 - **Electronic properties** depend on the **relationship between Fermi energy and band structure**
 
-This model forms the theoretical foundation for understanding conductors, semiconductors, and insulators in terms of their electronic band structures.
+## Brillouin Zones and Band Structure
+
+### Energy-Momentum Relations in Crystals
+
+The **energy-momentum relation** $E(\mathbf{k})$ is only valid within specific regions of momentum space known as **Brillouin Zones**.
+
+#### Brillouin Zone Definition
+
+A **Brillouin Zone** is the primitive unit cell of the reciprocal lattice, constructed by:
+
+1. Placing the origin at a reciprocal lattice point
+2. Drawing vectors to nearest neighbor lattice points
+3. Constructing perpendicular bisecting planes
+4. The first Brillouin zone is the smallest volume enclosed by these planes
+
+### Crystallographic Symmetry Points and Directions
+
+#### Notation Convention
+
+**Roman Letters**: Denote high-symmetry **points** in k-space
+**Greek Letters**: Denote high-symmetry **directions** (lines) in k-space
+
+#### FCC Brillouin Zone Structure
+
+For face-centered cubic lattices (common in semiconductors), important symmetry points include:
+
+- **Γ (Gamma)**: Zone center at $\mathbf{k} = (0,0,0)$
+- **X**: Zone boundary points along principal axes
+- **L**: Zone boundary points along face diagonals
+- **K**: Zone boundary points along edges
+
+### Direct vs. Indirect Band Gap Semiconductors
+
+#### Direct Band Gap
+
+**Condition**: The valence band maximum and conduction band minimum occur at the **same k-value**
+
+- Usually both extrema are located at the Γ point
+- **Examples**: GaAs, InP, GaN
+- **Optical Properties**: Strong light absorption and emission
+
+#### Indirect Band Gap
+
+**Condition**: The valence band maximum and conduction band minimum occur at **different k-values**
+
+- **Silicon**: Valence band maximum at Γ, conduction band minimum near X point
+- **Germanium**: Valence band maximum at Γ, conduction band minimum at L point
+- **Optical Properties**: Weaker optical transitions (require phonon assistance)
+
+#### Significance for Electronic Devices
+
+**Energy Bands**: Exist for all semiconductors, determining electrical and optical properties
+
+**Band Gaps**:
+
+- Present in semiconductors and insulators
+- **Absent in metals** - this is why metals don't have energy gaps like semiconductors

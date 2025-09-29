@@ -96,14 +96,17 @@ where:
 The human arm (considering the **hand as a rigid body**) has **7 degrees of freedom**:
 
 1. **Shoulder joint** – 3 DOFs (spherical)
+
    - flexion/extension
    - abduction/adduction
    - internal/external rotation
 
 2. **Elbow joint** – 1 DOF
+
    - flexion/extension
 
 3. **Forearm (radioulnar joint)** – 1 DOF
+
    - pronation/supination
 
 4. **Wrist joint** – 2 DOFs
@@ -118,20 +121,41 @@ From Grubler's formula, we have N = 5, m = 6, J = 7 => $6(5 - 1 - 7) + \sum_{i=1
 
 ## Spaces and Representations
 
-Charts are local, better to handel some singularities, multiple charts are called an 'atlas'. Singular points are those where some properties are not well defined. In general, we describe space with more numbers than needed, and subject them to constraints.
+### Charts and Atlases
+
+**Charts** are local coordinate representations that handle singularities better than global representations. **Singular points** are locations where certain properties are not well-defined.
+
+Multiple charts together form an **atlas**, providing complete coverage of the space. In general, we describe configuration spaces using more coordinates than strictly necessary, then subject them to appropriate constraints.
 
 ## Types of Constraints
 
-If there are N coordinates, and k independent holonomic constraints, it reduce an n-dim C-space to n-k dof. Pfaffian constraints are constraints on velocity, such as $A(\theta)\ddot \theta = 0$. Nonholonomic if constraints on velocity don't restrict configuration constraints.
+### Holonomic vs. Nonholonomic Constraints
 
-Task space is teh space in which a task is most naturally represented - independent of robot. Workspace is specification of space reachable of robot.
+**Holonomic Constraints**: If there are $N$ coordinates and $k$ independent holonomic constraints, they reduce an $n$-dimensional configuration space to $(n-k)$ degrees of freedom.
 
-Implicit (more #), Explicit (less #, minimal description)
+**Pfaffian Constraints**: Constraints on velocity, such as $A(\theta)\dot{\theta} = 0$. These are **nonholonomic** if the velocity constraints do not restrict the configuration space itself.
 
-Given a diff-drive robot: how many holonomic constraints k and nonholonomic constraints m are on it given non-slip...
+### Task Space vs. Workspace
 
-1. Controls on robot (2), the wheel speeds.
-2. There are 3 velocity constraints (Pffafian)...
-3. How many are holonomic / how many are nonholonomic...
+**Task Space**: The space in which a task is most naturally represented, independent of the specific robot design.
 
-- 1 nonholonomic, 2 holonomic
+**Workspace**: The specification of the reachable space for a particular robot configuration.
+
+### Representation Types
+
+**Implicit Representation**: Uses more parameters than necessary (overcomplete)
+**Explicit Representation**: Uses minimal parameters for complete description
+
+## Example: Differential Drive Robot
+
+Consider a differential drive robot with non-slip wheel constraints:
+
+### System Analysis
+
+1. **Controls**: The robot has **2 control inputs** - the left and right wheel speeds
+2. **Velocity Constraints**: There are **3 Pfaffian constraints** on the system velocities
+3. **Constraint Classification**:
+   - **1 nonholonomic constraint**: No-slip rolling condition
+   - **2 holonomic constraints**: Wheel-ground contact conditions
+
+This constraint structure determines the robot's motion capabilities and planning requirements.
