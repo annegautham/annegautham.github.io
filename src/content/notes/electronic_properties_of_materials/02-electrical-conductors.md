@@ -2,7 +2,7 @@
 title: Electrical Conductors and Electronic Band Theory
 author: Gautham Anne
 pubDatetime: 2025-07-01T12:00:00Z
-description: Comprehensive study of electrical conductors, electronic band theory, quantum mechanics of electrons in crystals, and the fundamental models describing electronic properties of materials
+description: On electrical conductors, electronic band theory, quantum mechanics of electrons in crystals, and the fundamental models describing electronic properties of materials
 tags:
   - ssp
 ---
@@ -162,7 +162,6 @@ $$\psi(\mathbf{r} + \mathbf{R}) = e^{i\mathbf{k} \cdot \mathbf{R}}\psi(\mathbf{r
 The Bloch wavefunction contains two independent components:
 
 1. **Plane Wave Component**: $e^{i\mathbf{k} \cdot \mathbf{r}}$
-
    - Represents the **momentum** of the electron
    - Provides **translational symmetry**
    - **Slowly varying** on the scale of the lattice
@@ -343,7 +342,6 @@ where $P(\varepsilon)$ is the left-hand side expressed in terms of $\varepsilon$
    $$E = \frac{\hbar^2 k^2}{2m}$$
 
 2. **Strong Potential Limit** ($U_0 \gg E$):
-
    - Tight-binding behavior
    - Narrow bands with large gaps
 

@@ -49,23 +49,53 @@ function reflectPreference() {
 // set early so no page flashes / CSS is made aware
 reflectPreference();
 
-window.onload = () => {
-  function setThemeFeature() {
-    // set on load so screen readers can get the latest value on the button
-    reflectPreference();
+function setThemeFeature() {
+  // set on load so screen readers can get the latest value on the button
+  reflectPreference();
 
-    // now this script can find and listen for clicks on the control
-    document.querySelector("#theme-btn")?.addEventListener("click", () => {
-      themeValue = themeValue === "light" ? "dark" : "light";
-      setPreference();
-    });
+  // now this script can find and listen for clicks on the control
+  document.querySelector("#theme-btn")?.addEventListener("click", () => {
+    themeValue = themeValue === "light" ? "dark" : "light";
+    setPreference();
+  });
+}
+
+// Initialize immediately
+setThemeFeature();
+
+// Re-initialize on window load
+window.addEventListener("load", setThemeFeature);
+
+// Runs on view transitions navigation
+document.addEventListener("astro:after-swap", () => {
+  // Re-read theme from localStorage in case it was changed on another page
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme && savedTheme !== themeValue) {
+    themeValue = savedTheme;
   }
+  // Add a small delay to ensure DOM is ready
+  setTimeout(setThemeFeature, 10);
+});
 
-  setThemeFeature();
+// Also handle before swap to preserve theme
+document.addEventListener("astro:before-swap", () => {
+  // Ensure theme is saved before page transition
+  localStorage.setItem("theme", themeValue);
+});
 
-  // Runs on view transitions navigation
-  document.addEventListener("astro:after-swap", setThemeFeature);
-};
+// Initialize on DOMContentLoaded as well for better compatibility
+document.addEventListener("DOMContentLoaded", setThemeFeature);
+
+// Handle page visibility changes (when user returns to tab)
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme && savedTheme !== themeValue) {
+      themeValue = savedTheme;
+      reflectPreference();
+    }
+  }
+});
 
 // sync with system changes
 window
