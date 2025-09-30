@@ -8,6 +8,8 @@ tags:
   - ML
 ---
 
+So! I'm taking this course to make sure my fundamentals in ML are solid. I've done project work and independent study here and there, but I longed to formalize it!
+
 ## Table of Contents
 
 # What is Machine Learning (ML)
