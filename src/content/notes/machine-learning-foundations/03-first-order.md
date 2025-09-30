@@ -154,7 +154,7 @@ Other formal convergence criteria include:
 
 The tolerance $\epsilon$ and maximum iteration count are typically set based on computational constraints and desired precision.
 
-### Example
+### Python Implementation
 
 ```python
 # import automatic differentiator to compute gradient module
