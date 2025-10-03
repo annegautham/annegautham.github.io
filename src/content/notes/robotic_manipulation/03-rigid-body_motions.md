@@ -108,3 +108,66 @@ There exists a **closed-form solution** for the matrix exponential known as **Ro
 **Logarithm map**: $R \in \text{SO}(3) \rightarrow [\hat{\omega}]\theta \in \text{so}(3)$
 
 These mappings allow us to integrate angular velocities to find orientation in space over time, transitioning between different orientations rather than decaying or growing.
+
+## Homogenous Transformation Matrices
+
+Special Euclidean group (SE(3)), constists of a rotation matrix and a 3 vector of positions. T = [R p; 0 1], T^-1 = [RT -RTp; 0 1].
+
+3 uses of HT matrices: Tab tells us where b is relative to a. 2) change a refernce frame of a vector or frame 3) Displace a vector or frame: T = (R,p) = Trans(p)Rot($\hat{\omega}, \theta$). Any rigid body transformation can be represented on a screw axis (linear speed + angular speed) -> pitch = linear / angular speed, and speed along the screw. If the pitch is infinite (then we dont neeed any angualar motion to advance linearly). Generalization of angular velcocity...
+
+## Twists
+
+- What is the instantaneous linwae morion of the whole frame. Linear velocty of origin ofa frame that will be refeerebcedd bu the frame.
+
+if theta.dot = 1
+
+Can use transformation to change framew of refernce of a framee.
+
+Va - [Ad_td] as an adjoiner.
+
+Twists are 6 vectors. se(3) is lie algebra of SE(3), the lset of all possible Tdot when T = I
+
+### Important Concepts
+
+- for a screw axis {q, shat, h}. The unit twist axis is so that he angular momemntum is hard to change due to precesssions'
+
+Thw dimension of space of screws: 5.
+
+Application: screw axis of Sb in kinova robot arm:
+
+SB = [0 1 0 0 0 0]'
+
+Ss = [0 1 0 9.8 0 0]'
+
+J2: Sb = [0 0 1 0 0 -717.3]
+
+Ss = [0 0 1 275.5 0 0]
+
+### Wrenches and Transformations
+
+Power is independent
+
+F_b = [Adj_T_ab]^T \* F_a
+
+Example 1:
+
+R = [ 0 0 1
+1 0 0
+0 1 0 ]
+
+p = (0 4 -2)'
+
+T = [R p
+0 1]
+
+Sa = (0 0 1 0 0 5)'
+Sb = (0 1 0 0 5 -4)'
+
+Tab' = e^{[S_a]\theta} _ Tab = Tab _ e^{[S_b]\theta}
+
+Tab' =
+[0 0 -1 0
+-1 0 0 4
+0 -1 0 0.5
+0 0 0 1
+]

@@ -43,6 +43,8 @@ This is a true quadratic built using the first and second derivatives of g. Not 
 
 h(w) = g(v) + grad g transpose (w-v) + 1/2 (w-v)^T _ hessian of g _ (w-v).
 
+The distant regression on
+
 ## Newton's Method
 
 ### Descent Direction

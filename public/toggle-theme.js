@@ -47,6 +47,13 @@ function reflectPreference() {
 }
 
 // set early so no page flashes / CSS is made aware
+// Apply saved theme immediately on script load
+const initialTheme = localStorage.getItem("theme");
+if (initialTheme) {
+  themeValue = initialTheme;
+  // Set theme attribute immediately to prevent flash
+  document.documentElement.setAttribute("data-theme", themeValue);
+}
 reflectPreference();
 
 function setThemeFeature() {
@@ -66,15 +73,32 @@ setThemeFeature();
 // Re-initialize on window load
 window.addEventListener("load", setThemeFeature);
 
-// Runs on view transitions navigation
-document.addEventListener("astro:after-swap", () => {
-  // Re-read theme from localStorage in case it was changed on another page
+// Apply theme as early as possible to prevent flash
+document.addEventListener("astro:before-preparation", () => {
+  // Read theme from localStorage and set it immediately
   const savedTheme = localStorage.getItem("theme");
-  if (savedTheme && savedTheme !== themeValue) {
+  if (savedTheme) {
     themeValue = savedTheme;
+    // Set the data-theme attribute on the HTML element immediately
+    document.documentElement.setAttribute("data-theme", themeValue);
   }
-  // Add a small delay to ensure DOM is ready
-  setTimeout(setThemeFeature, 10);
+});
+
+// Apply theme BEFORE page swap to prevent flash
+document.addEventListener("astro:page-load", () => {
+  // Read theme from localStorage and apply immediately
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    themeValue = savedTheme;
+    // Apply theme immediately without waiting for DOM
+    reflectPreference();
+  }
+});
+
+// Runs on view transitions navigation (after swap)
+document.addEventListener("astro:after-swap", () => {
+  // Re-initialize theme functionality after DOM swap
+  setThemeFeature();
 });
 
 // Also handle before swap to preserve theme
