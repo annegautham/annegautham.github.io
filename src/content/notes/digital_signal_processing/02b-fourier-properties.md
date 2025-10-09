@@ -331,37 +331,6 @@ T & |\Omega| \leq \pi/T \\
 \end{cases}
 $$
 
-### Multirate Signal Processing Fundamentals
-
-#### Downsampling (Decimation)
-
-**Operation**: $y[n] = x[Mn]$ (keep every $M$-th sample)
-
-**Frequency Domain**:
-$$Y(e^{j\omega}) = \frac{1}{M} \sum_{k=0}^{M-1} X(e^{j(\omega - 2\pi k)/M})$$
-
-**Aliasing**: Occurs if $X(e^{j\omega}) \neq 0$ for $|\omega| > \pi/M$
-
-#### Upsampling (Interpolation)
-
-**Operation**: Insert $(L-1)$ zeros between each sample
-
-**Frequency Domain**:
-$$Y(e^{j\omega}) = X(e^{j\omega L})$$
-
-**Imaging**: Creates replicas at multiples of $2\pi/L$
-
-#### Practical Multirate Systems
-
-**Decimation Filter**: Anti-aliasing filter before downsampling
-**Interpolation Filter**: Anti-imaging filter after upsampling
-
-**Design Specifications**:
-
-- **Passband**: $[0, \pi/M]$ for decimation
-- **Stopband**: $[\pi/M, \pi]$ with sufficient attenuation
-- **Transition Band**: Balance between filter complexity and performance
-
 ### Z-Transform Relationship
 
 #### Connection to DTFT
