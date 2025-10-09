@@ -121,3 +121,31 @@ J = qN_fv_f (N_f is the current density of all the electrons near fermi level (u
 - There was an implicit definiton of infinities (infinitely large crystal / single frequency of momentum vector yielding an infinitely large density of states)
 - normalized density of states (g(E)) by energy/volume is a constnant (can be proved...)
 - conductivity is j/E = q^2(g(E_f))v_f^2\*\tau
+
+Density of state is proportional to square root of energy...
+
+$\Delta E is very small (around 1\%) compared to E_f$.
+
+## 2D Case...
+
+We know that the real material is three dimensional so we need to look at dispersion in 3D. Since it is not easy to do that, let's look at the 2D situation...
+
+k is 2D is a vector, so that (kx, ky) yields the direction of propagation.
+
+E\_
+
+## Fermi Energy vs. Temperature
+
+Fermi Level in metals is fairly stubborn - doesn't change as a function of temperature...
+
+Integral of sqrt Energy dE/ 1+ exp E does not have a closed form solution....
+
+At 0 degree case, doesn't matter what fermi energy is, and appriximatino is given by
+
+Fermi energy = hbar^2 / 8effective mass \* (3n/pi)^2/3
+
+Fermi energy at a certain temperature = E_f0 \* (1-pi^2/12 (kT/E_f0)^2)
+
+Average energy of electrons are aroudnd 3/5 E_fermi
+
+Random dance of electrons, when it gets colder... in perfect cooridinate (less random... at short time scale, still random - vacuum field fluctuation)
