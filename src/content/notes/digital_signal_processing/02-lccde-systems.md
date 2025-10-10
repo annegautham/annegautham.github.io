@@ -1,7 +1,7 @@
 ---
 title: "Lecture 2A: LCCDEs and System Analysis"
 author: Gautham Anne
-order: 2.1
+order: 2
 pubDatetime: 2025-09-25T12:00:00Z
 description: Linear Constant Coefficient Difference Equations, system characterization, and frequency domain analysis of discrete-time LTI systems
 tags:

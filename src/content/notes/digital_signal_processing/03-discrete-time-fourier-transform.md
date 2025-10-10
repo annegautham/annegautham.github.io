@@ -1,14 +1,11 @@
 ---
-title: "Lecture 2B: Fourier Transforms and Properties"
+title: "Fourier Transform Properies"
 author: Gautham Anne
-order: 2.2
+order: 2
 pubDatetime: 2025-09-25T12:00:00Z
-description: Comprehensive treatment of DTFT theory, existence conditions, Gibbs phenomenon, and mathematical properties with proofs and applications
+description: DTFT theory, existence conditions, Gibbs phenomenon
 tags:
   - DSP
-  - Fourier Transform
-  - DTFT
-  - Mathematical Analysis
 ---
 
 ## Table of Contents
