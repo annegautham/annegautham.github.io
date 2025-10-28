@@ -1,7 +1,7 @@
 ---
 title: "Z-Transform"
 author: Gautham Anne
-order: 3
+order: 4
 pubDatetime: 2025-09-25T12:00:00Z
 description: Zzzzz-transform
 tags:
@@ -203,12 +203,3 @@ When the ROC includes the unit circle:
 $$H(e^{j\omega}) = H(z)\Big|_{z=e^{j\omega}}$$
 
 This gives the **frequency response** of the system, relating input and output in the frequency domain.
-
-## Applications
-
-1. **Digital Filter Design**: Specify desired poles and zeros
-2. **System Analysis**: Determine stability and frequency response
-3. **Control Systems**: Analyze feedback systems in discrete time
-4. **Signal Processing**: Transform-domain processing and analysis
-
-The Z-Transform provides a powerful framework for analyzing discrete-time systems and signals, extending beyond the limitations of the DTFT while maintaining the computational advantages of frequency-domain analysis.

@@ -1,7 +1,7 @@
 ---
 title: "Fourier Transform Properies"
 author: Gautham Anne
-order: 2
+order: 3
 pubDatetime: 2025-09-25T12:00:00Z
 description: DTFT theory, existence conditions, Gibbs phenomenon
 tags:

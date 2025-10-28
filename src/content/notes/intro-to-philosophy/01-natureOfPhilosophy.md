@@ -1,7 +1,7 @@
 ---
 title: The Nature of Philosophy
 author: Gautham Anne
-order: 2
+order: 1
 pubDatetime: 2025-07-01T12:00:00Z
 description: |
   Discussions on the nature of philosophy. Readings: Plato, “Apology: Defense of Socrates” & Russell, “The Value of Philosophy”

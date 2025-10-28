@@ -1,6 +1,7 @@
 ---
 title: Electrical Conductors and Electronic Band Theory
 author: Gautham Anne
+order: 2
 pubDatetime: 2025-07-01T12:00:00Z
 description: On electrical conductors, electronic band theory, quantum mechanics of electrons in crystals, and the fundamental models describing electronic properties of materials
 tags:
