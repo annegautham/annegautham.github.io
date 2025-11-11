@@ -15,138 +15,250 @@ tags:
 
 ## Current Density (Classical Perspective)
 
-### Drift Velocity and Current
+### Drift Velocity and Current Relationship
 
-When electrons drift in a conductor under an applied electric field $E_x$, they acquire an average drift velocity $v_{dx}$ in the x-direction. The resulting **current density** is:
+When electrons drift in a conductor under an applied electric field $\mathbf{E}$, they acquire an average drift velocity $\mathbf{v}_d$. The fundamental relationship for current density is:
 
-$$J_x = \frac{\Delta Q}{A\Delta t} = \frac{qNAv_{dx}\Delta t}{A\Delta t} = qNv_{dx}$$
+$$\mathbf{J} = n(-e)\mathbf{v}_d = ne\mathbf{v}_d$$
 
 where:
 
-- $q$ = electron charge (magnitude)
-- $N$ = number density of free electrons
-- $v_{dx}$ = drift velocity in x-direction
+- $n$ = number density of free electrons (electrons/m³)
+- $e$ = elementary charge magnitude ($1.602 \times 10^{-19}$ C)
+- $\mathbf{v}_d$ = drift velocity vector
 
-This assumes constant effective mass $m^*$ due to non-relativistic conditions.
+#### Derivation from First Principles
+
+Consider charge flow through a cross-sectional area $A$ in time $\Delta t$:
+
+$$\text{Charge flux} = \frac{\Delta Q}{A \Delta t} = \frac{n \cdot A \cdot v_d \Delta t \cdot e}{A \Delta t} = nev_d$$
+
+Therefore: $J = nev_d$
 
 ### Free Electron Model
 
-In the classical free electron model, kinetic energy increases quadratically with momentum:
+In the classical free electron model, the energy-momentum relationship is parabolic:
 
-$$E = \frac{p^2}{2m} = \frac{\hbar^2 k^2}{2m}$$
+$$E(\mathbf{k}) = \frac{\hbar^2|\mathbf{k}|^2}{2m^*}$$
 
-Theoretically extending to infinity, though quantum effects modify this at high energies.
+where $m^*$ is the effective mass accounting for:
 
-## Thermal Effects and Scattering
+- Band structure effects
+- Periodic potential of the crystal lattice
+- Many-body interactions
 
-### Thermal Motion
+The velocity of electrons is given by:
+$$\mathbf{v} = \frac{1}{\hbar}\nabla_{\mathbf{k}}E(\mathbf{k}) = \frac{\hbar\mathbf{k}}{m^*}$$
 
-Even without an external electric field, electrons possess significant **thermal energy**:
+## Thermal Effects and Electron Motion
 
-$$E_{\text{thermal}} \sim k_B T$$
+### Thermal Energy Distribution
 
-At room temperature ($T \approx 300$ K):
-$$k_B T \approx 26 \text{ meV} \approx 4.2 \times 10^{-21} \text{ J}$$
+Even without external fields, electrons possess significant thermal kinetic energy:
 
-This corresponds to thermal velocities via:
-$$\frac{1}{2}mv_{\text{thermal}}^2 \sim k_B T$$
+$$\langle E_{\text{thermal}} \rangle = \frac{3}{2}k_B T$$
 
-### Random vs. Drift Motion
+At room temperature ($T = 300$ K):
+$$k_B T = 25.9 \text{ meV} = 4.14 \times 10^{-21} \text{ J}$$
 
-- **Random thermal motion**: $v_{\text{thermal}} \sim 10^6$ m/s
-- **Drift velocity**: $v_{\text{drift}} \sim 10^{-2}$ m/s (cm/s order)
+The thermal velocity can be estimated from equipartition:
+$$\frac{1}{2}m^*v_{\text{th}}^2 = \frac{3}{2}k_B T \quad \Rightarrow \quad v_{\text{th}} = \sqrt{\frac{3k_B T}{m^*}}$$
 
-The drift represents a tiny bias superimposed on much larger random thermal motion.
+For electrons in copper: $v_{\text{th}} \approx 1.2 \times 10^6$ m/s
 
-## Classical Conduction Theory
+### Velocity Scales: Thermal vs. Drift
+
+The contrast between thermal and drift motion is dramatic:
+
+| Motion Type    | Typical Velocity                    | Physical Origin        |
+| -------------- | ----------------------------------- | ---------------------- |
+| Thermal motion | $v_{\text{th}} \sim 10^6$ m/s       | Random thermal energy  |
+| Drift motion   | $v_d \sim 10^{-4}$ to $10^{-2}$ m/s | Applied electric field |
+
+This means:
+$$\frac{v_d}{v_{\text{th}}} \sim 10^{-8} \text{ to } 10^{-6}$$
+
+The drift represents an infinitesimal bias on chaotic thermal motion.
+
+## Drude Model of Electrical Conduction
 
 ### Equation of Motion with Scattering
 
-The classical equation of motion for electrons includes a **friction term** representing scattering:
+The Drude model treats conduction electrons as classical particles subject to:
 
-$$m\frac{dv}{dt} + \frac{mv}{\tau} = qE$$
+$$m^*\frac{d\mathbf{v}}{dt} + \frac{m^*\mathbf{v}}{\tau} = -e\mathbf{E}$$
 
-where $\tau$ is the **relaxation time** (average time between scattering events).
+This Newton's equation includes:
+
+- Acceleration term: $m^*\frac{d\mathbf{v}}{dt}$
+- Friction term: $\frac{m^*\mathbf{v}}{\tau}$ (phenomenological scattering)
+- Driving force: $-e\mathbf{E}$ (electric field)
+
+where $\tau$ is the relaxation time (mean time between scattering events).
 
 ### Steady-State Solution
 
-At steady state ($dv/dt = 0$), the terminal drift velocity is:
+At equilibrium ($\frac{d\mathbf{v}}{dt} = 0$), the drift velocity becomes:
 
-$$v_d = \frac{q\tau E}{m} = \mu E$$
+$$\mathbf{v}_d = -\frac{e\tau}{m^*}\mathbf{E} = \mu_e\mathbf{E}$$
 
-where $\mu = \frac{q\tau}{m}$ is the **mobility**.
+The electron mobility is:
+$$\mu_e = \frac{e\tau}{m^*} \quad \text{(m²/V·s)}$$
 
-### Time-Dependent Solution
+### Transient Response
 
 For time-dependent fields, the complete solution is:
 
-$$v(t) = v_d\left[1 - e^{-t/\tau}\right]$$
+$$\mathbf{v}(t) = \mathbf{v}_d\left[1 - e^{-t/\tau}\right] + \mathbf{v}_0 e^{-t/\tau}$$
 
-The system reaches $\sim 63\%$ of terminal velocity after time $\tau$.
+Key time scales:
 
-### Conductivity
+- Response time: $\tau \sim 10^{-14}$ s (femtoseconds)
+- Reaches steady state in $\sim 3\tau$
 
-Using Ohm's law $\mathbf{J} = \sigma \mathbf{E}$:
+### Drude Conductivity Formula
 
-$$\sigma = \frac{nq^2\tau}{m}$$
+Combining with current density $\mathbf{J} = ne\mathbf{v}_d$:
 
-where $n$ is the electron density.
+$$\mathbf{J} = ne\mu_e\mathbf{E} = \sigma\mathbf{E}$$
 
-## Scattering Mechanisms
+The Drude conductivity is:
+$$\boxed{\sigma = \frac{ne^2\tau}{m^*}}$$
 
-### Energy-Dependent Scattering
+This fundamental relationship connects:
 
-Higher energy electrons have **increased scattering probability** due to:
+- Microscopic parameters: $n$, $e$, $\tau$, $m^*$
+- Macroscopic property: $\sigma$
 
-- Enhanced interaction cross-sections
-- Access to more scattering channels
-- Stronger coupling to lattice vibrations (phonons)
+## Scattering Mechanisms in Metals
 
-### Sources of Scattering
+### Energy Dependence of Scattering
 
-1. **Phonon scattering**: Interaction with lattice vibrations
-2. **Impurity scattering**: Defects and foreign atoms
-3. **Grain boundary scattering**: Polycrystalline interfaces
-4. **Surface scattering**: Important in thin films
+Higher energy electrons exhibit enhanced scattering due to:
 
-The classical model provides the foundation, though quantum mechanical treatments are needed for complete understanding of transport in metals.
+1. Larger interaction cross-sections $\sigma_s \propto E^{\alpha}$ where $\alpha > 0$
+2. Access to additional scattering channels at higher energies
+3. Increased coupling strength to lattice vibrations
 
-## Metal Electrons under External Field
+The scattering rate follows:
+$$\frac{1}{\tau(E)} = \sum_i \frac{1}{\tau_i(E)}$$
 
-$$\Delta k = \tau * \frac{E(-q)}{\bar{h}}$$
+### Primary Scattering Sources
 
-J = qN_fv_f (N_f is the current density of all the electrons near fermi level (unbalanced electrons))...
+#### 1. Phonon Scattering (Electron-Phonon Interaction)
 
-### Density of State
+Temperature-dependent scattering from lattice vibrations:
+$$\frac{1}{\tau_{ph}} \propto T \quad \text{(high temperature)}$$
 
-- There was an implicit definiton of infinities (infinitely large crystal / single frequency of momentum vector yielding an infinitely large density of states)
-- normalized density of states (g(E)) by energy/volume is a constnant (can be proved...)
-- conductivity is j/E = q^2(g(E_f))v_f^2\*\tau
+At low temperatures: $\frac{1}{\tau_{ph}} \propto T^5$ (Bloch-Grüneisen regime)
 
-Density of state is proportional to square root of energy...
+#### 2. Impurity Scattering
 
-$\Delta E is very small (around 1\%) compared to E_f$.
+Temperature-independent scattering from:
 
-## 2D Case...
+- Substitutional atoms
+- Interstitial defects
+- Vacancies
 
-We know that the real material is three dimensional so we need to look at dispersion in 3D. Since it is not easy to do that, let's look at the 2D situation...
+$$\frac{1}{\tau_{imp}} = \text{constant}$$
 
-k is 2D is a vector, so that (kx, ky) yields the direction of propagation.
+#### 3. Grain Boundary Scattering
 
-E\_
+Important in polycrystalline materials:
+$$\frac{1}{\tau_{gb}} \propto \frac{v_F}{L_{grain}}$$
 
-## Fermi Energy vs. Temperature
+where $L_{grain}$ is the average grain size.
 
-Fermi Level in metals is fairly stubborn - doesn't change as a function of temperature...
+#### 4. Surface Scattering
 
-Integral of sqrt Energy dE/ 1+ exp E does not have a closed form solution....
+Dominant in thin films when thickness $t < l_{mfp}$:
+$$\frac{1}{\tau_{surf}} \propto \frac{v_F}{t}$$
 
-At 0 degree case, doesn't matter what fermi energy is, and appriximatino is given by
+### Matthiessen's Rule
 
-Fermi energy = hbar^2 / 8effective mass \* (3n/pi)^2/3
+Total scattering rate combines all mechanisms:
+$$\boxed{\frac{1}{\tau_{total}} = \frac{1}{\tau_{ph}} + \frac{1}{\tau_{imp}} + \frac{1}{\tau_{gb}} + \frac{1}{\tau_{surf}}}$$
 
-Fermi energy at a certain temperature = E_f0 \* (1-pi^2/12 (kT/E_f0)^2)
+This leads to temperature-dependent resistivity:
+$$\rho(T) = \rho_0 + \rho_{ph}(T)$$
 
-Average energy of electrons are aroudnd 3/5 E_fermi
+where $\rho_0$ is the residual resistivity (impurities, defects).
 
-Random dance of electrons, when it gets colder... in perfect cooridinate (less random... at short time scale, still random - vacuum field fluctuation)
+## Quantum Mechanical Treatment of Conduction
+
+### Semiclassical Dynamics
+
+Under an external electric field, electrons near the Fermi surface experience a momentum shift:
+
+$$\Delta \mathbf{k} = -\frac{e\mathbf{E}\tau}{\hbar}$$
+
+The current density arises from electrons near $E_F$ with unbalanced momentum distribution:
+
+$$\mathbf{J} = -e \sum_{\mathbf{k}} \mathbf{v}(\mathbf{k}) f(\mathbf{k}) = -e n_F \mathbf{v}_F \Delta k$$
+
+where:
+
+- $n_F$ = density of electrons at Fermi level
+- $\mathbf{v}_F$ = Fermi velocity
+- $\Delta k$ = momentum displacement
+
+### Density of States and Conductivity
+
+The density of states per unit energy per unit volume is:
+
+$$g(E) = \frac{1}{2\pi^2}\left(\frac{2m^*}{\hbar^2}\right)^{3/2}\sqrt{E}$$
+
+For a 3D free electron gas: $g(E) \propto \sqrt{E}$
+
+The quantum mechanical conductivity becomes:
+$$\sigma = e^2 g(E_F) v_F^2 \tau = \frac{ne^2\tau}{m^*}$$
+
+This recovers the Drude result with quantum mechanical justification.
+
+### Dimensional Effects
+
+#### 3D Systems
+
+Density of states: $g_{3D}(E) \propto E^{1/2}$
+
+#### 2D Systems
+
+For quantum wells or thin films:
+$$g_{2D}(E) = \frac{m^*}{\pi\hbar^2} = \text{constant}$$
+
+#### 1D Systems
+
+For quantum wires:
+$$g_{1D}(E) \propto E^{-1/2}$$
+
+The dimensionality dramatically affects transport properties and density of states.
+
+## Temperature Dependence of Electronic Properties
+
+### Fermi Energy Temperature Dependence
+
+The Fermi energy in metals is remarkably stable against temperature variations:
+
+$$E_F(T) = E_F(0)\left[1 - \frac{\pi^2}{12}\left(\frac{k_B T}{E_F(0)}\right)^2\right]$$
+
+For typical metals: $\frac{k_B T}{E_F} \sim 10^{-2}$ at room temperature.
+
+#### Zero Temperature Limit
+
+$$E_F(0) = \frac{\hbar^2}{2m^*}\left(3\pi^2 n\right)^{2/3}$$
+
+This fundamental relationship connects electron density to Fermi energy.
+
+### Average Electronic Energy
+
+The average energy of conduction electrons is:
+$$\langle E \rangle = \frac{3}{5}E_F \quad \text{at } T = 0$$
+
+At finite temperature, thermal broadening around $E_F$ occurs over energy scale $k_B T$.
+
+### Electronic Heat Capacity
+
+The electronic contribution to specific heat:
+$$C_V = \gamma T = \frac{\pi^2}{3}k_B^2 g(E_F) T$$
+
+where $\gamma$ is the Sommerfeld coefficient. This linear temperature dependence distinguishes electronic from phononic contributions ($C_{phonon} \propto T^3$ at low T).

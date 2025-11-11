@@ -1,5 +1,5 @@
 ---
-title: Freedom of the Will
+title: Morality
 author: Gautham Anne
 order: 3
 pubDatetime: 2025-07-01T12:00:00Z

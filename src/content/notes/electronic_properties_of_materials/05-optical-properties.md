@@ -1,7 +1,7 @@
 ---
 title: Optical Properties of Conductors
 author: Gautham Anne
-order: 4
+order: 5
 pubDatetime: 2025-07-01T12:00:00Z
 description: Optical Properties of Metals and Electromagnetic Wave Propagation
 tags:

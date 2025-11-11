@@ -1,5 +1,5 @@
 ---
-title: "Lecture 2A: LCCDEs and System Analysis"
+title: LCCDEs and System Analysis
 author: Gautham Anne
 order: 2
 pubDatetime: 2025-09-25T12:00:00Z

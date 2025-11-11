@@ -1,5 +1,5 @@
 ---
-title: "Z-Transform"
+title: Z-Transform
 author: Gautham Anne
 order: 4
 pubDatetime: 2025-09-25T12:00:00Z
