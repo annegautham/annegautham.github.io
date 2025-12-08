@@ -1,6 +1,7 @@
 ---
 author: Gautham Anne
 pubDatetime: 2025-07-06T11:22:39
+title: STM Scan Head
 featured: false
 draft: false
 tags:
