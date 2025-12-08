@@ -10,7 +10,7 @@ tags:
 description: Global directory page for my STM project (scanning tunneling microscope).
 ---
 
-**tl;dr**: Built a functional scanning tunneling electron microscope. Iterating upon it to make it more robust against noise sources & less janky. May develop curriculum revolving around instrument to explain surface science adjacent topics.
+**tl;dr**: Built a functional scanning tunneling electron microscope. Iterating upon it to make it more robust against noise sources & less janky.
 
 ---
 
@@ -23,13 +23,13 @@ Typical commercial microscopes that are used in research labs cost upwards of \$
   materials like HOPG, gold, silicon, specially prepared samples
 - "Easy to use"
 
-I came across Dan Berard's (this guy is awesome) <a href="https://dberard.com/home-built-stm/">project</a> my junior year of high school, but I lacked the prereq knowledge to build it then. This directory documents my journey attempting to make my own microscope (started 08/2024). I am gatekeeping some information (sorry) since it is still under development! Longterm: I want to release it as a kit for high school students - which would supplement a curriculum, either in school or an educational camp. Contact me if you want some more information!
+I came across Dan Berard's (this guy is awesome) <a href="https://dberard.com/home-built-stm/">project</a> my junior year of high school, but I lacked the prereq knowledge to build it then. This directory documents my journey attempting to make my own microscope (started 08/2024).
 
 Some of the following pages sound super formal for blog posts, which is a result of me copying and pasting from my EE327 (Electronic System Design II) final report. Working on make it more concise...
 
 ---
 
-# Version 1 - Aangstrom (Updated 06/23/2025)
+# Version 1 - Aangstrom (Updated 07/21/2025)
 
 <div style="display: flex; align-items: center; gap: 2rem;">
 
@@ -88,7 +88,7 @@ Example HOPG lattice (const. current mode, after some post processing to remove 
 
 ---
 
-# Version 2 - uhhh... on it
+# Version 2
 
 I’ve uncovered a couple of design headaches in V1: the “5V” stepper motors actually run much more smoothly at around 9 V, and those delicate 40 AWG wires—along with my patience—keep breaking far too easily.
 
