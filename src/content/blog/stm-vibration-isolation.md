@@ -1,6 +1,6 @@
 ---
 author: Gautham Anne
-pubDatetime: 2025-05-04T00:39:22
+pubDatetime: 2025-05-14T09:41:33
 title: Vibration Isolation
 featured: false
 draft: false

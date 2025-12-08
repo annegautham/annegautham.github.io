@@ -1,6 +1,6 @@
 ---
 author: Gautham Anne
-pubDatetime: 2025-07-04T00:39:22
+pubDatetime: 2025-07-05T02:14:57
 title: Theory of Operation
 featured: false
 draft: false

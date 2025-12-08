@@ -1,7 +1,6 @@
 ---
 author: Gautham Anne
-pubDatetime: 2025-07-06T00:39:22
-title: Scan Head
+pubDatetime: 2025-07-06T11:22:39
 featured: false
 draft: false
 tags:

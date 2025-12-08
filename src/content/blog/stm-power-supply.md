@@ -1,6 +1,6 @@
 ---
 author: Gautham Anne
-pubDatetime: 2025-07-06T00:39:22
+pubDatetime: 2025-07-06T07:49:28
 title: Power Supply
 featured: false
 draft: false
