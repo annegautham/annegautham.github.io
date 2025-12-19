@@ -23,6 +23,12 @@ export const LOGO_IMAGE = {
   height: 46,
 };
 
+// Note subjects (folder names) that should be hidden from the site
+// Notes in these folders will not appear in listings or be accessible
+export const HIDDEN_NOTE_SUBJECTS = [
+  "intro-to-philosophy", // Add subject folder names here
+];
+
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",

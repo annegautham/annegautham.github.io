@@ -10,7 +10,7 @@ tags:
 description: Global directory page for my STM project (scanning tunneling microscope).
 ---
 
-**tl;dr**: Built a functional scanning tunneling electron microscope. Iterating upon it to make it more robust against noise sources & less janky.
+**tl;dr**: Built a functional scanning tunneling $e^-$ microscope. Need more robustness against mechanical noise sources & less janky.
 
 ---
 

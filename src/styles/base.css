@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import './citations.css';
 
 @tailwind base;
 @tailwind components;

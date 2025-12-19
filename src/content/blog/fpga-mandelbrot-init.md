@@ -156,7 +156,7 @@ It has
 
 Each pixel needs multiple multiplications and additions per iteration. A naïve design would take many cycles per iteration, but I plan to pipeline...
 
-A typical pipeline stage diagram:
+A pipeline stage diagram:
 
 ## Rendering Strategies: Iteration-Budget per Pixel
 
@@ -168,10 +168,10 @@ I have 2 main design strategies:
 - Store the escape count
 - Move to the next pixel
 
-Pro: simplest to code  
-Con: cannot reach real-time frame rates unless iteration count is low (<64)
+Pro: simplest to code frame rates unless iteration count is low (<64)
 
-2. Multiple pixels in flight (pipelined engine)
+2. Multiple pixels in flight (pipe
+   Con: cannot reach real-timelined engine)
 
 - A new pixel enters the pipeline every few cycles
 - Earlier pixels continue iterating in deeper pipeline stages

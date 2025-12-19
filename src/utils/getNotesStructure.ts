@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from "astro:content";
+import { HIDDEN_NOTE_SUBJECTS } from "@config";
 
 export interface NotesSubject {
   slug: string;
@@ -16,6 +17,7 @@ export interface NotesStructure {
 /**
  * Gets all notes organized by subject (folder structure)
  * Each subject corresponds to a folder in content/notes/
+ * Filters out subjects listed in HIDDEN_NOTE_SUBJECTS
  */
 export async function getNotesStructure(): Promise<NotesStructure> {
   const allNotes = await getCollection("notes");
@@ -30,6 +32,12 @@ export async function getNotesStructure(): Promise<NotesStructure> {
     }
 
     const subject = note.slug.split("/")[0];
+
+    // Skip hidden subjects
+    if (HIDDEN_NOTE_SUBJECTS.includes(subject)) {
+      return;
+    }
+
     if (!subjectMap.has(subject)) {
       subjectMap.set(subject, []);
     }
@@ -82,6 +90,12 @@ export async function getNoteWithContext(noteSlug: string) {
   if (!currentNote) return null;
 
   const subject = noteSlug.split("/")[0];
+
+  // Return null if note is from a hidden subject
+  if (HIDDEN_NOTE_SUBJECTS.includes(subject)) {
+    return null;
+  }
+
   const currentSubject = notesStructure.subjects.find(s => s.slug === subject);
 
   // If no subject found, create a default one
