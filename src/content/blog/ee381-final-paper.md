@@ -1,7 +1,7 @@
 ---
 author: Gautham Anne
 pubDatetime: 2025-12-12T09:17:42Z
-title: EE381 Final Project
+title: EE381 Final Paper
 featured: false
 draft: false
 tags:
