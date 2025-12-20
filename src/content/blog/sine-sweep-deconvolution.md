@@ -116,7 +116,7 @@ This **compacts** the IR, reducing pre-ringing and whitening the response.
 
 In some cases, there may be pulsive artifacts (like a tool drop). These are described can be described as a broadband click, and they deconvolve into descending sweep artifacts.
 
-The best way to remove these is is to compute the instantaneous frequency at the click time click time $t_c$,
+The best way to remove these is is to compute the instantaneous frequency at the click time $t_c$,
 
 $$
 f_\text{inst}(t_c) = f_1 \exp\!\Big(\tfrac{t_c}{T}\ln(\tfrac{f_2}{f_1})\Big),
