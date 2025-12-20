@@ -1,7 +1,7 @@
 ---
 author: Gautham Anne
 pubDatetime: 2025-12-12T09:17:42Z
-title: EE381 Final Paper
+title: Quantum Defect Sensors for Detecting Magnetic Fields
 featured: false
 draft: false
 tags:
