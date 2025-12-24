@@ -7,6 +7,7 @@ import Datetime from "@components/Datetime";
 import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
 import ShareLinks from "@components/ShareLinks.astro";
+import Comments from "@components/Comments.astro";
 import { SITE } from "@config";
 
 export interface Props {
@@ -101,6 +102,8 @@ const layoutProps = {
 
       <ShareLinks />
     </div>
+
+    <Comments />
   </main>
   <Footer />
 </Layout>

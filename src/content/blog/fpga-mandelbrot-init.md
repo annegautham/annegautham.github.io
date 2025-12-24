@@ -1,7 +1,7 @@
 ---
 author: Gautham Anne
 pubDatetime: 2025-10-25T20:48:34
-title: Mandy, An FPGA-Based Mandelbrot Engine (Initial Thoughts)
+title: An FPGA-Based Mandelbrot Engine (Initial Thoughts)
 featured: false
 draft: false
 tags:
