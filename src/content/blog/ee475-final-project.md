@@ -24,6 +24,17 @@ I also wanted a way to let the data speak for it self and automatically surface 
 
 The goal of this project is to build a data-driven pipeline that can automatically surface these behaviors. Rather than hand-labeling events or tuning thresholds, I wanted a workflow that starts from raw displacement data, extracts physically meaningful features, and then lets structure emerge naturally using unsupervised machine learning.
 
+<div class="download-list">
+  <div class="download-item">
+    <span class="file-name">AnneGautham_FinalProject.zip</span>
+    <a class="download-btn" href="/files/ee475-final-project/AnneGautham_EE475_FinalProject.zip" download title="Download file">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24">
+        <path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V4" />
+      </svg>
+    </a>
+  </div>
+</div>
+
 ## Experimental Context
 
 Without revealing too much about the experimental procedure (paper coming out soon!), I'll try to put the data in context of the work. Motion of a particle is read out using a quadrant photodiode analysis of pixel data (from a camera recording, 30 fps), which provides a time-domain displacement signal along orthogonal axes. Because the particle has extremely low dissipation, its mechanical modes ring for long times, making it an ideal platform for studying weak nonlinear effects. In practice, the data acquisition is broken into many short recordings. Each recording coresponds to a time-domain signal, and from this, a spectrogram, but gaps between the recordings exist. Thus, any meaningful analysis has to take into consideration a discontinuous dataset.
