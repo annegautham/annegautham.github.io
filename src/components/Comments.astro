@@ -10,8 +10,8 @@
 
 <script>
   function loadGiscus() {
-    const theme =
-      localStorage.getItem("theme") === "dark" ? "dark" : "light";
+    const theme = "light_protanopia";
+    //   localStorage.getItem("theme") === "dark" ? "dark" : "light";
 
     const script = document.createElement("script");
     script.src = "https://giscus.app/client.js";
@@ -45,15 +45,14 @@
 
   // Update theme when user toggles
   document.addEventListener("astro:after-swap", loadGiscus);
-  
+
   // Listen for theme changes
   const themeToggle = () => {
     const iframe = document.querySelector<HTMLIFrameElement>(
       "iframe.giscus-frame"
     );
     if (iframe) {
-      const theme =
-        localStorage.getItem("theme") === "dark" ? "dark" : "light";
+      const theme = localStorage.getItem("theme") === "dark" ? "dark" : "light";
       iframe.contentWindow?.postMessage(
         { giscus: { setConfig: { theme } } },
         "https://giscus.app"
@@ -63,9 +62,9 @@
 
   // Watch for theme changes
   window.addEventListener("storage", themeToggle);
-  
+
   // For theme toggle button click
-  document.addEventListener("click", (e) => {
+  document.addEventListener("click", e => {
     const target = e.target as HTMLElement;
     if (target.id === "theme-btn" || target.closest("#theme-btn")) {
       setTimeout(themeToggle, 100);
