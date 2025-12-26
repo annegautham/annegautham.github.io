@@ -2,7 +2,7 @@
 title: "Drude Theory of Metals"
 order: 1
 description: Drude made a theory.
-color: "purple"
+color: "red"
 tags: ["Physics"]
 ---
 
@@ -68,17 +68,14 @@ $$
 ### Key Assumptions of Drude Theory
 
 1. **Independent electron approximation**:
-
    - Ignore electron-electron and electron-ion interactions during collisions.
    - Each electron moves freely between collisions.
 
 2. **Collisions are instantaneous**:
-
    - Modeled as abrupt velocity changes (like bouncing off hard walls).
    - No gradual scattering — just sudden redirection.
 
 3. **Collision rate**:
-
    - Probability of collision per time = $1/\tau$
    - After each collision, an electron emerges with a **random velocity**, unrelated to its prior motion.
 

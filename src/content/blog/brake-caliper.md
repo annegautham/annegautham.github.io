@@ -17,6 +17,8 @@ description: My final deliverable for ME240 (Introduction to Mechanical Design a
 
 I've put this post off for long enough! Last spring, I took ME240 (Introduction to Mechanical Design and Manufacturing), as part of a required sequence for undergrad mechancical engineers. While the course was not my first exposure to manufacturing, I appreciated the formal structure the class placed on mechanical design, especially at scale. Most of my previous experiences emphasized 'scrappiness'. That is, getting a 'first-order' approximation of the final product out of the way, then iterate. However, the structure of ME240 placed significant weight on the evidence behind design desicions, which I appreciated. Over 10 weeks, my team members and I designed and verified functional brake calipers for the rear wheel of a bicycle. This post will explain how!
 
+![original design space](@assets/images/brake-caliper/pic.jpg)
+
 ## Needs and Metrics
 
 Our needs listed in Table 2 were generated through a combination of rider experience, engineering judgment, and alignment with ISO 4210-4 bicycle safety standards. High-priority needs (e.g., stopping distance, ease of brake actuation, structural rigidity) directly impact rider safety and brake performance. Lower-priority needs, such as aesthetically pleasing, still contribute to usability and product desirability but are less critical to core function.
