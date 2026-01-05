@@ -16,6 +16,7 @@ description: STM Mainboard
 
 The STM mainboard serves as the central control and signal-processing hub for all active subsystems. It interfaces with the scanning, positioning, and signal acquisition circuitry and enables the feedback control that makes atomic-resolution imaging possible. The design is centered around a Teensy 4.0 microcontroller, selected for its low-latency digital control capabilities.
 
+![mainboard_pcb](@assets/images/stm-7_11_2025_IMAGES/mainboard.png)
 ![mroot](@assets/images/stm-7_11_2025_IMAGES/mroot.png)
 
 ## Digital-to-Analog and Analog-to-Digital Conversion

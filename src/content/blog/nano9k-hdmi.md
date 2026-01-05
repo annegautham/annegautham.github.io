@@ -1,7 +1,7 @@
 ---
 author: Gautham Anne
 pubDatetime: 2025-12-14T20:48:34
-title: "FPGA HDMI Driver From Scracth: 640x480 on the Tang Nano 9k"
+title: "FPGA HDMI Driver From Scratch: 640x480 on the Tang Nano 9k"
 featured: false
 draft: false
 tags:
@@ -446,5 +446,5 @@ Here's the full digital schematic:
 
 ## Example Output
 
-Yay! This worked out! Here is a test image of a half red / half blue screen. Stay tuned for my Mandelbrot Engine.
+Yay! This worked out! Here is a test image of a half red / half blue screen. Stay tuned for my Mandelbrot Engine! I also have a fun project I'm working on (a DLP Maskless Lithography system) that will need to make use of this driver (although implemented on an FPGA with more LUTs).
 ![alt text](@assets/images/fpga_hdmi/red-blue.png)
