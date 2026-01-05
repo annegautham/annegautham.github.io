@@ -26,7 +26,9 @@ export const LOGO_IMAGE = {
 // Note subjects (folder names) that should be hidden from the site
 // Notes in these folders will not appear in listings or be accessible
 export const HIDDEN_NOTE_SUBJECTS = [
-  "intro-to-philosophy", // Add subject folder names here
+  "intro-to-philosophy",
+  "robotic_manipulation",
+  "ashcroft_mermin", // Add subject folder names here
 ];
 
 export const SOCIALS: SocialObjects = [

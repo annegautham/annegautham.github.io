@@ -141,7 +141,7 @@ This section converts my screen coordinates (from 0 to 640) into the complex num
 
 ### Hardware Unrolling `generate` block
 
-This is the critical part that currently kills my resources.
+This is the part that currently kills my resources.
 
 ```verilog
 genvar i;
