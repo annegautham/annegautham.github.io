@@ -361,7 +361,6 @@ module hdmi_top (
     wire pclk;       // 25.2 MHz
     wire pll_lock;
 
-    // 1. PLL: Generates only the high-speed VCO (504 MHz)
     Gowin_rPLL your_pll_inst (
         .clkin(clk_27m),
         .clkout(vco_fclk), // 504 MHz
@@ -369,17 +368,14 @@ module hdmi_top (
         .reset(!rst_n)     // Check your IP: usually active high reset
     );
 
-    // 2. CLKDIV 1: 504 MHz -> 126 MHz (Serial Clock)
-    // Divides by 4
+    //Serial clock
     CLKDIV #(.DIV_MODE("4")) u_div_serial (
         .CLKOUT(ser_fclk),
         .HCLKIN(vco_fclk),
         .RESETN(pll_lock)
     );
 
-    // 3. CLKDIV 2: 126 MHz -> 25.2 MHz (Pixel Clock)
-    // Divides by 5. THIS IS THE CRITICAL FIX.
-    // It takes the *already divided* ser_fclk as input.
+    // pixel clock
     CLKDIV #(.DIV_MODE("5")) u_div_pixel (
         .CLKOUT(pclk),
         .HCLKIN(ser_fclk), // Chain from the serial clock
@@ -440,7 +436,7 @@ module hdmi_top (
 endmodule
 ```
 
-Here's the full digital schematic:
+Here's the logic output of synthesis:
 
 <iframe height="600px" width="100%" src="/files/fpga_hdmi/schematic.pdf"></iframe>
 
