@@ -103,7 +103,7 @@ Some of these functions are synthesizable, others are not, for various reasons.
   - Do not have any secondary signals
   - Have equally spaced taps that are at least three registers apart
 
-```systemverilog
+```verliog
 module shift_8x64 (
 input logic clk,
 input logic shift,
@@ -130,7 +130,7 @@ Should yield this:
 
 A queue is a variable-size, ordered collection of homogenous elements. Like a dynamic array, queues can grow and shrink. Queue supports adding/removing elements. They are declared using the same syntax as unpacked arraysm but using $ as the array size. In queue, `0` is the first entry and $ is the last entry.
 
-```systemverilog
+```verliog
 int queue_0[$:255] // bounded queue of 255 elements
 int queue_1[$]; // unbounded queue of int
 queue_1 = {0,1,2,3};
@@ -153,7 +153,7 @@ A _non-blocking assignment_ executes statements in paralle. In the non-blocking 
 
 Unique if evaluates all the conditions in parallel. The simulator will issue a run time error/warning if zero ore more than one condition is true:
 
-```systemverilog
+```verliog
 // RT Warning: More than one conditions match in 'unique if' statement.
 unique if ( a < b ) $display("a is less than b");
 else if ( a < c ) $display("a is less than c");
@@ -166,7 +166,7 @@ Instead of having a long 'priority queue', the conditionals are evaluated parall
 
 Priority ifs evaluate all the conditions in sequential order. Simulator will issue a runtime error/warning if no condition is true or no corresponding else.
 
-```systemverilog
+```verliog
 // RT Warning: No condition matches in 'priority if' statement.
 priority if ( a < 20 ) $display("a is less than b");
 else if ( a < 40 ) $display("a is less than c");
@@ -176,7 +176,7 @@ else if ( a < 40 ) $display("a is less than c");
 
 `always` blocks are combinational logic. You have to include input signals in the sensitivity list (tells when to update process). You can also use the wildcard (\*) to include all combinational signals.
 
-```systemverilog
+```verliog
 // combinational full-adder
 always @ (a or b or cin) begin
 {cout, sum} = a + b + cin;
@@ -216,7 +216,7 @@ In a typical block RAM implementation, we have two processes:
 
 This design requires one input cycle delay between address and data:
 
-```systemverilog
+```verliog
 module bram
 #(parameter BRAM_ADDR_WIDTH = 10,
 parameter BRAM_DATA_WIDTH = 8)
@@ -252,7 +252,7 @@ Suppose we have 32 bit memory and we only want to write to 2 bytes. This would b
 
 This can be done in 2 ways: unpacked array or generate-for:
 
-```systemverilog
+```verliog
 // Unpacked Array
 module bram_block
 #(parameter BRAM_ADDR_WIDTH = 10,
@@ -276,7 +276,7 @@ brams [BRAM_DATA_WIDTH/8-1:0] (
 );
 ```
 
-```systemverilog
+```verliog
 // Generate-For
 module bram_block
 #(parameter BRAM_ADDR_WIDTH = 10,
