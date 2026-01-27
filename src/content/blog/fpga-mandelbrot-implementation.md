@@ -3,7 +3,7 @@ author: Gautham Anne
 pubDatetime: 2025-12-17T20:48:34
 title: FPGA-Based Mandelbrot Engine
 featured: false
-draft: false
+draft: true
 tags:
   - digital design
 description: Using my previous HDMI driver for the Gowin GW1NR-9 FPGA, I wrote a couple verilog modules to render mandelbrot sets real time.

@@ -1,11 +1,11 @@
 ---
-title: Introduction to System Verilog
+title: Introduction to SystemVerilog - Part 1
 author: Gautham Anne
 order: 0
 pubDatetime: 2025-07-01T12:00:00Z
 description: Lecture 2
 tags:
-  - digital systems design
+  - digital design
 ---
 
 ## Table of Contents
