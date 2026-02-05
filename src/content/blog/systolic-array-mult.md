@@ -1,12 +1,12 @@
 ---
 author: Gautham Anne
-pubDatetime: 2025-07-13T15:17:06
+pubDatetime: 2026-01-18T15:17:06
 title: Matrix Multiplication with Systolic Arrays in SystemVerilog
 featured: false
-draft: false
+draft: true
 tags:
   - digital systems design
-description: Systolic array multiplication!
+description: How to multiply matrices!
 ---
 
 ## Table of Contents
@@ -15,7 +15,7 @@ description: Systolic array multiplication!
 
 We know how important matrix multiplication is for basically any system, whether you are fine-tuning an LLM or running a edge detection filter on an image, you are essentially multiplying matrices.
 
-However, the standard algorithm ($C = A \times B$) is computationally expensive ($O(N^3)$). Worse, it is memory bandwidth bound. In a standard CPU architecture, you spend more time fetching the datafrom RAM than you do actually multiplying it. The _Systolic Array_ multiplication method solves this problem, and it is the architecture behind some of the newer 'TPU' and other AI accelerators. In this post, I'll attempt to break down how to implement one from scratch in SystemVerilog, as well as design a testbench to verify my design, and do synthesis in Synplify Premier for the Intel V Cyclone.
+However, the standard algorithm ($C = A \times B$) is computationally expensive ($O(N^3)$). Worse, it is memory bandwidth bound. In a standard CPU architecture, you spend more time fetching the datafrom RAM than you do actually multiplying it. The _Systolic Array_ multiplication method solves this problem, and it is the architecture behind some of the newer 'TPU' and other AI accelerators. In this post, I'll attempt to break down how to implement one from scratch in SystemVerilog, as well as design a testbench to verify my design, and do synthesis in Synplify Premier for the Intel V Cyclone. This was for an assignment in my CE387 course at Northwestern.
 
 ## Compute vs. Memory
 
@@ -85,7 +85,7 @@ if (a_count >= 2) begin
 end
 ```
 
-## Systolic Pulse
+## Systolic 'Pulsing'
 
 The entire operation is driven by a single signed integer counter, `t`. This represents the current time step of the systolic wave.
 
@@ -117,4 +117,23 @@ for (int rr = 0; rr < N; rr++) begin
     else
         a_in[rr] = 0; // Inject zeros if outside the valid window
 end
+```
+
+At $t = 0$: Row 0 calculates `kA = 0 - 0 = 0`. Row 1 calculates `kA = 0 - 1 = -1`, which is invalid, and injects 0. It then grabs A[0][0]. At $t = 1$: Row 0 calculates `kA = 1 - 0 = 1`, so it grabs A[0][1]. Row 1 calculates `kA = 1 - 1 = 0`, and so it grabs A[1][0]. This method doesn't require any additional hardware delays.
+
+### Processing Elements
+
+In our RTL, the PE logic is described inside the nested loops of the `always_ff` block. In every cycle, two things happen in parallel:
+
+1. MAC: The PE takes the data sitting in its registers (`a_pipe` and `b_pipe`) and computes the partial sum:
+
+```verilog
+// Explicit signed casting ensures we can handle negative numbers correctly
+a_s = $signed(a_pipe[r][c]);
+b_s = $signed(b_pipe[r][c]);
+
+prod_w    = a_s * b_s;
+prod_wrap = prod_w[DATA_WIDTH-1:0];
+
+psum[r][c] <= psum[r][c] + prod_wrap;
 ```

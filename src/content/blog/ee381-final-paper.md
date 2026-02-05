@@ -6,7 +6,7 @@ featured: false
 draft: false
 tags:
   - materials
-description: A quick literature review of quantum defect sensors for magnetic field sensing.
+description: A literature review of quantum defect sensors for magnetic field sensing.
 ---
 
 ## Table of Contents

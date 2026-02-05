@@ -7,7 +7,7 @@ draft: false
 tags:
   - northwestern
   - scanning probe microscopy
-description: STM Power Supply
+description: Description of power supply design for STM project.
 ---
 
 ## Table of Contents

@@ -29,7 +29,7 @@ Some of the following pages sound super formal for blog posts, which is a result
 
 ---
 
-# Version 1 - Aangstrom (Updated 07/21/2025)
+# Version 1 - Aangstrom (Updated 12/21/2025)
 
 <div style="display: flex; align-items: center; gap: 2rem;">
 

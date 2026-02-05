@@ -7,7 +7,7 @@ draft: false
 tags:
   - northwestern
   - scanning probe microscopy
-description: STM Vibration Isolation
+description: Attempting to make scan head less prone to vibrations.
 ---
 
 ## Table of Contents

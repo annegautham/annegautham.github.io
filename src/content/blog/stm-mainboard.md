@@ -7,7 +7,7 @@ draft: false
 tags:
   - northwestern
   - scanning probe microscopy
-description: STM Mainboard
+description: Description of mainboard design for STM project.
 ---
 
 ## Table of Contents

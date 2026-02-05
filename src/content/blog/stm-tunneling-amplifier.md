@@ -7,7 +7,7 @@ draft: false
 tags:
   - northwestern
   - scanning probe microscopy
-description: STM Tunneling Amplifier
+description: Design of tunneling current amplifier (transimpedance amplifer).
 ---
 
 ## Table of Contents

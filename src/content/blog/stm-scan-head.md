@@ -7,7 +7,7 @@ draft: false
 tags:
   - northwestern
   - scanning probe microscopy
-description: STM Scan Head
+description: Design of steel scan head for STM project.
 ---
 
 ## Table of Contents

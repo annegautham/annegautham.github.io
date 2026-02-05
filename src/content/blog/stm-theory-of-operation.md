@@ -7,7 +7,7 @@ draft: false
 tags:
   - northwestern
   - scanning probe microscopy
-description: STM Theory of Operation
+description: A brief description of theory of STM operation.
 ---
 
 ## Tunneling Current Derivation
