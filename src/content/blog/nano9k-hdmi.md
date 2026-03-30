@@ -1,7 +1,7 @@
 ---
 author: Gautham Anne
 pubDatetime: 2025-12-14T20:48:34
-title: "FPGA HDMI Driver From Scratch: 640x480 on the Tang Nano 9k"
+title: "FPGA HDMI Driver: 640x480 on the Tang Nano 9k"
 featured: false
 draft: false
 tags:
