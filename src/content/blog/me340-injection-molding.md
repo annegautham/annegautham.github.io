@@ -2,7 +2,7 @@
 author: Gautham Anne
 pubDatetime: 2026-03-12T19:55:00Z
 title: Injection Molding Final Project
-featured: true
+featured: false
 draft: false
 tags:
   - manufacturing

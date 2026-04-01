@@ -2,7 +2,7 @@
 author: Gautham Anne
 pubDatetime: 2026-03-18T09:41:33
 title: Streaming FM Radio
-featured: false
+featured: true
 draft: false
 tags:
   - fpga
