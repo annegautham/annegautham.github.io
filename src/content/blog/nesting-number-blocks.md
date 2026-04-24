@@ -2,7 +2,7 @@
 author: Gautham Anne
 pubDatetime: 2023-12-2T14:14:00Z
 title: Nesting Number Blocks - DTC Fall Quarter 2023
-featured: true
+featured: false
 draft: false
 tags:
   - northwestern
