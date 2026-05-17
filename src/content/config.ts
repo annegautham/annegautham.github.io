@@ -19,27 +19,4 @@ const blog = defineCollection({
     }),
 });
 
-const notes = defineCollection({
-  type: "content",
-  schema: z.object({
-    title: z.string(),
-    order: z.number().optional(), // for sidebar sorting within subjects
-    description: z.string().optional(),
-    draft: z.boolean().optional(),
-    tags: z.array(z.string()).optional(),
-    color: z
-      .enum([
-        "red",
-        "blue",
-        "green",
-        "purple",
-        "orange",
-        "teal",
-        "pink",
-        "indigo",
-      ])
-      .optional(), // color theme for the subject
-  }),
-});
-
-export const collections = { blog, notes };
+export const collections = { blog };
