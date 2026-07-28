@@ -225,4 +225,71 @@
   @apply text-red-400;
 }
 
+.stm-reading-guide {
+  @apply my-8 border-t border-b border-skin-line py-6;
+}
+
+.stm-reading-guide h2 {
+  @apply mb-2 mt-0 text-xl font-semibold;
+}
+
+.stm-guide-intro {
+  @apply mb-6 text-sm opacity-80;
+}
+
+.stm-guide-section {
+  @apply mb-5;
+}
+
+.stm-guide-section h3 {
+  @apply mb-2 mt-0 text-base font-semibold uppercase tracking-wide opacity-70;
+}
+
+.stm-guide-section ol {
+  @apply m-0 list-none space-y-2 p-0;
+}
+
+.stm-guide-section a {
+  @apply block rounded-sm py-1 no-underline transition hover:text-skin-accent;
+}
+
+.stm-guide-title {
+  @apply block font-medium;
+}
+
+.stm-guide-desc {
+  @apply block text-sm opacity-75;
+}
+
+.stm-series-nav {
+  @apply my-8 border-t border-skin-line pt-4;
+}
+
+.stm-series-nav-links {
+  @apply grid gap-4 text-sm sm:grid-cols-3;
+}
+
+.stm-series-nav-link {
+  @apply block no-underline transition hover:text-skin-accent;
+}
+
+.stm-series-nav-next {
+  @apply sm:text-right;
+}
+
+.stm-series-nav-center {
+  @apply sm:text-center;
+}
+
+.stm-series-nav-label {
+  @apply block text-xs uppercase tracking-wide opacity-60;
+}
+
+.stm-series-nav-title {
+  @apply block font-medium;
+}
+
+.stm-series-nav-count {
+  @apply mt-3 text-center text-xs opacity-60;
+}
 

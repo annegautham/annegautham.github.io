@@ -18,11 +18,13 @@ VLSI (Very Large Scale Integration) techniques allow for the packing of billions
 
 The culmination of the course was the design and layout of a complete 4×4 SRAM bank, built from the ground up using a standard 6T (six-transistor) SRAM bitcell in the FreePDK45 process. Rather than using pre-built memory macros, the project required a custom, hierarchical implementation starting from individual transistors and progressing up to a functional memory array.
 
+![](@assets/images/sram-bank/2026-07-26-17-51-59.png)
+
 ## 6T-SRAM Bitcell
 
 A 6T SRAM cell stores a single bit using a _bistable latch_, meaning it has two stable states and will remain in one of them indefinitely as long as power is supplied. The cell interacts with the outside world through two bitlines (`BIT` and `BIT_B`) and a wordline (`WORD`).
 
-![alt text](@assets/images/sram-bank/image.png)
+![alt text](@assets/images/sram-bank/image.png "50 50")
 _6T Transistor Cell Schematic_
 
 There are three modes of operations:

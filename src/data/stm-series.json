@@ -1,0 +1,69 @@
+{
+  "index": {
+    "slug": "stm-global",
+    "title": "Aangstrom: Seeing Atoms!",
+    "description": "Overview of the home-built scanning tunneling microscope project."
+  },
+  "posts": [
+    {
+      "slug": "stm-design-overview",
+      "title": "Design Description and Constraints",
+      "description": "Project goals, requirements, and design constraints.",
+      "section": "Overview"
+    },
+    {
+      "slug": "stm-engineering-standards",
+      "title": "Engineering Standards",
+      "description": "IPC and design standards used across the build.",
+      "section": "Overview"
+    },
+    {
+      "slug": "stm-theory-of-operation",
+      "title": "Theory of Operation",
+      "description": "How quantum tunneling and piezo feedback produce atomic-scale images.",
+      "section": "Overview"
+    },
+    {
+      "slug": "stm-scan-head",
+      "title": "Scan Head",
+      "description": "Mechanical design of the steel scan head assembly.",
+      "section": "Mechanical Design"
+    },
+    {
+      "slug": "stm-vibration-isolation",
+      "title": "Vibration Isolation",
+      "description": "Reducing sensitivity to environmental mechanical noise.",
+      "section": "Mechanical Design"
+    },
+    {
+      "slug": "stm-power-supply",
+      "title": "Power Supply",
+      "description": "Custom analog and digital power rails for the instrument.",
+      "section": "Electrical Design"
+    },
+    {
+      "slug": "stm-tunneling-amplifier",
+      "title": "Tunneling Amplifier",
+      "description": "Transimpedance amplifier for the tunneling current signal.",
+      "section": "Electrical Design"
+    },
+    {
+      "slug": "stm-mainboard",
+      "title": "Mainboard",
+      "description": "Core PCB that ties the electrical subsystems together.",
+      "section": "Electrical Design"
+    },
+    {
+      "slug": "stm-feedback-control",
+      "title": "Feedback Control",
+      "description": "Control loop that maintains constant tunneling current while scanning.",
+      "section": "Software Design"
+    },
+    {
+      "slug": "stm-firmware",
+      "title": "Firmware",
+      "description": "Embedded software for scanning, control, and data acquisition.",
+      "section": "Software Design"
+    }
+  ]
+}

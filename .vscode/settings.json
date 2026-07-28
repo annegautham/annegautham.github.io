@@ -1,0 +1,11 @@
+{
+  "markdown.editor.filePaste.enabled": true,
+  "markdown.editor.drop.enabled": true,
+  "markdown.copyFiles.destination": {
+    "src/content/blog/**": "../../assets/images/${documentBaseName}/"
+  },
+  "pasteImage.path": "${projectRoot}/src/assets/images/${currentFileNameWithoutExt}",
+  "pasteImage.basePath": "${projectRoot}/src/assets/images/${currentFileNameWithoutExt}",
+  "pasteImage.prefix": "",
+  "pasteImage.insertPattern": "${imageSyntaxPrefix}@assets/images/${currentFileNameWithoutExt}/${imageFileName}${imageSyntaxSuffix}"
+}

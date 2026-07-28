@@ -2,7 +2,7 @@
 author: Gautham Anne
 pubDatetime: 2023-05-12T16:43:00Z
 title: Introduction to Modern Physics Book
-featured: true
+featured: false
 draft: false
 tags:
   - physics

@@ -1,0 +1,66 @@
+---
+import {
+  STM_SERIES,
+  STM_SERIES_INDEX,
+  getStmSeriesPosition,
+  isStmSeriesPost,
+} from "@data/stm-series";
+
+export interface Props {
+  currentSlug: string;
+}
+
+const { currentSlug } = Astro.props;
+const position = isStmSeriesPost(currentSlug)
+  ? getStmSeriesPosition(currentSlug)
+  : null;
+---
+
+{
+  position && (
+    <nav
+      aria-label="STM project series navigation"
+      class="stm-series-nav not-prose"
+    >
+      <div class="stm-series-nav-links">
+        {position.previous ? (
+          <a
+            href={`/posts/${position.previous.slug}/`}
+            class="stm-series-nav-link"
+          >
+            <span class="stm-series-nav-label">← Previous</span>
+            <span class="stm-series-nav-title">{position.previous.title}</span>
+          </a>
+        ) : (
+          <span />
+        )}
+
+        <a
+          href={`/posts/${STM_SERIES_INDEX.slug}/`}
+          class="stm-series-nav-link stm-series-nav-center"
+        >
+          <span class="stm-series-nav-label">Series</span>
+          <span class="stm-series-nav-title">Aangstrom index</span>
+        </a>
+
+        {position.next ? (
+          <a
+            href={`/posts/${position.next.slug}/`}
+            class="stm-series-nav-link stm-series-nav-next"
+          >
+            <span class="stm-series-nav-label">Next →</span>
+            <span class="stm-series-nav-title">{position.next.title}</span>
+          </a>
+        ) : (
+          <span />
+        )}
+      </div>
+
+      {position.index >= 0 && (
+        <p class="stm-series-nav-count">
+          Part {position.index + 1} of {STM_SERIES.length}
+        </p>
+      )}
+    </nav>
+  )
+}

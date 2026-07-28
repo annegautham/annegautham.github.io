@@ -10,7 +10,7 @@ tags:
 description: Global directory page for my STM project (scanning tunneling microscope).
 ---
 
-**tl;dr**: Built a functional scanning tunneling $e^-$ microscope. Need more robustness against mechanical noise sources & less janky.
+**tl;dr**: Built a somewhat functional scanning tunneling electron microscope. Needs to be more robust against mechanical noise sources and less janky.
 
 ---
 
@@ -27,41 +27,13 @@ I came across Dan Berard's (this guy is awesome) <a href="https://dberard.com/ho
 
 Some of the following pages sound super formal for blog posts, which is a result of me copying and pasting from my EE327 (Electronic System Design II) final report. Working on make it more concise...
 
----
+<!-- stm-reading-guide -->
 
 # Version 1 - Aangstrom (Updated 12/21/2025)
 
-<div style="display: flex; align-items: center; gap: 2rem;">
+<div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
 
-<div style="flex: 1;">
-
-## Overview
-
-### [Design Overview + Constraints](/posts/stm-design-overview)
-
-### [Engineering Standards](/posts/stm-engineering-standards)
-
-### [Theory Of Operation](/posts/stm-theory-of-operation)
-
-## Mechanical Design Pages
-
-### [Scan Head](/posts/stm-scan-head)
-
-### [Vibration Isolation](/posts/stm-vibration-isolation)
-
-## Electrical Design Pages
-
-### [Power Supply](/posts/stm-power-supply)
-
-### [Tunneling Amplifier](/posts/stm-tunneling-amplifier)
-
-### [Mainboard](/posts/stm-mainboard)
-
-## Software Design Pages
-
-### [Feedback Control](/posts/stm-feedback-control)
-
-### [Firmware](/posts/stm-firmware)
+<div style="flex: 1; min-width: 16rem;">
 
 ## Image Gallery - More coming soon!
 
@@ -79,7 +51,7 @@ Example HOPG lattice (const. current mode, after some post processing to remove 
 </div>
 
 <div style="flex-shrink: 0;">
-  <img src="/files/stm_IMAGES/model.png" alt="model" style="max-width: 700px;" />
+  <img src="/files/stm_IMAGES/model.png" alt="STM model render" style="max-width: 700px;" />
 </div>
 
 </div>

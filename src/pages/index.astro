@@ -24,7 +24,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
-  <script type="module" src="/switchPfp.js"></script>
   <Header />
   <main id="main-content">
     <section id="hero">
@@ -58,11 +57,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             )
           }
           <p>
-            I'm a junior pursuing a B.S. in Mechanical Engineering with a
+            I'm a rising senior pursuing a B.S. in Mechanical Engineering with a
             combined M.S. in Electrical Engineering at Northwestern University.
             I'm broadly interested in intelligent systems, silicon design, and
-            quantum hardware. This site is a portfolio documenting what I build
-            and learn along the way.
+            quantum hardware. This site is a portfolio documenting what I learn
+            along the way.
           </p>
           <SubscribeForm />
         </div>
@@ -76,16 +75,23 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         <div class="resume col-span-2">
           <h2 class="resume-section">Experience</h2>
           <div class="grid grid-cols-3">
+            <div class="institution">
+              <a
+                class="border-b border-dashed border-current hover:text-skin-accent transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.psiquantum.com/">PsiQuantum</a
+              >
+            </div>
+            <div class="duration">2026 - present</div>
+            <div class="position">Photonics Intern, Actives Team</div>
+
             <div class="institution">IEEE Student Branch</div>
             <div class="duration">2025 - 2026</div>
             <div class="position">
               2026: Co-Director, Technical Program<br />
               2025: Project Manager, Technical Program, "Best Overall"
             </div>
-
-            <div class="institution">SoCo, Candid Photo Taker</div>
-            <div class="duration">2024 - 2025</div>
-            <div class="position">Electrical Lead</div>
 
             <div class="institution">
               <a

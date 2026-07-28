@@ -8,6 +8,8 @@ import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
 import { remarkReadingTime } from "./src/utils/remark-reading-time.mjs";
+import { remarkImageSize } from "./src/utils/remark-image-size.mjs";
+import { remarkStmReadingGuide } from "./src/utils/remark-stm-reading-guide.mjs";
 
 export default defineConfig({
   site: SITE.website,
@@ -18,6 +20,8 @@ export default defineConfig({
       remarkToc,
       remarkMath,
       remarkReadingTime,
+      remarkImageSize,
+      remarkStmReadingGuide,
       [remarkCollapse, { test: "Table of contents" }],
     ],
     rehypePlugins: [rehypeKatex],

@@ -8,6 +8,8 @@ import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
 import ShareLinks from "@components/ShareLinks.astro";
 import Comments from "@components/Comments.astro";
+import SeriesNav from "@components/SeriesNav.astro";
+import { isStmSeriesPost } from "@data/stm-series";
 import { SITE } from "@config";
 
 export interface Props {
@@ -29,6 +31,8 @@ const {
 } = post.data;
 
 const { Content } = await post.render();
+const postSlug = post.slug;
+const showStmSeriesNav = isStmSeriesPost(postSlug);
 
 const ogImageUrl = typeof ogImage === "string" ? ogImage : ogImage?.src;
 const ogUrl = new URL(
@@ -81,6 +85,8 @@ const layoutProps = {
       <Content />
     </article>
 
+    {showStmSeriesNav && <SeriesNav currentSlug={postSlug} />}
+
     <ul class="my-8">
       {tags.map(tag => <Tag tag={slugifyStr(tag)} />)}
     </ul>
@@ -124,6 +130,16 @@ const layoutProps = {
     font-style: var(--shiki-dark-font-style) !important;
     font-weight: var(--shiki-dark-font-weight) !important;
     text-decoration: var(--shiki-dark-text-decoration) !important;
+  }
+
+  .heading-link {
+    display: none;
+    margin-left: 0.5rem;
+    text-decoration: none;
+  }
+
+  .group:hover > .heading-link {
+    display: inline;
   }
 </style>
 
@@ -172,12 +188,14 @@ const layoutProps = {
   function addHeadingLinks() {
     let headings = Array.from(document.querySelectorAll("h2, h3, h4, h5, h6"));
     for (let heading of headings) {
+      if (heading.closest(".stm-reading-guide")) continue;
+
       heading.classList.add("group");
       let link = document.createElement("a");
       link.innerText = "#";
-      link.className = "heading-link hidden group-hover:inline-block ml-2";
+      link.className = "heading-link";
       link.href = "#" + heading.id;
-      link.ariaHidden = "true";
+      link.setAttribute("aria-hidden", "true");
       heading.appendChild(link);
     }
   }

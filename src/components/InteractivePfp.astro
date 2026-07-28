@@ -11,27 +11,133 @@ const initialImage = images[0];
   class="profile-img"
   id="profile"
   data-images={JSON.stringify(images)}
-  style={`background-image: url(${initialImage})`}
+  style={`background-image: url("${initialImage}")`}
+  role="button"
+  tabindex="0"
+  aria-label="Profile picture. Click to cycle through Ben 10 aliens."
   title="Click to switch alien"
 >
 </div>
+
+<script is:inline define:vars={{ images }}>
+  (() => {
+    const profile = document.getElementById("profile");
+    if (!profile || !images.length) return;
+
+    const storedIndex = Number(
+      sessionStorage.getItem("interactive-pfp-index") || 0
+    );
+    const index =
+      ((storedIndex % images.length) + images.length) % images.length;
+
+    profile.style.backgroundImage = `url("${images[index]}")`;
+  })();
+</script>
 
 <style>
   .profile-img {
     width: 200px;
     height: 200px;
-    margin: 1.5em auto; /* center by default */
+    margin: 1.5em auto;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
     flex-shrink: 0;
+    touch-action: manipulation;
+    user-select: none;
+    transition: opacity 0.15s ease;
+  }
+
+  .profile-img.is-switching {
+    opacity: 0.65;
+  }
+
+  .profile-img:focus-visible {
+    outline: 2px solid var(--color-accent, #61dafb);
+    outline-offset: 4px;
   }
 
   @media (min-width: 768px) {
     .profile-img {
-      margin: 0 0 0 2em; /* only apply left margin on desktop */
+      margin: 0 0 0 2em;
     }
   }
 </style>
+
+<script>
+  const STORAGE_KEY = "interactive-pfp-index";
+  const controllers = new WeakMap();
+
+  function initInteractivePfp() {
+    const profile = document.getElementById("profile");
+    if (!profile) return;
+
+    controllers.get(profile)?.abort();
+    const controller = new AbortController();
+    controllers.set(profile, controller);
+
+    const images = JSON.parse(profile.dataset.images || "[]");
+    if (!images.length) return;
+
+    let switching = false;
+
+    images.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+
+    let index = Number(sessionStorage.getItem(STORAGE_KEY) || 0);
+    index = ((index % images.length) + images.length) % images.length;
+
+    const showImage = (nextIndex, animate = false) => {
+      index = nextIndex;
+      sessionStorage.setItem(STORAGE_KEY, String(index));
+
+      const applyImage = () => {
+        profile.style.backgroundImage = `url("${images[index]}")`;
+      };
+
+      if (!animate) {
+        applyImage();
+        return;
+      }
+
+      profile.classList.add("is-switching");
+      window.setTimeout(() => {
+        applyImage();
+        profile.classList.remove("is-switching");
+      }, 120);
+    };
+
+    showImage(index);
+
+    const cycleImage = () => {
+      if (switching) return;
+
+      switching = true;
+      showImage((index + 1) % images.length, true);
+      window.setTimeout(() => {
+        switching = false;
+      }, 150);
+    };
+
+    profile.addEventListener("click", cycleImage, {
+      signal: controller.signal,
+    });
+
+    profile.addEventListener(
+      "keydown",
+      event => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          cycleImage();
+        }
+      },
+      { signal: controller.signal }
+    );
+  }
+
+  document.addEventListener("astro:page-load", initInteractivePfp);
+</script>

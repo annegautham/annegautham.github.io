@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "build:optimized": "astro build && jampack ./dist",
+    "build:optimized": "astro build && jampack ./dist --exclude \"files/**\"",
     "preview": "astro preview",
     "sync": "astro sync",
     "astro": "astro",
